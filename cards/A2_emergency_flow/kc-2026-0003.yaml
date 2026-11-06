@@ -1,0 +1,44 @@
+id: kc-2026-0003
+version: 1
+status: candidate
+title: Dedicated ambulance receiving area cut ambulance offload times
+summary: A dedicated ambulance receiving area with its own offload nurse and standard workflow training cut the 90th-percentile ambulance offload time by more than half, even as ambulance arrivals rose.
+intervention: Dedicated ambulance receiving area, dedicated offload nurse, standardised staff workflow training, refined through PDSA cycles
+comparator: 12 months before implementation
+source:
+  doi: 10.1016/j.jen.2026.09.012
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1016/j.jen.2026.09.012
+domains:
+- A2_emergency_flow
+- B5_transport
+design: before_after
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: high_volume_ed
+kpis:
+- name: ambulance_offload_time_p90_minutes
+  definition: Mean monthly 90th-percentile ambulance patient offload time, arrivals from one EMS agency (Sacramento County)
+  effect:
+    value: from 80.00 to 30.58
+    unit: minutes
+  evidence:
+    quote: Mean monthly 90th percentile ambulance patient offload time decreased from 80.00 to 30.58 minutes for Sacramento County ambulance arrivals (t = 8.64, P < .001, d = 3.53) and from 81.58 to 33.67 minutes for Sierra-Sacramento Valley ambulance arrivals (t = 9.38, P < .001, d = 3.83).
+- name: ambulance_offload_time_p90_minutes_agency2
+  definition: Mean monthly 90th-percentile ambulance patient offload time, arrivals from a second EMS agency (Sierra-Sacramento Valley)
+  effect:
+    value: from 81.58 to 33.67
+    unit: minutes
+  evidence:
+    quote: Mean monthly 90th percentile ambulance patient offload time decreased from 80.00 to 30.58 minutes for Sacramento County ambulance arrivals (t = 8.64, P < .001, d = 3.53) and from 81.58 to 33.67 minutes for Sierra-Sacramento Valley ambulance arrivals (t = 9.38, P < .001, d = 3.83).
+implementation_needs:
+- physical space for an ambulance receiving area
+- dedicated offload nurse each shift
+- standard handover workflow and training
+- offload time data from EMS
+lmic_applicability: partial
+notes: 'Single-site quality improvement project, 12 months before vs 12 after, no control; downgraded from OE4 to OE5. Ambulance volume rose and ED census did not change significantly. LMIC: transferable where ambulance handover delays exist, but needs a spare nurse and space.'
+review_by: '2031-11-06'

@@ -1,0 +1,39 @@
+id: kc-2026-0011
+version: 1
+status: candidate
+title: Two in five ED patients stayed over four hours at a Nepal tertiary hospital
+summary: In a two-week study at a tertiary ED in Nepal, median ED stay was 3.6 hours and 41% stayed longer than four hours; consultations, advanced tests, payment method and age were linked to longer stays.
+source:
+  doi: 10.1155/emmi/8919991
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1155/emmi/8919991
+domains:
+- A2_emergency_flow
+design: other
+evidence_level: OE5
+setting:
+  country: NP
+  income: LMIC
+  facility: tertiary_teaching_hospital_ed
+kpis:
+- name: ed_length_of_stay_median_hours
+  definition: Median ED length of stay, arrival to ED exit, all patients
+  effect:
+    value: '3.58'
+    unit: hours
+  evidence:
+    quote: The median ED LOS was 3.58 h (IQR 2.42-5.00).
+- name: ed_los_over_4h_pct
+  definition: Share of ED patients with length of stay over 4 hours
+  effect:
+    value: '40.8'
+    unit: percent
+  evidence:
+    quote: A total of 161 (40.8%) experienced prolonged ED LOS, while 234 (59.2%) had a LOS of ≤ 4 h.
+implementation_needs:
+- arrival and exit timestamps
+- consultation request and response times
+lmic_applicability: 'yes'
+notes: 'Single-site cross-sectional study over two weeks (395 patients); descriptive, downgraded to OE5. Adjusted odds ratios for the associated factors are cut off in the stored abstract, so only the descriptive figures are carded. LMIC setting: directly applicable.'
+review_by: '2031-11-06'

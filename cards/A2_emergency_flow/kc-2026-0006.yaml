@@ -1,0 +1,48 @@
+id: kc-2026-0006
+version: 1
+status: candidate
+title: Higher daily ED occupancy linked to more cardiac arrests in the ED
+summary: In one ED, each 10-point rise in peak daily occupancy was linked to a 22% higher rate of cardiac arrest in the department; a fast-track model reduced days of extreme crowding but showed no significant immediate change in arrest rates.
+intervention: Fast-track model to reduce crowding (secondary analysis)
+comparator: Days with lower maximum ED occupancy; pre-fast-track period
+source:
+  doi: 10.21203/rs.3.rs-11189681/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-11189681/v1
+domains:
+- A2_emergency_flow
+- C2_quality_safety
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: emergency_department
+kpis:
+- name: ed_cardiac_arrest_irr_per_10pt_occupancy
+  definition: Incidence rate ratio of ED cardiac arrest per 10-percentage-point increase in maximum daily ED occupancy rate
+  effect:
+    value: '1.22'
+    unit: IRR
+    ci:
+    - '1.09'
+    - '1.36'
+  evidence:
+    quote: In the adjusted analysis, each 10-percentage-point increase in maximum daily EDOR was associated with a 22% higher EDCA rate (IRR 1.22, 95% CI 1.09–1.36; p < 0.001).
+- name: ed_cardiac_arrest_irr_fast_track
+  definition: Immediate change in ED cardiac arrest rate at fast-track start (segmented time series)
+  effect:
+    value: '0.90'
+    unit: IRR
+    ci:
+    - '0.37'
+    - '2.16'
+  evidence:
+    quote: The segmented time-series analysis did not demonstrate a statistically significant immediate change in EDCA rates at the start of the post-intervention period (IRR 0.90, 95% CI 0.37–2.16; p = 0.810).
+implementation_needs:
+- daily maximum ED occupancy rate
+- ED event log
+lmic_applicability: uncertain
+notes: Preprint (Research Square), not peer reviewed; graded OE5. Single centre, 72 events, so estimates are imprecise. Association only; authors state it does not establish causation. Country not stated in the abstract.
+review_by: '2031-11-06'

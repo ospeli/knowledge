@@ -1,0 +1,43 @@
+id: kc-2026-0008
+version: 1
+status: candidate
+title: Dedicated vertical-care doctor did not shorten ED length of stay
+summary: Repurposing one emergency physician shift into a dedicated chair-based vertical care role did not consistently shorten length of stay for discharged patients, though fewer vertical patients were upgraded to a bed.
+intervention: Dedicated vertical-pathway emergency physician shift within a rotational patient assignment system
+comparator: Comparable prior Mondays without the role
+source:
+  doi: 10.5811/westjem.64648
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5811/westjem.64648
+domains:
+- A2_emergency_flow
+- C1_workforce
+design: before_after
+evidence_level: OE5
+setting:
+  country: unknown
+  income: HIC
+  facility: tertiary_ed
+  beds: 56
+kpis:
+- name: ed_los_discharged_median_minutes
+  definition: Median ED length of stay for discharged patients, whole ED, pre vs post
+  effect:
+    value: 226 vs 219
+    unit: minutes
+  evidence:
+    quote: Median ED LOS for discharged patients did not demonstrate a consistent directional change, decreasing by seven minutes (3.1%) in the overall ED (226 vs 219 minutes) and increasing by 18.5 minutes (13.0%) among patients initially evaluated via the VPP (142.5 vs 161 minutes).
+- name: vertical_pathway_upgrades_pct
+  definition: Share of vertical-pathway patients upgraded to a bed
+  effect:
+    value: 22.1 vs 3.8
+    unit: percent
+  evidence:
+    quote: The dedicated VPP EP saw three more patients per shift (21.4%; median 17 vs 14), and VPP upgrades fell from 15/68 (22.1%) to 5/130 (3.8%).
+implementation_needs:
+- chair-based vertical care area
+- rota flexibility to dedicate one physician
+lmic_applicability: uncertain
+notes: Small hypothesis-generating pilot (five intervention days, three comparison days), descriptive only; graded OE5. Negative result is useful. Non-vertical physicians reported less manageable workloads. Country not stated; income assumed HIC from journal and setting, reviewer to confirm.
+review_by: '2031-11-06'

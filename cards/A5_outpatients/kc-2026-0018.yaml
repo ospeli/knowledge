@@ -1,0 +1,41 @@
+id: kc-2026-0018
+version: 1
+status: candidate
+title: Waiting to see the doctor was the main outpatient delay at an Indian hospital
+summary: At a large government teaching hospital in North India, outpatients spent over five hours from arrival to collecting medicines, of which the consultation was under 13 minutes; waiting to be called was the main bottleneck, then pharmacy.
+source:
+  doi: 10.18203/2394-6040.ijcmph20264093
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.18203/2394-6040.ijcmph20264093
+domains:
+- A5_outpatients
+- A8_pharmacy
+- E4_patient_experience
+design: mixed_methods
+evidence_level: OE5
+setting:
+  country: IN
+  income: LMIC
+  facility: government_tertiary_teaching_hospital_opd
+kpis:
+- name: opd_total_journey_minutes
+  definition: Mean outpatient journey time, arrival to pharmacy completion
+  effect:
+    value: '318.6'
+    unit: minutes
+  evidence:
+    quote: Mean total patient journey time was 260.4 minutes (arrival to consultation) and 318.6 minutes (arrival to pharmacy completion), of which consultation itself accounted for only 12.8 minutes (under 5% of total time).
+- name: opd_wait_to_doctor_minutes
+  definition: Mean waiting time from arrival to being called by the doctor
+  effect:
+    value: '242.8'
+    unit: minutes
+  evidence:
+    quote: Waiting time from arrival to being called by the doctor was the primary bottleneck (242.8 minutes; 76.2% relative contribution), followed by pharmacy dispensing time (119.4 minutes; 37.5%).
+implementation_needs:
+- stage timestamps (registration, call, consultation, pharmacy)
+- queue display or token system
+lmic_applicability: 'yes'
+notes: Single-site cross-sectional study, convenience sample of 255, partly patient-reported times; graded OE5. Root causes (registration counter allocation, no patient guidance, multi-stop pharmacy) come from qualitative analysis; staffing and volume were not measured. Licence cc-by-nc-nd (community KB only).
+review_by: '2031-11-06'

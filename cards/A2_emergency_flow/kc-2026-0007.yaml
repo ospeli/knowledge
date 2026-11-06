@@ -1,0 +1,43 @@
+id: kc-2026-0007
+version: 1
+status: candidate
+title: Longer door-to-room time predicted ambulance diversion, boarding did not
+summary: At one urban ED, higher visit volume and longer door-to-room times were linked to ambulance redirection being switched on, while boarding time and admission count were not.
+comparator: Days without redirection
+source:
+  doi: 10.5811/westjem.20766
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5811/westjem.20766
+domains:
+- A2_emergency_flow
+- B5_transport
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: urban_tertiary_ed
+kpis:
+- name: ems_redirection_activation_or_per_5min_door_to_room
+  definition: Odds of any EMS redirection on a day, per 5-minute longer door-to-room time
+  effect:
+    value: '1.42'
+    unit: odds ratio
+    ci:
+    - '1.04'
+    - '1.92'
+  evidence:
+    quote: Longer door-to-room time was associated with activation (OR 1.42 per 5 min; 95% CI, 1.04-1.92) and duration (incidence rate ratio 1.022 per min; 95% CI, 1.002-1.042).
+- name: ems_redirection_vs_boarding
+  definition: Association of boarding time and admission count with redirection activation and duration
+  effect:
+    direction: no association
+  evidence:
+    quote: Boarding time and admission count were not associated with either outcome.
+implementation_needs:
+- daily door-to-room time
+- redirection log from EMS
+lmic_applicability: uncertain
+notes: Single centre, 392 days, retrospective; downgraded from OE4 to OE5. Redirection was activated centrally by the city EMS system, which limits transfer to settings without central diversion.
+review_by: '2031-11-06'

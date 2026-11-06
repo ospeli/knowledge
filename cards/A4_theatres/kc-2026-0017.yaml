@@ -1,0 +1,56 @@
+id: kc-2026-0017
+version: 1
+status: candidate
+title: Separate arthroplasty logistics linked to more same-day discharge
+summary: When seven Danish centres introduced the same day-case hip and knee pathway, centres with logistics separate from general orthopaedics sent home more eligible patients on the day of surgery.
+intervention: Standardised day-case arthroplasty pathway in centres with separate logistics
+comparator: Arthroplasty units integrated in general orthopaedic departments
+source:
+  doi: 10.1007/s00402-026-06525-8
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1007/s00402-026-06525-8
+domains:
+- A4_theatres
+- A3_inpatient_flow
+design: other
+evidence_level: OE4
+setting:
+  country: DK
+  income: HIC
+  facility: fast_track_arthroplasty_centres
+  sites: 7
+kpis:
+- name: same_day_discharge_aor_satellite
+  definition: Adjusted odds of successful day-of-surgery discharge among eligible patients, satellite centres vs integrated units
+  effect:
+    value: '3.0'
+    unit: adjusted odds ratio
+    ci:
+    - '1.3'
+    - '7.1'
+  evidence:
+    quote: Compared with AUOs (36%), successful DOS discharge among eligible patients was more likely in SACs (54%; adjusted OR 3.0, 95% CI 1.3-7.1; adjusted risk difference 25 percentage points, 95% CI 5.9-44) and EACs (60%; adjusted OR 3.8, 95% CI 1.7-8.5; adjusted risk difference 31 percentage points, 95% CI 13.8-48).
+- name: same_day_discharge_aor_elective
+  definition: Adjusted odds of successful day-of-surgery discharge among eligible patients, elective centres vs integrated units
+  effect:
+    value: '3.8'
+    unit: adjusted odds ratio
+    ci:
+    - '1.7'
+    - '8.5'
+  evidence:
+    quote: Compared with AUOs (36%), successful DOS discharge among eligible patients was more likely in SACs (54%; adjusted OR 3.0, 95% CI 1.3-7.1; adjusted risk difference 25 percentage points, 95% CI 5.9-44) and EACs (60%; adjusted OR 3.8, 95% CI 1.7-8.5; adjusted risk difference 31 percentage points, 95% CI 13.8-48).
+- name: same_day_discharge_rate_pct
+  definition: Day-of-surgery discharge rate, baseline vs post-implementation, by centre type
+  effect:
+    value: SAC 3.9 to 30; EAC 5.5 to 23; AUO 7.4 to 14
+    unit: percent
+  evidence:
+    quote: 'DOS discharge rates increased post-implementation across all centers (SAC: 3.9% to 30%, EAC: 5.5% to 23%, AUO: 7.4% to 14%).'
+implementation_needs:
+- agreed day-case eligibility and discharge criteria
+- ring-fenced elective logistics (beds, theatre, staff)
+lmic_applicability: uncertain
+notes: Multicentre cohort (6,718 procedures) comparing centre types; observational, mapped to OE4. Before-after rates are crude percentages. Licence cc-by-nc-nd (community KB only).
+review_by: '2031-11-06'

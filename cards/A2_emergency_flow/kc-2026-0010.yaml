@@ -1,0 +1,37 @@
+id: kc-2026-0010
+version: 1
+status: candidate
+title: ED doctor-to-doctor handoffs not linked to longer hospital stay
+summary: Across five EDs, admitted patients whose care was handed over between emergency physicians did not have longer hospital stays, more deaths or more ICU admissions after adjustment.
+comparator: ED visits with no physician handoff
+source:
+  doi: 10.7759/cureus.117821
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.7759/cureus.117821
+domains:
+- A2_emergency_flow
+- C2_quality_safety
+design: other
+evidence_level: OE4
+setting:
+  country: CA
+  income: HIC
+  facility: university_hospital_network
+  sites: 5
+kpis:
+- name: hospital_los_gmr_handoff
+  definition: Adjusted geometric mean ratio of hospital length of stay, handoff vs no handoff
+  effect:
+    value: '1.01'
+    unit: ratio
+    ci:
+    - '0.96'
+    - '1.08'
+  evidence:
+    quote: 'No significant association was observed between handoffs and in-hospital mortality (adjusted risk ratio [aRR] = 1.11; 95% CI: 0.94-1.30),ICU admission (aRR = 1.06; 95% CI: 0.91-1.23),or hospital length of stay (adjusted geometric mean ratio [aGMR] = 1.01; 95% CI: 0.96-1.08).'
+implementation_needs:
+- shift handoff timestamps in ED records
+lmic_applicability: uncertain
+notes: Multicentre retrospective cohort, 21,136 admissions in 2016-2017; propensity overlap weighting. Observational, mapped to OE4. Data are about ten years old.
+review_by: '2031-11-06'

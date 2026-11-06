@@ -1,0 +1,43 @@
+id: kc-2026-0004
+version: 1
+status: candidate
+title: Placing medical teams on fixed wards shortened length of stay
+summary: Assigning hospital medicine teams to specific nursing units, with redesigned bed management, was followed by a 10% shorter length of stay; units that localised most saw the biggest drop.
+intervention: Geographic localisation of hospitalist teams to nursing units plus re-engineered bed management (Patient-Centered Teams)
+comparator: Pre-implementation period
+source:
+  doi: 10.1002/jhm.70527
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1002/jhm.70527
+domains:
+- A3_inpatient_flow
+- C1_workforce
+design: before_after
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: academic_medical_centre
+kpis:
+- name: length_of_stay_pct_change
+  definition: Hospital length of stay, five units, adjusted for case mix, post vs pre
+  effect:
+    value: '-10'
+    unit: percent
+  evidence:
+    quote: Overall, a 10% reduction in LOS was observed following the localization initiative.
+- name: length_of_stay_pct_change_high_localisation
+  definition: Hospital length of stay in the two units with the largest rise in localisation
+  effect:
+    value: 13 to 19 percent decrease
+    unit: percent
+  evidence:
+    quote: In the two units which experienced the greatest increase in localization, LOS decreased by 13%-19%.
+implementation_needs:
+- bed management rules that admit to the team's home ward
+- stable team-to-unit assignment
+- localisation tracking (share of unit patients under home team)
+lmic_applicability: partial
+notes: Single site observational pre-post with case-mix adjustment; no confidence intervals in the abstract. Downgraded from OE4 to OE5. Dose-response pattern across units strengthens the signal. Two units with less localisation showed no significant change.
+review_by: '2031-11-06'

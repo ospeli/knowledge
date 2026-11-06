@@ -1,0 +1,47 @@
+id: kc-2026-0009
+version: 1
+status: candidate
+title: Longer ED stay, not hallway placement, linked to delirium in older boarders
+summary: For older patients boarding overnight in the ED, spending the night in a hallway space rather than a room was not linked to more delirium, but each extra hour in the ED was.
+comparator: Overnight boarding in an ED room
+source:
+  doi: 10.5811/westjem.64046
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5811/westjem.64046
+domains:
+- A2_emergency_flow
+- A3_inpatient_flow
+design: other
+evidence_level: OE4
+setting:
+  country: unknown
+  income: HIC
+  facility: multisite_eds
+kpis:
+- name: delirium_or_hallway_vs_room
+  definition: Odds of incident delirium or severe agitation, overnight in ED hallway vs ED room, patients 65+
+  effect:
+    value: '1.06'
+    unit: odds ratio
+    ci:
+    - '0.58'
+    - '1.94'
+  evidence:
+    quote: An overnight stay in the ED hallway was not associated with delirium and severe agitation (OR, 1.06, 95% CI, 0.58–1.94; P = .84), but increased ED LOS was independently associated with delirium and severe agitation (OR, 1.01; 95% CI, 1.0–1.01 per hour; P = .01).
+- name: delirium_or_per_hour_ed_los
+  definition: Odds of incident delirium or severe agitation per extra hour of ED length of stay
+  effect:
+    value: '1.01'
+    unit: odds ratio per hour
+    ci:
+    - '1.0'
+    - '1.01'
+  evidence:
+    quote: An overnight stay in the ED hallway was not associated with delirium and severe agitation (OR, 1.06, 95% CI, 0.58–1.94; P = .84), but increased ED LOS was independently associated with delirium and severe agitation (OR, 1.01; 95% CI, 1.0–1.01 per hour; P = .01).
+implementation_needs:
+- ED length of stay by patient
+- age flag for boarding prioritisation
+lmic_applicability: uncertain
+notes: 'Multisite retrospective cohort (8,576 patients); observational, mapped to OE4. Delirium was not routinely screened, so the outcome was a composite proxy. Operational use: supports prioritising older patients for transfer out of the ED; it is not clinical guidance. Country not stated in the abstract.'
+review_by: '2031-11-06'

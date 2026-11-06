@@ -1,0 +1,42 @@
+id: kc-2026-0020
+version: 1
+status: candidate
+title: Most hospitals audited in South-West Cameroon lacked a staffed recovery unit
+summary: An audit of 13 hospitals in South-West Cameroon found only five had a staffed post-anaesthesia care unit, many lacked formal incident reporting, and anaesthesia equipment was defective, outdated or missing in all.
+source:
+  doi: 10.64294/jsd.v4i3.426
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.64294/jsd.v4i3.426
+domains:
+- A4_theatres
+- C4_governance
+- B1_biomedical_engineering
+design: other
+evidence_level: OE5
+setting:
+  country: CM
+  income: LMIC
+  facility: district_and_regional_hospitals
+  sites: 13
+kpis:
+- name: hospitals_with_staffed_pacu_pct
+  definition: Share of audited hospitals with a PACU staffed by nurse anaesthetists and trained nurses
+  effect:
+    value: '38.5'
+    unit: percent
+  evidence:
+    quote: Thirteen hospitals were selected, out of which five (38.5%) had postanaesthesia care units (PACUs) staffed with nurse anaesthetists, and trained nurse practitioners.
+- name: pacu_without_incident_reporting_pct
+  definition: Share of PACUs with no formal incident-reporting procedure
+  effect:
+    value: '40'
+    unit: percent
+  evidence:
+    quote: There was no implementation of a formal incident-reporting procedure in 40% of PACUs, and anaesthesia equipment were defective, archaic, or unavailable in all of the selected hospitals.
+implementation_needs:
+- PACU and equipment inventory
+- incident reporting procedure
+lmic_applicability: 'yes'
+notes: Descriptive cross-sectional audit of purposively selected hospitals; no comparison, no confidence intervals; graded OE5. Useful as an LMIC baseline for theatre recovery capacity and equipment readiness.
+review_by: '2031-11-06'

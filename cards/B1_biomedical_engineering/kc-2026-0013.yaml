@@ -1,0 +1,42 @@
+id: kc-2026-0013
+version: 1
+status: candidate
+title: Trained biomedical technicians linked to less equipment out of service
+summary: A review of engineering-led maintenance studies found less equipment out of service where hospitals had trained technicians (Rwanda) and a 35% cut in downtime from an improvement project (Jordan).
+intervention: Biomedical technician training, structured maintenance and lifecycle management
+comparator: Hospitals without trained technicians; pre-project baseline
+source:
+  doi: 10.5281/zenodo.23860155
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5281/zenodo.23860155
+domains:
+- B1_biomedical_engineering
+design: systematic_review
+evidence_level: OE2
+setting:
+  country: multiple (RW, JO, MY and others)
+  income: mixed
+  facility: hospitals
+kpis:
+- name: equipment_out_of_service_pct
+  definition: Share of medical equipment out of service, hospitals with trained technicians vs comparator hospitals (Rwanda)
+  effect:
+    value: 10.2 vs 17.8
+    unit: percent
+  evidence:
+    quote: A Rwandan comparison reported equipment out of service at 10.2% in hospitals with trained technicians versus 17.8% in comparator hospitals, alongside higher technician productivity.
+- name: equipment_downtime_pct_change
+  definition: Equipment downtime after an improvement project (Jordan)
+  effect:
+    value: '-35'
+    unit: percent
+  evidence:
+    quote: A Jordanian improvement project reported a 35% reduction in downtime.
+implementation_needs:
+- equipment inventory with status
+- trained biomedical technicians
+- maintenance work-order records
+lmic_applicability: 'yes'
+notes: Narrative-synthesis review of ten primary reports of mixed, mostly weak designs; downgraded from OE1 to OE2 under the one-level rule, but the reviewer may judge OE3 more realistic. Figures come from single primary studies quoted in the review, not pooled. Journal outside the usual health-services literature. Strong LMIC relevance (Rwanda).
+review_by: '2031-11-06'

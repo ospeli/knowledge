@@ -1,0 +1,58 @@
+id: kc-2026-0021
+version: 1
+status: candidate
+title: Digital coordination centre coincided with better hospital flow
+summary: After a tertiary hospital opened a digital coordination centre, where an operations team watches live crowding and bed dashboards, ED stays fell by a third and more patients were admitted within four hours, alongside wider reforms.
+intervention: 'Digital coordination centre: multidisciplinary operations team using real-time ED crowding and inpatient utilisation dashboards'
+comparator: Pre-implementation period (interrupted time series)
+source:
+  doi: 10.64898/2026.11.02.26367112
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.64898/2026.11.02.26367112
+domains:
+- A3_inpatient_flow
+- A2_emergency_flow
+- D4_performance
+design: its_uncontrolled
+evidence_level: OE5
+setting:
+  country: AU
+  income: HIC
+  facility: metropolitan_tertiary_hospital
+kpis:
+- name: ed_length_of_stay_pct_change
+  definition: ED length of stay, admitted patients
+  effect:
+    value: '-33'
+    unit: percent
+  evidence:
+    quote: 'Analysis of 191,415 emergency department arrivals admitted to acute care and 187,783 acute inpatient episodes between July 2020 and July 2025 showed substantial improvements in measures of patient flow: 33% decrease in ED length of stay, 73% increase in hospital admissions from the ED within four hours of arrival, 7% decrease in inpatient length of stay, and 5% increase in discharges completed before noon.'
+- name: ed_admission_within_4h_pct_change
+  definition: Admissions from the ED within four hours of arrival
+  effect:
+    value: '73'
+    unit: percent
+  evidence:
+    quote: 'Analysis of 191,415 emergency department arrivals admitted to acute care and 187,783 acute inpatient episodes between July 2020 and July 2025 showed substantial improvements in measures of patient flow: 33% decrease in ED length of stay, 73% increase in hospital admissions from the ED within four hours of arrival, 7% decrease in inpatient length of stay, and 5% increase in discharges completed before noon.'
+- name: inpatient_length_of_stay_pct_change
+  definition: Acute inpatient length of stay
+  effect:
+    value: '-7'
+    unit: percent
+  evidence:
+    quote: 'Analysis of 191,415 emergency department arrivals admitted to acute care and 187,783 acute inpatient episodes between July 2020 and July 2025 showed substantial improvements in measures of patient flow: 33% decrease in ED length of stay, 73% increase in hospital admissions from the ED within four hours of arrival, 7% decrease in inpatient length of stay, and 5% increase in discharges completed before noon.'
+- name: discharge_before_noon_pct_change
+  definition: Discharges completed before noon
+  effect:
+    value: '5'
+    unit: percent
+  evidence:
+    quote: 'Analysis of 191,415 emergency department arrivals admitted to acute care and 187,783 acute inpatient episodes between July 2020 and July 2025 showed substantial improvements in measures of patient flow: 33% decrease in ED length of stay, 73% increase in hospital admissions from the ED within four hours of arrival, 7% decrease in inpatient length of stay, and 5% increase in discharges completed before noon.'
+implementation_needs:
+- real-time ED and bed occupancy feeds
+- staffed operations centre (flow managers, facilities, transport, nursing, analysts)
+- wider operational reform programme
+lmic_applicability: partial
+notes: 'Preprint (medRxiv), not peer reviewed: graded OE5 (would be OE3 as an uncontrolled ITS). Changes coincided with a broader reform programme, so the centre''s own effect cannot be separated. Whether percentages are relative or absolute changes is not stated. Licence cc-by-nc-nd (community KB only). Closely matches the Ospeli operations-centre concept.'
+review_by: '2031-11-06'
