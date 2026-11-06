@@ -75,12 +75,20 @@ def check(path: Path, abstracts: dict) -> list[str]:
         elif tier == "C":
             if quote:
                 errs.append(f"kpi {k.get('name')}: tier C cards must not quote publisher text")
-            if nums and not (k.get("evidence") or {}).get("checked_by"):
+            if nums and c.get("status") == "approved" and not (k.get("evidence") or {}).get("checked_by"):
                 errs.append(f"kpi {k.get('name')}: tier C numbers need evidence.checked_by (reviewer read the source)")
     if c.get("status") == "approved":
         ap = c.get("approval") or {}
         if not (ap.get("by") and ap.get("date")):
             errs.append("approved cards need approval.by and approval.date")
+        kind = ap.get("kind", "human")
+        if kind not in ("human", "ai"):
+            errs.append("approval.kind must be human or ai")
+        if kind == "ai":
+            if ap.get("by") != "ospeli-review-bot":
+                errs.append("ai approvals must be by ospeli-review-bot")
+            if not ap.get("notes"):
+                errs.append("ai approvals need approval.notes (what was checked against the source)")
     return [f"{path.name}: {e}" for e in errs]
 
 

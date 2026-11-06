@@ -16,3 +16,14 @@ Reviewers are the people who decide what Ospeli "knows". Each approval carries y
 - clinical treatment advice
 - anything identifying a patient or staff member
 - a number you could not find in the source
+
+## The review bot (build phase)
+During the build phase, a separate Claude session, `ospeli-review-bot`, reviews each night's card pull request. It did not write the cards. It re-reads every source and checks:
+- the numbers, design, evidence level, domains and setting
+- that the finding is operational, not clinical
+
+It approves cards that pass, with `approval: {by: ospeli-review-bot, kind: ai, date, notes}`. It removes cards that fail, gives a reason, and merges.
+
+- AI-approved cards are labelled `approval_kind = ai` in the knowledge base, and answers show that label.
+- Each week the founder spot-checks a random sample. Any wrong card is fixed and the error pattern goes into this guide.
+- Before any hospital pilot, a human reviews the knowledge base release that will ship with it.

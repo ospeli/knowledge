@@ -84,3 +84,17 @@ def test_verify_and_build(tmp_path, monkeypatch):
     db = sqlite3.connect(out)
     hit = db.execute("SELECT id FROM cards_fts WHERE cards_fts MATCH 'discharge'").fetchall()
     assert hit == [("kc-test-0001",)]
+
+
+def test_ai_approval_rules(tmp_path):
+    abstracts = {"10.9999/test.flow.1": json.loads((FX / "europepmc.json").read_text())["resultList"]["result"][0]["abstractText"]}
+    ok = tmp_path / "kc-test-0004.yaml"
+    ok.write_text(CARD.replace("kc-test-0001", "kc-test-0004").replace(
+        "approval: {by: test-reviewer, date: 2026-11-05}",
+        "approval: {by: ospeli-review-bot, kind: ai, date: 2026-11-06, notes: numbers and design checked against abstract}"))
+    assert V.check(ok, abstracts) == []
+    bad = tmp_path / "kc-test-0005.yaml"
+    bad.write_text(CARD.replace("kc-test-0001", "kc-test-0005").replace(
+        "approval: {by: test-reviewer, date: 2026-11-05}", "approval: {by: someone, kind: ai, date: 2026-11-06}"))
+    errs = V.check(bad, abstracts)
+    assert any("ospeli-review-bot" in e for e in errs) and any("notes" in e for e in errs)

@@ -19,7 +19,7 @@ def build(out: Path, community: bool = False) -> int:
     db.executescript("""
       CREATE TABLE meta(key TEXT PRIMARY KEY, value TEXT);
       CREATE TABLE cards(id TEXT PRIMARY KEY, version INT, title TEXT, summary TEXT, domains TEXT, design TEXT,
-                         evidence_level TEXT, setting TEXT, source TEXT, kpis TEXT, review_by TEXT, json TEXT);
+                         evidence_level TEXT, setting TEXT, source TEXT, kpis TEXT, review_by TEXT, approval_kind TEXT, json TEXT);
       CREATE VIRTUAL TABLE cards_fts USING fts5(id UNINDEXED, title, summary, intervention, kpi_names, domains);
     """)
     n = 0
@@ -30,9 +30,9 @@ def build(out: Path, community: bool = False) -> int:
         if (c.get("source") or {}).get("tier") == "B" and not community:
             continue
         kpis = c.get("kpis") or []
-        db.execute("INSERT INTO cards VALUES (?,?,?,?,?,?,?,?,?,?,?,?)", (
+        db.execute("INSERT INTO cards VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             c["id"], c["version"], c["title"], c["summary"], ",".join(c["domains"]), c["design"], c["evidence_level"],
-            json.dumps(c.get("setting")), json.dumps(c.get("source")), json.dumps(kpis), str(c["review_by"]), json.dumps(c, default=str)))
+            json.dumps(c.get("setting")), json.dumps(c.get("source")), json.dumps(kpis), str(c["review_by"]), (c.get("approval") or {}).get("kind", "human"), json.dumps(c, default=str)))
         db.execute("INSERT INTO cards_fts VALUES (?,?,?,?,?,?)", (
             c["id"], c["title"], c["summary"], c.get("intervention") or "", " ".join(k.get("name", "") for k in kpis), " ".join(c["domains"])))
         n += 1
