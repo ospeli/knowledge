@@ -19,8 +19,9 @@ def fetch(query: str, since: str, until: str, max_pages: int = 3):
     params = {"search": query, "filter": f"from_publication_date:{since},to_publication_date:{until}",
               "per-page": 100, "cursor": "*"}
     key = os.environ.get("OPENALEX_API_KEY")
-    if key:
-        params["api_key"] = key
+    if not key:
+        return  # OpenAlex now requires a (free) key; skip quietly until one is added as a repo secret
+    params["api_key"] = key
     mail = os.environ.get("OSPELI_CONTACT")
     if mail:
         params["mailto"] = mail
