@@ -1,0 +1,32 @@
+# Licence register. Harvesters read this; a licence change is a one-line PR.
+# tier A: store + quote with attribution + ship offline
+# tier B: store internally; community (non-commercial) bundle only, or own summary + link until permission
+# tier C: metadata + our own extracted facts + link; never publisher text
+# tier D: do not ingest; link only
+licence_tiers:
+  cc0: A
+  cc-by: A
+  pd: A            # US federal public domain (e.g. CDC)
+  ogl: A           # UK Open Government Licence
+  cc-by-sa: B
+  cc-by-nc: B
+  cc-by-nc-sa: B
+  cc-by-nd: B
+  cc-by-nc-nd: B
+  unknown: C
+  publisher: C
+sources:
+  europepmc:   {access: "REST, no key", default_tier: C, note: "per-article licence; OA full text only for A/B"}
+  openalex:    {access: "REST, free key, $1/day free", default_tier: C, note: "metadata CC0; OA status + licence per work"}
+  crossref:    {access: "REST, mailto polite pool", default_tier: C, note: "metadata free; abstracts may be copyrighted"}
+  pubmed:      {access: "E-utilities, NCBI key", default_tier: C}
+  arxiv:       {access: "API, 1 req / 3 s", default_tier: C, note: "metadata CC0; text only if CC BY"}
+  medrxiv:     {access: "api.medrxiv.org", default_tier: C, note: "label as preprint"}
+  who_iris:    {access: "metadata", default_tier: C, note: "CC BY-NC-SA IGO; database products need WHO permission (deferred)"}
+  paho_iris:   {access: "web", default_tier: C, note: "permission deferred"}
+  worldbank:   {access: "Indicators API v2", default_tier: A, note: "CC BY 4.0"}
+  semantic_scholar: {access: "discovery only", default_tier: D, note: "terms forbid storing data"}
+  nice:        {default_tier: D, note: "AI use needs licence + fee"}
+  cochrane:    {default_tier: D, note: "TDM = commercial reuse; metadata via PubMed only"}
+  ihi:         {default_tier: D, note: "no derivatives; cite concepts, link"}
+  model_hospital: {default_tier: D, note: "NHS login only"}

@@ -1,0 +1,41 @@
+# Ospeli operations taxonomy v0 (foundation v1, section 3). Keywords drive the first-pass classifier.
+domains:
+  A1_access_scheduling: [referral, waiting list, appointment, scheduling, no-show, did not attend, booking]
+  A2_emergency_flow: [emergency department, accident and emergency, crowding, boarding, triage, ambulance handover, four-hour, length of stay in the emergency]
+  A3_inpatient_flow: [bed occupancy, bed management, patient flow, discharge, delayed discharge, length of stay, red2green, safer bundle, exit block, bed capacity]
+  A4_theatres: [operating room, operating theatre, surgical scheduling, theatre utilisation, theatre utilization, case cancellation, perioperative]
+  A5_outpatients: [outpatient clinic, ambulatory clinic, clinic wait]
+  A6_laboratory: [laboratory turnaround, turnaround time, specimen rejection, laboratory quality]
+  A7_imaging: [radiology workflow, imaging turnaround, scanner utilisation, reporting backlog]
+  A8_pharmacy: [stock-out, stockout, essential medicines availability, pharmacy dispensing, medication supply, antimicrobial stewardship programme]
+  A9_clinical_support: [blood bank, sterile services, central sterile, decontamination, rehabilitation scheduling]
+  B1_biomedical_engineering: [medical equipment maintenance, biomedical engineering, equipment downtime, preventive maintenance, healthcare technology management]
+  B2_estates_facilities: [hospital facilities, estates, utilities, generator, medical gas, oxygen supply, healthcare waste, hospital energy]
+  B3_hotel_services: [hospital cleaning, environmental services, portering, porter, linen, hospital catering, bed turnaround]
+  B4_supply_chain: [hospital supply chain, procurement, inventory management, logistics]
+  B5_transport: [ambulance response, interfacility transfer, patient transport]
+  C1_workforce: [nurse staffing, rostering, roster, workforce planning, staff scheduling, skill mix, absenteeism, turnover, wisn]
+  C2_quality_safety: [patient safety, incident reporting, adverse event, quality improvement, pdsa, safety culture, huddle]
+  C3_ipc_operations: [hand hygiene compliance, infection prevention and control programme, isolation capacity, outbreak management]
+  C4_governance: [clinical governance, accreditation, standard operating procedure, clinical audit]
+  C5_records_ig: [medical records, health information management, clinical coding, data quality]
+  C6_strategy_planning: [capacity planning, hospital planning, service redesign, business case, organisational structure]
+  D1_finance_costing: [activity-based costing, cost per case, hospital costing, budgeting, efficiency]
+  D2_revenue_cycle: [revenue cycle, claims denial, billing]
+  D3_it_digital: [electronic health record implementation, health information system, downtime, interoperability, cybersecurity]
+  D4_performance: [performance indicators, benchmarking, key performance indicator, dashboard]
+  E1_preparedness: [hospital preparedness, surge capacity, mass casualty, disaster, hurricane, business continuity, hospital safety index]
+  E2_primary_community: [primary care operations, district health, community care, step-down, intermediate care]
+  E3_public_health_ops: [immunization programme, disease surveillance operations, vector control]
+  E4_patient_experience: [patient experience, complaints, waiting time satisfaction]
+methods: [systematic_review, rct, stepped_wedge, its_controlled, its_uncontrolled, controlled_before_after, before_after, case_study, simulation_des, simulation_sd, queueing, optimisation, forecasting, qualitative, mixed_methods, guidance, other]
+evidence_levels:
+  OE1: systematic review / meta-analysis / multi-site RCT
+  OE2: RCT / controlled ITS / stepped-wedge
+  OE3: uncontrolled ITS / controlled before-after
+  OE4: simple before-after / case study / validated simulation
+  OE5: expert opinion / unvalidated model / preprint
+  G: official guidance (graded as authority)
+# Required: at least one operations term; hospital/health context.
+context_terms: [hospital, health care, healthcare, health service, clinic, health system, ward, emergency department, patient]
+exclude_terms: [in vitro, mouse, mice, rat model, gene expression, cell line, molecular docking]

@@ -1,0 +1,18 @@
+# Search strings sent to each source every night. Broad on purpose; the classifier filters.
+queries:
+  - hospital patient flow
+  - bed occupancy OR bed management OR delayed discharge
+  - emergency department crowding OR boarding OR length of stay
+  - operating room scheduling OR theatre utilisation
+  - outpatient appointment scheduling no-show
+  - nurse staffing OR rostering OR workforce planning hospital
+  - hospital supply chain OR stock-out essential medicines
+  - medical equipment maintenance OR biomedical engineering hospital
+  - hospital facilities management OR healthcare estates
+  - laboratory turnaround time hospital
+  - hospital quality improvement PDSA OR lean OR six sigma
+  - patient safety incident reporting hospital
+  - hospital costing OR activity-based costing health
+  - hospital preparedness surge capacity OR disaster
+  - discrete event simulation hospital OR queueing model healthcare
+  - low- and middle-income countries hospital management

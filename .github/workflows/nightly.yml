@@ -1,0 +1,51 @@
+name: Nightly harvest and build
+
+on:
+  schedule:
+    - cron: "43 6 * * *"   # 02:43 Trinidad time
+  workflow_dispatch:
+    inputs:
+      since:
+        description: "Start date YYYY-MM-DD (blank = since last run)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - name: Harvest Europe PMC, OpenAlex, Crossref
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          OSPELI_CONTACT: ${{ vars.OSPELI_CONTACT }}
+        run: |
+          if [ -n "${{ github.event.inputs.since }}" ]; then python scripts/harvest.py --since "${{ github.event.inputs.since }}"; else python scripts/harvest.py; fi
+      - name: Commit inbox
+        run: |
+          git config user.name "ospeli-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inbox state
+          git diff --cached --quiet || git commit -m "Inbox $(date -u +%F)" && git push
+      - name: Verify cards and build knowledge base
+        run: |
+          python scripts/verify_cards.py
+          python scripts/build_kb.py --out dist/ospeli-kb-core.sqlite
+          python scripts/build_kb.py --community --out dist/ospeli-kb-community.sqlite
+          sha256sum dist/*.sqlite > dist/SHA256SUMS
+      - name: Publish rolling release
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          gh release delete kb-latest --yes --cleanup-tag 2>/dev/null || true
+          gh release create kb-latest dist/* --title "Knowledge base $(date -u +%F)" \
+            --notes "Approved cards only. Core = open-licence (tier A) cards. Community = adds non-commercial (tier B) cards."
