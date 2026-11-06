@@ -1,6 +1,6 @@
 id: kc-2026-0018
 version: 1
-status: candidate
+status: approved
 title: Waiting to see the doctor was the main outpatient delay at an Indian hospital
 summary: At a large government teaching hospital in North India, outpatients spent over five hours from arrival to collecting medicines, of which the consultation was under 13 minutes; waiting to be called was the main bottleneck, then pharmacy.
 source:
@@ -37,5 +37,10 @@ implementation_needs:
 - stage timestamps (registration, call, consultation, pharmacy)
 - queue display or token system
 lmic_applicability: 'yes'
-notes: Single-site cross-sectional study, convenience sample of 255, partly patient-reported times; graded OE5. Root causes (registration counter allocation, no patient guidance, multi-stop pharmacy) come from qualitative analysis; staffing and volume were not measured. Licence cc-by-nc-nd (community KB only).
+notes: Single-site cross-sectional study, convenience sample of 255, partly patient-reported times; graded OE5. Root causes (registration counter allocation, no patient guidance, multi-stop pharmacy) come from qualitative analysis; staffing and volume were not measured. The abstract's stage figures do not reconcile (pharmacy 119.4 min vs a 58.2 min gap between the two journey totals; contributions sum over 100%), so treat stage splits with caution. Licence cc-by-nc-nd (community KB only).
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: journey and wait times checked against abstract; single-site OE5; internal inconsistency in source noted

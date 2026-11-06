@@ -1,6 +1,6 @@
 id: kc-2026-0008
 version: 1
-status: candidate
+status: approved
 title: Dedicated vertical-care doctor did not shorten ED length of stay
 summary: Repurposing one emergency physician shift into a dedicated chair-based vertical care role did not consistently shorten length of stay for discharged patients, though fewer vertical patients were upgraded to a bed.
 intervention: Dedicated vertical-pathway emergency physician shift within a rotational patient assignment system
@@ -17,7 +17,7 @@ design: before_after
 evidence_level: OE5
 setting:
   country: unknown
-  income: HIC
+  income: unknown
   facility: tertiary_ed
   beds: 56
 kpis:
@@ -39,5 +39,10 @@ implementation_needs:
 - chair-based vertical care area
 - rota flexibility to dedicate one physician
 lmic_applicability: uncertain
-notes: Small hypothesis-generating pilot (five intervention days, three comparison days), descriptive only; graded OE5. Negative result is useful. Non-vertical physicians reported less manageable workloads. Country not stated; income assumed HIC from journal and setting, reviewer to confirm.
+notes: Small hypothesis-generating pilot (five intervention days, three comparison days), descriptive only; graded OE5. Negative result is useful. Non-vertical physicians reported less manageable workloads. Country and income not stated in the abstract (reviewer set income to unknown rather than assume HIC).
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: medians and upgrade shares checked against abstract; pilot OE5 confirmed; income changed to unknown (not in source)

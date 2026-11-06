@@ -1,6 +1,6 @@
 id: kc-2026-0011
 version: 1
-status: candidate
+status: approved
 title: Two in five ED patients stayed over four hours at a Nepal tertiary hospital
 summary: In a two-week study at a tertiary ED in Nepal, median ED stay was 3.6 hours and 41% stayed longer than four hours; consultations, advanced tests, payment method and age were linked to longer stays.
 source:
@@ -37,3 +37,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-site cross-sectional study over two weeks (395 patients); descriptive, downgraded to OE5. Adjusted odds ratios for the associated factors are cut off in the stored abstract, so only the descriptive figures are carded. LMIC setting: directly applicable.'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: median, IQR and 40.8% checked against abstract; Nepal LMIC setting confirmed; cross-sectional OE5

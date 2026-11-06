@@ -1,6 +1,6 @@
 id: kc-2026-0017
 version: 1
-status: candidate
+status: approved
 title: Separate arthroplasty logistics linked to more same-day discharge
 summary: When seven Danish centres introduced the same day-case hip and knee pathway, centres with logistics separate from general orthopaedics sent home more eligible patients on the day of surgery.
 intervention: Standardised day-case arthroplasty pathway in centres with separate logistics
@@ -54,3 +54,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: Multicentre cohort (6,718 procedures) comparing centre types; observational, mapped to OE4. Before-after rates are crude percentages. Licence cc-by-nc-nd (community KB only).
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: aORs, CIs and crude rates checked against abstract; 7-centre Danish cohort OE4 confirmed

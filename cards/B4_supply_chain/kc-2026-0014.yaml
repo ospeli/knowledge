@@ -1,6 +1,6 @@
 id: kc-2026-0014
 version: 1
-status: candidate
+status: approved
 title: Efficient medicine supply system linked to better access in Kenyan facilities
 summary: In Nairobi public facilities, insured NCD patients who reported an efficient medicine supply system had about four times the odds of getting their essential medicines; three in five reported frequent stock-outs.
 comparator: Patients reporting an inefficient supply system
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: Cross-sectional mixed-methods survey (351 patients); supply-system efficiency is patient-reported, not measured from stock records. Wide confidence interval. Observational, mapped to OE4.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: AOR, CI and 62.1% checked against abstract; Nairobi LMIC setting; patient-reported exposure noted

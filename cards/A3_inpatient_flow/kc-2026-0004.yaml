@@ -1,6 +1,6 @@
 id: kc-2026-0004
 version: 1
-status: candidate
+status: approved
 title: Placing medical teams on fixed wards shortened length of stay
 summary: Assigning hospital medicine teams to specific nursing units, with redesigned bed management, was followed by a 10% shorter length of stay; units that localised most saw the biggest drop.
 intervention: Geographic localisation of hospitalist teams to nursing units plus re-engineered bed management (Patient-Centered Teams)
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: Single site observational pre-post with case-mix adjustment; no confidence intervals in the abstract. Downgraded from OE4 to OE5. Dose-response pattern across units strengthens the signal. Two units with less localisation showed no significant change.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: 10% and 13-19% LOS figures checked against abstract; observational pre-post single site, OE5 confirmed

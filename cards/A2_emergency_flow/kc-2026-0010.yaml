@@ -1,6 +1,6 @@
 id: kc-2026-0010
 version: 1
-status: candidate
+status: approved
 title: ED doctor-to-doctor handoffs not linked to longer hospital stay
 summary: Across five EDs, admitted patients whose care was handed over between emergency physicians did not have longer hospital stays, more deaths or more ICU admissions after adjustment.
 comparator: ED visits with no physician handoff
@@ -35,3 +35,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: Multicentre retrospective cohort, 21,136 admissions in 2016-2017; propensity overlap weighting. Observational, mapped to OE4. Data are about ten years old.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: aGMR and CI checked against abstract; 5-ED Quebec cohort OE4 confirmed

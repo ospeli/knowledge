@@ -1,6 +1,6 @@
 id: kc-2026-0001
 version: 1
-status: candidate
+status: approved
 title: Nurse-led fast care stream cut ED waits for minor emergencies
 summary: In a randomised trial in one university ED, a nurse-led Fast Care stream for minor emergencies cut waiting time and total length of stay and almost removed walk-outs before evaluation.
 intervention: Nurse-led Fast Care model with early assessment and continuity of care for minor emergencies
@@ -47,3 +47,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Single-site RCT (801 patients); country not stated in the abstract. Downgraded from OE2 to OE3: single site and no confidence intervals reported in the abstract. LMIC applicability uncertain: depends on having nurses with extended assessment scope.'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: numbers, units and direction checked against abstract; single-site RCT, OE3 for no CIs confirmed; operational flow outcomes

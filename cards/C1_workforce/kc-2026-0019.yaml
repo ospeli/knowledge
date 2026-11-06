@@ -1,6 +1,6 @@
 id: kc-2026-0019
 version: 1
-status: candidate
+status: approved
 title: Over half of nurses in conflict-affected Yemen intend to leave within a year
 summary: In 24 facilities across Yemen, 55% of nurses said they intended to leave within 12 months; very high nurse-to-patient ratios and frequent night shifts were linked to psychological distress.
 source:
@@ -45,3 +45,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: Multicentre cross-sectional survey of 800 nurses; observational, mapped to OE4. Aggregate staff wellbeing data only. Ratios of 1:15 showed no consistent association. Conflict setting limits transfer to stable systems.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: prevalence and AOR with CIs checked against abstract; Yemen LIC, 24 sites, OE4 confirmed

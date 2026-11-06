@@ -1,8 +1,8 @@
 id: kc-2026-0006
 version: 1
-status: candidate
+status: approved
 title: Higher daily ED occupancy linked to more cardiac arrests in the ED
-summary: In one ED, each 10-point rise in peak daily occupancy was linked to a 22% higher rate of cardiac arrest in the department; a fast-track model reduced days of extreme crowding but showed no significant immediate change in arrest rates.
+summary: In one ED, each 10-point rise in peak daily occupancy was linked to a 22% higher rate of cardiac arrest in the department; after a fast-track model started there were fewer days of extreme crowding, but no significant immediate change in arrest rates.
 intervention: Fast-track model to reduce crowding (secondary analysis)
 comparator: Days with lower maximum ED occupancy; pre-fast-track period
 source:
@@ -46,3 +46,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: Preprint (Research Square), not peer reviewed; graded OE5. Single centre, 72 events, so estimates are imprecise. Association only; authors state it does not establish causation. Country not stated in the abstract.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: IRRs and CIs checked against abstract; preprint OE5 confirmed; summary reworded so fast-track is not credited causally

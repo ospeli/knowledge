@@ -1,6 +1,6 @@
 id: kc-2026-0005
 version: 1
-status: candidate
+status: approved
 title: High bed occupancy raised the chance of patients being outlied to other wards
 summary: Across nine hospitals, patients admitted when bed occupancy was above 115% were more likely to be placed on an off-specialty ward (bedspacing) than when occupancy was below 85%.
 comparator: Bed occupancy below 85%
@@ -36,3 +36,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: Multicentre retrospective cohort, 234,325 unplanned admissions, 2015-2019. Observational association, not an intervention; mapped to OE4. Patient characteristics also predicted bedspacing; ward managers should not use them to choose who is moved.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: HR and 95% CI checked against abstract; 9-site Swedish cohort, OE4 confirmed; association only

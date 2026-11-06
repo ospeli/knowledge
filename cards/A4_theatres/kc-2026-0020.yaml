@@ -1,8 +1,8 @@
 id: kc-2026-0020
 version: 1
-status: candidate
+status: approved
 title: Most hospitals audited in South-West Cameroon lacked a staffed recovery unit
-summary: An audit of 13 hospitals in South-West Cameroon found only five had a staffed post-anaesthesia care unit, many lacked formal incident reporting, and anaesthesia equipment was defective, outdated or missing in all.
+summary: An audit of 13 hospitals in South-West Cameroon found only five had a staffed post-anaesthesia care unit, two in five recovery units had no formal incident reporting, and anaesthesia equipment was defective, outdated or missing in all.
 source:
   doi: 10.64294/jsd.v4i3.426
   tier: A
@@ -40,3 +40,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: Descriptive cross-sectional audit of purposively selected hospitals; no comparison, no confidence intervals; graded OE5. Useful as an LMIC baseline for theatre recovery capacity and equipment readiness.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: 38.5% and 40% checked against abstract; descriptive audit OE5; summary wording tightened

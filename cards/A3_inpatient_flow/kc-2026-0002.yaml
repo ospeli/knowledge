@@ -1,6 +1,6 @@
 id: kc-2026-0002
 version: 1
-status: candidate
+status: approved
 title: Hospitalist-led short-stay rehab unit shortened waits for post-acute discharge
 summary: A hospitalist-led short-stay rehabilitation unit opened inside the hospital's own long-term care centre roughly halved the time from referral to discharge for patients waiting for post-acute rehabilitation.
 intervention: Hospitalist-led short-stay rehabilitation unit within an on-site community living centre
@@ -34,3 +34,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single site, simple before-after with no control group and no confidence intervals; downgraded from OE4 to OE5. Abstract is short. LMIC: the idea (step-down beds under hospital medical cover) transfers, but assumes an existing on-site long-term care facility.'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: numbers and FY periods checked against abstract; single-site before-after, OE5 confirmed; VA setting confirmed

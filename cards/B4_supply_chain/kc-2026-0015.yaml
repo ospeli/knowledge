@@ -1,6 +1,6 @@
 id: kc-2026-0015
 version: 1
-status: candidate
+status: approved
 title: Machine-learning forecasts cut estimated stock-out costs for erratic-demand drugs
 summary: At one large hospital pharmacy, a demand-forecasting model for high-value, intermittent-demand drugs, used with a safety buffer, cut the estimated financial impact of stock-outs by about 70% for erratic-demand drugs versus manual ordering.
 intervention: LightGBM-Tweedie weekly demand forecasting with a strategic inventory buffer
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site retrospective model evaluation on a held-out year; savings are estimated from cost proxies, not from implementation; no confidence intervals. Downgraded from OE4 to OE5. Holding costs rose moderately. If used in Ospeli this is an AI suggestion: the pharmacist decides, with an off switch. Licence cc-by-nc (community KB only).'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: wMAPE and 70% checked against abstract; single-site retrospective model, OE5; Beijing UMIC confirmed

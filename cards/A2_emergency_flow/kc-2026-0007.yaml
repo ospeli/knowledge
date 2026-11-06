@@ -1,6 +1,6 @@
 id: kc-2026-0007
 version: 1
-status: candidate
+status: approved
 title: Longer door-to-room time predicted ambulance diversion, boarding did not
 summary: At one urban ED, higher visit volume and longer door-to-room times were linked to ambulance redirection being switched on, while boarding time and admission count were not.
 comparator: Days without redirection
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: Single centre, 392 days, retrospective; downgraded from OE4 to OE5. Redirection was activated centrally by the city EMS system, which limits transfer to settings without central diversion.
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: OR and CI checked against abstract; null finding for boarding confirmed; single centre OE5

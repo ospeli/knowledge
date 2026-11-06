@@ -1,6 +1,6 @@
 id: kc-2026-0009
 version: 1
-status: candidate
+status: approved
 title: Longer ED stay, not hallway placement, linked to delirium in older boarders
 summary: For older patients boarding overnight in the ED, spending the night in a hallway space rather than a room was not linked to more delirium, but each extra hour in the ED was.
 comparator: Overnight boarding in an ED room
@@ -45,3 +45,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Multisite retrospective cohort (8,576 patients); observational, mapped to OE4. Delirium was not routinely screened, so the outcome was a composite proxy. Operational use: supports prioritising older patients for transfer out of the ED; it is not clinical guidance. Country not stated in the abstract.'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: ORs and CIs checked against abstract; multisite cohort OE4; operational exposure (ED LOS), not treatment advice

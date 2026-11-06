@@ -1,6 +1,6 @@
 id: kc-2026-0021
 version: 1
-status: candidate
+status: approved
 title: Digital coordination centre coincided with better hospital flow
 summary: After a tertiary hospital opened a digital coordination centre, where an operations team watches live crowding and bed dashboards, ED stays fell by a third and more patients were admitted within four hours, alongside wider reforms.
 intervention: 'Digital coordination centre: multidisciplinary operations team using real-time ED crowding and inpatient utilisation dashboards'
@@ -56,3 +56,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Preprint (medRxiv), not peer reviewed: graded OE5 (would be OE3 as an uncontrolled ITS). Changes coincided with a broader reform programme, so the centre''s own effect cannot be separated. Whether percentages are relative or absolute changes is not stated. Licence cc-by-nc-nd (community KB only). Closely matches the Ospeli operations-centre concept.'
 review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: all four percentages checked against abstract; preprint OE5; co-interventions noted
