@@ -1,0 +1,41 @@
+id: kc-2026-0002
+version: 1
+status: approved
+title: Hospitalist-led short-stay rehab unit shortened waits for post-acute discharge
+summary: A hospitalist-led short-stay rehabilitation unit opened inside the hospital's own long-term care centre roughly halved the time from referral to discharge for patients waiting for post-acute rehabilitation.
+intervention: Hospitalist-led short-stay rehabilitation unit within an on-site community living centre
+comparator: Prior years (before the unit opened)
+source:
+  doi: 10.1002/jhm.70509
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1002/jhm.70509
+domains:
+- A3_inpatient_flow
+- E2_primary_community
+design: before_after
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: veterans_health_system
+kpis:
+- name: referral_to_discharge_days
+  definition: Mean referral-to-discharge time for post-acute rehabilitation, excluding referral hold periods
+  effect:
+    value: from 6.89 to 3.35
+    unit: days
+  evidence:
+    quote: Mean referral-to-discharge time, excluding referral hold periods, decreased from 6.89 days in fiscal year (FY) 2023 to 4.58 days in FY2024 and 3.35 days in FY2025.
+implementation_needs:
+- on-site post-acute or step-down beds
+- hospitalist cover for the unit
+- referral pathway from acute wards
+lmic_applicability: partial
+notes: 'Single site, simple before-after with no control group and no confidence intervals; downgraded from OE4 to OE5. Abstract is short. LMIC: the idea (step-down beds under hospital medical cover) transfers, but assumes an existing on-site long-term care facility.'
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: numbers and FY periods checked against abstract; single-site before-after, OE5 confirmed; VA setting confirmed

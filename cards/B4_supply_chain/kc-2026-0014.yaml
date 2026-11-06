@@ -1,0 +1,49 @@
+id: kc-2026-0014
+version: 1
+status: approved
+title: Efficient medicine supply system linked to better access in Kenyan facilities
+summary: In Nairobi public facilities, insured NCD patients who reported an efficient medicine supply system had about four times the odds of getting their essential medicines; three in five reported frequent stock-outs.
+comparator: Patients reporting an inefficient supply system
+source:
+  doi: 10.37284/eajhs.9.3.6145
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.37284/eajhs.9.3.6145
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: mixed_methods
+evidence_level: OE4
+setting:
+  country: KE
+  income: LMIC
+  facility: level_4_public_health_facilities
+kpis:
+- name: essential_medicine_access_aor
+  definition: Adjusted odds of accessing essential NCD medicines, efficient vs inefficient supply system (patient-reported)
+  effect:
+    value: '3.939'
+    unit: adjusted odds ratio
+    ci:
+    - '1.284'
+    - '12.086'
+  evidence:
+    quote: After adjustment, an efficient medicine supply system remained a significant independent predictor of access; patients reporting an efficient system had approximately 3.9 times higher odds of accessing essential medicines (AOR = 3.939, 95% CI [1.284–12.086], p = .017).
+- name: frequent_stockout_reported_pct
+  definition: Share of insured NCD patients reporting frequent medicine stock-outs
+  effect:
+    value: '62.1'
+    unit: percent
+  evidence:
+    quote: The findings showed that 62.1% of respondents reported frequent medicine stock-outs, 53.0% indicated that they did not receive all prescribed medicines, and 73.8% reported referral to private pharmacies because of stock-outs.
+implementation_needs:
+- stock-out tracking at facility level
+- forecasting and replenishment process
+lmic_applicability: 'yes'
+notes: Cross-sectional mixed-methods survey (351 patients); supply-system efficiency is patient-reported, not measured from stock records. Wide confidence interval. Observational, mapped to OE4.
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: AOR, CI and 62.1% checked against abstract; Nairobi LMIC setting; patient-reported exposure noted

@@ -1,0 +1,40 @@
+id: kc-2026-0012
+version: 1
+status: approved
+title: Workflow redesign gave the broadest gains in PACU discharge flow
+summary: A systematic review of 23 studies found that workflow redesign and quality improvement gave the widest operational benefits for recovery-room (PACU) discharge delays; discharge criteria and technology helped narrower parts of the problem.
+intervention: Workflow redesign and QI, discharge criteria, technology-enabled tools, downstream flow processes, PACU capacity redesign
+comparator: Usual PACU processes
+source:
+  doi: 10.1016/j.pcorm.2026.100767
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1016/j.pcorm.2026.100767
+domains:
+- A4_theatres
+- C2_quality_safety
+design: systematic_review
+evidence_level: OE2
+setting:
+  country: multiple
+  income: mixed
+  facility: post_anaesthesia_care_unit
+kpis:
+- name: pacu_discharge_delay
+  definition: PACU flow and discharge efficiency (various measures across included studies)
+  effect:
+    direction: improved
+  evidence:
+    quote: Workflow redesign and quality improvement interventions offered the most comprehensive operational benefits, while the remaining interventions targeted specific aspects of discharge efficiency and operational performance.
+implementation_needs:
+- PACU arrival and discharge-ready timestamps
+- agreed PACU discharge criteria
+- link to ward bed availability
+lmic_applicability: uncertain
+notes: Systematic review with narrative synthesis; no pooled effect. Downgraded from OE1 to OE2 because most included studies were non-randomised. Settings of included studies not given in the abstract.
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: 23 studies and narrative findings checked against abstract; SR of mostly non-randomised studies, OE2 confirmed

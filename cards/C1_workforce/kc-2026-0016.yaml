@@ -1,0 +1,48 @@
+id: kc-2026-0016
+version: 1
+status: approved
+title: Moving surgical cover from overtime to shifts raises staff costs sharply
+summary: In a South African regional hospital surgical department, replacing commuted overtime with 12-hour shifts for 24-hour cover would need nearly three times as many medical officers and raise personnel costs by about half or more.
+intervention: Shift-based 24-hour cover (12-hour medical officer shifts; hybrid models)
+comparator: Commuted overtime model
+source:
+  doi: 10.7196/samj.2026.v116i10.4662
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.7196/samj.2026.v116i10.4662
+domains:
+- C1_workforce
+- D1_finance_costing
+design: other
+evidence_level: OE5
+setting:
+  country: ZA
+  income: UMIC
+  facility: regional_public_hospital_surgery
+kpis:
+- name: medical_officer_complement_required
+  definition: Medical officers needed for continuous shift-based surgical cover (baseline 8)
+  effect:
+    value: 22 (175% increase)
+    unit: posts
+  evidence:
+    quote: Delivering continuous shift-based coverage required scaling the MO complement to 22, a 175% increase.
+- name: personnel_cost_pct_change
+  definition: Annual personnel cost change vs overtime-inclusive baseline, hybrid model A and B
+  effect:
+    value: 48 to 79
+    unit: percent
+  evidence:
+    quote: Under this COT-inclusive comparison, hybrid model A represents a cost increase of ~48% and hybrid model B ~79%.
+implementation_needs:
+- rota and post establishment data
+- salary scales
+- overtime payment records
+lmic_applicability: 'yes'
+notes: Costing model for one department; clinical outcomes and optimal staffing not assessed; no confidence intervals. Graded OE5 (model, single site). Figures are approximate (~) in the source. Licence cc-by-nc (community KB only).
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: MO complement and 48-79% cost figures checked against abstract; costing model OE5; ZA UMIC confirmed

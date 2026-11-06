@@ -1,0 +1,43 @@
+id: kc-2026-0005
+version: 1
+status: approved
+title: High bed occupancy raised the chance of patients being outlied to other wards
+summary: Across nine hospitals, patients admitted when bed occupancy was above 115% were more likely to be placed on an off-specialty ward (bedspacing) than when occupancy was below 85%.
+comparator: Bed occupancy below 85%
+source:
+  doi: 10.1136/bmjopen-2026-120864
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1136/bmjopen-2026-120864
+domains:
+- A3_inpatient_flow
+- C2_quality_safety
+design: other
+evidence_level: OE4
+setting:
+  country: SE
+  income: HIC
+  facility: acute_hospitals_regional_network
+  sites: 9
+kpis:
+- name: bedspacing_hazard_ratio
+  definition: Hazard of being bedspaced (placed on an off-service ward), occupancy above 115% vs below 85%
+  effect:
+    value: '1.46'
+    unit: hazard ratio
+    ci:
+    - '1.39'
+    - '1.54'
+  evidence:
+    quote: Regarding bed occupancy, the HR of being bedspaced was 1.46 (95% CI 1.39 to 1.54) when comparing above 115% to less than 85% bed occupancy.
+implementation_needs:
+- ward-level bed occupancy data
+- flag for patients on off-service wards
+lmic_applicability: uncertain
+notes: Multicentre retrospective cohort, 234,325 unplanned admissions, 2015-2019. Observational association, not an intervention; mapped to OE4. Patient characteristics also predicted bedspacing; ward managers should not use them to choose who is moved.
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: HR and 95% CI checked against abstract; 9-site Swedish cohort, OE4 confirmed; association only

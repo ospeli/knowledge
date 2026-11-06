@@ -1,0 +1,54 @@
+id: kc-2026-0001
+version: 1
+status: approved
+title: Nurse-led fast care stream cut ED waits for minor emergencies
+summary: In a randomised trial in one university ED, a nurse-led Fast Care stream for minor emergencies cut waiting time and total length of stay and almost removed walk-outs before evaluation.
+intervention: Nurse-led Fast Care model with early assessment and continuity of care for minor emergencies
+comparator: Usual ED care
+source:
+  doi: 10.1016/j.jen.2026.07.017
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1016/j.jen.2026.07.017
+domains:
+- A2_emergency_flow
+design: rct
+evidence_level: OE3
+setting:
+  country: unknown
+  income: unknown
+  facility: university_hospital_ed
+kpis:
+- name: ed_waiting_time_minutes
+  definition: Waiting time, minor-emergency patients, difference vs usual care
+  effect:
+    value: '-77.6'
+    unit: minutes
+  evidence:
+    quote: Compared with usual care, participants in the Fast Care group experienced reductions of 77.6 minutes in waiting time, 156.9 minutes in treatment time, and 178.1 minutes in overall length of stay.
+- name: ed_length_of_stay_minutes
+  definition: Overall ED length of stay, minor-emergency patients, difference vs usual care
+  effect:
+    value: '-178.1'
+    unit: minutes
+  evidence:
+    quote: Compared with usual care, participants in the Fast Care group experienced reductions of 77.6 minutes in waiting time, 156.9 minutes in treatment time, and 178.1 minutes in overall length of stay.
+- name: left_before_evaluation_pct
+  definition: Patients leaving before clinical evaluation, Fast Care vs usual care
+  effect:
+    value: 2.5 vs 32.2
+    unit: percent
+  evidence:
+    quote: In the Fast Care group, the care pathway was completed in nearly all cases, with early departures (patients leaving before clinical evaluation) occurring in 2.5% of participants, compared with 32.2% in the usual care group.
+implementation_needs:
+- separate minor-emergency stream
+- trained emergency nurses leading early assessment
+- agreed eligibility criteria for minor emergencies
+lmic_applicability: uncertain
+notes: 'Single-site RCT (801 patients); country not stated in the abstract. Downgraded from OE2 to OE3: single site and no confidence intervals reported in the abstract. LMIC applicability uncertain: depends on having nurses with extended assessment scope.'
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: numbers, units and direction checked against abstract; single-site RCT, OE3 for no CIs confirmed; operational flow outcomes

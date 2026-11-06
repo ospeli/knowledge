@@ -1,0 +1,52 @@
+id: kc-2026-0019
+version: 1
+status: approved
+title: Over half of nurses in conflict-affected Yemen intend to leave within a year
+summary: In 24 facilities across Yemen, 55% of nurses said they intended to leave within 12 months; very high nurse-to-patient ratios and frequent night shifts were linked to psychological distress.
+source:
+  doi: 10.3390/nursrep16100353
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3390/nursrep16100353
+domains:
+- C1_workforce
+design: other
+evidence_level: OE4
+setting:
+  country: YE
+  income: LIC
+  facility: health_facilities_conflict_setting
+  sites: 24
+kpis:
+- name: intention_to_leave_12m_pct
+  definition: Share of registered nurses reporting intention to leave within 12 months
+  effect:
+    value: '54.8'
+    unit: percent
+    ci:
+    - '51.2'
+    - '58.3'
+  evidence:
+    quote: 'High self-rated burnout was prevalent in 34.0% (95% CI: 30.7–37.4), and 54.8% (95% CI: 51.2–58.3) reported their intention to leave within 12 months.'
+- name: distress_aor_ratio_1_to_20
+  definition: Adjusted odds of psychological distress, nurse-to-patient ratio of 1:20 or worse
+  effect:
+    value: '1.68'
+    unit: adjusted odds ratio
+    ci:
+    - '1.07'
+    - '2.63'
+  evidence:
+    quote: 'Psychological distress was independently associated with displacement (AOR = 2.31, 95% CI: 1.68–3.17), workplace violence (AOR = 2.84, 95% CI: 2.03–3.97), inadequate income (AOR = 2.53, 95% CI: 1.80–3.56), nurse-to-patient ratios ≥ 1:20 (AOR = 1.68, 95% CI: 1.07–2.63), and frequent night shifts (AOR = 1.26, 95% CI: 1.17–1.36 per additional shift).'
+implementation_needs:
+- nurse-to-patient ratio by shift
+- night-shift counts per nurse
+- turnover and intent-to-leave tracking
+lmic_applicability: 'yes'
+notes: Multicentre cross-sectional survey of 800 nurses; observational, mapped to OE4. Aggregate staff wellbeing data only. Ratios of 1:15 showed no consistent association. Conflict setting limits transfer to stable systems.
+review_by: '2031-11-06'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-06'
+  notes: prevalence and AOR with CIs checked against abstract; Yemen LIC, 24 sites, OE4 confirmed
