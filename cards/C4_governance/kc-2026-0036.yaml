@@ -1,8 +1,8 @@
 id: kc-2026-0036
 version: 1
-status: candidate
+status: approved
 title: ISO 9001 quality system linked to shorter stays at a Pakistani cardiac hospital
-summary: After ISO 9001 certification and investment in leadership, safety culture and data, a Pakistani cardiac centre saw mean length of stay fall from 6.2 to 4.7 days and hospital infections fall, compared with three similar regional hospitals.
+summary: After ISO 9001 certification and investment in leadership, safety culture and data, a Pakistani cardiac centre saw mean length of stay fall from 6.2 to 4.7 days and hospital infections fall; the abstract does not report the figures for the three comparison hospitals.
 intervention: ISO 9001 certification with a learning quality management system (leadership, safety culture, structured data use, JCI-standard preparation)
 comparator: Three regional hospitals of similar size and volume
 source:
@@ -40,5 +40,10 @@ implementation_needs:
 - routine quality data reporting
 - leadership time for safety culture
 lmic_applicability: 'yes'
-notes: 'Single intervention site with difference-in-differences against three comparison hospitals (2020–2025). The abstract text is cut off mid-sentence after the LOS figures, so the LOS quote is a sentence fragment. No CIs. Controlled before-after (OE3) downgraded to OE4: one intervention site, no CIs, many co-interventions.'
+notes: 'Single intervention site with difference-in-differences against three comparison hospitals (2020–2025). The abstract text is cut off mid-sentence after the LOS figures, so the LOS quote is a sentence fragment and its P value is lost. Difference-in-differences results against comparators are not given in the abstract; the infection fall coincides with an intensified infection-control bundle. No CIs. Controlled before-after (OE3) downgraded to OE4: one intervention site, no CIs, many co-interventions.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: LOS and HAI figures checked; summary no longer implies comparator effect (DiD not in abstract); co-intervention noted; CBA downgraded to OE4 confirmed

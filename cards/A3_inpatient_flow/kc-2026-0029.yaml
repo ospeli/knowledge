@@ -1,6 +1,6 @@
 id: kc-2026-0029
 version: 1
-status: candidate
+status: approved
 title: Simulated discharge fixes projected cutting average discharge time by over half
 summary: In a public hospital, Lean Six Sigma found tests and discharge medicines were the main discharge bottlenecks; a simulation projected that prioritising discharge tests and a dedicated discharge pharmacy line would cut average discharge time by more than half.
 intervention: Prioritised discharge-related tests plus a dedicated discharge-medication pharmacy line (tested in simulation)
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Projection from a discrete-event model calibrated to one hospital; not yet implemented. Country not stated in abstract. Validated simulation (OE4) downgraded to OE5: single site, no real-world result. Licence cc-by-nc-nd. LMIC applicability partial: changes are low cost but rely on HIS data.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: baseline and projected discharge times checked; simulation not implementation; country unknown; OE5 confirmed

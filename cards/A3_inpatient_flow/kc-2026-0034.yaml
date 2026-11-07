@@ -1,9 +1,9 @@
 id: kc-2026-0034
 version: 1
-status: candidate
+status: approved
 title: Emergency admissions with dementia used far more bed days in North West London
-summary: In a London population study, people with diagnosed dementia had 9.28 times the emergency bed-day rate of matched controls, and cause-matched admissions stayed 1.58 days longer.
-comparator: Matched residents without dementia
+summary: In a London population study, people with diagnosed dementia had 9.28 times the emergency bed-day rate of residents without dementia, and cause-matched admissions stayed 1.58 days longer.
+comparator: Residents without dementia (population controls); cause- and frailty-matched pairs for length of stay
 source:
   doi: 10.64898/2026.10.26.26366509
   tier: A
@@ -45,3 +45,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Preprint: OE5. Large population cohort (1.26 million residents) with linked records and matching on frailty and cause. Observational; useful for capacity planning, not a care recommendation. Infections and injuries made up almost half of dementia bed days. LMIC applicability uncertain: depends on linked records.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: rate ratio, LOS difference and CIs checked; summary corrected (bed-day RR is vs population controls, not matched); preprint OE5

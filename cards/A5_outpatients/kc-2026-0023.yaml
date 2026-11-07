@@ -1,6 +1,6 @@
 id: kc-2026-0023
 version: 1
-status: candidate
+status: approved
 title: Simulated Lean redesign projected shorter waits at a Chinese endoscopy centre
 summary: A validated simulation of one tertiary endoscopy centre projected that a Lean, model-based redesign would cut patient waiting time and staff overtime; even at half effectiveness, waits were projected to fall by a fifth.
 intervention: Lean process redesign planned with model-based systems engineering (value stream mapping, root cause analysis) across six subsystems
@@ -47,3 +47,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Simulated projections, not an implemented change; authors call for a pilot. Single site; model output within ±5% of historical data. Mapped OE4 (validated simulation), downgraded to OE5 for single site and no real-world implementation. CIs are simulation intervals over 20 Monte Carlo runs. LMIC applicability partial: Lean mapping is low cost, but simulation skills may be scarce.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers and simulation CIs checked against stored abstract; projections not implementation; validated DES OE4 downgraded to OE5 confirmed

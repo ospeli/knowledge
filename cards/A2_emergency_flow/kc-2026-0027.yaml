@@ -1,6 +1,6 @@
 id: kc-2026-0027
 version: 1
-status: candidate
+status: approved
 title: District emergency centre clinicians carried a median of 1.5 patients at once
 summary: In a South African district emergency centre, clinicians carried a median of 1.5 unresolved patients at any time (peak 3), varying by clinician type and shift; this "active queue" adds to patients-per-hour for staffing plans.
 source:
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: Retrospective cross-sectional analysis of 1,289 clinician shifts (2019) at one district EC. Descriptive metric with associations by clinician category, employment and shift type (abstract truncates the p values). Observational single site, OE5. Directly relevant to LMIC district hospitals.
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: median and peak AQ checked against stored abstract; ZA UMIC confirmed; descriptive single-site OE5

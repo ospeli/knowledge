@@ -1,6 +1,6 @@
 id: kc-2026-0022
 version: 1
-status: candidate
+status: approved
 title: Hotter days linked to slower door-to-doctor times in a US emergency department
 summary: Over 22 warm seasons at one large US academic ED, each 1°F rise in heat index went with slightly longer door-to-doctor time, and very hot days saw more patients leave against advice and more ambulance arrivals.
 comparator: Cooler days (continuous heat index; days below 95°F heat index for threshold outcomes)
@@ -45,3 +45,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Preprint (medRxiv), so OE5. Single-site retrospective observational study (485,403 visits); heat index was not significantly linked to doctor-to-decision time, boarding time or total ED length of stay. LMIC applicability uncertain: climate, cooling and arrival patterns differ.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers, CIs, units and direction checked against stored abstract; preprint OE5 confirmed; null results for other throughput metrics noted

@@ -1,6 +1,6 @@
 id: kc-2026-0026
 version: 1
-status: candidate
+status: approved
 title: Lab analysis phase, not notification, slowed critical blood count alerts in Brazil
 summary: At a Brazilian tertiary hospital, critical blood count results took a median of over five hours to reach clinicians, mostly in the analytical phase; ward samples and weekend collection were linked to longer delays.
 comparator: Emergency and other non-ward sample origins; weekday collection
@@ -43,3 +43,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-centre retrospective cross-sectional study (544 critical CBCs, 487 with timestamps). Observational, mapped to OE5 (single site). LMIC applicability yes: UMIC tertiary setting; timestamp decomposition is low tech.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: TAT figures, OR and CI checked against stored abstract; BR UMIC confirmed; observational single site OE5

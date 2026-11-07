@@ -1,10 +1,10 @@
 id: kc-2026-0035
 version: 1
-status: candidate
+status: approved
 title: Rapid access neurosurgery clinic saw referrals in a median of nine days
 summary: A Toronto rapid-access neurosurgery clinic for non-emergency referrals saw patients a median of nine days after referral, managed 79.9% conservatively or back to primary care, and sent only 0.54% to the ED.
 intervention: Rapid Access in Neurosurgery (RAIN) ambulatory clinic for subacute referrals
-comparator: National median of 49.9 weeks from referral to treatment (context, not a matched comparison)
+comparator: None (no control group; national 49.9-week referral-to-treatment median is context only)
 source:
   doi: 10.1017/cjn.2026.10700
   tier: A
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-centre prospective series of 2,979 referrals with no control group; the 49.9-week figure is a national referral-to-treatment median, not a like-for-like comparator. OE5. LMIC applicability partial: model is simple but needs specialist time.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: wait and ED transfer figures checked; comparator reset to none (49.9 weeks is context only); single-centre OE5

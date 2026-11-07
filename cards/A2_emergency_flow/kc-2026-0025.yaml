@@ -1,8 +1,8 @@
 id: kc-2026-0025
 version: 1
-status: candidate
+status: approved
 title: Extra clinician cover in surges kept door-to-doctor times low in rural EDs
-summary: In a small feasibility study of one doctor at two rural US EDs, surges covered by an advanced practice clinician had much shorter door-to-doctor times; a doctor reached capacity at about four simultaneous mid-acuity patients.
+summary: In a small feasibility study of one doctor at two rural community EDs, surges covered by an advanced practice clinician had much shorter door-to-doctor times; the doctor reached capacity at about four simultaneous Level 3 patients.
 intervention: Advanced practice clinician (APC) support during surges, triggered by an acuity-weighted workload metric (CWAAL)
 comparator: Surge periods without APC support
 source:
@@ -16,8 +16,8 @@ domains:
 design: case_study
 evidence_level: OE5
 setting:
-  country: US
-  income: HIC
+  country: unknown
+  income: unknown
   facility: rural_community_ed
 kpis:
 - name: door_to_doctor_time_surge_minutes
@@ -38,5 +38,10 @@ implementation_needs:
 - real-time acuity scores per clinician
 - on-call or flexible APC cover
 lmic_applicability: uncertain
-notes: 'Very small development cohort: one physician, 354 patients, 10 dates, 4 surge events per arm. Needs prospective validation. Case study, OE5. LMIC applicability uncertain: relies on electronic acuity tracking and flexible staffing.'
+notes: 'Very small development cohort: one physician, 354 patients, 10 dates, 4 surge events per arm. Needs prospective validation. Case study (OE4) downgraded to OE5: single clinician, no CIs. Country not stated in the abstract. LMIC applicability uncertain: relies on electronic acuity tracking and flexible staffing.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers checked against stored abstract; country/income set to unknown (not stated in abstract); summary wording aligned to Level 3; OE5 confirmed

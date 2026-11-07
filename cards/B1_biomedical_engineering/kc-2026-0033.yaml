@@ -1,6 +1,6 @@
 id: kc-2026-0033
 version: 1
-status: candidate
+status: approved
 title: 13% of standard lab analysers in Tanzania were not working, mostly breakdowns
 summary: A national mapping of 3,044 standardised laboratory analysers in mainland Tanzania found 13.0% non-functional, with urine analysers worst; equipment breakdown caused 60–71% of failures.
 source:
@@ -39,3 +39,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Preprint (medRxiv): OE5. National cross-sectional mapping exercise after the 2018 standard equipment guideline; descriptive, no comparison group. Non-functional rates: urine 23.5%, chemistry 13.7%, haematology 6.6%.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: counts and percentages checked against stored abstract; TZ LMIC confirmed; preprint OE5

@@ -1,6 +1,6 @@
 id: kc-2026-0028
 version: 1
-status: candidate
+status: approved
 title: Physical therapy QI in a medical ICU sustained gains for three years
 summary: At one US academic medical ICU, a programme of auto-consults, therapists on rounds, a bedrest-order hard stop and more therapy staff raised the odds of patients getting physical therapy nearly fourfold, with a modest fall in ICU stay sustained for three years.
 intervention: 'Multifaceted physical therapy programme: education, therapists on multidisciplinary rounds, automatic consult orders, EHR hard stop on bedrest orders, extra therapy staffing and a coordinator'
@@ -14,6 +14,7 @@ domains:
 - A3_inpatient_flow
 - C2_quality_safety
 - C1_workforce
+- A9_clinical_support
 design: before_after
 evidence_level: OE5
 setting:
@@ -42,3 +43,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site before-during-after design, 13,058 admissions; no effect sizes or CIs for LOS in the abstract. OE4 downgraded to OE5 for single site. Operational lever is service delivery (consult automation, staffing), not clinical treatment choice. LMIC applicability partial: needs EHR order sets and therapy staff.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: quoted findings checked; approximate odds and unquantified LOS flagged in card; service delivery (consult automation, staffing) not treatment choice; added A9_clinical_support domain

@@ -1,6 +1,6 @@
 id: kc-2026-0037
 version: 1
-status: candidate
+status: approved
 title: Ethiopia local medicine manufacturing strategy grew range but missed supply target
 summary: Ethiopia's 10-year pharmaceutical manufacturing strategy expanded locally made essential medicines from 90 to 140 chemical entities, but local supply reached only 23% of demand against a 60% public procurement target.
 intervention: 'National strategy for local pharmaceutical manufacturing: industrial incentives, preferential centralised procurement, regulatory strengthening'
@@ -15,7 +15,7 @@ domains:
 - A8_pharmacy
 - C6_strategy_planning
 design: case_study
-evidence_level: OE4
+evidence_level: OE5
 setting:
   country: ET
   income: LIC
@@ -40,5 +40,10 @@ implementation_needs:
 - preferential procurement rules
 - regulator capacity
 lmic_applicability: 'yes'
-notes: WHO Bulletin lessons-from-the-field case study; descriptive, no counterfactual. National-level policy, so hospital-level use is indirect (procurement planning). OE4 case study.
+notes: WHO Bulletin lessons-from-the-field case study; descriptive, no counterfactual. National-level policy, so hospital-level use is indirect (procurement planning). Case study (OE4) downgraded to OE5 (single country, no comparison group).
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: figures checked against stored abstract; downgraded OE4 to OE5 (single country, no comparison) per CARDS.md

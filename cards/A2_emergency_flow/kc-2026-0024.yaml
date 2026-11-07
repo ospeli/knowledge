@@ -1,6 +1,6 @@
 id: kc-2026-0024
 version: 1
-status: candidate
+status: approved
 title: Early ECG ordering for mental health patients linked to shorter adjusted ED stay
 summary: At one US ED, ordering the ECG early for patients with suspected mental health conditions (to speed medical clearance) was linked to about 19% lower adjusted length of stay, though unadjusted and time-series results were not significant.
 intervention: Targeted early ECG order at arrival for suspected behavioural health presentations, identified by a Six Sigma DMAIC review
@@ -17,7 +17,7 @@ evidence_level: OE5
 setting:
   country: US
   income: HIC
-  facility: community_hospital_ed
+  facility: hospital_ed
 kpis:
 - name: ed_length_of_stay_adjusted_ratio
   definition: Adjusted ED length-of-stay ratio, pre vs post intervention (mental health encounters)
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site retrospective before-after study (412 encounters, 3-month post period). Unadjusted median difference not significant; SPC and interrupted time-series showed no significant change. OE4 downgraded to OE5 for single site and mixed results. LMIC applicability partial: depends on ECG access at triage.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers, LOS ratio CI and direction checked; non-significant unadjusted and ITS results noted; facility type changed to hospital_ed (community not stated)

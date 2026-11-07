@@ -1,8 +1,8 @@
 id: kc-2026-0032
 version: 1
-status: candidate
-title: Pooled studies show higher deaths at long ED boarding times, but data are weak
-summary: A meta-analysis of 20 studies found pooled in-hospital mortality of 8.3% among ED patients, with higher pooled figures at 6–12 hour boarding thresholds; extreme variation between studies means no threshold or cause can be claimed.
+status: approved
+title: Boarding and mortality review finds no reliable time threshold; long-wait pools are fragile
+summary: A meta-analysis of 20 studies found pooled in-hospital mortality of 8.3% among ED patients, Pools for 8 hours or more looked higher but rested on few studies and fell to 4–8% when one study was removed; extreme variation means no threshold or cause can be claimed.
 comparator: Early admission / no boarding
 source:
   doi: 10.1002/hsr2.73400
@@ -30,7 +30,7 @@ kpis:
   evidence:
     quote: 'The overall pooled in‐hospital mortality proportion was 8.3% (95% CI: 7.6%–9.0%; I 2 = 99.9%).'
 - name: in_hospital_mortality_by_boarding_threshold_pct
-  definition: Pooled in-hospital mortality by boarding threshold, no boarding vs 12-hour boarding
+  definition: Pooled in-hospital mortality by boarding threshold, no boarding vs 12-hour boarding (12-hour pool falls to 3.9% when one study is excluded)
   effect:
     value: 10.2 vs 21.8
     unit: percent
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Proportional meta-analysis of 20 observational studies (2007–2024); I² 99.9%. Long-threshold pools rest on few studies and drop to 7.9%, 3.9% and 4.0% (8, 12, 24 h) when one study is excluded. Authors say the pools are descriptive and show no threshold, dose-response or causal link. Systematic review of observational data with extreme heterogeneity: mapped OE4, in line with kc-2026-0013. LMIC applicability uncertain: few LMIC studies indicated.'
 review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: pooled figures and CI checked; title and summary rewritten to reflect leave-one-out fragility and no threshold; OE4 consistent with kc-2026-0013
