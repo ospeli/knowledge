@@ -1,0 +1,50 @@
+id: kc-2026-0026
+version: 1
+status: approved
+title: Lab analysis phase, not notification, slowed critical blood count alerts in Brazil
+summary: At a Brazilian tertiary hospital, critical blood count results took a median of over five hours to reach clinicians, mostly in the analytical phase; ward samples and weekend collection were linked to longer delays.
+comparator: Emergency and other non-ward sample origins; weekday collection
+source:
+  doi: 10.9734/acri/2026/v26i102228
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.9734/acri/2026/v26i102228
+domains:
+- A6_laboratory
+- C2_quality_safety
+design: other
+evidence_level: OE5
+setting:
+  country: BR
+  income: UMIC
+  facility: tertiary_hospital_laboratory
+kpis:
+- name: critical_result_total_tat_hours
+  definition: Median total turnaround time from sample collection to notification, critical CBC results
+  effect:
+    value: '5.45'
+    unit: hours
+  evidence:
+    quote: Median total TAT was 5.45 h (IQR 3.12–13.18), predominantly reflecting the analytical phase (median 3.86 h), while post-analytical notification time was shorter (median 0.62 h).
+- name: ward_origin_tat_over_4h_or
+  definition: Odds of total turnaround of 4 hours or more, inpatient ward samples vs others
+  effect:
+    value: '4.22'
+    unit: odds ratio
+    ci:
+    - '2.65'
+    - '6.71'
+  evidence:
+    quote: Inpatient ward origin was independently associated with TAT ≥4 h (OR 4.22, 95% CI 2.65–6.71).
+implementation_needs:
+- timestamps at collection, release and notification
+- ward sample transport process
+- weekend lab staffing review
+lmic_applicability: 'yes'
+notes: 'Single-centre retrospective cross-sectional study (544 critical CBCs, 487 with timestamps). Observational, mapped to OE5 (single site). LMIC applicability yes: UMIC tertiary setting; timestamp decomposition is low tech.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: TAT figures, OR and CI checked against stored abstract; BR UMIC confirmed; observational single site OE5

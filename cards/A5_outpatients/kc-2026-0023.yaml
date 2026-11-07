@@ -1,0 +1,54 @@
+id: kc-2026-0023
+version: 1
+status: approved
+title: Simulated Lean redesign projected shorter waits at a Chinese endoscopy centre
+summary: A validated simulation of one tertiary endoscopy centre projected that a Lean, model-based redesign would cut patient waiting time and staff overtime; even at half effectiveness, waits were projected to fall by a fifth.
+intervention: Lean process redesign planned with model-based systems engineering (value stream mapping, root cause analysis) across six subsystems
+comparator: Historical baseline (2022) patient flow
+source:
+  doi: 10.31083/ghhm55733
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.31083/ghhm55733
+domains:
+- A5_outpatients
+- A1_access_scheduling
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_hospital_endoscopy_centre
+kpis:
+- name: endoscopy_waiting_time_minutes
+  definition: Projected mean patient waiting time, first optimisation scenario vs historical baseline
+  effect:
+    value: 19.5 to 10.8
+    unit: minutes
+    ci:
+    - '10.3'
+    - '11.3'
+  evidence:
+    quote: 'The first optimization scenario projected mean total patient visit time from 69.1 minutes (historical baseline) to 53.7 minutes (95% CI: 52.9–54.5), a simulated reduction of 22.3%; waiting time from 19.5 minutes to 10.8 minutes (95% CI: 10.3–11.3), a simulated reduction of 44.7%; patient density from 20.2 to 15.1 per 1000 m2 (95% CI: 14.6–15.6), a simulated reduction of 25.2%; and projected elimination of staff overtime (from 88.2 to 0 minutes/day).'
+- name: endoscopy_waiting_time_conservative_minutes
+  definition: Projected mean waiting time if only 50% of the redesign is realised
+  effect:
+    value: '15.6'
+    unit: minutes
+    ci:
+    - '14.8'
+    - '16.4'
+  evidence:
+    quote: 'Scenario 3 (conservative, 50% realization) projected a total visit time of 61.4 minutes (95% CI: 60.5–62.3), an 11.0% reduction; waiting time of 15.6 minutes (95% CI: 14.8–16.4), a 20.0% reduction; and staff overtime of 22.1 minutes (95% CI: 18.5–25.7), a 75% reduction.'
+implementation_needs:
+- process mapping of the patient journey
+- discrete-event simulation capability
+- staff engagement in Lean workshops
+lmic_applicability: partial
+notes: 'Simulated projections, not an implemented change; authors call for a pilot. Single site; model output within ±5% of historical data. Mapped OE4 (validated simulation), downgraded to OE5 for single site and no real-world implementation. CIs are simulation intervals over 20 Monte Carlo runs. LMIC applicability partial: Lean mapping is low cost, but simulation skills may be scarce.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers and simulation CIs checked against stored abstract; projections not implementation; validated DES OE4 downgraded to OE5 confirmed

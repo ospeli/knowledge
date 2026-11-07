@@ -1,0 +1,49 @@
+id: kc-2026-0036
+version: 1
+status: approved
+title: ISO 9001 quality system linked to shorter stays at a Pakistani cardiac hospital
+summary: After ISO 9001 certification and investment in leadership, safety culture and data, a Pakistani cardiac centre saw mean length of stay fall from 6.2 to 4.7 days and hospital infections fall; the abstract does not report the figures for the three comparison hospitals.
+intervention: ISO 9001 certification with a learning quality management system (leadership, safety culture, structured data use, JCI-standard preparation)
+comparator: Three regional hospitals of similar size and volume
+source:
+  doi: 10.1093/intqhc/mzag154
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42773502
+domains:
+- C4_governance
+- C2_quality_safety
+- A3_inpatient_flow
+design: controlled_before_after
+evidence_level: OE4
+setting:
+  country: PK
+  income: LMIC
+  facility: tertiary_cardiac_hospital
+kpis:
+- name: length_of_stay_days
+  definition: Mean length of stay before vs after ISO 9001 certification
+  effect:
+    value: 6.2 to 4.7
+    unit: days
+  evidence:
+    quote: Mean length of stay decreased from 6.2 to 4.7 days
+- name: hospital_acquired_infection_pct
+  definition: Hospital-acquired infection rate before vs after certification
+  effect:
+    value: 3.2 to 2.0
+    unit: percent
+  evidence:
+    quote: Hospital-acquired infections (HAIs) fell from 3.2% to 2.0% (t = 4.15, P = .002), reaching 1.3% by 2025, with zero CLABSIs recorded in the final quarter following the mid-period intensification of the infection-control bundle.
+implementation_needs:
+- quality management system and document control
+- routine quality data reporting
+- leadership time for safety culture
+lmic_applicability: 'yes'
+notes: 'Single intervention site with difference-in-differences against three comparison hospitals (2020–2025). The abstract text is cut off mid-sentence after the LOS figures, so the LOS quote is a sentence fragment and its P value is lost. Difference-in-differences results against comparators are not given in the abstract; the infection fall coincides with an intensified infection-control bundle. No CIs. Controlled before-after (OE3) downgraded to OE4: one intervention site, no CIs, many co-interventions.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: LOS and HAI figures checked; summary no longer implies comparator effect (DiD not in abstract); co-intervention noted; CBA downgraded to OE4 confirmed

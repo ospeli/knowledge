@@ -1,0 +1,52 @@
+id: kc-2026-0022
+version: 1
+status: approved
+title: Hotter days linked to slower door-to-doctor times in a US emergency department
+summary: Over 22 warm seasons at one large US academic ED, each 1°F rise in heat index went with slightly longer door-to-doctor time, and very hot days saw more patients leave against advice and more ambulance arrivals.
+comparator: Cooler days (continuous heat index; days below 95°F heat index for threshold outcomes)
+source:
+  doi: 10.64898/2026.10.27.26366595
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/PPR/PPR1353305
+domains:
+- A2_emergency_flow
+- E1_preparedness
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: urban_academic_medical_center_ed
+kpis:
+- name: door_to_doctor_time_change_pct
+  definition: Percent change in door-to-doctor time per 1°F rise in daily maximum heat index
+  effect:
+    value: '0.41'
+    unit: percent per °F
+    ci:
+    - '0.38'
+    - '0.44'
+  evidence:
+    quote: 'Each 1°F increase in heat index was associated with a 0.41% increase in door-to-doctor time (95% CI: 0.38% – 0.44%).'
+- name: left_against_medical_advice_or
+  definition: Odds of leaving against medical advice, heat index at or above 95°F vs below
+  effect:
+    value: '1.27'
+    unit: odds ratio
+    ci:
+    - '1.02'
+    - '1.58'
+  evidence:
+    quote: 'At the 95°F heat index threshold, patients were 27% more likely to leave against medical advice than on days below the threshold (OR 1.27; 95% CI: 1.02 – 1.58), and had higher odds of arriving by EMS (OR 1.10; 95% CI: 1.06 – 1.15).'
+implementation_needs:
+- daily heat index feed
+- heat-readiness trigger in ED escalation plan
+lmic_applicability: uncertain
+notes: 'Preprint (medRxiv), so OE5. Single-site retrospective observational study (485,403 visits); heat index was not significantly linked to doctor-to-decision time, boarding time or total ED length of stay. LMIC applicability uncertain: climate, cooling and arrival patterns differ.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers, CIs, units and direction checked against stored abstract; preprint OE5 confirmed; null results for other throughput metrics noted

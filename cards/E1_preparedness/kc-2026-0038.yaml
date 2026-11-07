@@ -1,0 +1,41 @@
+id: kc-2026-0038
+version: 1
+status: approved
+title: Disaster drill showed hospital command was slow to start despite quick triage
+summary: In a full-scale mass-casualty drill at a tertiary hospital, triage started without delay but setting up the hospital incident command system and assigning a triage officer took longer than the protocol benchmarks.
+intervention: Full-scale trauma disaster drill (simulated two-bus collision, about 100 casualties) with checklist scoring and time-motion analysis
+comparator: Protocol benchmarks
+source:
+  doi: 10.21203/rs.3.rs-11109693/v1
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/PPR/PPR1338645
+domains:
+- E1_preparedness
+- A2_emergency_flow
+design: case_study
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: tertiary_care_hospital
+kpis:
+- name: incident_command_activation_minutes
+  definition: Time to activate the hospital incident command system and assign a triage officer during the drill
+  effect:
+    value: 14 min 52 s; 16.8 min
+    unit: minutes
+  evidence:
+    quote: HICS activation (14 minutes 52 seconds) and triage-officer assignment (16.8 minutes) both exceeded protocol benchmarks, while siren activation (29 minutes 56 seconds) and initial patient triage were within expected limits.
+implementation_needs:
+- annual full-scale drill
+- pre-assigned command roles
+- communication backup
+lmic_applicability: partial
+notes: 'Preprint (Research Square); single drill at one hospital, five tracked simulated patients. Country not stated in the abstract. Benchmark values not given in the abstract. OE5. LMIC applicability partial: drills are low cost; findings depend on local command structure.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: drill timings checked against stored abstract; country unknown; preprint single drill OE5

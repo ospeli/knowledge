@@ -1,0 +1,49 @@
+id: kc-2026-0032
+version: 1
+status: approved
+title: Boarding and mortality review finds no reliable time threshold; long-wait pools are fragile
+summary: A meta-analysis of 20 studies found pooled in-hospital mortality of 8.3% among ED patients, Pools for 8 hours or more looked higher but rested on few studies and fell to 4–8% when one study was removed; extreme variation means no threshold or cause can be claimed.
+comparator: Early admission / no boarding
+source:
+  doi: 10.1002/hsr2.73400
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1002/hsr2.73400
+domains:
+- A2_emergency_flow
+- A3_inpatient_flow
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: mixed
+  facility: emergency_departments
+kpis:
+- name: in_hospital_mortality_pooled_pct
+  definition: Overall pooled in-hospital mortality, ED patients across boarding studies
+  effect:
+    value: '8.3'
+    unit: percent
+    ci:
+    - '7.6'
+    - '9.0'
+  evidence:
+    quote: 'The overall pooled in‐hospital mortality proportion was 8.3% (95% CI: 7.6%–9.0%; I 2 = 99.9%).'
+- name: in_hospital_mortality_by_boarding_threshold_pct
+  definition: Pooled in-hospital mortality by boarding threshold, no boarding vs 12-hour boarding (12-hour pool falls to 3.9% when one study is excluded)
+  effect:
+    value: 10.2 vs 21.8
+    unit: percent
+  evidence:
+    quote: Subgroup analyses showed pooled mortality estimates of 10.2% for early admission/no boarding, 4.4% for 1‐h boarding, 5.9% for 2‐h boarding, 4.8% for 4‐h boarding, 13.5% for 6‐h boarding, 20.5% for 8‐h boarding, 21.8% for 12‐h boarding, and 11.8% for 24‐h boarding.
+implementation_needs:
+- boarding time measured from admission decision
+- inpatient bed escalation plan
+lmic_applicability: uncertain
+notes: 'Proportional meta-analysis of 20 observational studies (2007–2024); I² 99.9%. Long-threshold pools rest on few studies and drop to 7.9%, 3.9% and 4.0% (8, 12, 24 h) when one study is excluded. Authors say the pools are descriptive and show no threshold, dose-response or causal link. Systematic review of observational data with extreme heterogeneity: mapped OE4, in line with kc-2026-0013. LMIC applicability uncertain: few LMIC studies indicated.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: pooled figures and CI checked; title and summary rewritten to reflect leave-one-out fragility and no threshold; OE4 consistent with kc-2026-0013

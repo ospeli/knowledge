@@ -1,0 +1,49 @@
+id: kc-2026-0035
+version: 1
+status: approved
+title: Rapid access neurosurgery clinic saw referrals in a median of nine days
+summary: A Toronto rapid-access neurosurgery clinic for non-emergency referrals saw patients a median of nine days after referral, managed 79.9% conservatively or back to primary care, and sent only 0.54% to the ED.
+intervention: Rapid Access in Neurosurgery (RAIN) ambulatory clinic for subacute referrals
+comparator: None (no control group; national 49.9-week referral-to-treatment median is context only)
+source:
+  doi: 10.1017/cjn.2026.10700
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1017/cjn.2026.10700
+domains:
+- A5_outpatients
+- A1_access_scheduling
+- A2_emergency_flow
+design: case_study
+evidence_level: OE5
+setting:
+  country: CA
+  income: HIC
+  facility: academic_neurosurgery_clinic
+kpis:
+- name: referral_to_consultation_days
+  definition: Median referral-to-consultation wait at the rapid access clinic
+  effect:
+    value: '9'
+    unit: days
+  evidence:
+    quote: The RAIN Clinic achieved a median referral-to-consultation wait time of 9 days (interquartile range (IQR) 6-15).
+- name: immediate_ed_transfer_pct
+  definition: Share of clinic patients needing immediate ED transfer
+  effect:
+    value: '0.54'
+    unit: percent
+  evidence:
+    quote: Critically, only 0.54% of patients required immediate ED transfer, suggesting the model safely identifies and manages high-acuity patients in an outpatient setting.
+implementation_needs:
+- referral triage criteria
+- protected rapid-access clinic slots
+- pathway back to primary care
+lmic_applicability: partial
+notes: 'Single-centre prospective series of 2,979 referrals with no control group; the 49.9-week figure is a national referral-to-treatment median, not a like-for-like comparator. OE5. LMIC applicability partial: model is simple but needs specialist time.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: wait and ED transfer figures checked; comparator reset to none (49.9 weeks is context only); single-centre OE5

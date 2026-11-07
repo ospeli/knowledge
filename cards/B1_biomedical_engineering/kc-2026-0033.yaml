@@ -1,0 +1,46 @@
+id: kc-2026-0033
+version: 1
+status: approved
+title: 13% of standard lab analysers in Tanzania were not working, mostly breakdowns
+summary: A national mapping of 3,044 standardised laboratory analysers in mainland Tanzania found 13.0% non-functional, with urine analysers worst; equipment breakdown caused 60–71% of failures.
+source:
+  doi: 10.64898/2026.10.09.26365127
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.64898/2026.10.09.26365127
+domains:
+- B1_biomedical_engineering
+- A6_laboratory
+design: other
+evidence_level: OE5
+setting:
+  country: TZ
+  income: LMIC
+  facility: tiered_public_laboratory_network
+kpis:
+- name: analyser_non_functional_pct
+  definition: Share of standardised chemistry, haematology and urine analysers non-functional
+  effect:
+    value: '13.0'
+    unit: percent
+  evidence:
+    quote: Of the 3,044 standardised analysers assessed, 987 (32.4%) chemistry 1,308 (43.0%) haematology, and 749 (24.6%) urine) assessed; 397 (13.0%) were non-functional.
+- name: breakdown_share_of_non_functional_pct
+  definition: Share of non-functional analysers whose cause was breakdown, by analyser type
+  effect:
+    value: 60.0 to 70.9
+    unit: percent
+  evidence:
+    quote: Equipment breakdown was the leading cause of non-functionality, accounting for 70.9% (61/86), 70.5% (124/176) and 60.0% (81/135) of the non-functional haematology, urine and chemistry analysers, respectively, among all causes identified for each analyser type.
+implementation_needs:
+- equipment inventory with functional status
+- preventive maintenance schedule
+- repair service contracts or in-house biomedical engineers
+lmic_applicability: 'yes'
+notes: 'Preprint (medRxiv): OE5. National cross-sectional mapping exercise after the 2018 standard equipment guideline; descriptive, no comparison group. Non-functional rates: urine 23.5%, chemistry 13.7%, haematology 6.6%.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: counts and percentages checked against stored abstract; TZ LMIC confirmed; preprint OE5

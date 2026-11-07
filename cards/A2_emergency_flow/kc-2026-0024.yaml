@@ -1,0 +1,49 @@
+id: kc-2026-0024
+version: 1
+status: approved
+title: Early ECG ordering for mental health patients linked to shorter adjusted ED stay
+summary: At one US ED, ordering the ECG early for patients with suspected mental health conditions (to speed medical clearance) was linked to about 19% lower adjusted length of stay, though unadjusted and time-series results were not significant.
+intervention: Targeted early ECG order at arrival for suspected behavioural health presentations, identified by a Six Sigma DMAIC review
+comparator: Pre-intervention period (usual ordering)
+source:
+  doi: 10.7759/cureus.118978
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.7759/cureus.118978
+domains:
+- A2_emergency_flow
+design: before_after
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: hospital_ed
+kpis:
+- name: ed_length_of_stay_adjusted_ratio
+  definition: Adjusted ED length-of-stay ratio, pre vs post intervention (mental health encounters)
+  effect:
+    value: '1.23'
+    unit: LOS ratio (pre/post)
+    ci:
+    - '1.02'
+    - '1.49'
+  evidence:
+    quote: In the adjusted analysis, the pre-intervention period was associated with longer LOS than the post-intervention period (LOS ratio 1.23, 95% CI 1.02-1.49,p = 0.032), equivalent to approximately 19% lower adjusted LOS in the post-intervention period.
+- name: ed_length_of_stay_median_minutes
+  definition: Median ED length of stay, mental health encounters, pre vs post
+  effect:
+    value: 854 vs 785
+    unit: minutes
+  evidence:
+    quote: Median LOS decreased from 854 minutes (IQR 389-1301) pre-intervention to 785 minutes (IQR 304-1404) post-intervention, though this difference was not statistically significant (p = 0.245).
+implementation_needs:
+- standing order or triage protocol for early ECG
+- agreed medical clearance pathway
+lmic_applicability: partial
+notes: 'Single-site retrospective before-after study (412 encounters, 3-month post period). Unadjusted median difference not significant; SPC and interrupted time-series showed no significant change. OE4 downgraded to OE5 for single site and mixed results. LMIC applicability partial: depends on ECG access at triage.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: numbers, LOS ratio CI and direction checked; non-significant unadjusted and ITS results noted; facility type changed to hospital_ed (community not stated)

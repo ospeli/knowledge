@@ -1,0 +1,52 @@
+id: kc-2026-0034
+version: 1
+status: approved
+title: Emergency admissions with dementia used far more bed days in North West London
+summary: In a London population study, people with diagnosed dementia had 9.28 times the emergency bed-day rate of residents without dementia, and cause-matched admissions stayed 1.58 days longer.
+comparator: Residents without dementia (population controls); cause- and frailty-matched pairs for length of stay
+source:
+  doi: 10.64898/2026.10.26.26366509
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/PPR/PPR1352197
+domains:
+- A3_inpatient_flow
+- C6_strategy_planning
+design: other
+evidence_level: OE5
+setting:
+  country: GB
+  income: HIC
+  facility: regional_population_acute_hospitals
+kpis:
+- name: bed_day_rate_ratio
+  definition: Emergency bed-day rate after dementia diagnosis vs controls
+  effect:
+    value: '9.28'
+    unit: rate ratio
+    ci:
+    - '8.43'
+    - '10.23'
+  evidence:
+    quote: Bed-day rates were 9.28 times those in controls after diagnosis (95% CI 8.43-10.23) and 1.69 times those before diagnosis (1.50-1.92).
+- name: index_length_of_stay_difference_days
+  definition: Adjusted index length of stay, cause-matched admissions after dementia diagnosis vs controls
+  effect:
+    value: '1.58'
+    unit: days
+    ci:
+    - '1.44'
+    - '1.71'
+  evidence:
+    quote: Among 108,958 cause-matched pairs (217,916 admissions), adjusted index length of stay was 1.58 days longer after dementia diagnosis (95% CI 1.44-1.71; ratio 1.18, 1.16-1.20).
+implementation_needs:
+- dementia flag in admission data
+- bed-day reporting by patient group
+lmic_applicability: uncertain
+notes: 'Preprint: OE5. Large population cohort (1.26 million residents) with linked records and matching on frailty and cause. Observational; useful for capacity planning, not a care recommendation. Infections and injuries made up almost half of dementia bed days. LMIC applicability uncertain: depends on linked records.'
+review_by: '2031-11-07'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-07'
+  notes: rate ratio, LOS difference and CIs checked; summary corrected (bed-day RR is vs population controls, not matched); preprint OE5
