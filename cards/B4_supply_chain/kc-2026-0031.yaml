@@ -1,0 +1,49 @@
+id: kc-2026-0031
+version: 1
+status: candidate
+title: Ethiopian facilities using both eLMIS and APTS more often had full medicine stock
+summary: In a national survey of 1,245 Ethiopian public facilities, those using both the electronic logistics system (eLMIS) and the auditable pharmaceutical transactions system (APTS) had 4.32 times the adjusted odds of full essential-commodity availability.
+intervention: Electronic Logistics Management Information System (eLMIS) plus Auditable Pharmaceutical Transactions and Services (APTS)
+comparator: Facilities using neither system
+source:
+  doi: 10.64898/2026.10.05.26364822
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.64898/2026.10.05.26364822
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: other
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: public_health_facilities_national
+kpis:
+- name: optimal_availability_dual_aor
+  definition: Adjusted odds of optimal essential-commodity availability (zero stock-outs, all tracers present), both systems vs neither
+  effect:
+    value: '4.32'
+    unit: adjusted odds ratio
+    ci:
+    - '3.25'
+    - '5.74'
+  evidence:
+    quote: Dual implementation showed a profound synergistic effect (AOR = 4.32; 95% CI; 3.25–5.74, p < 0.001).
+- name: optimal_availability_elmis_only_aor
+  definition: Adjusted odds of optimal availability, eLMIS alone vs neither
+  effect:
+    value: '2.15'
+    unit: adjusted odds ratio
+    ci:
+    - '1.52'
+    - '3.04'
+  evidence:
+    quote: 'Facilities using eLMIS alone (AOR = 2.15; 95% CI: 1.52–3.04) and APTS alone (AOR = 1.82; 95% CI; 1.28–2.58) showed higher security.'
+implementation_needs:
+- electronic stock records at facility level
+- pharmacy transaction auditing
+- working cold chain
+lmic_applicability: 'yes'
+notes: 'Preprint (medRxiv): OE5. Cross-sectional secondary analysis of the 2024/2025 Service Provision Assessment, 1,245 facilities in 125 clusters; observational, so adoption may track better-resourced facilities. The APTS-alone CI is written with a semicolon in the source (AOR 1.82). Comparator assumed as neither system; abstract does not state it explicitly.'
+review_by: '2031-11-07'

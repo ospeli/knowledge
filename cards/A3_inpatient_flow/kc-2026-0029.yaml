@@ -1,0 +1,43 @@
+id: kc-2026-0029
+version: 1
+status: candidate
+title: Simulated discharge fixes projected cutting average discharge time by over half
+summary: In a public hospital, Lean Six Sigma found tests and discharge medicines were the main discharge bottlenecks; a simulation projected that prioritising discharge tests and a dedicated discharge pharmacy line would cut average discharge time by more than half.
+intervention: Prioritised discharge-related tests plus a dedicated discharge-medication pharmacy line (tested in simulation)
+comparator: Observed baseline discharge process
+source:
+  doi: 10.1016/j.jer.2026.10.067
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1016/j.jer.2026.10.067
+domains:
+- A3_inpatient_flow
+- A8_pharmacy
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: public_hospital
+kpis:
+- name: discharge_time_baseline_hours
+  definition: Observed baseline average discharge time (simulated baseline in brackets)
+  effect:
+    value: '20.5'
+    unit: hours
+  evidence:
+    quote: The simulated baseline model (20.39 h) was consistent with the observed baseline discharge time (20.5 h).
+- name: discharge_time_projected_hours
+  definition: Projected average discharge time with both changes
+  effect:
+    value: '8.99'
+    unit: hours
+  evidence:
+    quote: The simulation results indicate that prioritizing discharge-related examinations combined with a dedicated discharge-medication pharmacy line could reduce the average discharge time to a projected 8.99 h, and the estimated sigma level could increase from an observed 2.88 to a projected 4.14.
+implementation_needs:
+- discharge timestamps from the hospital information system
+- pharmacy capacity for a discharge line
+- priority flag for discharge tests
+lmic_applicability: partial
+notes: 'Projection from a discrete-event model calibrated to one hospital; not yet implemented. Country not stated in abstract. Validated simulation (OE4) downgraded to OE5: single site, no real-world result. Licence cc-by-nc-nd. LMIC applicability partial: changes are low cost but rely on HIS data.'
+review_by: '2031-11-07'

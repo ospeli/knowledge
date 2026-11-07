@@ -1,0 +1,42 @@
+id: kc-2026-0025
+version: 1
+status: candidate
+title: Extra clinician cover in surges kept door-to-doctor times low in rural EDs
+summary: In a small feasibility study of one doctor at two rural US EDs, surges covered by an advanced practice clinician had much shorter door-to-doctor times; a doctor reached capacity at about four simultaneous mid-acuity patients.
+intervention: Advanced practice clinician (APC) support during surges, triggered by an acuity-weighted workload metric (CWAAL)
+comparator: Surge periods without APC support
+source:
+  doi: 10.5811/westjem.66241
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5811/westjem.66241
+domains:
+- A2_emergency_flow
+- C1_workforce
+design: case_study
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: rural_community_ed
+kpis:
+- name: door_to_doctor_time_surge_minutes
+  definition: Median door-to-doctor time during surge events, with vs without APC support
+  effect:
+    value: 31.5 vs 107.7
+    unit: minutes
+  evidence:
+    quote: At Hospital B, surge-period DDTs were substantially lower with advanced practice clinician (APC) coverage than without (median, 31.5 minutes [interquartile range {IQR}, 24.7–38.0] vs 107.7 minutes [IQR, 85.7–133.5]); Mann-Whitney U = 0, P = .03, 2-tailed exact; rank-biserial r = 1.0), with complete distributional separation across eight surge events.
+- name: clinician_capacity_threshold_cwaal
+  definition: Acuity-weighted workload level at which one doctor reached functional capacity
+  effect:
+    value: '12'
+    unit: CWAAL points
+  evidence:
+    quote: A CWAAL feasibility threshold of ≤ 12 (±1)—equivalent to four simultaneous Level 3 patients (~120 minute demand within a 60-minute window)—emerged consistently across both sites.
+implementation_needs:
+- real-time acuity scores per clinician
+- on-call or flexible APC cover
+lmic_applicability: uncertain
+notes: 'Very small development cohort: one physician, 354 patients, 10 dates, 4 surge events per arm. Needs prospective validation. Case study, OE5. LMIC applicability uncertain: relies on electronic acuity tracking and flexible staffing.'
+review_by: '2031-11-07'

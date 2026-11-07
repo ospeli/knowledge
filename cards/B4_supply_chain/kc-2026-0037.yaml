@@ -1,0 +1,44 @@
+id: kc-2026-0037
+version: 1
+status: candidate
+title: Ethiopia local medicine manufacturing strategy grew range but missed supply target
+summary: Ethiopia's 10-year pharmaceutical manufacturing strategy expanded locally made essential medicines from 90 to 140 chemical entities, but local supply reached only 23% of demand against a 60% public procurement target.
+intervention: 'National strategy for local pharmaceutical manufacturing: industrial incentives, preferential centralised procurement, regulatory strengthening'
+comparator: Situation before the 2015 strategy
+source:
+  doi: 10.2471/blt.25.295594
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.2471/blt.25.295594
+domains:
+- B4_supply_chain
+- A8_pharmacy
+- C6_strategy_planning
+design: case_study
+evidence_level: OE4
+setting:
+  country: ET
+  income: LIC
+  facility: national_pharmaceutical_supply_system
+kpis:
+- name: local_supply_share_pct
+  definition: Share of national generic medicine demand supplied locally by 2025 (about 20% before the strategy)
+  effect:
+    value: '23'
+    unit: percent
+  evidence:
+    quote: However, domestic supply only increased to 23% against a 60% public procurement target; active pharmaceutical ingredient production and WHO prequalification remained unachieved, and export and workforce targets were missed.
+- name: essential_medicines_made_locally_count
+  definition: Chemical entities on the national essential medicines list produced locally
+  effect:
+    value: 90 to 140
+    unit: chemical entities
+  evidence:
+    quote: Locally produced coverage of the National Essential Medicines List increased from 90 to 140 chemical entities, across 167 dosage forms, and a vaccine manufacturing initiative was launched.
+implementation_needs:
+- cross-ministry steering
+- preferential procurement rules
+- regulator capacity
+lmic_applicability: 'yes'
+notes: WHO Bulletin lessons-from-the-field case study; descriptive, no counterfactual. National-level policy, so hospital-level use is indirect (procurement planning). OE4 case study.
+review_by: '2031-11-07'
