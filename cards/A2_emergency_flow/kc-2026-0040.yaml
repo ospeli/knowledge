@@ -1,0 +1,43 @@
+id: kc-2026-0040
+version: 1
+status: candidate
+title: Longer ED boarding of mental health patients is linked to more aggression
+summary: A systematic review of 12 studies found a consistent link between prolonged ED boarding of psychiatric patients and aggression or violent incidents; patients with adverse events had boarded far longer.
+intervention: Prolonged ED boarding of mental health patients (exposure)
+comparator: Shorter boarding
+source:
+  doi: 10.3389/femer.2026.1924026
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3389/femer.2026.1924026
+domains:
+- A2_emergency_flow
+- C2_quality_safety
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: unknown
+  facility: emergency_departments
+kpis:
+- name: boarding_hours_adverse_event_vs_none
+  definition: Boarding time, patients with adverse events (including physical assault) vs without
+  effect:
+    value: 35 vs 6.5
+    unit: hours
+  evidence:
+    quote: Patients experiencing adverse events including physical assault had boarding times of 35 h compared to 6.5 h for those without such events.
+- name: boarding_time_aggressive_youth
+  definition: Boarding time of youth with aggressive behaviours relative to youth without aggression
+  effect:
+    value: '193'
+    unit: percent longer
+  evidence:
+    quote: Youth with aggressive behaviours experienced 193% longer boarding times than those without aggression.
+implementation_needs:
+- boarding time tracked for mental health patients
+- escalation trigger for long boarders
+- access to acute psychiatric beds or alternative pathways
+lmic_applicability: uncertain
+notes: 'Narrative systematic review of 12 observational studies (searches included SciSpace and Google Scholar); no pooled estimate. Mapped OE4 in line with kc-2026-0013 and kc-2026-0032. Direction is uncertain: aggression may lengthen boarding as well as result from it. Settings of included studies not given in the abstract; LMIC applicability uncertain.'
+review_by: '2031-11-08'

@@ -1,0 +1,50 @@
+id: kc-2026-0043
+version: 1
+status: candidate
+title: Higher previous-cycle receipts lowered stock-out odds in Kigoma facilities
+summary: In three public facilities in Kigoma, Tanzania, eLMIS records showed forecasts drove approvals and approvals drove receipts, and larger previous-period receipts were linked to lower odds of stock-out; overall availability was 92.56%.
+intervention: Quantities received in the previous eLMIS reporting cycle
+comparator: Lower previous-period receipts
+source:
+  doi: 10.58721/nzs72v94
+  tier: B
+  licence: cc-by-nc-sa
+  url: https://doi.org/10.58721/nzs72v94
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: other
+evidence_level: OE5
+setting:
+  country: TZ
+  income: LMIC
+  facility: public_health_facilities
+kpis:
+- name: stockout_receipt_coefficient
+  definition: Mixed-effects coefficient of previous-period receipt quantity on stock-out occurrence
+  effect:
+    value: '-0.217'
+    unit: regression coefficient (beta)
+  evidence:
+    quote: Previous-period receipt quantity was negatively and significantly associated with lower odds of stock-out occurrence (β = -0.217, p < 0.001).
+- name: approval_to_receipt_coefficient
+  definition: Coefficient of previous-period approved quantity on following receipts
+  effect:
+    value: '0.391'
+    unit: regression coefficient (beta)
+  evidence:
+    quote: while previous-period approved quantity was positively associated with following receipts (β = 0.391, p < 0.001).
+- name: medicine_availability_pct
+  definition: Overall medicine availability across observations
+  effect:
+    value: '92.56'
+    unit: percent
+  evidence:
+    quote: Overall medicine availability was 92.56%; however, availability varied across pharmaceuticals and facility types, whereas some products had availability below 80%.
+implementation_needs:
+- eLMIS with forecast, approval and receipt fields
+- monthly comparison of forecast vs approved vs received
+- follow-up with the central medical store
+lmic_applicability: 'yes'
+notes: Retrospective case study of 1,725 medicine-level observations from three purposively selected facilities, July 2025–July 2026; observational. OE5 (few sites, no comparison). Licence cc-by-nc-sa (community KB only). Coefficient units depend on model scaling not given in the abstract.
+review_by: '2031-11-08'

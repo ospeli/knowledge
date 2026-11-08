@@ -1,0 +1,50 @@
+id: kc-2026-0054
+version: 1
+status: candidate
+title: Planned power shutoffs raised respiratory ED visits, more so with wildfire smoke
+summary: Across California 2013–2019, severe public safety power shutoffs were linked to more same-day respiratory ED visits and unscheduled admissions, with a larger rise when they coincided with wildfire smoke.
+intervention: Severe public safety power shutoff (PSPS) event, alone or with wildfire PM2.5 (exposure)
+comparator: Days without PSPS or wildfire exposure
+source:
+  doi: 10.1371/journal.pmed.1005270
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1371/journal.pmed.1005270
+domains:
+- E1_preparedness
+- A2_emergency_flow
+- B2_estates_facilities
+design: other
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: statewide_ed_and_admissions
+kpis:
+- name: respiratory_encounters_or_severe_psps
+  definition: Odds of same-day respiratory ED visit or unscheduled admission, severe PSPS
+  effect:
+    value: '1.06'
+    unit: odds ratio
+    ci:
+    - '1.02'
+    - '1.11'
+  evidence:
+    quote: 'Severe PSPS events were associated with elevated odds of same-day respiratory encounters (OR = 1.06, 95% CI: 1.02, 1.11) and lag0-3 effects were similar.'
+- name: respiratory_encounters_or_psps_plus_smoke
+  definition: Odds of respiratory encounter, PSPS plus 10 μg/m3 higher wildfire PM2.5 vs neither
+  effect:
+    value: '1.16'
+    unit: odds ratio
+    ci:
+    - '1.10'
+    - '1.22'
+  evidence:
+    quote: 'Compared to no PSPS or wildfire exposure, joint PSPS and 10 μg/m3 higher wildfire PM2.5 was associated with higher odds of respiratory encounters (1.16 [95% CI: 1.10, 1.22]), with evidence of multiplicative interaction.'
+implementation_needs:
+- alerts from utilities on planned shutoffs
+- surge staffing plan for respiratory demand
+- outreach to electricity-dependent patients
+lmic_applicability: partial
+notes: 'Statewide time-stratified case-crossover study (PLOS Medicine); observational, mapped OE4. Exposure assigned at zip-code level, so misclassification is likely. Null for cardiovascular and psychiatric encounters. Operational use: forecasting ED demand around planned outages. LMIC: load-shedding is common in many LMICs, but effect sizes may differ.'
+review_by: '2031-11-08'

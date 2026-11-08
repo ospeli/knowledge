@@ -1,0 +1,56 @@
+id: kc-2026-0039
+version: 1
+status: candidate
+title: Friday–Saturday arrivals waited longer for endoscopy and used more bed-days
+summary: In one tertiary centre, arriving on a Friday or Saturday pushed most bleeding patients past 24 h for endoscopy because of the weekday list. The extra hospital days roughly equalled the wait; 30-day mortality showed no detectable difference.
+intervention: Endoscopy after 24 h, driven by a weekday-only endoscopy schedule (Friday/Saturday arrival used as a natural experiment)
+comparator: Endoscopy within 24 h
+source:
+  doi: 10.3390/jcm15207820
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3390/jcm15207820
+domains:
+- A3_inpatient_flow
+- A1_access_scheduling
+design: other
+evidence_level: OE4
+setting:
+  country: unknown
+  income: unknown
+  facility: tertiary_ed
+kpis:
+- name: total_length_of_stay_irr
+  definition: Total hospital stay, delayed vs early endoscopy (incidence rate ratio)
+  effect:
+    value: '1.40'
+    unit: incidence rate ratio
+    ci:
+    - '1.14'
+    - '1.73'
+  evidence:
+    quote: 'Total stay was longer with delay (incidence rate ratio: 1.40, 95% CI: 1.14 to 1.73), while stay from endoscopy onward was not (1.05, 95% CI: 0.80 to 1.38), and each day of waiting added 1.03 days of admission (95% CI: 0.60 to 1.46).'
+- name: admission_days_per_day_waiting
+  definition: Additional days of admission for each day waiting for endoscopy
+  effect:
+    value: '1.03'
+    unit: days per day of waiting
+    ci:
+    - '0.60'
+    - '1.46'
+  evidence:
+    quote: 'Total stay was longer with delay (incidence rate ratio: 1.40, 95% CI: 1.14 to 1.73), while stay from endoscopy onward was not (1.05, 95% CI: 0.80 to 1.38), and each day of waiting added 1.03 days of admission (95% CI: 0.60 to 1.46).'
+- name: elective_timing_share_fri_sat
+  definition: Share of episodes with endoscopy after 24 h, Friday/Saturday arrival vs other days
+  effect:
+    value: 87.8 vs 33.7
+    unit: percent
+  evidence:
+    quote: Friday or Saturday arrival raised the elective proportion from 33.7% to 87.8% without altering the measured severity.
+implementation_needs:
+- weekend or seven-day endoscopy list
+- on-call endoscopy staff
+- tracking time from gastroenterology consult to procedure
+lmic_applicability: partial
+notes: 'Single-centre retrospective cohort (413 episodes, 2019–2025) using day of arrival as an instrument; with CIs, mapped OE4, but reviewer may prefer OE5 for a single site. Country not stated in the abstract. The stored abstract has a garbled timing definition (''urgent ( 24 h)''). Operational lever is list scheduling, not a clinical timing recommendation; the authors note only 22 deaths, so a moderate mortality effect cannot be excluded. LMIC: the bed-day cost of weekday-only lists applies wherever endoscopy is not available every day.'
+review_by: '2031-11-08'

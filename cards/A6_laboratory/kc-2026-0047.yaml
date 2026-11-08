@@ -1,0 +1,50 @@
+id: kc-2026-0047
+version: 1
+status: candidate
+title: Headline lab rejection rate nearly halves once administrative events are removed
+summary: In a 25-month audit of 905,018 test orders at one general hospital laboratory, the overall rejection rate was 3.92% but true specimen-quality failures were 2.21%; five causes made up 84.3% of failures and STAT samples failed less than routine ones.
+intervention: Partitioned reporting of pre-analytical rejections (specimen-quality failures vs operational/administrative events)
+comparator: Aggregate rejection rate
+source:
+  doi: 10.3390/jcm15197663
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3390/jcm15197663
+domains:
+- A6_laboratory
+- C2_quality_safety
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: general_hospital_laboratory
+kpis:
+- name: rejection_rate_overall_pct
+  definition: Rejected test orders as share of all orders received
+  effect:
+    value: '3.92'
+    unit: percent
+  evidence:
+    quote: Of 905,018 test orders received, 35,476 were rejected (overall rejection rate 3.92%).
+- name: specimen_quality_failure_pct
+  definition: Specimen-quality failures after excluding operational events
+  effect:
+    value: '2.21'
+    unit: percent
+  evidence:
+    quote: However, the specimen-quality failures were 2.21% (σ = 3.51), with 15,495 entries excluded as operational events.
+- name: sqf_stat_vs_routine_pct
+  definition: Specimen-quality failure rate, STAT vs routine samples
+  effect:
+    value: 1.25 vs 2.51
+    unit: percent
+  evidence:
+    quote: STAT samples had a lower specimen quality failure rate than Routine samples (1.25% vs. 2.51%).
+implementation_needs:
+- rejection reason codes that separate administrative events
+- monthly Pareto of rejection causes
+- phlebotomy training on clotting, haemolysis and sample type
+lmic_applicability: partial
+notes: 'Single-laboratory retrospective audit (July 2023–August 2025); descriptive, no comparison: OE5. Country not stated in the abstract (the hospital name suggests Saudi Arabia; left unknown). Classification used an AI-assisted protocol whose accuracy is not reported. LMIC: partitioning needs only coded rejection reasons.'
+review_by: '2031-11-08'

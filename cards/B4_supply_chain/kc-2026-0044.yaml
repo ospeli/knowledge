@@ -1,0 +1,50 @@
+id: kc-2026-0044
+version: 1
+status: candidate
+title: Children served by facilities with stock-outs were less often taken for care
+summary: Linking Ethiopia's 2024/2025 household survey to facility audits, children near facilities with paediatric medicine stock-outs had lower adjusted odds of formal care seeking and of receiving recommended treatment.
+intervention: Essential paediatric medicine stock-out at the local primary facility in the preceding month (exposure)
+comparator: Facilities without stock-outs
+source:
+  doi: 10.21203/rs.3.rs-10996829/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10996829/v1
+domains:
+- B4_supply_chain
+- E2_primary_community
+design: other
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: primary_health_facilities_national
+kpis:
+- name: care_seeking_aor
+  definition: Adjusted odds of formal care seeking for sick under-fives, stock-out vs no stock-out facilities
+  effect:
+    value: '0.58'
+    unit: adjusted odds ratio
+  evidence:
+    quote: Children served by facilities with stock outs had 42% lower odds of formal care seeking (adjusted odds ratio = 0.58) and 56% lower odds of receiving appropriate clinical treatment (adjusted odds ratio = 0.44).
+- name: appropriate_treatment_aor
+  definition: Adjusted odds of receiving recommended treatment, stock-out vs no stock-out facilities
+  effect:
+    value: '0.44'
+    unit: adjusted odds ratio
+  evidence:
+    quote: Children served by facilities with stock outs had 42% lower odds of formal care seeking (adjusted odds ratio = 0.58) and 56% lower odds of receiving appropriate clinical treatment (adjusted odds ratio = 0.44).
+- name: facility_stockout_prevalence_pct
+  definition: Local primary facilities with essential paediatric medicine stock-outs in the preceding month
+  effect:
+    value: '41.3'
+    unit: percent
+  evidence:
+    quote: Overall, 41.3% of local primary health facilities experienced essential pediatric medicine stock outs in the preceding month.
+implementation_needs:
+- facility stock monitoring for tracer paediatric medicines
+- primary care logistics support
+- linking stock data to service-use data
+lmic_applicability: 'yes'
+notes: 'Preprint (Research Square), not peer reviewed: OE5. Cross-sectional multilevel analysis of 8,452 children; no confidence intervals in the abstract. Observational: stock-outs may track other weaknesses of the facility. Method of linking households to facility audits is not described in the abstract. Treatment outcome is a service-coverage KPI, not clinical advice. Related to kc-2026-0031 (different study, same survey round).'
+review_by: '2031-11-08'

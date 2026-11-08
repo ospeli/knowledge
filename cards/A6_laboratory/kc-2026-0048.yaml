@@ -1,0 +1,43 @@
+id: kc-2026-0048
+version: 1
+status: candidate
+title: Lab automation first slowed D-dimer reporting; full analyser integration restored it
+summary: At one university hospital, total laboratory automation increased D-dimer reporting time from 45 to 57 minutes until the analyser was fully integrated, which brought it back to 46 minutes.
+intervention: Total laboratory automation, then full analyser integration
+comparator: Pre-automation reporting time
+source:
+  doi: 10.1016/j.rpth.2026.107017
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1016/j.rpth.2026.107017
+domains:
+- A6_laboratory
+- A2_emergency_flow
+design: before_after
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: university_hospital_laboratory
+kpis:
+- name: ddimer_tat_after_automation_min
+  definition: D-dimer reporting time, before vs after total laboratory automation
+  effect:
+    value: 45 vs 57
+    unit: minutes
+  evidence:
+    quote: Automation increased D-dimer reporting time from 45 to 57 minutes.
+- name: ddimer_tat_after_integration_min
+  definition: D-dimer reporting time after full analyser integration
+  effect:
+    value: '46'
+    unit: minutes
+  evidence:
+    quote: Full analyzer integration restored reporting time to 46 minutes.
+implementation_needs:
+- track turnaround time through automation go-live
+- integrate coagulation analysers into the track
+- plan for a transition dip
+lmic_applicability: uncertain
+notes: 'Stored text is the highlights only (no full abstract), so sample size, statistics and whether times are medians are unknown. Single site, before-after: OE5. Country not stated. Licence cc-by-nc-nd (community KB only). LMIC applicability uncertain: total lab automation is capital-intensive; the lesson (expect a dip until integration) transfers.'
+review_by: '2031-11-08'

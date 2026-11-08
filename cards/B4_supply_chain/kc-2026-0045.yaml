@@ -1,0 +1,44 @@
+id: kc-2026-0045
+version: 1
+status: candidate
+title: LMIS availability tracked stock-out burden in Blantyre facilities; fill rate was 28%
+summary: In six government facilities in Blantyre, Malawi, mean availability recorded in Open-LMIS was strongly negatively correlated with stock-out days, while the mean order fill rate was only 28.24% and did not correlate with stock-outs.
+intervention: Facility mean availability recorded in Open-LMIS (indicator)
+comparator: Accumulated stock-out days and stock-out frequency
+source:
+  doi: 10.21203/rs.3.rs-10778187/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10778187/v1
+domains:
+- B4_supply_chain
+- A8_pharmacy
+- D4_performance
+design: other
+evidence_level: OE5
+setting:
+  country: MW
+  income: LIC
+  facility: government_health_facilities_district
+kpis:
+- name: availability_vs_stockout_days_rs
+  definition: Spearman correlation between mean availability and accumulated stock-out days (facility level)
+  effect:
+    value: '-0.829'
+    unit: Spearman rho
+  evidence:
+    quote: Spearman rank correlation demonstrated strong, statistically significant negative associations between mean availability and both accumulated stock-out days (rₛ = −0.829, p = 0.042) and stock-out frequency (rₛ = −0.829, p = 0.042).
+- name: order_fill_rate_pct
+  definition: Mean order fill rate across facilities
+  effect:
+    value: '28.24'
+    unit: percent
+  evidence:
+    quote: Mean order fill rate across all facilities was 28.24%.
+implementation_needs:
+- Open-LMIS or equivalent with monthly stock data
+- facility-level availability dashboard
+- order fill tracking against the central store
+lmic_applicability: 'yes'
+notes: 'Preprint (Research Square): OE5. Six facilities, nine medicines, five months (April 2023 missing); facility-level correlations rest on n = 6, so p = 0.042 is fragile. Availability and stock-out days are near-mechanically related; the more useful operational signal is the very low fill rate. Facility names appear in the source but no individuals.'
+review_by: '2031-11-08'
