@@ -1,6 +1,6 @@
 id: kc-2026-0049
 version: 1
-status: candidate
+status: approved
 title: Door-to-balloon times in LMICs vary widely; activation and referral design matter
 summary: A systematic review of 24 studies in 11 low- and middle-income settings found door-to-balloon times from 34 to 169 minutes; single-call activation, continuous cath-lab cover, training and organised referral were reported alongside shorter times.
 intervention: 'Organisational facilitators: single-call cath-lab activation, continuous pPCI availability, team training, direct ED-to-cath-lab transfer, audit and feedback, referral networks'
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: Narrative systematic review of observational studies (29,319 patients, 11 LMIC settings); no pooled estimate; facilitators are reported associations, not tested effects. Mapped OE4 in line with kc-2026-0013 and kc-2026-0032. Operational content only; the clinical reperfusion strategy is out of scope. Authors recommend tracking total ischaemic time, not D2B alone.
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: range and 12/17 count checked; OE4 consistent with other narrative reviews; operational scope only

@@ -1,6 +1,6 @@
 id: kc-2026-0054
 version: 1
-status: candidate
+status: approved
 title: Planned power shutoffs raised respiratory ED visits, more so with wildfire smoke
 summary: Across California 2013–2019, severe public safety power shutoffs were linked to more same-day respiratory ED visits and unscheduled admissions, with a larger rise when they coincided with wildfire smoke.
 intervention: Severe public safety power shutoff (PSPS) event, alone or with wildfire PM2.5 (exposure)
@@ -13,7 +13,6 @@ source:
 domains:
 - E1_preparedness
 - A2_emergency_flow
-- B2_estates_facilities
 design: other
 evidence_level: OE4
 setting:
@@ -46,5 +45,10 @@ implementation_needs:
 - surge staffing plan for respiratory demand
 - outreach to electricity-dependent patients
 lmic_applicability: partial
-notes: 'Statewide time-stratified case-crossover study (PLOS Medicine); observational, mapped OE4. Exposure assigned at zip-code level, so misclassification is likely. Null for cardiovascular and psychiatric encounters. Operational use: forecasting ED demand around planned outages. LMIC: load-shedding is common in many LMICs, but effect sizes may differ.'
+notes: 'Statewide time-stratified case-crossover study (PLOS Medicine); observational, mapped OE4. Exposure assigned at zip-code level, so misclassification is likely. Null for cardiovascular and psychiatric encounters. Operational use: forecasting ED demand around planned outages. LMIC: load-shedding is common in many LMICs, but effect sizes may differ. Reviewer: B2 domain removed (community power shutoffs, not hospital utilities).'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: ORs and CIs checked; B2 domain removed; OE4 confirmed

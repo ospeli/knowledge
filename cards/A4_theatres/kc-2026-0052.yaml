@@ -1,6 +1,6 @@
 id: kc-2026-0052
 version: 1
-status: candidate
+status: approved
 title: Non-technical skills training raised theatre team scores in an Ethiopian hospital
 summary: After context-adapted non-technical skills training, operating-room staff scores rose and held at one month; fewer adverse events and care delays followed, though without a control group.
 intervention: Context-adapted multidisciplinary non-technical skills training for operating-room teams
@@ -46,5 +46,10 @@ implementation_needs:
 - protected time for whole-team training
 - refresher sessions
 lmic_applicability: 'yes'
-notes: Single-site quasi-experimental pre-post (24 staff, 336 vs 336 patients) with no control group; self-reported Likert scores. Patient-outcome changes are not quantified in the abstract and cannot be attributed causally (authors say so). OE4 downgraded to OE5 for single site and no control. Hospital is named in the source; no individuals.
+notes: Single-site quasi-experimental pre-post (24 staff, 336 vs 336 patients) with no control group; eight-item Likert-scale instrument (who rated is not stated in the abstract). Patient-outcome changes are not quantified in the abstract and cannot be attributed causally (authors say so). OE4 downgraded to OE5 for single site and no control. Hospital is named in the source; no individuals.
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: adjusted differences and CIs checked; 'self-reported' removed (not in source); ET LIC confirmed; hospital name not on card

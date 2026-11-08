@@ -1,6 +1,6 @@
 id: kc-2026-0046
 version: 1
-status: candidate
+status: approved
 title: Shorter postpartum stays in wartime did not raise emergency return visits
 summary: In one hospital during the first month of a war, low-risk women were discharged earlier after delivery (median 53 vs 64 hours) with no rise in postpartum visits to the gynaecological emergency room.
 intervention: Earlier postpartum discharge of low-risk women during wartime
@@ -39,5 +39,10 @@ implementation_needs:
 - accessible emergency return pathway
 - surge plan that frees maternity beds
 lmic_applicability: partial
-notes: 'Single-site retrospective comparison (801 vs 913 deliveries) with a historical control and no CIs: OE5. Country not stated in the abstract. Elective caesareans fell sharply in wartime (57% vs 92%), so case mix changed. Surge lever for preparedness, not a routine discharge rule.'
+notes: 'Single-site retrospective comparison (801 vs 913 deliveries) with a historical control and no CIs: OE5. Country not stated in the abstract. Elective caesareans fell sharply in wartime (57% vs 92%), so case mix changed. Surge lever for preparedness, not a routine discharge rule. Reviewer: lower ER use in wartime may reflect avoidance of travel, not safety of early discharge; the abstract also reports no change in mode of delivery yet a fall in elective caesareans. Not evidence on clinical safety; eligibility for early discharge stays a clinical decision.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: medians and referral rates checked; country left unknown (not in abstract); wartime confounding and clinical-decision boundary noted

@@ -1,6 +1,6 @@
 id: kc-2026-0041
 version: 1
-status: candidate
+status: approved
 title: Five-level priority system separated inpatient CT waits by urgency
 summary: After a Swiss tertiary hospital introduced five priority levels for inpatient CT, urgent requests (P1–P3) waited about a day less than non-urgent ones; the study does not show improvement over the old first-come system.
 intervention: Five-level priority system (P1 immediate to P5 not urgent) for inpatient CT requests
@@ -13,7 +13,7 @@ source:
 domains:
 - A7_imaging
 - A3_inpatient_flow
-design: before_after
+design: other
 evidence_level: OE5
 setting:
   country: CH
@@ -39,5 +39,10 @@ implementation_needs:
 - radiology slot booking that reads priority
 - waiting time dashboard
 lmic_applicability: partial
-notes: 'Single-centre retrospective quality-control study (1,341 exams, May–July 2025); authors say it does not establish a causal improvement over the previous scheduling system. The historical dashboard figures (1.28 and 1.06 days) use a different definition and are not carded. Small P1 and P5 groups (n = 11 and 19). OE5. LMIC: a priority scheme is low cost, but needs booking discipline.'
+notes: 'Single-centre retrospective quality-control study (1,341 exams, May–July 2025); authors say it does not establish a causal improvement over the previous scheduling system. The historical dashboard figures (1.28 and 1.06 days) use a different definition and are not carded. Small P1 and P5 groups (n = 11 and 19). OE5. LMIC: a priority scheme is low cost, but needs booking discipline. Reviewer: design changed before_after→other (post-implementation comparison between strata, no pre-period cohort).'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: stratum means, same-day shares and contrast checked; design before_after→other; OE5 and no causal claim confirmed

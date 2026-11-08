@@ -1,7 +1,7 @@
 id: kc-2026-0047
 version: 1
-status: candidate
-title: Headline lab rejection rate nearly halves once administrative events are removed
+status: approved
+title: Lab rejection rate falls from 3.92% to 2.21% once administrative events are removed
 summary: In a 25-month audit of 905,018 test orders at one general hospital laboratory, the overall rejection rate was 3.92% but true specimen-quality failures were 2.21%; five causes made up 84.3% of failures and STAT samples failed less than routine ones.
 intervention: Partitioned reporting of pre-analytical rejections (specimen-quality failures vs operational/administrative events)
 comparator: Aggregate rejection rate
@@ -48,3 +48,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-laboratory retrospective audit (July 2023–August 2025); descriptive, no comparison: OE5. Country not stated in the abstract (the hospital name suggests Saudi Arabia; left unknown). Classification used an AI-assisted protocol whose accuracy is not reported. LMIC: partitioning needs only coded rejection reasons.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: counts and rates checked (19,981/905,018 = 2.21%); title 'nearly halves' → exact figures

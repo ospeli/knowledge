@@ -1,6 +1,6 @@
 id: kc-2026-0042
 version: 1
-status: candidate
+status: approved
 title: Nurses following the SOP returned inpatient records on time far more often
 summary: In an Indonesian regional hospital, 14 of 21 nurses with good SOP compliance returned inpatient medical records on time versus 2 of 19 with poor compliance; workload and attitude showed no association.
 intervention: Good compliance with the medical-record return SOP
@@ -42,5 +42,10 @@ implementation_needs:
 - routine monitoring of return times
 - shift accountability for records
 lmic_applicability: 'yes'
-notes: Single-site cross-sectional study of 40 nurses (total sampling); crude OR only and a very wide CI. OE5. Unit of analysis is the nurse, not the record. Hospital is named in the source (no individuals). LMIC setting directly relevant.
+notes: 'Single-site cross-sectional study of 40 nurses (total sampling); crude OR only and a very wide CI. OE5. Unit of analysis is the nurse, not the record. Hospital is named in the source (no individuals). LMIC setting directly relevant. Reviewer: OR recomputed from 14/21 vs 2/19 (=17.0). SOP compliance and timely return were measured on the same nurses, so the link may be partly definitional.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: crude OR recomputed from counts; ID UMIC confirmed; no individuals named; possible definitional overlap noted

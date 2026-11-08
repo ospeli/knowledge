@@ -1,6 +1,6 @@
 id: kc-2026-0040
 version: 1
-status: candidate
+status: approved
 title: Longer ED boarding of mental health patients is linked to more aggression
 summary: A systematic review of 12 studies found a consistent link between prolonged ED boarding of psychiatric patients and aggression or violent incidents; patients with adverse events had boarded far longer.
 intervention: Prolonged ED boarding of mental health patients (exposure)
@@ -39,5 +39,10 @@ implementation_needs:
 - escalation trigger for long boarders
 - access to acute psychiatric beds or alternative pathways
 lmic_applicability: uncertain
-notes: 'Narrative systematic review of 12 observational studies (searches included SciSpace and Google Scholar); no pooled estimate. Mapped OE4 in line with kc-2026-0013 and kc-2026-0032. Direction is uncertain: aggression may lengthen boarding as well as result from it. Settings of included studies not given in the abstract; LMIC applicability uncertain.'
+notes: 'Narrative systematic review of 12 observational studies (searches included SciSpace and Google Scholar); no pooled estimate. Mapped OE4 in line with kc-2026-0013 and kc-2026-0032. Direction is uncertain: aggression may lengthen boarding as well as result from it. Settings of included studies not given in the abstract; LMIC applicability uncertain. Reviewer: the 35 h vs 6.5 h and 193% figures come from individual included studies, not pooled.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: figures checked against abstract; noted they are single-study figures; OE4 consistent with kc-2026-0013/0032; reverse causation noted

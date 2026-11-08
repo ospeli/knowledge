@@ -1,8 +1,8 @@
 id: kc-2026-0039
 version: 1
-status: candidate
+status: approved
 title: Friday–Saturday arrivals waited longer for endoscopy and used more bed-days
-summary: In one tertiary centre, arriving on a Friday or Saturday pushed most bleeding patients past 24 h for endoscopy because of the weekday list. The extra hospital days roughly equalled the wait; 30-day mortality showed no detectable difference.
+summary: In one tertiary centre, arriving on a Friday or Saturday pushed most bleeding patients past 24 h for endoscopy because of the weekday list. Total hospital stay was longer with delay and the extra bed-days roughly equalled the wait.
 intervention: Endoscopy after 24 h, driven by a weekday-only endoscopy schedule (Friday/Saturday arrival used as a natural experiment)
 comparator: Endoscopy within 24 h
 source:
@@ -52,5 +52,10 @@ implementation_needs:
 - on-call endoscopy staff
 - tracking time from gastroenterology consult to procedure
 lmic_applicability: partial
-notes: 'Single-centre retrospective cohort (413 episodes, 2019–2025) using day of arrival as an instrument; with CIs, mapped OE4, but reviewer may prefer OE5 for a single site. Country not stated in the abstract. The stored abstract has a garbled timing definition (''urgent ( 24 h)''). Operational lever is list scheduling, not a clinical timing recommendation; the authors note only 22 deaths, so a moderate mortality effect cannot be excluded. LMIC: the bed-day cost of weekday-only lists applies wherever endoscopy is not available every day.'
+notes: 'Single-centre retrospective cohort (413 episodes, 2019–2025) using day of arrival as an instrument; with CIs, mapped OE4, but reviewer may prefer OE5 for a single site. Country not stated in the abstract. The stored abstract has a garbled timing definition (''urgent ( 24 h)''). Operational lever is list scheduling, not a clinical timing recommendation; the authors note only 22 deaths, so a moderate mortality effect cannot be excluded. LMIC: the bed-day cost of weekday-only lists applies wherever endoscopy is not available every day. Reviewer: mortality removed from the summary; the card makes no claim that delayed endoscopy is clinically safe.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: numbers, CIs and direction checked; mortality claim dropped from summary (clinical, underpowered); OE4 kept (single site but with comparison and CIs)

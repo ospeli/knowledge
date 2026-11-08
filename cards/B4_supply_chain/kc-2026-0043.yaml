@@ -1,8 +1,8 @@
 id: kc-2026-0043
 version: 1
-status: candidate
-title: Higher previous-cycle receipts lowered stock-out odds in Kigoma facilities
-summary: In three public facilities in Kigoma, Tanzania, eLMIS records showed forecasts drove approvals and approvals drove receipts, and larger previous-period receipts were linked to lower odds of stock-out; overall availability was 92.56%.
+status: approved
+title: Higher previous-cycle receipts linked to lower stock-out odds in Kigoma facilities
+summary: In three public facilities in Kigoma, Tanzania, eLMIS records showed forecasts were associated with approvals and approvals with receipts, and larger previous-period receipts were linked to lower odds of stock-out; overall availability was 92.56%.
 intervention: Quantities received in the previous eLMIS reporting cycle
 comparator: Lower previous-period receipts
 source:
@@ -46,5 +46,10 @@ implementation_needs:
 - monthly comparison of forecast vs approved vs received
 - follow-up with the central medical store
 lmic_applicability: 'yes'
-notes: Retrospective case study of 1,725 medicine-level observations from three purposively selected facilities, July 2025–July 2026; observational. OE5 (few sites, no comparison). Licence cc-by-nc-sa (community KB only). Coefficient units depend on model scaling not given in the abstract.
+notes: 'Retrospective case study of 1,725 medicine-level observations from three purposively selected facilities, July 2025–July 2026; observational. OE5 (few sites, no comparison). Licence cc-by-nc-sa (community KB only). Coefficient units depend on model scaling not given in the abstract. Reviewer: title and summary de-causalised; the source sentence on stock-out odds is a double negative, read as larger receipts → lower odds. Business/finance venue.'
 review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: betas and availability checked; title/summary de-causalised; TZ LMIC confirmed; licence nc-sa noted
