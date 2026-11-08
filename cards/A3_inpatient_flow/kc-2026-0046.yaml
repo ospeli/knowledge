@@ -1,0 +1,48 @@
+id: kc-2026-0046
+version: 1
+status: approved
+title: Shorter postpartum stays in wartime did not raise emergency return visits
+summary: In one hospital during the first month of a war, low-risk women were discharged earlier after delivery (median 53 vs 64 hours) with no rise in postpartum visits to the gynaecological emergency room.
+intervention: Earlier postpartum discharge of low-risk women during wartime
+comparator: Same calendar period in the previous year
+source:
+  doi: 10.1371/journal.pone.0335688
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1371/journal.pone.0335688
+domains:
+- A3_inpatient_flow
+- E1_preparedness
+design: before_after
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_maternity
+kpis:
+- name: postpartum_los_hours
+  definition: Median postpartum hospital stay, wartime vs previous year
+  effect:
+    value: 53.2 vs 64.1
+    unit: hours
+  evidence:
+    quote: The duration of postpartum hospitalization was significantly shorter during wartime [median length of 53.2 [Interquartile-range (IQR] 42.4-72.4) hours vs. 64.1 (IQR 47.4-82.8) in the previous year (p < 0.0001)].
+- name: postpartum_er_referral_pct
+  definition: Postpartum women referred to the gynaecological emergency room, wartime vs previous year
+  effect:
+    value: 8.7 vs 8.8
+    unit: percent
+  evidence:
+    quote: There were no significant differences in the rate of total referrals of postpartum-women to the GER (8.7% vs. 8.8%; p > 0.05), and no differences in referrals due to infections or bleeding.
+implementation_needs:
+- low-risk criteria for early postpartum discharge
+- accessible emergency return pathway
+- surge plan that frees maternity beds
+lmic_applicability: partial
+notes: 'Single-site retrospective comparison (801 vs 913 deliveries) with a historical control and no CIs: OE5. Country not stated in the abstract. Elective caesareans fell sharply in wartime (57% vs 92%), so case mix changed. Surge lever for preparedness, not a routine discharge rule. Reviewer: lower ER use in wartime may reflect avoidance of travel, not safety of early discharge; the abstract also reports no change in mode of delivery yet a fall in elective caesareans. Not evidence on clinical safety; eligibility for early discharge stays a clinical decision.'
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: medians and referral rates checked; country left unknown (not in abstract); wartime confounding and clinical-decision boundary noted

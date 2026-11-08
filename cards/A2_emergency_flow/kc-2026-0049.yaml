@@ -1,0 +1,49 @@
+id: kc-2026-0049
+version: 1
+status: approved
+title: Door-to-balloon times in LMICs vary widely; activation and referral design matter
+summary: A systematic review of 24 studies in 11 low- and middle-income settings found door-to-balloon times from 34 to 169 minutes; single-call activation, continuous cath-lab cover, training and organised referral were reported alongside shorter times.
+intervention: 'Organisational facilitators: single-call cath-lab activation, continuous pPCI availability, team training, direct ED-to-cath-lab transfer, audit and feedback, referral networks'
+comparator: Settings with transfer, financial, administrative and out-of-hours delays
+source:
+  doi: 10.1186/s12872-026-06926-y
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1186/s12872-026-06926-y
+domains:
+- A2_emergency_flow
+- B5_transport
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: mixed
+  facility: pci_capable_hospitals
+kpis:
+- name: d2b_study_level_range_min
+  definition: Range of study-level door-to-balloon estimates
+  effect:
+    value: 34 to 169
+    unit: minutes
+  evidence:
+    quote: Conventional study-level D2B estimates ranged from 34 to 169 min.
+- name: studies_within_90min
+  definition: Studies with D2B estimates consistently within the 90-minute benchmark (of 17 classifiable)
+  effect:
+    value: 12 of 17
+    unit: studies
+  evidence:
+    quote: Among 17 studies with conventional D2B estimates that could be classified relative to the 90 min benchmark, 12 reported values consistently within 90 min and five reported values exceeding 90 min; three additional studies reported subgroup or intervention-period estimates spanning the threshold.
+implementation_needs:
+- single-call cath-lab activation protocol
+- 24/7 cath-lab staffing
+- regional referral and transfer agreements
+- D2B audit and feedback
+lmic_applicability: 'yes'
+notes: Narrative systematic review of observational studies (29,319 patients, 11 LMIC settings); no pooled estimate; facilitators are reported associations, not tested effects. Mapped OE4 in line with kc-2026-0013 and kc-2026-0032. Operational content only; the clinical reperfusion strategy is out of scope. Authors recommend tracking total ischaemic time, not D2B alone.
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: range and 12/17 count checked; OE4 consistent with other narrative reviews; operational scope only

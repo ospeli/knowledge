@@ -1,0 +1,48 @@
+id: kc-2026-0041
+version: 1
+status: approved
+title: Five-level priority system separated inpatient CT waits by urgency
+summary: After a Swiss tertiary hospital introduced five priority levels for inpatient CT, urgent requests (P1–P3) waited about a day less than non-urgent ones; the study does not show improvement over the old first-come system.
+intervention: Five-level priority system (P1 immediate to P5 not urgent) for inpatient CT requests
+comparator: Non-urgent strata (P4–P5) within the same period; historical dashboard value reported only for context
+source:
+  doi: 10.59667/sjoranm.v35i3.14
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.59667/sjoranm.v35i3.14
+domains:
+- A7_imaging
+- A3_inpatient_flow
+design: other
+evidence_level: OE5
+setting:
+  country: CH
+  income: HIC
+  facility: tertiary_hospital_radiology
+kpis:
+- name: ct_wait_urgent_vs_nonurgent_days
+  definition: Mean request-to-scan wait, P1–P3 vs P4–P5 (calendar days)
+  effect:
+    value: 0.42 vs 1.47
+    unit: days
+  evidence:
+    quote: Waiting time differed significantly across strata (Kruskal–Wallis p < 0.001), and the urgent strata (P1–P3) waited less than the non-urgent strata (P4–P5) (0.42 vs 1.47 days, difference 1.05 days, p < 0.001).
+- name: same_day_ct_share_p1_vs_p5
+  definition: Share of inpatient CTs done on the day of request, P1 vs P5
+  effect:
+    value: 91 vs 5
+    unit: percent
+  evidence:
+    quote: Mean waiting time on the measured calendar-day scale was 0.09 days for P1 (n = 11), 0.19 days for P2 (n = 245), 0.49 days for P3 (n = 852), 1.34 days for P4 (n = 214) and 3.00 days for P5 (n = 19); the proportion examined on the same day decreased from 91% for P1 to 5% for P5.
+implementation_needs:
+- agreed priority definitions for requesters
+- radiology slot booking that reads priority
+- waiting time dashboard
+lmic_applicability: partial
+notes: 'Single-centre retrospective quality-control study (1,341 exams, May–July 2025); authors say it does not establish a causal improvement over the previous scheduling system. The historical dashboard figures (1.28 and 1.06 days) use a different definition and are not carded. Small P1 and P5 groups (n = 11 and 19). OE5. LMIC: a priority scheme is low cost, but needs booking discipline. Reviewer: design changed before_after→other (post-implementation comparison between strata, no pre-period cohort).'
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: stratum means, same-day shares and contrast checked; design before_after→other; OE5 and no causal claim confirmed

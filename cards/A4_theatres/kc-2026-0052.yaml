@@ -1,0 +1,55 @@
+id: kc-2026-0052
+version: 1
+status: approved
+title: Non-technical skills training raised theatre team scores in an Ethiopian hospital
+summary: After context-adapted non-technical skills training, operating-room staff scores rose and held at one month; fewer adverse events and care delays followed, though without a control group.
+intervention: Context-adapted multidisciplinary non-technical skills training for operating-room teams
+comparator: Baseline (pre-training) scores and pre-intervention patients
+source:
+  doi: 10.64573/torgj2609014
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.64573/torgj2609014
+domains:
+- A4_theatres
+- C2_quality_safety
+- C1_workforce
+design: before_after
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: teaching_hospital_theatres
+kpis:
+- name: nts_score_change_1_month
+  definition: Adjusted mean difference in non-technical skills score (5-point scale) at one month vs baseline
+  effect:
+    value: '0.679'
+    unit: points
+    ci:
+    - '0.373'
+    - '0.985'
+  evidence:
+    quote: Adjusted mean differences versus baseline were 0.464 (95% CI 0.161–0.766) immediately after training and 0.679 (95% CI 0.373–0.985) at one month.
+- name: nts_score_change_immediate
+  definition: Adjusted mean difference immediately after training vs baseline
+  effect:
+    value: '0.464'
+    unit: points
+    ci:
+    - '0.161'
+    - '0.766'
+  evidence:
+    quote: Adjusted mean differences versus baseline were 0.464 (95% CI 0.161–0.766) immediately after training and 0.679 (95% CI 0.373–0.985) at one month.
+implementation_needs:
+- trainers adapting NOTSS/ANTS content locally
+- protected time for whole-team training
+- refresher sessions
+lmic_applicability: 'yes'
+notes: Single-site quasi-experimental pre-post (24 staff, 336 vs 336 patients) with no control group; eight-item Likert-scale instrument (who rated is not stated in the abstract). Patient-outcome changes are not quantified in the abstract and cannot be attributed causally (authors say so). OE4 downgraded to OE5 for single site and no control. Hospital is named in the source; no individuals.
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: adjusted differences and CIs checked; 'self-reported' removed (not in source); ET LIC confirmed; hospital name not on card

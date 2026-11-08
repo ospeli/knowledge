@@ -1,0 +1,41 @@
+id: kc-2026-0053
+version: 1
+status: approved
+title: Six Sigma DMAIC cut unacceptable lab analytes from 11 to 2
+summary: An 11-month DMAIC Six Sigma programme in a clinical biochemistry laboratory reduced the number of serum analytes with unacceptable analytical performance from 11 of 20 to 2.
+intervention: DMAIC-based Six Sigma quality improvement programme
+comparator: Baseline analytical performance
+source:
+  doi: 10.6026/973206300227069
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.6026/973206300227069
+domains:
+- A6_laboratory
+- C2_quality_safety
+design: before_after
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: clinical_biochemistry_laboratory
+kpis:
+- name: unacceptable_sigma_analytes
+  definition: Serum analytes (of 20) with unacceptable Sigma performance, baseline vs endpoint
+  effect:
+    value: 11 vs 2
+    unit: analytes
+  evidence:
+    quote: Unacceptable analytes decreased from 11 to 2, while world-class and excellent performers increased from 0 to 4 and 0 to 3, respectively.
+implementation_needs:
+- internal QC and EQA data
+- Sigma metric calculation per analyte
+- risk-based QC planning
+lmic_applicability: partial
+notes: 'Single-laboratory prospective before-after on 20 analytes; short abstract, no statistics. OE4 downgraded to OE5 (single site, no comparison). Country not stated in the abstract. LMIC: needs reliable IQC/EQA participation.'
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: analyte counts checked; OE5 confirmed

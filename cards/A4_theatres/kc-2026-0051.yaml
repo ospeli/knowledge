@@ -1,0 +1,41 @@
+id: kc-2026-0051
+version: 1
+status: approved
+title: Surgeon–scrub nurse familiarity shortened procedures across a whole hospital
+summary: Across 33,374 procedures at a US academic centre, one standard deviation more surgeon–scrub familiarity cut surgery duration by 1.9 to 3.7 minutes under the authors' causal model; scrub–circulator familiarity had no effect.
+intervention: Higher surgeon–scrub nurse team familiarity (shared work frequency)
+comparator: Lower familiarity
+source:
+  doi: 10.1007/s10729-026-09780-8
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1007/s10729-026-09780-8
+domains:
+- A4_theatres
+- C1_workforce
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: academic_medical_centre
+kpis:
+- name: surgery_duration_per_sd_familiarity_min
+  definition: Change in surgery duration per one SD increase in surgeon–scrub familiarity
+  effect:
+    value: -1.9 to -3.7
+    unit: minutes
+  evidence:
+    quote: Specifically, increasing familiarity by one standard deviation leads to a reduction of 1.9 to 3.7 minutes in surgery duration.
+implementation_needs:
+- rostering that keeps surgeon–scrub pairs together
+- theatre roster and case-time data linked
+- monitoring of team stability
+lmic_applicability: partial
+notes: 'Single-centre retrospective study (2017–2023) with structural causal modelling; effect is causal only under the assumed DAG. No CIs in the abstract. OE4 downgraded to OE5 by reviewer (single site, no CI in abstract). LMIC: rostering for stable pairs is low cost; small minute savings matter most in high-volume lists.'
+review_by: '2031-11-08'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-08'
+  notes: effect range and DAG caveat checked; OE4→OE5 (single site, no CI)
