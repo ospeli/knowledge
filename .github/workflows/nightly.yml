@@ -2,7 +2,7 @@ name: Nightly harvest and build
 
 on:
   schedule:
-    - cron: "43 6 * * *"   # 02:43 Trinidad time
+    - cron: "43 6 * * *"   # 06:43 UTC
   workflow_dispatch:
     inputs:
       since:
