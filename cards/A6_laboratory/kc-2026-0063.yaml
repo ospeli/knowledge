@@ -1,0 +1,48 @@
+id: kc-2026-0063
+version: 1
+status: approved
+title: New blood culture workflow gave a rapid susceptibility report 19.6 hours before the old final one
+summary: A Chinese laboratory combined satellite incubation in the ED, rapid identification and automated rapid susceptibility reporting; the new rapid susceptibility report for ICU bloodstream infections came 19.6 hours before the old final report, and hospital stay was 5 days shorter in an unadjusted comparison.
+intervention: 'Multimodal blood culture workflow: satellite ED incubation, rapid MALDI-TOF identification, automated rapid susceptibility reporting'
+comparator: Pre-optimisation period (final susceptibility report)
+source:
+  doi: 10.2147/idr.s632364
+  tier: B
+  licence: cc-by-nc
+  url: https://europepmc.org/article/MED/42859641
+domains:
+- A6_laboratory
+- A3_inpatient_flow
+design: before_after
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: hospital_laboratory_and_icu
+kpis:
+- name: susceptibility_report_time_hours
+  definition: Time to susceptibility report, post (rapid) vs pre (final)
+  effect:
+    value: '-19.6'
+    unit: hours
+  evidence:
+    quote: Compared to the final AST report in the pre-optimization group, the rapid AST report in the post-optimization group was 19.6 hours faster
+- name: hospital_los_days
+  definition: Hospital length of stay, post vs pre
+  effect:
+    value: '-5'
+    unit: days
+  evidence:
+    quote: Hospital length of stay was 5 days shorter ( P = 0.006).
+implementation_needs:
+- 24/7 incubation near the ED
+- MALDI-TOF and automated susceptibility platform
+- result notification to ICU team
+lmic_applicability: partial
+notes: 'Single-centre pre-post (107 vs 153 patients); unadjusted, no CI, so OE4 downgraded to OE5. The abstract text is garbled in places ("P P"), so the turnaround quote stops before the p-value and its significance cannot be confirmed. Reviewer: the 19.6 h compares the post-period rapid report with the pre-period final report, not like with like. Dual AST cards were also part of the bundle. LOS change is unadjusted and the periods are 18 months apart. Antibiotic-use findings left off (clinical). LMIC: needs capital equipment; satellite incubation alone may be feasible.'
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: 19.6 h and 5-day LOS checked; title/summary corrected (rapid vs final report not like for like; LOS unadjusted); antibiotic use correctly excluded; OE5 confirmed

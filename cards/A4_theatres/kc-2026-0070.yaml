@@ -1,0 +1,41 @@
+id: kc-2026-0070
+version: 1
+status: approved
+title: LLM multi-agent tool produced feasible theatre schedules in 82.91% of scenarios
+summary: An iterative multi-agent large language model framework that writes optimisation code for operating room scheduling produced feasible schedules more often than single-agent and standard multi-agent approaches.
+intervention: Iterative multi-agent LLM framework generating theatre-scheduling optimisation code
+comparator: Single-agent and traditional multi-agent LLM baselines
+source:
+  doi: 10.1038/s41746-026-03319-5
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1038/s41746-026-03319-5
+domains:
+- A4_theatres
+- D3_it_digital
+design: optimisation
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: synthetic_and_hospital_or_datasets
+kpis:
+- name: feasible_schedule_rate_pct
+  definition: 'Average feasible schedule rate of the IMA framework across 10 LLMs and 35 scenarios (the two baselines scored 65.59% and 52.53%; the abstract does not say which is which)'
+  effect:
+    value: 82.91 vs 65.59 and 52.53
+    unit: percent
+  evidence:
+    quote: Across 10 LLMs and 35 scenarios, IMA achieved an average feasible schedule rate of 82.91%, compared with 65.59% and 52.53% for the baselines.
+implementation_needs:
+- clean theatre session and case-duration data
+- expert check of generated schedules
+- manual fallback
+lmic_applicability: uncertain
+notes: Computational study mostly on synthetic cases; real-hospital gains (utilisation, overtime) described without figures in the abstract. OE5. The abstract does not map 65.59% and 52.53% to the single-agent and traditional multi-agent baselines, so the card does not either. Any Ospeli use must stay a suggestion with an off switch.
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: feasible schedule rates checked; baseline mapping removed (not stated in source); computational study, OE5 confirmed

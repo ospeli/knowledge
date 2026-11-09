@@ -1,0 +1,53 @@
+id: kc-2026-0066
+version: 1
+status: approved
+title: Problem closure and first-contact resolution linked to satisfaction with hospital services
+summary: In three Dongguan public hospitals, one-stop administrative and logistics desks that closed problems and resolved them at first contact had the strongest links to patient satisfaction; longer response times were linked to lower satisfaction. Cross-sectional, so not causal.
+intervention: One-stop administrative and logistics service centre performance (exposure)
+comparator: Lower service-process quality scores
+source:
+  doi: 10.1097/md.0000000000051204
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.1097/md.0000000000051204
+domains:
+- E4_patient_experience
+- D4_performance
+design: other
+evidence_level: OE4
+setting:
+  country: CN
+  income: UMIC
+  facility: public_hospitals_multisite
+kpis:
+- name: problem_closure_or_high_satisfaction
+  definition: Odds of high satisfaction (score 8 or more) per unit problem-closure score
+  effect:
+    value: '2.87'
+    unit: odds ratio
+    ci:
+    - '2.18'
+    - '3.82'
+  evidence:
+    quote: Problem closure showed the strongest association with high satisfaction (odds ratio, 2.87; 95% CI, 2.18-3.82).
+- name: first_contact_resolution_beta
+  definition: Adjusted linear association of first-contact resolution with satisfaction (0–10)
+  effect:
+    value: '0.31'
+    unit: beta
+    ci:
+    - '0.23'
+    - '0.38'
+  evidence:
+    quote: In the fully adjusted linear model (n = 774), first-contact resolution (β = 0.31; 95% confidence interval [CI], 0.23-0.38) and problem closure (β = 0.29; 95% CI, 0.25-0.33) were positively associated with satisfaction.
+implementation_needs:
+- work-order system recording response time, closure and repeat contacts
+- single front desk for admin and logistics requests
+lmic_applicability: partial
+notes: 'Multicentre cross-sectional survey (837 users) linked to work-order indicators; association only, instrument not independently validated. OE4. Useful KPIs for a service-desk module: first-contact resolution, closure, response time, repeat visits.'
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: ORs, betas and CIs checked; title de-causalised (cross-sectional); OE4 kept (multi-site, CIs reported)

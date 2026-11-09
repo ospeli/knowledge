@@ -1,0 +1,48 @@
+id: kc-2026-0060
+version: 1
+status: approved
+title: Theatre management web app detected scheduling conflicts with 92.5% accuracy
+summary: A progressive web app combining theatre booking, anaesthesia planning, instrument trays and dashboards correctly flagged most scheduling conflicts on a test set of 40 schedules (17 of 19 conflicts and 20 of 21 non-conflicts); the scheduling module covered 18 theatres.
+intervention: Integrated mobile/web theatre management application with automatic conflict detection
+comparator: Reference-standard labelled schedules (diagnostic test dataset)
+source:
+  doi: 10.62441/actainnovations.vi.2560
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.62441/actainnovations.vi.2560
+domains:
+- A4_theatres
+- D3_it_digital
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_theatre_suite
+kpis:
+- name: conflict_detection_accuracy_pct
+  definition: Overall accuracy of scheduling-conflict detection on test dataset
+  effect:
+    value: '92.50'
+    unit: percent
+  evidence:
+    quote: For scheduling conflict detection, the application demonstrated 89.47% sensitivity, 95.24% specificity, 94.44% positive predictive value, 90.91% negative predictive value and 92.50% overall accuracy.
+- name: conflict_detection_sensitivity_pct
+  definition: Share of true scheduling conflicts flagged
+  effect:
+    value: '89.47'
+    unit: percent
+  evidence:
+    quote: For scheduling conflict detection, the application demonstrated 89.47% sensitivity, 95.24% specificity, 94.44% positive predictive value, 90.91% negative predictive value and 92.50% overall accuracy.
+implementation_needs:
+- defined theatre hours and turnover buffer (30 minutes used)
+- stakeholder workshops to map OT process
+- role-based access
+lmic_applicability: partial
+notes: Development and technical validation only (19 conflicts, 21 non-conflicts); no data on utilisation, cancellations or turnover time. OE5. Country and hospital type not stated in the abstract, so left unknown. The 18 theatres are the scheduling module scope; the test set was 40 schedules.
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: accuracy and sensitivity checked against 17/19 and 20/21; facility tier and country not in source, left unknown; technical validation only, OE5 confirmed

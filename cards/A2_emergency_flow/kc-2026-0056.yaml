@@ -1,0 +1,48 @@
+id: kc-2026-0056
+version: 1
+status: approved
+title: Outreach calls and primary care slots raised 7-day follow-up after youth MH ED visits
+summary: A 12-month quality improvement project across two EDs and three primary care sites raised completed 7-day follow-up after youth mental health ED discharges from 28.7% to 40.3%, with no change in 30-day returns.
+intervention: Post-discharge phone outreach plus protected paediatric primary care access
+comparator: Baseline period before the QI project
+source:
+  doi: 10.1097/pq9.0000000000000944
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://europepmc.org/article/MED/42953896
+domains:
+- A2_emergency_flow
+- E2_primary_community
+design: before_after
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: health_system_eds_and_primary_care
+kpis:
+- name: followup_7day_pct
+  definition: ED mental health discharges with a completed follow-up within 7 days
+  effect:
+    value: 28.7 vs 40.3
+    unit: percent
+  evidence:
+    quote: The mean follow-up percentage increased from 28.7% (n = 258) to 40.3% (n = 334).
+- name: followup_in_primary_care_pct
+  definition: ED mental health discharges followed up within paediatric primary care
+  effect:
+    value: 3.5 vs 10.7
+    unit: percent
+  evidence:
+    quote: Follow-up visits within PPC increased from 3.5% of discharges to 10.7% of discharges.
+implementation_needs:
+- discharge list shared daily with outreach staff
+- reserved primary care appointment slots
+- run charts for follow-up rate
+lmic_applicability: partial
+notes: 'QI before-after without a control group or CI; OE4 downgraded to OE5. Target was 50%, reached 40.3%. Balancing measure (30-day return ED visits) unchanged. Outreach calls reached 52.4% of discharges. LMIC: phone outreach is cheap; depends on having primary care capacity to absorb follow-ups.'
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: percentages, n and balancing measure checked; multi-site QI with no control or CI, OE5 confirmed

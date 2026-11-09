@@ -1,0 +1,48 @@
+id: kc-2026-0058
+version: 1
+status: approved
+title: Sweden–Uganda hospital twinning coincided with lower inpatient child mortality
+summary: A three-year paediatric twinning partnership between Stockholm and the Busoga region of Uganda, built on a quality-of-care assessment in two hospitals (staff exchanges, WHO ETAT+ triage rollout, neonatal and epilepsy initiatives) coincided with lower in-hospital mortality for neonates and under-fives.
+intervention: 'Hospital twinning partnership: 63 staff exchanges, ETAT+ triage training, neonatal care and epilepsy registry initiatives'
+comparator: Pre-partnership baseline (2020)
+source:
+  doi: 10.1080/16549716.2026.2729905
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42820854
+domains:
+- A2_emergency_flow
+- C2_quality_safety
+design: case_study
+evidence_level: OE5
+setting:
+  country: UG
+  income: LIC
+  facility: hospital
+kpis:
+- name: neonatal_inhospital_mortality_pct
+  definition: In-hospital neonatal mortality, 2020 vs 2025
+  effect:
+    value: 26.4 vs 21.7
+    unit: percent
+  evidence:
+    quote: The in-hospital mortality dropped over the project period (2020-2025) from 26.4% to 21.7% for neonates ( p = 0.021) and from 3.8% to 2.8% ( p = <0.01) for children less than five outside the neonatal period.
+- name: under5_inhospital_mortality_pct
+  definition: In-hospital mortality, children under five excluding neonates, 2020 vs 2025
+  effect:
+    value: 3.8 vs 2.8
+    unit: percent
+  evidence:
+    quote: The in-hospital mortality dropped over the project period (2020-2025) from 26.4% to 21.7% for neonates ( p = 0.021) and from 3.8% to 2.8% ( p = <0.01) for children less than five outside the neonatal period.
+implementation_needs:
+- partner hospital and funding for exchanges
+- national ETAT+ facilitators (14 trained)
+- quality-of-care baseline assessment
+lmic_applicability: 'yes'
+notes: Reflective implementation report; multiple concurrent initiatives and secular trends, so the mortality change cannot be attributed to any one component. No control. Mortality is used here as a system quality KPI, not as clinical guidance. OE5.
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: mortality figures and p-values checked; facility→hospital (regional referral not in source); summary corrected to region-level partnership; multiple concurrent initiatives, OE5 confirmed

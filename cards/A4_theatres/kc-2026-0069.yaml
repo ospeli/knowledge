@@ -1,0 +1,47 @@
+id: kc-2026-0069
+version: 1
+status: approved
+title: Structured theatre workflow completed 142 cochlear implants in three days
+summary: A humanitarian cochlear implant mission used standard surgical protocols, shift-based team assignments and digital coordination across several theatres to complete 142 operations in three days, mean operative time 57 minutes.
+intervention: Structured multi-theatre intraoperative workflow (standard protocols, shift assignments, digital coordination)
+comparator: None (descriptive)
+source:
+  doi: 10.1016/j.bjorl.2026.101928
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42874300
+domains:
+- A4_theatres
+design: case_study
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: surgical_mission_multiple_theatres
+kpis:
+- name: cases_completed
+  definition: Cochlear implant operations completed over the three-day mission
+  effect:
+    value: '142'
+    unit: operations
+  evidence:
+    quote: A total of 142 CI surgeries were completed over three days (30-, 66-, and 46-cases).
+- name: mean_operative_time_min
+  definition: Mean operative time per case
+  effect:
+    value: '57'
+    unit: minutes
+  evidence:
+    quote: The mean operative time was 57-minutes, with a median of 46-minutes.
+implementation_needs:
+- standardised surgical protocol and kit
+- shift rota for surgical teams
+- shared digital case tracker
+lmic_applicability: partial
+notes: 'Descriptive case series, no comparator; OE5. Mission location and number of theatres not given in the abstract. Transferable idea: high-volume list design for camps and backlog-clearing days.'
+review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: case count and operative times checked; descriptive case series, country not stated, OE5 confirmed
