@@ -1,6 +1,6 @@
 id: kc-2026-0057
 version: 1
-status: candidate
+status: approved
 title: Ukrainian hospital nearly doubled beds and admissions without losing utilisation
 summary: A Ukrainian territorial hospital grew from 280 to 520 beds in 2021–2025; admissions rose in proportion, length of stay and occupancy stayed within a stable range, and physician staffing improved while nurse staffing did not.
 intervention: Inpatient capacity expansion under national hospital financing reform (exposure)
@@ -46,5 +46,10 @@ implementation_needs:
 - annual Form 20-style bed and staffing returns
 - tracking of filled vs established posts by staff group
 lmic_applicability: 'yes'
-notes: Single-site descriptive analysis of five annual data points; no comparison site, so OE4 downgraded to OE5. Wartime context (2022–2025) and network consolidation likely drove growth; causes not separated. Income group set to UMIC per recent World Bank classification; reviewer please confirm. Useful as a benchmark for bed-capacity change, not as evidence of an intervention.
+notes: Single-site descriptive analysis of five annual data points; no comparison site, so OE4 downgraded to OE5. Wartime context (2022–2025) and network consolidation likely drove growth; causes not separated. Income group UMIC (World Bank reclassification, July 2024). Useful as a benchmark for bed-capacity change, not as evidence of an intervention.
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: beds, occupancy range and staffing rates checked; mortality correctly excluded; Ukraine UMIC confirmed (World Bank, July 2024); OE5 confirmed

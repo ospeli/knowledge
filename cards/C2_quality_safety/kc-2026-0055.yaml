@@ -1,7 +1,7 @@
 id: kc-2026-0055
 version: 1
-status: candidate
-title: Standard ECPR activation protocol cut set-up times and fixed supply readiness
+status: approved
+title: Standard ECPR activation protocol linked to shorter set-up times and supplies ready first time
 summary: Across three Chinese tertiary hospitals, a standardised activation protocol for in-hospital extracorporeal CPR was followed by shorter preparation, priming and initiation times, and disposable supplies were ready first time in every case.
 intervention: Standardised ECPR activation protocol (team activation, preparation and supply readiness steps)
 comparator: Pre-implementation period (Sept 2019 – Dec 2023)
@@ -46,5 +46,10 @@ implementation_needs:
 - pre-packed ECPR supply kits with checklist
 - team drills
 lmic_applicability: partial
-notes: 'Retrospective pre-post, 103 patients (30 pre, 73 post) at three hospitals; no CI for process times (mean ± SD only), so OE4 downgraded to OE5. The abstract sentence is garbled after the supply figure ("all P P P"), so quotes stop at that point. Clinical outcomes (neurological status) deliberately left off this card; operational process measures only. LMIC: ECPR itself needs ECMO capacity, but the supply-kit and activation-protocol approach transfers to any resuscitation team.'
+notes: 'Retrospective pre-post, 103 patients (30 pre, 73 post) at three hospitals; no CI for process times (mean ± SD only), so OE4 downgraded to OE5. The abstract sentence is garbled after the supply figure ("all P P P"), so quotes stop at that point and per-measure significance cannot be confirmed from the abstract. Pre period (30 patients over 4 years) and post period (73 over 2 years) differ in length. Clinical outcomes (neurological status) deliberately left off this card; operational process measures only. LMIC: ECPR itself needs ECMO capacity, but the supply-kit and activation-protocol approach transfers to any resuscitation team.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: process times, SDs and supply readiness checked; title de-causalised; garbled p-values and unequal periods noted; clinical outcomes correctly excluded; OE5 confirmed

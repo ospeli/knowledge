@@ -1,8 +1,8 @@
 id: kc-2026-0060
 version: 1
-status: candidate
+status: approved
 title: Theatre management web app detected scheduling conflicts with 92.5% accuracy
-summary: A progressive web app combining theatre booking, anaesthesia planning, instrument trays and dashboards correctly flagged most scheduling conflicts on a test set of 40 schedules across 18 theatres.
+summary: A progressive web app combining theatre booking, anaesthesia planning, instrument trays and dashboards correctly flagged most scheduling conflicts on a test set of 40 schedules (17 of 19 conflicts and 20 of 21 non-conflicts); the scheduling module covered 18 theatres.
 intervention: Integrated mobile/web theatre management application with automatic conflict detection
 comparator: Reference-standard labelled schedules (diagnostic test dataset)
 source:
@@ -18,7 +18,7 @@ evidence_level: OE5
 setting:
   country: unknown
   income: unknown
-  facility: tertiary_hospital_theatre_suite
+  facility: hospital_theatre_suite
 kpis:
 - name: conflict_detection_accuracy_pct
   definition: Overall accuracy of scheduling-conflict detection on test dataset
@@ -39,5 +39,10 @@ implementation_needs:
 - stakeholder workshops to map OT process
 - role-based access
 lmic_applicability: partial
-notes: Development and technical validation only (19 conflicts, 21 non-conflicts); no data on utilisation, cancellations or turnover time. OE5. Country not stated in the abstract (authors appear to be from India; reviewer please confirm).
+notes: Development and technical validation only (19 conflicts, 21 non-conflicts); no data on utilisation, cancellations or turnover time. OE5. Country and hospital type not stated in the abstract, so left unknown. The 18 theatres are the scheduling module scope; the test set was 40 schedules.
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: accuracy and sensitivity checked against 17/19 and 20/21; facility tier and country not in source, left unknown; technical validation only, OE5 confirmed

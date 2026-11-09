@@ -1,6 +1,6 @@
 id: kc-2026-0062
 version: 1
-status: candidate
+status: approved
 title: Not attending ICU follow-up clinic linked to more ICU readmissions in Wales
 summary: In linked Welsh data for 6,491 ICU survivors, those invited but not attending a follow-up clinic, and those never invited, had higher adjusted odds of ICU readmission than attendees, plus more elective admissions and bed days.
 intervention: Attendance at a post-ICU follow-up clinic (exposure)
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Population data-linkage cohort; association only, strong risk of selection bias (who attends). No CI in the abstract, so OE4 downgraded to OE5. No difference in emergency admissions or GP events. LMIC: few post-ICU clinics exist; mainly relevant to referral design.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: odds ratios checked (no CIs in abstract); association only with selection bias; OE5 confirmed

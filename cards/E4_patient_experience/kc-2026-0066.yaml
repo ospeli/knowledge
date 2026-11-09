@@ -1,8 +1,8 @@
 id: kc-2026-0066
 version: 1
-status: candidate
-title: Problem closure and first-contact resolution drive satisfaction with hospital services
-summary: In three Dongguan public hospitals, one-stop administrative and logistics desks that closed problems and resolved them at first contact had the strongest links to patient satisfaction; longer response times lowered it.
+status: approved
+title: Problem closure and first-contact resolution linked to satisfaction with hospital services
+summary: In three Dongguan public hospitals, one-stop administrative and logistics desks that closed problems and resolved them at first contact had the strongest links to patient satisfaction; longer response times were linked to lower satisfaction. Cross-sectional, so not causal.
 intervention: One-stop administrative and logistics service centre performance (exposure)
 comparator: Lower service-process quality scores
 source:
@@ -46,3 +46,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Multicentre cross-sectional survey (837 users) linked to work-order indicators; association only, instrument not independently validated. OE4. Useful KPIs for a service-desk module: first-contact resolution, closure, response time, repeat visits.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: ORs, betas and CIs checked; title de-causalised (cross-sectional); OE4 kept (multi-site, CIs reported)

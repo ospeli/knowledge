@@ -1,6 +1,6 @@
 id: kc-2026-0065
 version: 1
-status: candidate
+status: approved
 title: Hourly ED demand forecast within about 2–3 patients per hour using social data
 summary: At a Wuhan teaching hospital, a machine-learning model using neighbourhood social determinants beat weather-only models and forecast hourly ED arrivals with a mean absolute error of 2.62 visits per hour.
 intervention: XGBoost hourly ED demand forecast with social determinants of health features
@@ -14,7 +14,7 @@ domains:
 - A2_emergency_flow
 - C1_workforce
 design: forecasting
-evidence_level: OE4
+evidence_level: OE5
 setting:
   country: CN
   income: UMIC
@@ -32,5 +32,10 @@ implementation_needs:
 - neighbourhood-level social data
 - staffing process that can act on hourly forecasts
 lmic_applicability: partial
-notes: 'Single-site retrospective model (213,138 encounters); compared against weather-only models but no prospective test of staffing impact. OE4. Ospeli use: forecasts are suggestions for rota decisions by people, with an off switch. LMIC: needs reliable arrival time stamps; social data may be unavailable.'
+notes: 'Single-site retrospective model (213,138 encounters); compared against weather-only models but no prospective test of staffing impact; no CIs. OE4 downgraded to OE5 (as for kc-2026-0015). Ospeli use: forecasts are suggestions for rota decisions by people, with an off switch. LMIC: needs reliable arrival time stamps; social data may be unavailable.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: MAE and RMSE checked; OE4→OE5 (single-site retrospective, no CIs, as for kc-2026-0015)

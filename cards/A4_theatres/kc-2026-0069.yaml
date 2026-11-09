@@ -1,6 +1,6 @@
 id: kc-2026-0069
 version: 1
-status: candidate
+status: approved
 title: Structured theatre workflow completed 142 cochlear implants in three days
 summary: A humanitarian cochlear implant mission used standard surgical protocols, shift-based team assignments and digital coordination across several theatres to complete 142 operations in three days, mean operative time 57 minutes.
 intervention: Structured multi-theatre intraoperative workflow (standard protocols, shift assignments, digital coordination)
@@ -40,3 +40,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Descriptive case series, no comparator; OE5. Mission location and number of theatres not given in the abstract. Transferable idea: high-volume list design for camps and backlog-clearing days.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: case count and operative times checked; descriptive case series, country not stated, OE5 confirmed

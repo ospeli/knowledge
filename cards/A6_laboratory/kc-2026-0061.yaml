@@ -1,6 +1,6 @@
 id: kc-2026-0061
 version: 1
-status: candidate
+status: approved
 title: 'Ghana neonates: blood cultures took 2–5 days; 28.9% discharged before results'
 summary: At a Ghanaian military hospital neonatal unit, positive blood cultures took a median 2 days and negatives 5 days; 28.9% of neonates left before results were available, some of whom were culture positive.
 intervention: Operational research interventions on blood culture processes (follow-up of an earlier cohort)
@@ -18,7 +18,7 @@ evidence_level: OE5
 setting:
   country: GH
   income: LMIC
-  facility: teaching_military_hospital_neonatal_unit
+  facility: military_hospital_neonatal_unit
 kpis:
 - name: culture_positive_tat_days
   definition: Median turnaround time for culture-positive blood culture results
@@ -40,3 +40,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Retrospective before-after against a historical cohort; the abstract does not give the earlier turnaround times, so no change is quoted. OE5. Operational point: results arriving after discharge need a call-back loop. Antimicrobial-resistance findings left off (not operational).'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: turnaround and discharged-before-result figures checked; facility "teaching" removed (not in source); AMR findings correctly excluded; OE5 confirmed

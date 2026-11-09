@@ -1,8 +1,8 @@
 id: kc-2026-0059
 version: 1
-status: candidate
+status: approved
 title: 'EMR downtime at an Indonesian hospital: five outages, backlogs and manual workarounds'
-summary: An Indonesian hospital logged five EMR outages totalling about 4 hours 28 minutes in two months; staff reported patient backlogs, slower services and re-entry workload, with unclear escalation authority as the main gap.
+summary: An Indonesian hospital logged five EMR outages totalling about 4 hours 28 minutes in two months; staff reported patient backlogs, slower services and re-entry workload, The main constraints were late or unclear notifications, uncertain recovery estimates and hierarchical approval, and the SOP did not define escalation criteria or decision authority.
 intervention: Existing EMR downtime procedure (switch to paper, later re-entry)
 comparator: None (descriptive evaluation)
 source:
@@ -32,5 +32,10 @@ implementation_needs:
 - paper forms ready at each service point
 - re-entry plan after recovery
 lmic_applicability: 'yes'
-notes: 'Qualitative study with four informants plus downtime logs; impacts on waiting are reported narratively, not measured. OE5. Relevant to Ospeli offline-first design: confirms that unclear notification and recovery estimates are the main pain points.'
+notes: 'Qualitative study with four informants plus downtime logs; impacts on waiting are reported narratively, not measured. OE5. Relevant to Ospeli offline-first design: in this one hospital (four informants), unclear notification and recovery estimates were the main pain points.'
 review_by: '2031-11-09'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-09'
+  notes: downtime count and duration checked; summary corrected to the constraints the source names; qualitative, four informants, OE5 confirmed
