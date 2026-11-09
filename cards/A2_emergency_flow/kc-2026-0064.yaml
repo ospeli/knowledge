@@ -1,0 +1,48 @@
+id: kc-2026-0064
+version: 1
+status: candidate
+title: 'Three ED triage systems: similar accuracy, but TRIAGE took longest to complete'
+summary: In a randomised crossover simulation, Thai medical students triaged 50 standard cases with three systems; correct triage was similar (61.8–64.5%), over-triage was highest with MOPH and completion time longest with the new TRIAGE system.
+intervention: TRIAGE (Thai Rapid Initial Assessment and Grading for Emergency) system
+comparator: Emergency Severity Index (ESI) and Thai Ministry of Public Health (MOPH) triage systems
+source:
+  doi: 10.1371/journal.pone.0350690
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42932270
+domains:
+- A2_emergency_flow
+design: rct
+evidence_level: OE3
+setting:
+  country: TH
+  income: UMIC
+  facility: medical_education_centre_simulation
+kpis:
+- name: correct_triage_pct
+  definition: Correct triage, TRIAGE vs ESI vs MOPH
+  effect:
+    value: 63.2 vs 64.5 vs 61.8
+    unit: percent
+  evidence:
+    quote: No significant overall differences were detected in correct triage across TRIAGE, ESI, and MOPH (63.2%, 64.5%, and 61.8%, respectively), or in under-triage (19.6%, 20.0%, and 18.8%).
+- name: over_triage_pct
+  definition: Over-triage, MOPH vs TRIAGE vs ESI
+  effect:
+    value: 7.0 vs 5.7 vs 4.9
+    unit: percent
+  evidence:
+    quote: Over-triage differed across systems and was highest with MOPH (7.0%), followed by TRIAGE (5.7%) and ESI (4.9%).
+- name: completion_time_min
+  definition: Time to triage 50 standard cases, TRIAGE vs ESI vs MOPH
+  effect:
+    value: 32.8 vs 24.3 vs 23.2
+    unit: minutes
+  evidence:
+    quote: Completion time was longest with TRIAGE (32.8 minutes), compared with ESI (24.3 minutes) and MOPH (23.2 minutes).
+implementation_needs:
+- triage training and refresher schedule
+- standardised case cards for audit
+lmic_applicability: 'yes'
+notes: 'Randomised three-period crossover with 60 students on paper cases at one centre; OE2 downgraded to OE3 (simulated cases, students not triage staff). Not powered for equivalence. Operational relevance: choice of triage scale and time burden at the front door.'
+review_by: '2031-11-09'

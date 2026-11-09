@@ -1,0 +1,50 @@
+id: kc-2026-0057
+version: 1
+status: candidate
+title: Ukrainian hospital nearly doubled beds and admissions without losing utilisation
+summary: A Ukrainian territorial hospital grew from 280 to 520 beds in 2021–2025; admissions rose in proportion, length of stay and occupancy stayed within a stable range, and physician staffing improved while nurse staffing did not.
+intervention: Inpatient capacity expansion under national hospital financing reform (exposure)
+comparator: Same hospital, earlier years (2021 baseline)
+source:
+  doi: 10.31612/2616-4868.7.2026.04
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.31612/2616-4868.7.2026.04
+domains:
+- A3_inpatient_flow
+- C1_workforce
+design: case_study
+evidence_level: OE5
+setting:
+  country: UA
+  income: UMIC
+  facility: territorial_medical_association
+  beds: 520
+kpis:
+- name: beds_and_admissions
+  definition: Average annual beds, 2021 vs 2025 (admissions rose 9,150 to 16,971)
+  effect:
+    value: 280 vs 520
+    unit: beds
+  evidence:
+    quote: From 2021 to 2025, the average annual number of beds increased from 280 to 520, admissions from 9,150 to 16,971, discharges from 8,833 to 16,634, and bed-days from 75,075 to 135,257.
+- name: bed_occupancy_range_pct
+  definition: Annual bed occupancy range across 2021–2025 (no significant trend)
+  effect:
+    value: 55.6 to 73.5
+    unit: percent
+  evidence:
+    quote: Average length of stay ranged from 7.2 to 8.2 days, bed turnover from 27.5 to 32.9 patients per bed annually, and bed occupancy from 55.6% to 73.5%; no statistically significant monotonic trend was identified.
+- name: physician_staffing_rate_pct
+  definition: Filled physician posts as share of establishment, 2021 vs 2025
+  effect:
+    value: 81.73 vs 91.38
+    unit: percent
+  evidence:
+    quote: The physician staffing rate increased from 81.73% to 91.38%, while the staffing rate for nursing personnel did not change materially.
+implementation_needs:
+- annual Form 20-style bed and staffing returns
+- tracking of filled vs established posts by staff group
+lmic_applicability: 'yes'
+notes: Single-site descriptive analysis of five annual data points; no comparison site, so OE4 downgraded to OE5. Wartime context (2022–2025) and network consolidation likely drove growth; causes not separated. Income group set to UMIC per recent World Bank classification; reviewer please confirm. Useful as a benchmark for bed-capacity change, not as evidence of an intervention.
+review_by: '2031-11-09'

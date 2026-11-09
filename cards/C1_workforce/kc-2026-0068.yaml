@@ -1,0 +1,43 @@
+id: kc-2026-0068
+version: 1
+status: candidate
+title: 'Somalia: 39.8% of reporting facilities met minimum staffing; 68.4% reported'
+summary: An analysis of Somalia's 2024 DHIS2 workforce data found 10,928 health workers reported; 68.4% of expected facilities reported, and of those 39.8% met the minimum staffing standard for the essential services package.
+intervention: Routine workforce reporting through DHIS2 (measurement baseline)
+comparator: Essential Package of Health Services minimum staffing standard
+source:
+  doi: 10.21203/rs.3.rs-10787410/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10787410/v1
+domains:
+- C1_workforce
+- C5_records_ig
+design: other
+evidence_level: OE5
+setting:
+  country: SO
+  income: LIC
+  facility: public_health_facilities_national
+kpis:
+- name: staffing_adequacy_pct
+  definition: Reporting facilities meeting the EPHS minimum staffing requirement
+  effect:
+    value: '39.8'
+    unit: percent
+  evidence:
+    quote: Among reporting facilities, 210 met the applicable EPHS minimum staffing requirement, corresponding to an observed staffing adequacy of 39.8%.
+- name: hrh_reporting_coverage_pct
+  definition: Facilities expected to report workforce data that did so
+  effect:
+    value: '68.4'
+    unit: percent
+  evidence:
+    quote: Of 771 facilities expected to report HRH data, 527 (68.4%) contributed data.
+implementation_needs:
+- DHIS2 or similar workforce module
+- facility-level staffing standard
+- reporting completeness monitoring
+lmic_applicability: 'yes'
+notes: 'Preprint (Research Square), not peer reviewed: OE5. Descriptive baseline, not an intervention; adequacy only covers facilities that reported, so true adequacy may be lower. Useful as a benchmark for workforce-data completeness KPIs.'
+review_by: '2031-11-09'

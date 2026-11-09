@@ -1,0 +1,42 @@
+id: kc-2026-0061
+version: 1
+status: candidate
+title: 'Ghana neonates: blood cultures took 2–5 days; 28.9% discharged before results'
+summary: At a Ghanaian military hospital neonatal unit, positive blood cultures took a median 2 days and negatives 5 days; 28.9% of neonates left before results were available, some of whom were culture positive.
+intervention: Operational research interventions on blood culture processes (follow-up of an earlier cohort)
+comparator: 2017–2020 cohort at the same hospital
+source:
+  doi: 10.1186/s12982-026-03072-w
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1186/s12982-026-03072-w
+domains:
+- A6_laboratory
+- A3_inpatient_flow
+design: before_after
+evidence_level: OE5
+setting:
+  country: GH
+  income: LMIC
+  facility: teaching_military_hospital_neonatal_unit
+kpis:
+- name: culture_positive_tat_days
+  definition: Median turnaround time for culture-positive blood culture results
+  effect:
+    value: '2'
+    unit: days
+  evidence:
+    quote: The median turnaround time for culture positive results was 2 days (48 h), whereas culture negative reports took five days.
+- name: discharged_before_result_pct
+  definition: Neonates discharged before blood culture results were available
+  effect:
+    value: '28.9'
+    unit: percent
+  evidence:
+    quote: Notably, 28.9% ( n = 146) of neonates were discharged before culture results were available, with 27 (5.3%) being confirmed as culture positive.
+implementation_needs:
+- laboratory result tracking against discharge
+- call-back process for results that arrive after discharge
+lmic_applicability: 'yes'
+notes: 'Retrospective before-after against a historical cohort; the abstract does not give the earlier turnaround times, so no change is quoted. OE5. Operational point: results arriving after discharge need a call-back loop. Antimicrobial-resistance findings left off (not operational).'
+review_by: '2031-11-09'

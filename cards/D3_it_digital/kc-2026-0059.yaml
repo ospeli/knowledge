@@ -1,0 +1,36 @@
+id: kc-2026-0059
+version: 1
+status: candidate
+title: 'EMR downtime at an Indonesian hospital: five outages, backlogs and manual workarounds'
+summary: An Indonesian hospital logged five EMR outages totalling about 4 hours 28 minutes in two months; staff reported patient backlogs, slower services and re-entry workload, with unclear escalation authority as the main gap.
+intervention: Existing EMR downtime procedure (switch to paper, later re-entry)
+comparator: None (descriptive evaluation)
+source:
+  doi: 10.59585/ijhs.v4i4.1824
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.59585/ijhs.v4i4.1824
+domains:
+- D3_it_digital
+- E1_preparedness
+design: qualitative
+evidence_level: OE5
+setting:
+  country: ID
+  income: UMIC
+  facility: hospital
+kpis:
+- name: emr_downtime_total
+  definition: Total EMR downtime from official reports, March–April 2026 (5 events)
+  effect:
+    value: 4 hours 28 minutes
+    unit: duration
+  evidence:
+    quote: Official documentation for March-April 2026 recorded five downtime events totaling approximately 4 hours 28 minutes, caused by a firewall anomaly, Transmedik server anomalies, and a total power outage.
+implementation_needs:
+- downtime SOP with escalation criteria and named decision authority
+- paper forms ready at each service point
+- re-entry plan after recovery
+lmic_applicability: 'yes'
+notes: 'Qualitative study with four informants plus downtime logs; impacts on waiting are reported narratively, not measured. OE5. Relevant to Ospeli offline-first design: confirms that unclear notification and recovery estimates are the main pain points.'
+review_by: '2031-11-09'

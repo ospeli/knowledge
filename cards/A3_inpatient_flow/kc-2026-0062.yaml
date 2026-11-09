@@ -1,0 +1,43 @@
+id: kc-2026-0062
+version: 1
+status: candidate
+title: Not attending ICU follow-up clinic linked to more ICU readmissions in Wales
+summary: In linked Welsh data for 6,491 ICU survivors, those invited but not attending a follow-up clinic, and those never invited, had higher adjusted odds of ICU readmission than attendees, plus more elective admissions and bed days.
+intervention: Attendance at a post-ICU follow-up clinic (exposure)
+comparator: Invited non-attendees and patients not invited
+source:
+  doi: 10.1097/cce.0000000000001500
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://europepmc.org/article/MED/42965250
+domains:
+- A3_inpatient_flow
+- A5_outpatients
+design: other
+evidence_level: OE5
+setting:
+  country: GB
+  income: HIC
+  facility: regional_health_boards
+kpis:
+- name: icu_readmission_or_nonattenders
+  definition: Adjusted odds of ICU readmission, invited non-attendees vs attendees
+  effect:
+    value: '2.81'
+    unit: odds ratio
+  evidence:
+    quote: Compared with attendees, nonattendees and those not invited had higher adjusted odds of ICU readmission (odds ratio [OR] = 2.81 and 2.22, respectively), elective admissions, and hospital bed days.
+- name: icu_readmission_or_not_invited
+  definition: Adjusted odds of ICU readmission, not invited vs attendees
+  effect:
+    value: '2.22'
+    unit: odds ratio
+  evidence:
+    quote: Compared with attendees, nonattendees and those not invited had higher adjusted odds of ICU readmission (odds ratio [OR] = 2.81 and 2.22, respectively), elective admissions, and hospital bed days.
+implementation_needs:
+- referral criteria for ICU follow-up
+- clinic capacity
+- linked admissions data to monitor readmissions
+lmic_applicability: uncertain
+notes: 'Population data-linkage cohort; association only, strong risk of selection bias (who attends). No CI in the abstract, so OE4 downgraded to OE5. No difference in emergency admissions or GP events. LMIC: few post-ICU clinics exist; mainly relevant to referral design.'
+review_by: '2031-11-09'

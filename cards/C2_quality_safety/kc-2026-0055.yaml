@@ -1,0 +1,50 @@
+id: kc-2026-0055
+version: 1
+status: candidate
+title: Standard ECPR activation protocol cut set-up times and fixed supply readiness
+summary: Across three Chinese tertiary hospitals, a standardised activation protocol for in-hospital extracorporeal CPR was followed by shorter preparation, priming and initiation times, and disposable supplies were ready first time in every case.
+intervention: Standardised ECPR activation protocol (team activation, preparation and supply readiness steps)
+comparator: Pre-implementation period (Sept 2019 – Dec 2023)
+source:
+  doi: 10.3389/fcvm.2026.1899029
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42909210
+domains:
+- C2_quality_safety
+- A9_clinical_support
+design: before_after
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_hospitals_multisite
+kpis:
+- name: ecpr_preparation_time_min
+  definition: Mean ECPR preparation time, post vs pre implementation
+  effect:
+    value: 2.87 vs 8.60
+    unit: minutes
+  evidence:
+    quote: Compared with the control group, the post-implementation group had shorter ECPR preparation time (2.87 ± 2.32 vs. 8.60 ± 1.34 min)
+- name: ecmo_initiation_time_min
+  definition: Mean ECMO initiation time, post vs pre implementation
+  effect:
+    value: 35.01 vs 54.12
+    unit: minutes
+  evidence:
+    quote: Compared with the control group, the post-implementation group had shorter ECPR preparation time (2.87 ± 2.32 vs. 8.60 ± 1.34 min), ECMO priming time (14.83 ± 2.88 vs. 19.07 ± 1.18 min), and ECMO initiation time (35.01 ± 2.36 vs. 54.12 ± 3.55 min)
+- name: supply_first_time_readiness_pct
+  definition: Share of activations with all disposable supplies ready first time
+  effect:
+    value: 100 vs 50.0
+    unit: percent
+  evidence:
+    quote: Compared with the control group, the post-implementation group had shorter ECPR preparation time (2.87 ± 2.32 vs. 8.60 ± 1.34 min), ECMO priming time (14.83 ± 2.88 vs. 19.07 ± 1.18 min), and ECMO initiation time (35.01 ± 2.36 vs. 54.12 ± 3.55 min), and a higher one-time readiness rate of disposable supplies (100% vs. 50.0%
+implementation_needs:
+- written activation protocol and role cards
+- pre-packed ECPR supply kits with checklist
+- team drills
+lmic_applicability: partial
+notes: 'Retrospective pre-post, 103 patients (30 pre, 73 post) at three hospitals; no CI for process times (mean ± SD only), so OE4 downgraded to OE5. The abstract sentence is garbled after the supply figure ("all P P P"), so quotes stop at that point. Clinical outcomes (neurological status) deliberately left off this card; operational process measures only. LMIC: ECPR itself needs ECMO capacity, but the supply-kit and activation-protocol approach transfers to any resuscitation team.'
+review_by: '2031-11-09'
