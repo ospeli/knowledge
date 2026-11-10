@@ -1,0 +1,60 @@
+id: kc-2026-0072
+version: 1
+status: approved
+title: Higher ISAR frailty screen scores linked to longer ED stays for older patients
+summary: Among ED patients aged 65 and over in one tertiary ED, each extra point on the ISAR screening score was linked to higher odds of admission and of staying 6 hours or more in the ED. The score adds little on its own and is a screening aid, not a disposition tool.
+intervention: Identification of Seniors at Risk (ISAR) score recorded at ED presentation (exposure)
+comparator: Lower ISAR scores
+source:
+  doi: 10.3390/jcm15218329
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3390/jcm15218329
+domains:
+- A2_emergency_flow
+- A3_inpatient_flow
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: tertiary_university_ed
+kpis:
+- name: prolonged_ed_los_odds
+  definition: Adjusted odds of ED length of stay of 6 hours or more per one-point increase in ISAR, adjusted also for admission
+  effect:
+    value: '1.178'
+    unit: odds ratio
+    ci:
+    - '1.143'
+    - '1.214'
+  evidence:
+    quote: After adjustment including hospital admission status, each one-point increase in ISAR was associated with higher odds of prolonged EDLOS (OR 1.178, 95% CI 1.143–1.214; p < 0.001).
+- name: admission_odds
+  definition: Adjusted odds of hospital admission per one-point increase in ISAR
+  effect:
+    value: '1.155'
+    unit: odds ratio
+    ci:
+    - '1.121'
+    - '1.191'
+  evidence:
+    quote: In the continuous-score admission model, each one-point increase in ISAR was associated with higher odds of admission (OR 1.155, 95% CI 1.121–1.191; p < 0.001), although categorical sensitivity analysis demonstrated a nonlinear association with a plateau at higher scores.
+- name: median_ed_los_minutes
+  definition: Median ED length of stay at ISAR 0 vs ISAR 6
+  effect:
+    value: 326 vs 596
+    unit: minutes
+  evidence:
+    quote: Median EDLOS increased from 326 min (IQR 215–494) at ISAR 0 to 596 min (IQR 324–1312) at ISAR 6.
+implementation_needs:
+- ISAR recorded at triage for patients 65+
+- ED length-of-stay data linked to screening score
+lmic_applicability: uncertain
+notes: 'Retrospective single-centre cohort, 2024 (10,090 presentations with ISAR documented). Association only; ISAR gave modest discrimination for admission (AUC 0.589). Single site, observational: OE5. Country not stated in the abstract. Operational use: flag high-ISAR older patients early for flow planning; authors say prospective studies are needed before ISAR-guided pathways. LMIC applicability uncertain: needs routine screening documentation.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "ORs, CIs and median EDLOS checked; association only; country left unknown (not in abstract)"

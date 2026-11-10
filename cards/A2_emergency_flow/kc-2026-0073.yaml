@@ -1,0 +1,61 @@
+id: kc-2026-0073
+version: 1
+status: approved
+title: ED attendance fell more than ICU admissions during a Korean doctor workforce disruption
+summary: At one Korean regional emergency centre, comparing the 2024 physician workforce disruption with the COVID-19 onset episode, ED attendance contracted more than ED-origin ICU admission volume, which rose slightly (9.24 to 9.67 a day); the ICU finding depended on the baseline chosen. The authors stress this describes use, not measured capacity pressure.
+intervention: 2024 national physician workforce disruption (exposure)
+comparator: COVID-19 onset episode, using calendar-aligned 224-day windows
+source:
+  doi: 10.3390/jcm15207783
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42941300
+domains:
+- A2_emergency_flow
+- C1_workforce
+design: other
+evidence_level: OE4
+setting:
+  country: KR
+  income: HIC
+  facility: regional_emergency_medical_centre
+kpis:
+- name: daily_ed_visits_ratio
+  definition: Ratio of relative changes in daily ED visits between the workforce and COVID-19 episodes (episode-by-phase interaction; abstract does not state which episode is the numerator)
+  effect:
+    value: '0.73'
+    unit: ratio of relative changes
+    ci:
+    - '0.68'
+    - '0.78'
+  evidence:
+    quote: The ratio of relative changes was 0.73 (95% confidence interval [CI], 0.68-0.78) for daily visits, 1.28 (1.19-1.37) for transfer-in presentation and 1.44 (1.33-1.55) for acuity-conditioned ICU admission.
+- name: transfer_in_presentation_ratio
+  definition: Ratio of relative changes in transfer-in presentations between the workforce and COVID-19 episodes (episode-by-phase interaction)
+  effect:
+    value: '1.28'
+    unit: ratio of relative changes
+    ci:
+    - '1.19'
+    - '1.37'
+  evidence:
+    quote: The ratio of relative changes was 0.73 (95% confidence interval [CI], 0.68-0.78) for daily visits, 1.28 (1.19-1.37) for transfer-in presentation and 1.44 (1.33-1.55) for acuity-conditioned ICU admission.
+- name: ed_origin_icu_admissions_per_day
+  definition: ED-origin ICU admissions per day, before vs during the workforce episode
+  effect:
+    value: 9.24 vs 9.67
+    unit: admissions per day
+  evidence:
+    quote: ED-origin ICU admissions/day were 9.24 before and 9.67 during the workforce episode; the primary ratio of incidence rate ratios was 1.13 (1.05-1.22), but the prior-calendar-year sensitivity included the null (1.06, 0.97-1.15).
+implementation_needs:
+- daily ED and ICU admission counts
+- transfer-in flag on ED arrivals
+- baseline windows for comparison
+lmic_applicability: partial
+notes: 'Single-centre retrospective comparison of two crisis episodes (83,998 visits) with clustered Poisson models and sensitivity analyses. Has a comparison episode and CIs, so OE4, but ICU-admission findings depend on baseline choice (sensitivity analysis included the null). Mortality results are out of scope for this card. Useful as a surveillance approach for workforce shocks. LMIC applicability partial: method transfers, setting is a high-income national system.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "ratios, CIs and ICU counts checked; summary rewritten to the source's own conclusion and baseline sensitivity; KPI definitions no longer assume which episode is numerator; mortality excluded"

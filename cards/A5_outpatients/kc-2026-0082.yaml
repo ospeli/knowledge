@@ -1,0 +1,48 @@
+id: kc-2026-0082
+version: 1
+status: approved
+title: 'Simulation: joint staffing and service-time changes cut clinic stay from 266 to 75 min'
+summary: A digital-twin simulation of a Montreal multiservice ambulatory centre found the baseline set-up could not finish the day on time. Changing staffing or service times alone was not enough; changing both together cut average patient time in the centre from 266 to 75 minutes.
+intervention: Joint optimisation of staffing levels and service durations tested in a hybrid agent-based / discrete-event digital twin
+comparator: Baseline staffing and service durations (simulated)
+source:
+  doi: 10.1016/j.health.2026.100506
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1016/j.health.2026.100506
+domains:
+- A5_outpatients
+- C1_workforce
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: CA
+  income: HIC
+  facility: multiservice_ambulatory_care_centre
+kpis:
+- name: patient_length_of_stay_minutes
+  definition: Simulated mean patient time in centre after joint staffing and service-time optimisation
+  effect:
+    value: '75'
+    unit: minutes
+  evidence:
+    quote: In contrast, jointly optimizing staffing and service durations reduced the mean patient length of stay to 75 minutes and enabled completion of daily operations by 19:14, representing a 3.5-fold improvement over the baseline.
+- name: baseline_length_of_stay_minutes
+  definition: Simulated mean patient time in centre under baseline configuration
+  effect:
+    value: '266'
+    unit: minutes
+  evidence:
+    quote: The baseline configuration proved operationally infeasible, with an average patient length of stay of 266 minutes and service completion extending to 01:29.
+implementation_needs:
+- arrival and service-time data from field observation
+- simulation software and modelling skills
+- manager and clinician input on scenarios
+lmic_applicability: partial
+notes: 'Simulation study (500 replications per scenario); inputs from field observation and expert estimates, with no validation against real outcomes reported in the abstract, so OE5. Shows that staffing and process time interact: fixing one alone was not enough. LMIC applicability partial: what-if approach transfers; needs local data and modelling capacity.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "simulated LOS figures checked; simulation not validated, OE5 confirmed"

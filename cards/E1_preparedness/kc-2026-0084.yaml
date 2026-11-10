@@ -1,0 +1,41 @@
+id: kc-2026-0084
+version: 1
+status: approved
+title: 'Model: severe pandemic bed demand exceeds surge capacity 5–9 fold despite stockpiles'
+summary: A modelling study for the UK, Japan and the US found antiviral stockpiles kept hospital bed demand manageable in moderate pandemics, but in severe scenarios daily demand exceeded staffed surge capacity five- to nine-fold even with perfect antiviral coverage. Authors suggest capacity-based planning rather than fixed stockpile targets.
+intervention: Capacity-based preparedness planning (comparing bed demand with staffed surge capacity)
+comparator: Inventory-based antiviral stockpile target (25% population coverage)
+source:
+  doi: 10.1371/journal.pmed.1004992
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1371/journal.pmed.1004992
+domains:
+- E1_preparedness
+- B4_supply_chain
+- A3_inpatient_flow
+design: other
+evidence_level: OE5
+setting:
+  country: GB/JP/US
+  income: HIC
+  facility: national_health_systems
+kpis:
+- name: bed_demand_to_capacity_ratio
+  definition: Peak daily hospital bed demand relative to available staffed surge capacity, high-severity scenarios
+  effect:
+    value: 5-9
+    unit: fold
+  evidence:
+    quote: In high-severity scenarios (analogous to 1918 or CDC Very Severe parameters), the daily surge of patients exceeded available hospital capacity by a factor of 5-9.
+implementation_needs:
+- national surge capacity counts (staffed beds)
+- scenario demand models
+lmic_applicability: partial
+notes: 'Modelling study (static estimate, deterministic transmission model, historical reconstructions) with deliberately optimistic assumptions, so a lower bound; uses general beds as proxy and a 4-day length of stay. OE5 (model, not validated against outcomes). Operational lesson: plan against staffed capacity, not inventory size. LMIC applicability partial: logic applies more strongly where surge capacity is smaller, but modelled countries are high-income.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "5-9 fold figure checked; model with optimistic assumptions, OE5 confirmed"

@@ -1,0 +1,43 @@
+id: kc-2026-0079
+version: 1
+status: approved
+title: AI-drafted portal replies linked to longer clinician message turnaround on adoption
+summary: At one US academic centre, adopting an AI tool that drafts replies to patient portal messages was linked to an 8.6% longer message turnaround time. Using the drafts was linked to shorter turnaround, with fewer after-hours replies for test-result queries received in working hours but more for messages received after hours, so the tool did not uniformly cut workload.
+intervention: AI-generated draft reply tool for patient portal messages (enterprise deployment December 2024)
+comparator: Same clinicians before adoption (individual fixed effects)
+source:
+  doi: 10.1001/jamanetworkopen.2026.41364
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://europepmc.org/article/MED/42961417
+domains:
+- D3_it_digital
+- C1_workforce
+design: other
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: academic_medical_centre
+kpis:
+- name: message_turnaround_change_pct
+  definition: Change in time from patient message to first clinician response associated with tool adoption
+  effect:
+    value: '8.6'
+    unit: percent increase
+    ci:
+    - '4.6'
+    - '12.9'
+  evidence:
+    quote: Response tool adoption was associated with an 8.6% (95% CI, 4.6%-12.9%
+implementation_needs:
+- EHR in-basket metrics (turnaround, after-hours replies)
+- clinician-level usage logs
+lmic_applicability: uncertain
+notes: 'Retrospective clinician-level panel regression with fixed effects, 983,154 responses from 1,542 clinicians. Within-clinician comparison with CIs, single centre: OE4. The stored abstract is truncated mid-sentence after the first result, so only the adoption estimate is quoted; use-level and after-hours findings come from the conclusions and have no number here. AI is supportive here; keep human review of replies. LMIC applicability uncertain: depends on portal messaging volumes.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "8.6% and CI checked against truncated abstract; direction confirmed by conclusions; summary on tool use corrected to match conclusions"

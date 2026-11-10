@@ -1,0 +1,65 @@
+id: kc-2026-0071
+version: 1
+status: approved
+title: Prescribing QI at a Ugandan district hospital raised guideline-concordant prescribing
+summary: A six-month quality improvement package (prescriber education, digital copies of national guidelines and essential medicines list, restricted prescribing rights and prescription audit with feedback) was followed by more guideline-concordant prescribing, fewer antibiotics and fewer medicines per outpatient prescription.
+intervention: Root-cause analysis, then prescriber education, soft-copy national guidelines and essential medicines list, restricted prescribing with signature verification, periodic prescription audit and feedback
+comparator: Baseline outpatient prescribing before the initiative
+source:
+  doi: 10.37432/jieph-d-25-00344
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.37432/jieph-d-25-00344
+domains:
+- A8_pharmacy
+- C2_quality_safety
+design: before_after
+evidence_level: OE5
+setting:
+  country: UG
+  income: LIC
+  facility: public_district_hospital
+kpis:
+- name: guideline_concordant_prescribing_pct
+  definition: Share of sampled outpatient prescriptions concordant with national clinical guidelines, adjusted change endline vs baseline
+  effect:
+    value: '32.8'
+    unit: percentage points
+    ci:
+    - '21.9'
+    - '43.8'
+  evidence:
+    quote: Guideline-concordant prescribing increased from 43.7% to 76.2% (adjusted change, +32.8 percentage points; 95% CI, 21.9–43.8; aPR=1.82; 95% CI, 1.51–2.20).
+- name: antibiotic_prescriptions_pct
+  definition: Share of sampled outpatient prescriptions containing an antibiotic, adjusted change
+  effect:
+    value: '-17.9'
+    unit: percentage points
+    ci:
+    - '-27.8'
+    - '-8.0'
+  evidence:
+    quote: Antibiotic prescribing decreased from 83.4% to 65.3% (adjusted change, −17.9 points; 95% CI, −27.8 to −8.0; aPR=0.80; 95% CI, 0.70–0.91).
+- name: medicines_per_encounter
+  definition: Mean number of medicines per outpatient encounter, adjusted mean difference
+  effect:
+    value: '-0.61'
+    unit: medicines
+    ci:
+    - '-0.79'
+    - '-0.43'
+  evidence:
+    quote: Mean medicines per encounter decreased from 3.35 to 2.66 (adjusted mean difference, −0.61; 95% CI, −0.79 to −0.43), while prescriptions containing only generic medicines increased from 78.6% to 94.1% (adjusted change, +13.6 points; 95% CI, 5.8–21.4).
+implementation_needs:
+- hospital QI team
+- access to national guidelines and essential medicines list
+- prescription audit and feedback routine
+- agreed list of recognised prescribers
+lmic_applicability: 'yes'
+notes: 'Uncontrolled before-and-after QI evaluation at one public district hospital (350 baseline, 101 endline outpatient prescriptions). OE4 design downgraded to OE5: single site, no comparison group, small endline sample. Prompted by recurrent stock-outs, so relevant to pharmacy stock planning; stock-out rates themselves were not reported. Antibiotic use remained high after the initiative. Prescribing indicators are used as operational (medicines-use) KPIs only, not clinical advice. LMIC applicability yes: done in a low-income public hospital with low-cost components.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "all four numbers, CIs, signs and units checked against abstract; uncontrolled before-after downgraded OE4→OE5 confirmed; prescribing indicators kept as medicines-use KPIs only"

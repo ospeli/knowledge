@@ -1,0 +1,55 @@
+id: kc-2026-0075
+version: 1
+status: approved
+title: 'Chinese hospital case: engineer ratio 1:1123 vs 1:250–300 benchmark; OEM share over 60%'
+summary: In one large Chinese tertiary hospital, medical equipment value grew 21.3% over 2023–2025 while engineers rose from 14 to 17. The reported engineer ratio (1:1123, basis not stated) was far from the cited 1:250–300 benchmark, and manufacturers (OEM) took over 60% of maintenance spend. The authors propose a four-tier maintenance model by asset criticality (not yet evaluated).
+intervention: Proposed four-level tiered maintenance governance (OEM, in-house preventive maintenance, audited third-party repair, replace-not-repair) based on the Structure-Process-Outcome model
+comparator: Single-mode, OEM-dependent maintenance
+source:
+  doi: 10.32629/jcmr.v7i3.5553
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.32629/jcmr.v7i3.5553
+domains:
+- B1_biomedical_engineering
+- D1_finance_costing
+design: case_study
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_grade_a_hospital
+kpis:
+- name: engineer_staffing_ratio
+  definition: Biomedical engineer staffing ratio reported by the hospital (international benchmark 1:250–300)
+  effect:
+    value: 1:1123
+    unit: ratio
+  evidence:
+    quote: 'the number of engineers increased by only 3 (14→17), with the ratio as low as 1:1123 (international benchmark: 1:250–300)'
+- name: equipment_asset_growth_pct
+  definition: Growth in total equipment asset value over three years
+  effect:
+    value: '21.3'
+    unit: percent
+  evidence:
+    quote: 'The hospital’s three-year data showed that the total value of equipment assets increased by 21.3% (2.82 billion yuan→3.42 billion yuan), while the number of engineers increased by only 3 (14→17), with the ratio as low as 1:1123 (international benchmark: 1:250–300); annual maintenance expenditure increased by 8.8% (57.03 million yuan→62.04 million yuan), among which OEM maintenance accounted for continuously >60%, and the book COSR remained at 1.8%–2.0%, but indirect costs such as labor costs were not included.'
+- name: cost_of_service_ratio_pct
+  definition: Book cost of service ratio (maintenance spend / asset value), excluding indirect labour costs
+  effect:
+    value: 1.8–2.0
+    unit: percent
+  evidence:
+    quote: annual maintenance expenditure increased by 8.8% (57.03 million yuan→62.04 million yuan), among which OEM maintenance accounted for continuously >60%, and the book COSR remained at 1.8%–2.0%, but indirect costs such as labor costs were not included
+implementation_needs:
+- equipment asset register with value and criticality class
+- maintenance spend split by OEM / in-house / third party
+- engineer headcount
+lmic_applicability: partial
+notes: 'Single-hospital descriptive case (2023–2025) plus literature comparison; the tiered framework is proposed, not tested. OE5. The abstract does not say what the 1:1123 ratio is measured against (equipment units or value); check source before use. Useful benchmark KPIs for a biomedical engineering module: engineer ratio, COSR, OEM share. LMIC applicability partial: tiering by criticality transfers well; benchmarks are from a large, well-funded hospital.'
+review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "all figures checked; title/summary corrected (engineers rose 14→17, about the same 21% as assets, so 'barely rose' was misleading); ratio basis not stated, noted"
