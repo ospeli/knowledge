@@ -1,0 +1,50 @@
+id: kc-2026-0081
+version: 1
+status: candidate
+title: Pharmaceutical waste estimated at about 53 g per bed-day in an Indonesian hospital
+summary: Using two years of hazardous-waste records from an Indonesian regional referral hospital, pharmaceutical waste was estimated at about 380 kg a month (around 53 g per bed per day), costing roughly USD 166 a month to treat through an outsourced contractor.
+intervention: Routine hazardous medical waste monitoring with model-based estimate of the pharmaceutical fraction
+comparator: Sensitivity scenarios (3% to 6% pharmaceutical share)
+source:
+  doi: 10.2147/rmhp.s632337
+  tier: B
+  licence: cc-by-nc
+  url: https://europepmc.org/article/MED/42953427
+domains:
+- B2_estates_facilities
+- D1_finance_costing
+design: other
+evidence_level: OE5
+setting:
+  country: ID
+  income: UMIC
+  facility: regional_referral_hospital
+kpis:
+- name: pharmaceutical_waste_g_per_bed_day
+  definition: Estimated pharmaceutical waste per bed per day, base case (5% of hazardous waste)
+  effect:
+    value: '53'
+    unit: g/bed/day
+  evidence:
+    quote: Under the base-case scenario, estimated pharmaceutical waste generation was 380.06 kg/month, equivalent to approximately 53 g/bed/day.
+- name: hazardous_waste_kg_per_month
+  definition: Mean monthly hazardous medical waste generation, 2023–2024
+  effect:
+    value: '7601.18'
+    unit: kg/month
+  evidence:
+    quote: During the 24-month observation period, total hazardous medical waste generation reached 182,428.32 kg, with a mean monthly generation of 7601.18 kg.
+- name: pharmaceutical_waste_cost_usd_per_month
+  definition: Estimated monthly cost of treating pharmaceutical waste at an outsourced tariff
+  effect:
+    value: '166.28'
+    unit: USD/month
+  evidence:
+    quote: The estimated pharmaceutical waste management cost was USD 166.28/month (USD 1995.36 annually).
+implementation_needs:
+- hazardous waste weighed and logged monthly
+- segregation of pharmaceutical waste
+- contractor tariff per kg
+lmic_applicability: 'yes'
+notes: 'Single-hospital retrospective estimate (2023–2024). The pharmaceutical fraction is assumed (5% base case), not measured, so OE5. Useful as an indicator template (g/bed/day, cost/month) for a waste or facilities module; local segregation is needed to measure it directly. LMIC applicability yes: middle-income setting using routine records.'
+review_by: '2031-11-10'

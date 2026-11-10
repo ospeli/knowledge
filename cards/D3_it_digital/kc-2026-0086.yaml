@@ -1,0 +1,43 @@
+id: kc-2026-0086
+version: 1
+status: candidate
+title: ED ultrasound archive ran 4 years with no data loss; logbook saves trainees 2 h a week
+summary: An Australian tertiary ED installed middleware to archive point-of-care ultrasound images linked to the EMR. Over four years, volume roughly doubled, no data were lost, and the automated trainee logbook saved each trainee about two hours a week. The main recurring cost was clinician time.
+intervention: Middleware-based ED ultrasound image archiving and workflow (EMR worklist, DICOM transfer, structured reporting, automated logbooks, QA review)
+comparator: None (single-site implementation report)
+source:
+  doi: 10.1111/1742-6723.70342
+  tier: B
+  licence: cc-by-nc
+  url: https://europepmc.org/article/MED/42683516
+domains:
+- D3_it_digital
+- A2_emergency_flow
+design: case_study
+evidence_level: OE5
+setting:
+  country: AU
+  income: HIC
+  facility: tertiary_ed
+kpis:
+- name: trainee_time_saved_hours_per_week
+  definition: Trainee time saved by the automated ultrasound logbook
+  effect:
+    value: '2'
+    unit: hours/week per trainee
+  evidence:
+    quote: The automated logbook alone saves each trainee approximately 2 h/week.
+- name: archived_studies_per_year
+  definition: Annual archived ED ultrasound studies, 2022 vs 2025
+  effect:
+    value: 1083 vs 2224
+    unit: studies/year
+  evidence:
+    quote: Archived 7281 ED-US studies across 15 modalities between October 2021 and April 2026, with annual volume growing from 1083 (2022) to 2224 (2025).
+implementation_needs:
+- IT resource allocation
+- multivendor integration with EMR and PACS
+- governance and QA reviewer time
+lmic_applicability: partial
+notes: 'Single-centre implementation report (Oct 2021–Apr 2026); time saving is an approximate estimate, method not stated in the abstract. OE5. The hardest parts were IT resourcing, multivendor integration and governance workload. LMIC applicability partial: governance and QA model transfers; middleware and PACS integration may not be available.'
+review_by: '2031-11-10'

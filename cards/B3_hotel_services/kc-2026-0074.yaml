@@ -1,0 +1,50 @@
+id: kc-2026-0074
+version: 1
+status: candidate
+title: 'RFID/IoT portering dispatch system: sub-minute dispatch and high patient satisfaction'
+summary: A large Chinese hospital replaced telephone dispatch of patient transport with an RFID/IoT system linked to the hospital information system. After launch, median dispatch time was about half a minute and inpatient satisfaction with transport was high. There was no usable baseline, so no improvement can be claimed.
+intervention: Intelligent centralised transport dispatching (RFID-IoT real-time positioning, multi-objective scheduling, links to HIS, exam platforms and staff handhelds)
+comparator: None (no complete pre-implementation baseline)
+source:
+  doi: 10.3389/fpubh.2026.1949019
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3389/fpubh.2026.1949019
+domains:
+- B3_hotel_services
+- D3_it_digital
+design: case_study
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: large_tertiary_hospital
+kpis:
+- name: dispatch_time_minutes
+  definition: Median single-task dispatch time after implementation (IQR 0.31–0.82)
+  effect:
+    value: '0.57'
+    unit: minutes
+  evidence:
+    quote: Post-implementation median single-task dispatch time reached 0.57 (0.31–0.82) min, and emergency examination transport time 24.3 (13.41–32.87) min.
+- name: emergency_exam_transport_minutes
+  definition: Median transport time for emergency examinations after implementation (IQR 13.41–32.87)
+  effect:
+    value: '24.3'
+    unit: minutes
+  evidence:
+    quote: Post-implementation median single-task dispatch time reached 0.57 (0.31–0.82) min, and emergency examination transport time 24.3 (13.41–32.87) min.
+- name: transport_satisfaction_pct
+  definition: Overall inpatient satisfaction with transport
+  effect:
+    value: '97.78'
+    unit: percent
+  evidence:
+    quote: In 5,508 surveyed inpatients, overall transport satisfaction hit 97.78%, with item-level satisfaction rates ranging from 95.51% (staff attentiveness) to 98.14% (staff appearance/professional grooming).
+implementation_needs:
+- RFID or equivalent location tracking
+- integration with hospital information system and exam scheduling
+- mobile terminals for porters
+lmic_applicability: partial
+notes: 'Single-centre, post-implementation only (Jan–Jun 2026); authors say pre-2025 records were incomplete and no inter-period test was possible. Case study downgraded to OE5. Useful as KPI definitions for a portering/transport module (dispatch time, transport time, mode mix, satisfaction). Ranges in definitions are IQRs, not CIs. LMIC applicability partial: concept transfers, RFID/IoT infrastructure may not.'
+review_by: '2031-11-10'

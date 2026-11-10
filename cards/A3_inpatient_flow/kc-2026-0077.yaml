@@ -1,0 +1,48 @@
+id: kc-2026-0077
+version: 1
+status: candidate
+title: Enhanced recovery pathways cut length of stay by 1.6 days after IBD bowel surgery
+summary: A systematic review of 18 studies found enhanced recovery (ERAS) pathways for adults with inflammatory bowel disease having colorectal surgery shortened hospital stay by about 1.6 days, with no clear change in 30-day readmissions.
+intervention: Enhanced recovery after surgery (ERAS) pathway
+comparator: Conventional perioperative care
+source:
+  doi: 10.1111/codi.70642
+  tier: A
+  licence: cc-by
+  url: https://europepmc.org/article/MED/42811387
+domains:
+- A3_inpatient_flow
+- A4_theatres
+design: systematic_review
+evidence_level: OE2
+setting:
+  country: mixed
+  income: mixed
+  facility: acute_hospital
+kpis:
+- name: length_of_stay_days
+  definition: Mean difference in hospital length of stay, ERAS vs conventional care (15 studies, 4,225 patients, moderate certainty)
+  effect:
+    value: '-1.62'
+    unit: days
+    ci:
+    - '-2.03'
+    - '-1.21'
+  evidence:
+    quote: 'LOS was significantly lower in the ERAS group (mean difference: -1.62 days; 95% CI: -2.03, -1.21, 15 studies, 4225 patients, moderate certainty).'
+- name: readmission_30d_odds
+  definition: Odds of 30-day readmission, ERAS vs conventional care (15 studies, low certainty)
+  effect:
+    value: '0.83'
+    unit: odds ratio
+    ci:
+    - '0.62'
+    - '1.12'
+  evidence:
+    quote: 'There was no difference in 30-day readmissions (odds ratio, OR: 0.83; 95% CI: 0.62, 1.12, 15 studies, 4157 patients, low certainty)'
+implementation_needs:
+- agreed multidisciplinary ERAS protocol
+- pathway compliance audit
+lmic_applicability: partial
+notes: 'Systematic review and meta-analysis (1 RCT, 17 observational studies). Downgraded OE1 to OE2: mostly observational evidence at serious risk of bias, non-blinded. Card records pathway-level flow outcomes only; the clinical content of ERAS elements is out of scope. LMIC applicability partial: pathway is low-tech, but included studies are likely from high-income settings.'
+review_by: '2031-11-10'

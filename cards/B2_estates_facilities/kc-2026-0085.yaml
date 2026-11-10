@@ -1,0 +1,36 @@
+id: kc-2026-0085
+version: 1
+status: candidate
+title: 'Activity-based hospital design: staff fit and wellbeing varied by clinic type and role'
+summary: When an outpatient unit of 10 clinics moved to an activity-based care design (shared, non-assigned workspaces), consultation-based clinics, physicians and administrators reported lasting declines in how well the space fitted their tasks, stress indicators worsened for all, and turnover did not change.
+intervention: Relocation from traditional hospital design to activity-based care (ABC) workspace model
+comparator: Pre-relocation (3 months before) and pre-period sick leave and turnover
+source:
+  doi: 10.1016/j.ssci.2026.107526
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1016/j.ssci.2026.107526
+domains:
+- B2_estates_facilities
+- C1_workforce
+design: its_uncontrolled
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_outpatient_unit_10_clinics
+kpis:
+- name: staff_turnover
+  definition: Staff turnover about 1 year before vs after relocation (segmented ITS)
+  evidence:
+    quote: Turnover remained unchanged, while sick leave varied across contexts and roles.
+- name: task_environment_alignment
+  definition: Staff-rated task–environment alignment, 3 months before vs 6 and 18 months after
+  evidence:
+    quote: Consultation-based clinics and physicians and administrative employees showed persistent declines over time, while surgical/radiology clinics and nursing roles remained stable or improved.
+implementation_needs:
+- task analysis by clinic type and role before redesign
+- repeated staff surveys beyond a single post-occupancy check
+lmic_applicability: uncertain
+notes: 'Longitudinal case study in one outpatient unit: repeated-measures survey plus segmented ITS for sick leave and turnover. No effect sizes in the abstract, so no numbers carded. Single site, no control: OE5. Country not stated in the abstract. Relevant to estates planning: one-size workspace redesign may not suit consultation-heavy services. LMIC applicability uncertain.'
+review_by: '2031-11-10'
