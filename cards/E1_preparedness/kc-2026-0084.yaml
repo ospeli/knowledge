@@ -1,6 +1,6 @@
 id: kc-2026-0084
 version: 1
-status: candidate
+status: approved
 title: 'Model: severe pandemic bed demand exceeds surge capacity 5–9 fold despite stockpiles'
 summary: A modelling study for the UK, Japan and the US found antiviral stockpiles kept hospital bed demand manageable in moderate pandemics, but in severe scenarios daily demand exceeded staffed surge capacity five- to nine-fold even with perfect antiviral coverage. Authors suggest capacity-based planning rather than fixed stockpile targets.
 intervention: Capacity-based preparedness planning (comparing bed demand with staffed surge capacity)
@@ -34,3 +34,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Modelling study (static estimate, deterministic transmission model, historical reconstructions) with deliberately optimistic assumptions, so a lower bound; uses general beds as proxy and a 4-day length of stay. OE5 (model, not validated against outcomes). Operational lesson: plan against staffed capacity, not inventory size. LMIC applicability partial: logic applies more strongly where surge capacity is smaller, but modelled countries are high-income.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "5-9 fold figure checked; model with optimistic assumptions, OE5 confirmed"

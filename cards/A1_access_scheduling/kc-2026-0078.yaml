@@ -1,6 +1,6 @@
 id: kc-2026-0078
 version: 1
-status: candidate
+status: approved
 title: Language filter in EHR scheduling queue raised 10-day booking for non-English speakers
 summary: At an academic outpatient rehabilitation service, a visible "preferred language" field and filter in the referral work queue let schedulers prioritise patients with a non-English language preference, raising the share booked within 10 days. Only about a fifth of schedulers used it regularly and gaps remained.
 intervention: Sortable preferred-language field and toggle filter in the EHR referral work queue
@@ -31,7 +31,7 @@ kpis:
   evidence:
     quote: Patients with NELP demonstrated a larger increase in the likelihood of scheduling within 10 days following the intervention (adjusted RL = 2.86, 95% CI = 1.82-4.48) relative to patients with EP.
 - name: scheduled_within_10_days_pct
-  definition: Share of referrals scheduled within 10 days, pre vs post
+  definition: Share of referrals scheduled within 10 days, pre vs post (abstract does not say whether this is all referrals or the NELP group)
   effect:
     value: 27.4 vs 31.3
     unit: percent
@@ -51,3 +51,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Interrupted time series, 19,260 referrals (Sep 2024–May 2025), one academic centre. OE3 downgraded to OE4: single site. Abstract does not state whether 27.4% to 31.3% refers to the language group or all referrals; check source. Country not stated. Low fidelity suggests pairing with capacity and accountability. LMIC applicability partial: the work-queue visibility idea transfers to any digital referral queue.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "RL, CI, 27.4→31.3% and 22% fidelity checked; definition now flags unclear group for 27.4→31.3%; country left unknown; OE4 kept (single site, no concurrent control)"

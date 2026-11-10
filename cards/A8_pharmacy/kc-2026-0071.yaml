@@ -1,6 +1,6 @@
 id: kc-2026-0071
 version: 1
-status: candidate
+status: approved
 title: Prescribing QI at a Ugandan district hospital raised guideline-concordant prescribing
 summary: A six-month quality improvement package (prescriber education, digital copies of national guidelines and essential medicines list, restricted prescribing rights and prescription audit with feedback) was followed by more guideline-concordant prescribing, fewer antibiotics and fewer medicines per outpatient prescription.
 intervention: Root-cause analysis, then prescriber education, soft-copy national guidelines and essential medicines list, restricted prescribing with signature verification, periodic prescription audit and feedback
@@ -58,3 +58,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Uncontrolled before-and-after QI evaluation at one public district hospital (350 baseline, 101 endline outpatient prescriptions). OE4 design downgraded to OE5: single site, no comparison group, small endline sample. Prompted by recurrent stock-outs, so relevant to pharmacy stock planning; stock-out rates themselves were not reported. Antibiotic use remained high after the initiative. Prescribing indicators are used as operational (medicines-use) KPIs only, not clinical advice. LMIC applicability yes: done in a low-income public hospital with low-cost components.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "all four numbers, CIs, signs and units checked against abstract; uncontrolled before-after downgraded OE4→OE5 confirmed; prescribing indicators kept as medicines-use KPIs only"

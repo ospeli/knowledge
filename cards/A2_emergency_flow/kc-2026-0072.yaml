@@ -1,6 +1,6 @@
 id: kc-2026-0072
 version: 1
-status: candidate
+status: approved
 title: Higher ISAR frailty screen scores linked to longer ED stays for older patients
 summary: Among ED patients aged 65 and over in one tertiary ED, each extra point on the ISAR screening score was linked to higher odds of admission and of staying 6 hours or more in the ED. The score adds little on its own and is a screening aid, not a disposition tool.
 intervention: Identification of Seniors at Risk (ISAR) score recorded at ED presentation (exposure)
@@ -53,3 +53,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Retrospective single-centre cohort, 2024 (10,090 presentations with ISAR documented). Association only; ISAR gave modest discrimination for admission (AUC 0.589). Single site, observational: OE5. Country not stated in the abstract. Operational use: flag high-ISAR older patients early for flow planning; authors say prospective studies are needed before ISAR-guided pathways. LMIC applicability uncertain: needs routine screening documentation.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "ORs, CIs and median EDLOS checked; association only; country left unknown (not in abstract)"

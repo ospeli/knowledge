@@ -1,6 +1,6 @@
 id: kc-2026-0082
 version: 1
-status: candidate
+status: approved
 title: 'Simulation: joint staffing and service-time changes cut clinic stay from 266 to 75 min'
 summary: A digital-twin simulation of a Montreal multiservice ambulatory centre found the baseline set-up could not finish the day on time. Changing staffing or service times alone was not enough; changing both together cut average patient time in the centre from 266 to 75 minutes.
 intervention: Joint optimisation of staffing levels and service durations tested in a hybrid agent-based / discrete-event digital twin
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Simulation study (500 replications per scenario); inputs from field observation and expert estimates, with no validation against real outcomes reported in the abstract, so OE5. Shows that staffing and process time interact: fixing one alone was not enough. LMIC applicability partial: what-if approach transfers; needs local data and modelling capacity.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "simulated LOS figures checked; simulation not validated, OE5 confirmed"

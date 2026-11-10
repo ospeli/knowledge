@@ -1,6 +1,6 @@
 id: kc-2026-0074
 version: 1
-status: candidate
+status: approved
 title: 'RFID/IoT portering dispatch system: sub-minute dispatch and high patient satisfaction'
 summary: A large Chinese hospital replaced telephone dispatch of patient transport with an RFID/IoT system linked to the hospital information system. After launch, median dispatch time was about half a minute and inpatient satisfaction with transport was high. There was no usable baseline, so no improvement can be claimed.
 intervention: Intelligent centralised transport dispatching (RFID-IoT real-time positioning, multi-objective scheduling, links to HIS, exam platforms and staff handhelds)
@@ -48,3 +48,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-centre, post-implementation only (Jan–Jun 2026); authors say pre-2025 records were incomplete and no inter-period test was possible. Case study downgraded to OE5. Useful as KPI definitions for a portering/transport module (dispatch time, transport time, mode mix, satisfaction). Ranges in definitions are IQRs, not CIs. LMIC applicability partial: concept transfers, RFID/IoT infrastructure may not.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "medians, IQRs and satisfaction checked; post-implementation only, no improvement claimed; OE5 confirmed"

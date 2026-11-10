@@ -1,7 +1,7 @@
 id: kc-2026-0083
 version: 1
-status: candidate
-title: Maternal safety model with obstetric high-dependency care improved quality trends
+status: approved
+title: Maternal safety model with obstetric high-dependency care linked to better quality trends
 summary: A multicomponent maternal safety model, including obstetric high-dependency capacity, in three Colombian Caribbean hospitals had mixed but generally favourable results; at one public hospital, time-series analysis showed falls in adverse outcome scores after implementation.
 intervention: Multicomponent maternal safety and technological strengthening model including obstetric high-dependency unit capacity
 comparator: Pre-implementation period at each institution
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Multisite before-and-after evaluation with ITS only where data allowed (one public hospital); other sites mixed or limited follow-up. Costs rose at the private clinic. Uncontrolled ITS at one site, no CIs in abstract: OE4. Authors say HDUs work best as part of an integrated rescue system, not as isolated infrastructure. Quality indicators are used as service KPIs; no clinical advice. LMIC applicability yes: middle-income, high-risk region.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "betas and P values checked (no CIs); title de-causalised; OE4 kept"

@@ -1,10 +1,10 @@
 id: kc-2026-0081
 version: 1
-status: candidate
-title: Pharmaceutical waste estimated at about 53 g per bed-day in an Indonesian hospital
-summary: Using two years of hazardous-waste records from an Indonesian regional referral hospital, pharmaceutical waste was estimated at about 380 kg a month (around 53 g per bed per day), costing roughly USD 166 a month to treat through an outsourced contractor.
+status: approved
+title: Assuming a 5% share, pharmaceutical waste is about 53 g per bed-day in an Indonesian hospital
+summary: Using two years of hazardous-waste records from an Indonesian regional referral hospital, and assuming pharmaceutical waste is 5% of hazardous waste (it was not measured), pharmaceutical waste was estimated at about 380 kg a month (around 53 g per bed per day), costing roughly USD 166 a month to treat through an outsourced contractor.
 intervention: Routine hazardous medical waste monitoring with model-based estimate of the pharmaceutical fraction
-comparator: Sensitivity scenarios (3% to 6% pharmaceutical share)
+comparator: None (sensitivity scenarios used a 3% to 6% pharmaceutical share)
 source:
   doi: 10.2147/rmhp.s632337
   tier: B
@@ -48,3 +48,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-hospital retrospective estimate (2023–2024). The pharmaceutical fraction is assumed (5% base case), not measured, so OE5. Useful as an indicator template (g/bed/day, cost/month) for a waste or facilities module; local segregation is needed to measure it directly. LMIC applicability yes: middle-income setting using routine records.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "all figures checked; title/summary now say the 5% pharmaceutical share is assumed, not measured; comparator set to none; Indonesia UMIC"

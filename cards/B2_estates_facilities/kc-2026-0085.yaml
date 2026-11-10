@@ -1,8 +1,8 @@
 id: kc-2026-0085
 version: 1
-status: candidate
-title: 'Activity-based hospital design: staff fit and wellbeing varied by clinic type and role'
-summary: When an outpatient unit of 10 clinics moved to an activity-based care design (shared, non-assigned workspaces), consultation-based clinics, physicians and administrators reported lasting declines in how well the space fitted their tasks, stress indicators worsened for all, and turnover did not change.
+status: approved
+title: 'Activity-based outpatient design: task fit varied by clinic and role; stress rose for all'
+summary: When an outpatient unit of 10 clinics moved to an activity-based care design (shared, non-assigned workspaces), consultation-based clinics, physicians and administrators reported lasting declines in how well the space fitted their tasks, stress and recovery indicators worsened across all groups, job satisfaction declined, and turnover did not change.
 intervention: Relocation from traditional hospital design to activity-based care (ABC) workspace model
 comparator: Pre-relocation (3 months before) and pre-period sick leave and turnover
 source:
@@ -34,3 +34,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Longitudinal case study in one outpatient unit: repeated-measures survey plus segmented ITS for sick leave and turnover. No effect sizes in the abstract, so no numbers carded. Single site, no control: OE5. Country not stated in the abstract. Relevant to estates planning: one-size workspace redesign may not suit consultation-heavy services. LMIC applicability uncertain.'
 review_by: '2031-11-10'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-10'
+  notes: "no numbers carded; quotes checked; title/summary corrected (stress worsened for all groups, not varied); job satisfaction decline added"
