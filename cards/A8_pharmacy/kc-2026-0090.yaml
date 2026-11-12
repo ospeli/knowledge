@@ -1,0 +1,37 @@
+id: kc-2026-0090
+version: 1
+status: candidate
+title: Process mapping cut time to resolve pharmacy order queries by 81%
+summary: 'After a new clinical information system at a Canadian tertiary hospital, a pharmacy improvement group used process mapping to find two sources of wasted time: finding the information needed, and finding the right clinical pharmacist to ask. After four fixes (clearer verification principles, streamlined resources, clarified roles, updated contact lists), time to resolve medication orders needing clarification fell by 81%.'
+intervention: Quality improvement working group using process mapping and four action plans
+comparator: Time to resolution before the changes
+source:
+  doi: 10.4212/cjhp.3826
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.4212/cjhp.3826
+domains:
+- A8_pharmacy
+- D3_it_digital
+design: before_after
+evidence_level: OE5
+setting:
+  country: CA
+  income: HIC
+  facility: tertiary_hospital
+kpis:
+- name: order_clarification_resolution_time
+  definition: Time to resolve medication orders requiring clarification, from workload measurement data
+  effect:
+    value: '81'
+    unit: percent reduction
+  evidence:
+    checked_by: ''
+implementation_needs:
+- process map of the query path
+- up-to-date list of who to contact per ward
+- clear role split between dispensary and ward pharmacists
+- workload timestamps
+lmic_applicability: 'yes'
+notes: 'Single site, before-after with no statistics in the abstract: OE5. Operational only (communication and role clarity), no prescribing content. A worked example for X1 process mapping: the two waste points were ''where is the information'' and ''who do I ask'', both fixable without new technology. LMIC yes: low-cost changes. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'

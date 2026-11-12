@@ -1,0 +1,53 @@
+id: kc-2026-0099
+version: 1
+status: candidate
+title: Routine EHR data matched manual chart review for hospital outcome reporting
+summary: Across 113 US Veterans Affairs facilities (460,585 operations, 2016-2020), hospital risk-adjusted 30-day post-operative mortality ratios built from routine electronic record data correlated with those built from manually abstracted data at r = 0.98, and 99.3% of hospital-quarters were classed the same. Of quarters flagged as worse than expected by the manual method, 81.0% were also flagged by the EHR method.
+intervention: Risk adjustment using routinely recorded EHR variables
+comparator: Manually abstracted registry variables (VASQIP)
+source:
+  doi: 10.1001/jamasurg.2026.5401
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.1001/jamasurg.2026.5401
+domains:
+- D4_performance
+- C5_records_ig
+design: other
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: health_system
+  sites: 113
+kpis:
+- name: observed_expected_ratio_correlation
+  definition: Correlation of quarterly observed-to-expected ratios, EHR vs manual data
+  effect:
+    value: '0.98'
+    unit: r
+    ci:
+    - '0.98'
+    - '0.98'
+  evidence:
+    checked_by: ''
+- name: concordant_hospital_quarters_pct
+  definition: Hospital-quarters classed the same by both methods (2096/2111)
+  effect:
+    value: '99.3'
+    unit: percent
+  evidence:
+    checked_by: ''
+- name: high_outlier_agreement_pct
+  definition: Worse-than-expected quarters by manual data also flagged with EHR data (34/42)
+  effect:
+    value: '81.0'
+    unit: percent
+  evidence:
+    checked_by: ''
+implementation_needs:
+- linked routine data covering the model variables
+- a check of outlier agreement before switching
+lmic_applicability: uncertain
+notes: 'National comparative study with CIs, OE4. Supports recomputing indicators from routine records instead of manual abstraction, but about one in five outlier quarters was missed, so outlier flags need a human check. The mortality outcome is used here only as a reporting test case. LMIC uncertain: needs complete electronic records. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'

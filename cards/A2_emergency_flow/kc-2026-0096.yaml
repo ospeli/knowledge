@@ -1,0 +1,65 @@
+id: kc-2026-0096
+version: 1
+status: candidate
+title: Staff hourly crowding ratings on a smartwatch tracked ED occupancy moderately
+summary: In one Korean tertiary ED over 449 hours during a physician shortage, 28 clinicians gave hourly 0-200 crowding ratings on a smartwatch, with a 97.86% response rate. The hourly median rating correlated with the ED occupancy ratio (r=0.542) and NEDOCS (r=0.483) but not with EDWIN (r=0.060). The authors see it as a complementary measure, not a workload or prediction tool.
+intervention: Hourly perceived-crowding rating on a smartwatch (ecological momentary assessment)
+comparator: Objective crowding scores (EDOR, NEDOCS, EDWIN)
+source:
+  doi: 10.2196/103317
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.2196/103317
+domains:
+- A2_emergency_flow
+design: other
+evidence_level: OE5
+setting:
+  country: KR
+  income: HIC
+  facility: tertiary_ed
+kpis:
+- name: perceived_vs_occupancy_ratio_r
+  definition: Pearson correlation of hourly median perceived crowding with ED occupancy ratio
+  effect:
+    value: '0.542'
+    unit: r
+    ci:
+    - '0.473'
+    - '0.604'
+  evidence:
+    checked_by: ''
+- name: perceived_vs_nedocs_r
+  definition: Pearson correlation of hourly median perceived crowding with NEDOCS
+  effect:
+    value: '0.483'
+    unit: r
+    ci:
+    - '0.409'
+    - '0.551'
+  evidence:
+    checked_by: ''
+- name: perceived_vs_edwin_r
+  definition: Pearson correlation of hourly median perceived crowding with EDWIN (not significant)
+  effect:
+    value: '0.060'
+    unit: r
+    ci:
+    - '-0.033'
+    - '0.152'
+  evidence:
+    checked_by: ''
+- name: rating_response_rate_pct
+  definition: Completed hourly ratings out of scheduled on-duty opportunities (1100/1124)
+  effect:
+    value: '97.86'
+    unit: percent
+  evidence:
+    checked_by: ''
+implementation_needs:
+- one-tap hourly rating for the nurse in charge
+- ED occupancy (patients / treatment spaces) by hour
+- ratings aggregated per hour, never shown per person
+lmic_applicability: partial
+notes: 'Single ED in an unusual staffing crisis, short period: OE4 downgraded to OE5. Ospeli use: an optional ''how busy does it feel'' tap aggregated per hour alongside occupancy; measure the flow, never individual staff. Smartwatches are not needed; a phone tap would do. LMIC partial: rating method transfers; validated scores need bed counts. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'

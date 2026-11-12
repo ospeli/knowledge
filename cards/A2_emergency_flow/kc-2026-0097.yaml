@@ -1,0 +1,47 @@
+id: kc-2026-0097
+version: 1
+status: candidate
+title: Structured ED nursing framework in Thailand improved experience, not length of stay
+summary: In a Thai provincial hospital ED, introducing the HIRAID structured emergency nursing assessment framework improved patient experience and the quality and quantity of nursing documentation. There was no clinically significant change in time to first pain relief, ED length of stay or unplanned return within 72 hours (3-month periods before and after).
+intervention: HIRAID structured emergency nursing framework
+comparator: 3-month period before implementation
+source:
+  doi: 10.1111/ijn.70197
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1111/ijn.70197
+domains:
+- A2_emergency_flow
+- E4_patient_experience
+design: before_after
+evidence_level: OE5
+setting:
+  country: TH
+  income: UMIC
+  facility: provincial_hospital
+kpis:
+- name: ed_length_of_stay
+  definition: ED length of stay from electronic attendance records
+  effect:
+    value: no clinically significant change
+  evidence:
+    checked_by: ''
+- name: unplanned_return_72h
+  definition: Unplanned ED return within 72 hours of discharge
+  effect:
+    value: no clinically significant change
+  evidence:
+    checked_by: ''
+- name: patient_experience
+  definition: Patient experience of emergency care, survey
+  effect:
+    value: improved
+  evidence:
+    checked_by: ''
+implementation_needs:
+- nursing training in the framework
+- documentation audit tool
+- ED attendance records with times
+lmic_applicability: 'yes'
+notes: 'Single site quasi-experimental pre/post; the abstract gives no effect sizes, so OE4 downgraded to OE5. A useful null result: a documentation and assessment framework did not move flow KPIs. The nursing assessment content is clinical and out of scope. LMIC yes: run in a resource-limited setting. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'

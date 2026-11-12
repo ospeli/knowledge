@@ -1,0 +1,60 @@
+id: kc-2026-0088
+version: 1
+status: candidate
+title: Routine triage data predicted which ED patients would be admitted
+summary: Across two Canadian academic hospitals (526,145 adult ED visits, 2015-2022), a model using only data available at the end of triage predicted hospital admission with an AUC of 0.86 (sensitivity 0.67, specificity 0.86); a simpler logistic regression reached 0.84. It could give the bed office earlier warning of admissions, but has not been tested prospectively.
+intervention: Gradient boosting (XGBoost) admission prediction at end of triage
+comparator: Logistic regression baseline
+source:
+  doi: 10.2196/98273
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.2196/98273
+domains:
+- A3_inpatient_flow
+- A2_emergency_flow
+design: forecasting
+evidence_level: OE5
+setting:
+  country: CA
+  income: HIC
+  facility: academic_hospital
+kpis:
+- name: admission_prediction_auc
+  definition: Area under the ROC curve for predicting admission vs discharge at end of triage, held-out test set
+  effect:
+    value: '0.86'
+    unit: AUC
+    ci:
+    - '0.858'
+    - '0.864'
+  evidence:
+    checked_by: ''
+- name: admission_prediction_sensitivity
+  definition: Share of admitted visits flagged at the reported threshold
+  effect:
+    value: '0.67'
+    unit: proportion
+  evidence:
+    checked_by: ''
+- name: admission_prediction_specificity
+  definition: Share of discharged visits not flagged at the reported threshold
+  effect:
+    value: '0.86'
+    unit: proportion
+  evidence:
+    checked_by: ''
+- name: baseline_logistic_regression_auc
+  definition: AUC of the logistic regression comparator
+  effect:
+    value: '0.84'
+    unit: AUC
+  evidence:
+    checked_by: ''
+implementation_needs:
+- structured triage data (age, triage score, arrival mode, vital signs, chief complaint)
+- count of prior hospitalisations
+- local recalibration and prospective check
+lmic_applicability: uncertain
+notes: 'Retrospective model development with internal hold-out only (17.4% admitted); no prospective or external validation, so OE5 as an unvalidated model. Operational use only: an aggregate forecast of expected admissions for bed planning, advisory with an off switch; never a per-patient triage or disposition decision. Note the simpler logistic model was close (0.84), which is easier to explain and run offline. LMIC uncertain: needs reliable structured triage data. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'

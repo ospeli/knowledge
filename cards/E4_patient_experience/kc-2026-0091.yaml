@@ -1,0 +1,43 @@
+id: kc-2026-0091
+version: 1
+status: candidate
+title: Weekly patient feedback on medicines advice lifted positive ratings on surgical wards
+summary: Two adult surgical wards in Northern Ireland ran a 6-month improvement project (process mapping, PDSA cycles, run charts) with a validated 17-item questionnaire given to patients at discharge and reviewed weekly. Positive feedback on medicines information moved from a baseline median of 0% to a new median of 30%, for 7.6% extra counselling time. Welcome cards and prompting patients to ask questions did not help; tailoring advice to the feedback did.
+intervention: Weekly discharge questionnaire (SIMS) used to drive PDSA changes to medicines advice
+comparator: Baseline median before the changes (run chart)
+source:
+  doi: 10.1097/qmh.0000000000000611
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.1097/qmh.0000000000000611
+domains:
+- E4_patient_experience
+- A3_inpatient_flow
+design: its_uncontrolled
+evidence_level: OE5
+setting:
+  country: GB
+  income: HIC
+  facility: acute_hospital
+kpis:
+- name: positive_feedback_medicines_info_pct
+  definition: Share of discharge-ready patients giving positive feedback on medicines information, run-chart median
+  effect:
+    value: 0 to 30
+    unit: percent
+  evidence:
+    checked_by: ''
+- name: counselling_time_change_pct
+  definition: Extra counselling time compared with baseline (balancing measure)
+  effect:
+    value: '7.6'
+    unit: percent extra
+  evidence:
+    checked_by: ''
+implementation_needs:
+- short validated feedback form at discharge
+- weekly review of results
+- named team to act on feedback
+lmic_applicability: partial
+notes: '217 patients; run-chart rules only, no control and no CI. OE3 downgraded twice to OE5 (single site, no CI). Useful for E4: the gain came from acting on weekly feedback, not from leaflets. The content of medicines advice is clinical and out of scope; the card is about the feedback loop. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+review_by: '2031-11-12'
