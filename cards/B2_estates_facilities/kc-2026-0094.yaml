@@ -1,8 +1,8 @@
 id: kc-2026-0094
 version: 1
-status: candidate
+status: approved
 title: Staff education and visual aids improved operating-room waste segregation
-summary: At a 402-bed US community hospital, education and visual aids for operating room staff raised correct item disposal from 50.5% to 60.2% and cut non-compliant items per audit from 262.2 to 162.5. Total sharps bin waste fell from 612.7 kg to 527.6 kg, and knowledge gains held at 3 months.
+summary: At a 402-bed US community hospital, education and visual aids for operating room staff raised correct item disposal from 50.5% to 60.2% and cut the mean number of non-compliant items from 262.2 to 162.5. Total sharps bin waste fell from 612.7 kg to 527.6 kg (no significance test reported), and knowledge gains held at 3 months.
 intervention: Waste segregation education with visual aids at disposal points
 comparator: Pre-education audit
 source:
@@ -28,25 +28,30 @@ kpis:
     value: 50.5 to 60.2
     unit: percent
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: noncompliant_items_mean
-  definition: Mean number of non-compliant items per audit
+  definition: Mean number of non-compliant items (unit of count not stated in abstract)
   effect:
     value: 262.2 to 162.5
     unit: items
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: sharps_bin_waste_kg
-  definition: Total intraoperative sharps bin waste weight, pre vs post education
+  definition: Total intraoperative sharps bin waste weight, pre vs post education (no significance test reported)
   effect:
     value: 612.7 to 527.6
     unit: kg
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
 - waste audit method (item count and weight)
 - visual aids at bins
 - repeat education
 lmic_applicability: 'yes'
-notes: 'Single site before-after with no comparison group: OE4 downgraded to OE5. Audit periods may differ in case mix and volume, so bin weights are indicative. Fits B2 waste and B3 support services. LMIC yes: low-cost, and segregation errors drive treatment cost where waste is incinerated or contracted out. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+notes: 'Single site before-after with no comparison group: OE4 downgraded to OE5. Audit periods may differ in case mix and volume, so bin weights are indicative. Fits B2 waste and B3 support services. LMIC yes: low-cost, and segregation errors drive treatment cost where waste is incinerated or contracted out. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
 review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fixes: "per audit" removed (not in source); sharps weight flagged as untested.'

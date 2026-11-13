@@ -1,6 +1,6 @@
 id: kc-2026-0098
 version: 1
-status: candidate
+status: approved
 title: In-house open-source AI scribe ran at under US$30 per doctor per month
 summary: A Canadian provincial health system ran an in-house AI documentation scribe for emergency physicians (197 physicians, 105 facilities, 21,548 sessions over 9 months), keeping all audio and text inside its own infrastructure. Operating cost averaged under US$30 per physician per month, 70% to 95% below commercial prices (excluding staff costs); survey respondents reported a median 16 to 30 minutes saved per shift and rated documentation quality lowest.
 intervention: In-house AI scribe on the health system's own data platform (open-source version released)
@@ -27,25 +27,30 @@ kpis:
     value: <30
     unit: USD
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: cost_reduction_vs_commercial_pct
   definition: Operating cost compared with commercial subscription prices
   effect:
     value: 70 to 95
     unit: percent lower
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: self_reported_time_saved_per_shift
   definition: Median self-reported documentation time saved per shift (69-73 respondents per item)
   effect:
     value: 16 to 30
     unit: minutes
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
 - institutional data platform
 - speech recognition and language model components
 - local governance for audio data
 lmic_applicability: uncertain
-notes: 'Implementation report; usage logs plus optional survey, time saving self-reported, full cost of ownership unknown: OE5. Clinical documentation itself is out of Ospeli''s scope (not a patient record); kept as evidence that in-house, data-sovereign AI can run cheaply and that quality checks must come before scale. LMIC uncertain: needs cloud compute and connectivity. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+notes: 'Implementation report; usage logs plus optional survey, time saving self-reported, full cost of ownership unknown: OE5. Clinical documentation itself is out of Ospeli''s scope (not a patient record); kept as evidence that in-house, data-sovereign AI can run cheaply and that quality checks must come before scale. LMIC uncertain: needs cloud compute and connectivity. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
 review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

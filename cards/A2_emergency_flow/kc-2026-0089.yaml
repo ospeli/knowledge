@@ -1,6 +1,6 @@
 id: kc-2026-0089
 version: 1
-status: candidate
+status: approved
 title: Waits for admission from Sicilian EDs ran far longer than waits for discharge
 summary: In a sample of 10,077 visits from the 16 largest hospitals in Sicily in 2019, median ED length of stay was 1.70 hours for discharged patients and 3.77 hours for admitted patients, and at the 90th percentile 7.10 vs 34.95 hours. Large differences between EDs in time to admission led the authors to suggest targeting any extra inpatient capacity at the specific wards receiving these patients, not across the whole hospital.
 intervention: None (observational analysis of ED length of stay by exit route)
@@ -14,7 +14,7 @@ domains:
 - A2_emergency_flow
 - A3_inpatient_flow
 design: other
-evidence_level: OE4
+evidence_level: OE5
 setting:
   country: IT
   income: HIC
@@ -27,25 +27,30 @@ kpis:
     value: '1.70'
     unit: hours
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: median_ed_los_admitted_hours
   definition: Median ED length of stay for visits ending in hospital admission
   effect:
     value: '3.77'
     unit: hours
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: p90_ed_los_discharged_vs_admitted_hours
   definition: 90th percentile ED length of stay, discharged vs admitted
   effect:
     value: 7.10 vs 34.95
     unit: hours
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
 - ED arrival and departure timestamps
 - exit route recorded (discharge or admission)
 - receiving ward recorded for admissions
 lmic_applicability: partial
-notes: 'Multi-site retrospective competing-risks frailty model on pre-COVID data; descriptive, no intervention, so OE4. For the bed board: report ED waits split by exit route and by receiving ward, and watch the upper tail (90th percentile), not only the median. Disease-group findings left out as clinical detail. LMIC partial: the measure transfers wherever ED times and exit route are recorded. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+notes: 'Multi-site retrospective competing-risks frailty model on pre-COVID data; descriptive, no intervention, and the reported medians and 90th percentiles carry no CI, so OE4 downgraded to OE5 (reviewer). For the bed board: report ED waits split by exit route and by receiving ward, and watch the upper tail (90th percentile), not only the median. Disease-group findings left out as clinical detail. LMIC partial: the measure transfers wherever ED times and exit route are recorded. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
 review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fixes: OE4→OE5 (no CI on the descriptive medians).'

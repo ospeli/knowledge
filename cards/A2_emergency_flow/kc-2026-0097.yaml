@@ -1,6 +1,6 @@
 id: kc-2026-0097
 version: 1
-status: candidate
+status: approved
 title: Structured ED nursing framework in Thailand improved experience, not length of stay
 summary: In a Thai provincial hospital ED, introducing the HIRAID structured emergency nursing assessment framework improved patient experience and the quality and quantity of nursing documentation. There was no clinically significant change in time to first pain relief, ED length of stay or unplanned return within 72 hours (3-month periods before and after).
 intervention: HIRAID structured emergency nursing framework
@@ -18,7 +18,7 @@ evidence_level: OE5
 setting:
   country: TH
   income: UMIC
-  facility: provincial_hospital
+  facility: hospital_ed
 kpis:
 - name: ed_length_of_stay
   definition: ED length of stay from electronic attendance records
@@ -43,5 +43,10 @@ implementation_needs:
 - documentation audit tool
 - ED attendance records with times
 lmic_applicability: 'yes'
-notes: 'Single site quasi-experimental pre/post; the abstract gives no effect sizes, so OE4 downgraded to OE5. A useful null result: a documentation and assessment framework did not move flow KPIs. The nursing assessment content is clinical and out of scope. LMIC yes: run in a resource-limited setting. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+notes: 'Single site quasi-experimental pre/post; the abstract gives no effect sizes, so OE4 downgraded to OE5. A useful null result: a documentation and assessment framework did not move flow KPIs. The nursing assessment content is clinical and out of scope. LMIC yes: run in a resource-limited setting. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
 review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fixes: facility provincial_hospital→hospital_ed (not stated in source).'

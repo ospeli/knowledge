@@ -1,6 +1,6 @@
 id: kc-2026-0093
 version: 1
-status: candidate
+status: approved
 title: Phoning patients who missed their follow-up visit got half of them seen remotely
 summary: A US hospital pilot had a psychiatrist repeatedly phone 50 adults who missed their scheduled clinic appointment after discharge from acute mental health care, offering an immediate remote appointment. Half completed a follow-up, 72% of those in the first week of calls. Fewer returned to acute care within 90 days than a historical comparison group (26% vs 42%), but this was not statistically significant.
 intervention: Repeated phone outreach with an ad hoc remote appointment after a missed post-discharge visit
@@ -26,25 +26,30 @@ kpis:
     value: '50'
     unit: percent
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: recovered_in_first_week_pct
   definition: Share of completed follow-ups achieved in the first week of call attempts
   effect:
     value: '72'
     unit: percent of completed
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: acute_reuse_90d_pct
   definition: Acute mental health care use within 90 days of discharge, intervention vs historical control (not significant)
   effect:
     value: 26 vs 42
     unit: percent
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
 - daily list of missed post-discharge appointments
 - a clinician slot for same-day remote appointments
 - call-attempt log
 lmic_applicability: partial
-notes: 'Small single-site pilot with a historical control and no CI: OE3 downgraded to OE5. Operational lesson for A1 did-not-attend handling: most recoveries came in the first week, so long call campaigns add little. Clinical content of the appointment is out of scope. LMIC partial: needs phone contact and a remote appointment route. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers copied as stated and need evidence.checked_by from a reviewer before approval.'
+notes: 'Small single-site pilot with a historical control and no CI: OE3 downgraded to OE5. Operational lesson for A1 did-not-attend handling: most recoveries came in the first week, so long call campaigns add little. Clinical content of the appointment is out of scope. LMIC partial: needs phone contact and a remote appointment route. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
 review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'
