@@ -1,0 +1,47 @@
+id: kc-2026-0092
+version: 1
+status: approved
+title: Overnight ward tasks left patients under 4 hours of unbroken sleep on average
+summary: Using electronic record timestamps for 46,916 admissions on general medical and surgical units at a US academic hospital, overnight medication rounds, vital sign checks and blood draws (grouped into 20-minute episodes) left an average longest uninterrupted sleep opportunity of 3 h 40 min per patient-night, and about 6 h 30 min in total. Longer opportunities went with better patient-reported sleep quality, and the measure varied between units.
+intervention: None (observational measure of overnight task interruptions)
+comparator: Variation across units and admissions
+source:
+  doi: 10.1002/jhm.70537
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1002/jhm.70537
+domains:
+- A3_inpatient_flow
+- E4_patient_experience
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: academic_hospital
+kpis:
+- name: longest_uninterrupted_sleep_opportunity
+  definition: Mean longest gap per patient-night between overnight interruptive episodes (medication, vital signs, lab draws)
+  effect:
+    value: 3 h 40 min
+    unit: per patient-night
+  evidence:
+    checked_by: ospeli-review-bot
+- name: total_uninterrupted_sleep_opportunity
+  definition: Mean total uninterrupted time per patient-night (abstract says approximately)
+  effect:
+    value: 6 h 30 min
+    unit: per patient-night
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- timestamps for overnight medication, observation and sample-collection tasks
+- unit-level reporting
+lmic_applicability: partial
+notes: 'Single-site retrospective observational study, no CI in the abstract: OE4 downgraded to OE5. Operational lever: clustering overnight tasks. Report by unit, never by staff member. LMIC partial: needs task timestamps, which paper wards may not have. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
+review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

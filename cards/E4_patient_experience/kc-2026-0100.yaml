@@ -1,0 +1,55 @@
+id: kc-2026-0100
+version: 1
+status: approved
+title: Digital patient-reported outcome tools were valued but scored poor on usability
+summary: In a multicentre feasibility study in Spain, Austria, the Netherlands and Germany, a digital platform for patients to report outcomes on phones, tablets or the web had a mean System Usability Scale score of 44.65/100, and only 115 of 241 participants (47.7%) gave follow-up data, although 83% of respondents would recommend it. Login difficulties, technical instability and weak links to clinical systems were the main problems.
+intervention: Digital patient-reported outcome collection platform (H2O)
+comparator: None (feasibility study)
+source:
+  doi: 10.2196/94733
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.2196/94733
+domains:
+- E4_patient_experience
+- D3_it_digital
+design: mixed_methods
+evidence_level: OE5
+setting:
+  country: multi
+  income: HIC
+  facility: multiple
+kpis:
+- name: system_usability_scale_mean
+  definition: Mean System Usability Scale score (SD 9.78)
+  effect:
+    value: '44.65'
+    unit: score out of 100
+  evidence:
+    checked_by: ospeli-review-bot
+- name: follow_up_retention_pct
+  definition: Participants who contributed follow-up data (115/241)
+  effect:
+    value: '47.7'
+    unit: percent
+  evidence:
+    checked_by: ospeli-review-bot
+- name: would_recommend_pct
+  definition: Respondents willing to recommend the platform (44/53)
+  effect:
+    value: '83'
+    unit: percent
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- login-free or simple access
+- stable offline-tolerant app
+- results visible in the consultation workflow
+lmic_applicability: partial
+notes: 'Noninterventional mixed-methods feasibility study with heavy attrition: OE5. Countries: ES, AT, NL, DE. Direct lesson for E4 feedback and the Adoption lead: perceived value does not survive poor usability and login friction. LMIC partial: the friction would be worse on low-end phones. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
+review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

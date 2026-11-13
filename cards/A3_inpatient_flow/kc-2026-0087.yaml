@@ -1,0 +1,48 @@
+id: kc-2026-0087
+version: 1
+status: approved
+title: Doubling ward pharmacist hours raised pharmacist involvement in discharges
+summary: On one respiratory ward of an Australian tertiary hospital, doubling clinical pharmacist staffing and extending their hours raised the share of discharges with pharmacist involvement from 78% to 95%. Admission medication reconciliation rose from 81% to 91%, but that change was not statistically significant.
+intervention: Doubled clinical pharmacist staffing with extended hours of ward pharmacist availability
+comparator: Usual pharmacist staffing and hours (pre-intervention audit)
+source:
+  doi: 10.1093/ijpp/riag166
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1093/ijpp/riag166
+domains:
+- A3_inpatient_flow
+- A8_pharmacy
+design: before_after
+evidence_level: OE5
+setting:
+  country: AU
+  income: HIC
+  facility: tertiary_hospital
+kpis:
+- name: pharmacist_discharge_involvement_pct
+  definition: Share of audited discharges with clinical pharmacist involvement in the discharge process
+  effect:
+    value: 78 to 95
+    unit: percent of discharges
+  evidence:
+    checked_by: ospeli-review-bot
+- name: admission_medication_reconciliation_pct
+  definition: Share of audited admissions with medication reconciliation completed (not statistically significant)
+  effect:
+    value: 81 to 91
+    unit: percent of admissions
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- funded extra pharmacist hours
+- discharge process that names the pharmacist step
+- audit of admissions and discharges
+lmic_applicability: partial
+notes: 'Single ward, retrospective pre/post audit plus staff survey; sample sizes and CIs not in the abstract. OE4 downgraded to OE5 (single site, no comparison group). The authors say it supported patient flow, but no flow KPI (length of stay, discharge time) is reported, so the card claims only process measures. LMIC partial: depends on pharmacist workforce. Tier C: abstract read via the PubMed record, not stored in the inbox; numbers re-checked against the PubMed abstract by ospeli-review-bot on 2026-11-13.'
+review_by: '2031-11-12'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-13'
+  notes: 'Re-read PubMed abstract (tier C, no quotes): numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fixes: facility→tertiary_hospital (source says tertiary).'
