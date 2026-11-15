@@ -25,22 +25,16 @@ kpis:
   definition: Share of sampled general medicine inpatients medically ready for discharge on the survey day
   effect:
     value: '41.9'
-    unit: percent
-    ci:
-    - '18.4'
-    - '64.7'
+    unit: percent (range across hospitals 18.4 to 64.7)
 - name: major_discharge_barrier_pct
   definition: Share of sampled inpatients medically ready for discharge for one week or more
   effect:
     value: '18.1'
-    unit: percent
-    ci:
-    - '0'
-    - '32'
+    unit: percent (range across hospitals 0 to 32)
 implementation_needs:
 - daily medically-ready flag per bed
 - reason-for-wait code (placement, payer, family choice, transport)
 - weekly review of the longest waits
 lmic_applicability: partial
-notes: 'Multi-site cross-sectional point-prevalence survey filled in by attending physicians; no CI (the ci field holds the range across hospitals, not a confidence interval): OE4 downgraded to OE5. Tier C: finding written from the abstract on the PubMed record (PMID 42877989), no quotes; a human reviewer must check the numbers. Supports A3: a medically-ready flag with a wait reason makes this measurable from the bed board. LMIC partial: long-term care placement is a smaller factor where such facilities are few, but the flag and reason codes transfer.'
+notes: 'Multi-site cross-sectional point-prevalence survey filled in by attending physicians; no CI (ranges across hospitals are noted in the units): OE4 downgraded to OE5. Tier C: finding written from the abstract on the PubMed record (PMID 42877989), no quotes; a human reviewer must check the numbers. Supports A3: a medically-ready flag with a wait reason makes this measurable from the bed board. LMIC partial: long-term care placement is a smaller factor where such facilities are few, but the flag and reason codes transfer.'
 review_by: '2031-11-15'

@@ -31,10 +31,7 @@ kpis:
   definition: Median Customer Effort Score (1 = lowest effort)
   effect:
     value: '1'
-    unit: score
-    ci:
-    - '1'
-    - '2'
+    unit: score (IQR 1 to 2)
   evidence:
     quote: The median CES was 1 (interquartile range 1-2), indicating low perceived effort.
 implementation_needs:
@@ -42,5 +39,5 @@ implementation_needs:
 - one open question on what to improve
 - results by service, not by staff member
 lmic_applicability: 'yes'
-notes: 'Single-site mixed-methods study with a small sample and no comparator: OE5. The ci field holds the interquartile range 1 to 2, not a confidence interval. Supports E4: a very short survey (NPS, effort, one open question) gives usable signal, and waiting is the main lever. Country not stated in the abstract. LMIC yes: a two-question survey works on any phone.'
+notes: 'Single-site mixed-methods study with a small sample and no comparator: OE5. Supports E4: a very short survey (NPS, effort, one open question) gives usable signal, and waiting is the main lever. Country not stated in the abstract. LMIC yes: a two-question survey works on any phone.'
 review_by: '2031-11-15'
