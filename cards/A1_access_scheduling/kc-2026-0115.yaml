@@ -1,0 +1,53 @@
+id: kc-2026-0115
+version: 1
+status: candidate
+title: Physiotherapists rated booking-platform and SMS reminders effective; posters were not
+summary: A national survey of 1,246 private physiotherapists in France found online booking platform reminders and SMS reminders rated effective by about 79% and 78% of users, against 20% for in-clinic posters. Attendance itself was not measured.
+intervention: Digital appointment reminders (booking platform, SMS)
+comparator: Other strategies, such as in-clinic posters
+source:
+  doi: 10.1093/ptj/pzag119
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1093/ptj/pzag119
+domains:
+- A1_access_scheduling
+- A5_outpatients
+design: other
+evidence_level: OE5
+setting:
+  country: FR
+  income: HIC
+  facility: private_outpatient_physiotherapy
+kpis:
+- name: booking_platform_reminder_rated_effective_pct
+  definition: Share of users rating booking-platform reminders effective or very effective
+  effect:
+    value: '78.9'
+    unit: percent
+    ci:
+    - '74.1'
+    - '83.2'
+- name: sms_reminder_rated_effective_pct
+  definition: Share of users rating SMS reminders effective or very effective
+  effect:
+    value: '77.7'
+    unit: percent
+    ci:
+    - '72.4'
+    - '82.9'
+- name: poster_rated_effective_pct
+  definition: Share rating in-clinic posters effective or very effective
+  effect:
+    value: '20.0'
+    unit: percent
+    ci:
+    - '16.6'
+    - '23.4'
+implementation_needs:
+- automatic reminder before each booking
+- record of reminder sent and confirmed
+- did-not-attend rate tracked to test whether reminders work
+lmic_applicability: partial
+notes: 'Cross-sectional survey of perceived effectiveness only; objective attendance was not assessed: OE5. Tier C: finding written from the PubMed abstract (PMID 42912695), no quotes; a human reviewer must check numbers. For A1: start with automatic reminders, and measure the did-not-attend rate rather than relying on staff impressions. LMIC partial: SMS transfers widely; booking platforms less so.'
+review_by: '2031-11-15'

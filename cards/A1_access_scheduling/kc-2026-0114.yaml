@@ -1,0 +1,45 @@
+id: kc-2026-0114
+version: 1
+status: candidate
+title: Adding e-visits raised a hospital's total outpatient volume 14% and doctor time 16%
+summary: In a large public hospital in China, starting online visits alongside office visits was linked to 14% more outpatient visits overall, 16% more total doctor service time and 32% more time per patient, while office visits fell 6%. Demand shifted towards senior doctors, leaving junior doctors' capacity underused.
+intervention: Electronic visits added alongside office outpatient visits
+comparator: Before e-visits (difference-in-differences)
+source:
+  doi: 10.1056/cat.26.0158
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.1056/cat.26.0158
+domains:
+- A1_access_scheduling
+- A5_outpatients
+- C1_workforce
+design: controlled_before_after
+evidence_level: OE4
+setting:
+  country: CN
+  income: UMIC
+  facility: large_public_hospital
+kpis:
+- name: outpatient_volume_change_pct
+  definition: Change in total outpatient volume (online plus office) after e-visit adoption
+  effect:
+    value: '14'
+    unit: percent
+- name: aggregate_service_time_change_pct
+  definition: Change in total clinician service time after e-visit adoption
+  effect:
+    value: '16'
+    unit: percent
+- name: office_visit_volume_change_pct
+  definition: Change in office (in-person) visit volume after e-visit adoption
+  effect:
+    value: '-6'
+    unit: percent
+implementation_needs:
+- separate session slots for online visits
+- triage rule for which requests go online
+- volume and time reported per channel and per session type
+lmic_applicability: partial
+notes: 'Single-hospital difference-in-differences analysis, p values but no CI in the abstract: OE3 downgraded to OE4. Tier C: finding written from the PubMed abstract (PMID 42867968), no quotes; a human reviewer must check numbers. Supports A1 and C1: an online channel adds workload unless it has its own scheduled sessions. Report by session and channel, never by named doctor. LMIC partial: needs reliable connectivity and payment rules for online visits.'
+review_by: '2031-11-15'

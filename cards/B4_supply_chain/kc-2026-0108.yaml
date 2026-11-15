@@ -1,0 +1,50 @@
+id: kc-2026-0108
+version: 1
+status: candidate
+title: Where clinics ran out of child medicines, fewer sick children were taken for care
+summary: Linking Ethiopia's 2024/2025 national household survey with facility audits, 41.3% of local primary facilities had a stock-out of essential child medicines in the past month. Children served by those facilities had lower odds of being taken for formal care (adjusted OR 0.58) and of receiving the recommended treatment (adjusted OR 0.44).
+intervention: None (association between facility stock-outs and care use)
+comparator: Children served by facilities without stock-outs
+source:
+  doi: 10.21203/rs.3.rs-10996829/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10996829/v1
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: other
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: primary_health_facilities_national
+kpis:
+- name: facility_stockout_pct
+  definition: Share of local primary facilities with an essential paediatric medicine stock-out in the preceding month
+  effect:
+    value: '41.3'
+    unit: percent
+  evidence:
+    quote: Overall, 41.3% of local primary health facilities experienced essential pediatric medicine stock outs in the preceding month.
+- name: care_seeking_aor_stockout
+  definition: Adjusted odds of formal care seeking, children served by facilities with stock-outs vs without
+  effect:
+    value: '0.58'
+    unit: adjusted odds ratio
+  evidence:
+    quote: Children served by facilities with stock outs had 42% lower odds of formal care seeking (adjusted odds ratio = 0.58) and 56% lower odds of receiving appropriate clinical treatment (adjusted odds ratio = 0.44).
+- name: recommended_treatment_aor_stockout
+  definition: Adjusted odds of receiving the recommended treatment, children served by facilities with stock-outs vs without
+  effect:
+    value: '0.44'
+    unit: adjusted odds ratio
+  evidence:
+    quote: Children served by facilities with stock outs had 42% lower odds of formal care seeking (adjusted odds ratio = 0.58) and 56% lower odds of receiving appropriate clinical treatment (adjusted odds ratio = 0.44).
+implementation_needs:
+- monthly stock-out check of a short list of essential items
+- stock-out days recorded per item
+- re-order point per item
+lmic_applicability: 'yes'
+notes: 'Preprint; cross-sectional secondary analysis, association not causation, no CIs in the abstract: OE5. Supports the stock object (B4, A6 pharmacy stock): stock-outs matter beyond the pharmacy because they keep patients away. Which medicines are recommended is out of scope. LMIC yes: national LIC data from primary facilities.'
+review_by: '2031-11-15'

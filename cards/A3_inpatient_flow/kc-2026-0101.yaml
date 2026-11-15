@@ -1,0 +1,54 @@
+id: kc-2026-0101
+version: 1
+status: candidate
+title: One in five discharge-summary actions sent to GP practices was not completed
+summary: In seven English general practices, 263 older patients were discharged with 160 summaries asking for 551 follow-up actions. Among patients who needed an action, 20.6% had an action missed (error) and 4.4% came to harm; 17.5% had a related readmission within 90 days.
+intervention: None (observational review of how practices processed discharge-summary actions)
+comparator: Patients with and without errors
+source:
+  doi: 10.3399/bjgp.2025.0627
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3399/bjgp.2025.0627
+domains:
+- A3_inpatient_flow
+- C2_quality_safety
+design: other
+evidence_level: OE4
+setting:
+  country: GB
+  income: HIC
+  facility: general_practices
+  sites: 7
+kpis:
+- name: discharge_action_error_pct
+  definition: Share of patients needing a post-discharge GP action who had a requested action not completed
+  effect:
+    value: '20.6'
+    unit: percent
+  evidence:
+    quote: For those patients who required an action, 20.6% experienced error and 4.4% experienced harm.
+- name: discharge_action_harm_pct
+  definition: Share of patients needing a post-discharge GP action who experienced harm
+  effect:
+    value: '4.4'
+    unit: percent
+  evidence:
+    quote: For those patients who required an action, 20.6% experienced error and 4.4% experienced harm.
+- name: related_readmission_90d_pct
+  definition: Related readmissions within 90 days of discharge, patients aged 65 and over
+  effect:
+    value: '17.5'
+    unit: percent
+    ci:
+    - '13.7'
+    - '23.0'
+  evidence:
+    quote: Within the cohort of 263 discharged patients, 186 (70.7%) accessed post-discharge care; with 47 out of the 263 patients (17.5%; 95% confidence interval = 13.7 to 23.0) having related readmissions within 90 days.
+implementation_needs:
+- list of actions requested in each discharge summary
+- owner and due date per action
+- closed-loop check that each action was done
+lmic_applicability: partial
+notes: 'Retrospective record review in 7 purposively sampled practices, CI given for readmission only. Observational, multi-site: OE4. The CI is for the readmission share, not for the error or harm rates. Operational lever for A3: treat discharge-summary requests as tracked tasks with an owner, so the receiving team can close them. Clinical content of actions is out of scope. LMIC partial: needs written discharge summaries reaching primary care.'
+review_by: '2031-11-15'

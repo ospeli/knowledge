@@ -1,0 +1,47 @@
+id: kc-2026-0105
+version: 1
+status: candidate
+title: Unconfirmed bookings, transport and housing needs went with child clinic no-shows
+summary: In six general paediatric clinics, 34.8% of 7,931 booked appointments were missed. A prediction model reached an AUROC of about 0.71 with or without social-needs data, but unconfirmed appointments, no active patient portal, transport needs and housing instability were linked to no-shows and are things a clinic can act on.
+intervention: None (retrospective analysis of no-show predictors and a prediction model)
+comparator: Attended appointments
+source:
+  doi: 10.1038/s41390-026-05531-1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1038/s41390-026-05531-1
+domains:
+- A1_access_scheduling
+design: forecasting
+evidence_level: OE5
+setting:
+  country: unknown
+  income: HIC
+  facility: general_paediatric_clinics
+  sites: 6
+kpis:
+- name: no_show_rate_pct
+  definition: Share of scheduled appointments not attended
+  effect:
+    value: '34.8'
+    unit: percent
+  evidence:
+    quote: Among 7,931 included appointments, 2761 (34.8%) were no-shows.
+- name: no_show_model_auroc
+  definition: Discrimination of the no-show prediction model, with or without social-needs variables
+  effect:
+    value: '0.708'
+    unit: AUROC
+  evidence:
+    quote: Models with and without NMDOH variables showed similar performance (AUROC 0.708 for both; AUPRC 0.536 vs. 0.535, respectively).
+- name: no_show_associated_factors
+  definition: Factors associated with no-show in multivariable analysis (no effect sizes in abstract)
+  evidence:
+    quote: No-shows were associated with unconfirmed appointments, non-active patient portal status, transportation needs, and housing instability.
+implementation_needs:
+- appointment confirmation status recorded
+- reminder and confirmation step before each visit
+- outreach list for unconfirmed bookings
+lmic_applicability: partial
+notes: 'Retrospective, six clinics, five months, no CIs in the abstract: OE5. Country not stated in the abstract (insurance variables suggest the US). For A1: a modest model adds little over tracking confirmation; any score should only suggest outreach, with a person deciding and an off switch. Flows, never people: report no-show by clinic and slot type, never as a label on a patient. LMIC partial: confirmation by phone or SMS transfers; portal status does not.'
+review_by: '2031-11-15'
