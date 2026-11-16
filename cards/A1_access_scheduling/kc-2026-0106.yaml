@@ -1,0 +1,45 @@
+id: kc-2026-0106
+version: 1
+status: approved
+title: Booked eye-clinic patients waited less than walk-ins; the gain varied by department
+summary: A survey of 996 waits in two outpatient departments of a Chinese tertiary hospital found that, after adjustment, booked patients in ophthalmology waited 6.43 minutes less than walk-ins. The study title reports that the gain differed by department; the stored abstract stops before the other department and satisfaction results.
+intervention: Appointment booking
+comparator: Walk-in attendance
+source:
+  doi: 10.21203/rs.3.rs-10836918/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10836918/v1
+domains:
+- A1_access_scheduling
+- A5_outpatients
+- E4_patient_experience
+design: other
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_hospital_outpatients
+kpis:
+- name: wait_difference_booked_vs_walkin_min
+  definition: Adjusted difference in actual waiting time, booked minus walk-in, ophthalmology outpatients
+  effect:
+    value: '-6.43'
+    unit: minutes
+    ci:
+    - '-9.02'
+    - '-3.84'
+  evidence:
+    quote: 'After adjustment, patients with appointments waited 6.43 minutes less than walk-in patients in ophthalmology (95% CI: −9.02 to − 3.84; Holm-adjusted P'
+implementation_needs:
+- arrival, booked time and called time recorded per visit
+- waits reported per department and per booking type
+- expected call time shown to patients
+lmic_applicability: 'yes'
+notes: 'Preprint, single-site cross-sectional survey: OE5. The stored abstract is cut off after the ophthalmology result, so the gynaecology result and satisfaction findings are not carded; a reviewer should read the full abstract. Lesson for A1 and E4: measure waits per department and per booking type, and compare the actual call time with the booked window. LMIC yes: walk-in plus booking mixes are common in polyclinics.'
+review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '-6.43 min and CI checked against truncated stored abstract; unsupported satisfaction claim removed from summary; preprint OE5; CN UMIC.'

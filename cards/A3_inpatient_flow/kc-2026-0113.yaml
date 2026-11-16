@@ -1,0 +1,47 @@
+id: kc-2026-0113
+version: 1
+status: approved
+title: Nurse-led criteria discharge on a children's ward kept readmissions at about 3%
+summary: A Swiss paediatric ward let nurses discharge children with bronchiolitis, pneumonia or asthma once agreed criteria were met. Across 355 admissions before and after, 14-day readmissions were similar (about 3% with criteria-led discharge vs about 3% to 4.5% with standard discharge), and staff, patient and carer satisfaction was high; staff felt discharges were quicker.
+intervention: Criteria-led (nurse-led) discharge
+comparator: Standard physician-led discharge, before and after implementation
+source:
+  doi: 10.1007/s00431-026-07578-y
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1007/s00431-026-07578-y
+domains:
+- A3_inpatient_flow
+design: before_after
+evidence_level: OE5
+setting:
+  country: CH
+  income: HIC
+  facility: childrens_hospital_ward
+kpis:
+- name: readmission_14d_cld_pct
+  definition: 14-day readmission rate, criteria-led discharge cohort
+  effect:
+    value: '3.2'
+    unit: percent
+  evidence:
+    checked_by: ospeli-review-bot
+- name: readmission_14d_standard_pct
+  definition: 14-day readmission rate, standard discharge cohort before implementation
+  effect:
+    value: '3.4'
+    unit: percent
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- discharge criteria agreed by clinicians for each condition
+- nurse training
+- criteria-met status visible on the ward board
+lmic_applicability: partial
+notes: 'Single-site before-after quality improvement study, no CI in the abstract: OE4 downgraded to OE5. Efficiency gains are reported as subjective in the abstract; length of stay figures are not in it. Tier C: finding written from the PubMed abstract (PMID 42998099; a PMC copy exists, PMC13744470), no quotes; reviewer checked the numbers; licence left as publisher pending a check of the PMC copy. Readmission rates are described as comparable, with no test statistic in the abstract. The criteria themselves are clinical and out of scope; Ospeli would only show that criteria are met. LMIC partial: depends on nursing scope of practice.'
+review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'Checked against PubMed abstract PMID 42998099: 3.2% CLD vs 3.4% SD (4.5% post SD); 355 admissions; efficiency subjective only; criteria clinical but discharge workflow operational; OE5.'

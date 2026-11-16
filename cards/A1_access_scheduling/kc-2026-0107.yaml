@@ -1,0 +1,55 @@
+id: kc-2026-0107
+version: 1
+status: approved
+title: E-referral platform answered three in four paediatric referrals within an hour
+summary: Over two years, a South African specialist paediatric department received 579 e-referrals, mostly from primary care nurses, with volume up 50% in the second year. 76.7% got a response within an hour; 18% were managed locally with advice and 22.8% were booked into outpatients.
+intervention: Electronic referral platform to a specialist paediatric service
+comparator: Telephone referral (described, not measured)
+source:
+  doi: 10.7196/samj.2026.v116i9.4661
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.7196/samj.2026.v116i9.4661
+domains:
+- A1_access_scheduling
+- E2_primary_community
+design: other
+evidence_level: OE5
+setting:
+  country: ZA
+  income: UMIC
+  facility: tertiary_hospital_paediatrics
+kpis:
+- name: referral_response_within_1h_pct
+  definition: Share of e-referrals answered within one hour
+  effect:
+    value: '76.7'
+    unit: percent
+  evidence:
+    quote: Most e-referrals received a response within <1 hour (444/579, 76.7%).
+- name: referral_advice_local_management_pct
+  definition: Share of e-referrals resolved with advice for local management (no transfer or booking)
+  effect:
+    value: '18.0'
+    unit: percent
+  evidence:
+    quote: 'E-referral outcomes included: urgent emergency department transfer (92/579, 15.9%); advice for local case management (104/579, 18.0%); outpatient department bookings (132/579, 22.8%); and referral to lower levels of care (63/579, 10.9%).'
+- name: referral_outpatient_booking_pct
+  definition: Share of e-referrals converted to an outpatient booking
+  effect:
+    value: '22.8'
+    unit: percent
+  evidence:
+    quote: 'E-referral outcomes included: urgent emergency department transfer (92/579, 15.9%); advice for local case management (104/579, 18.0%); outpatient department bookings (132/579, 22.8%); and referral to lower levels of care (63/579, 10.9%).'
+implementation_needs:
+- referral form with a response-time stamp
+- outcome recorded per referral (advice, booking, transfer, refer down)
+- after-hours cover for answering
+lmic_applicability: 'yes'
+notes: 'Single-site retrospective descriptive review, no comparator measured, no CI: OE5. Lesson for A1 (and the two-site polyclinic): time each referral from sent to answered and record its outcome; about one in five needed no visit at all. Clinical advice content is out of scope. LMIC yes: UMIC public setting, nurse-led referrals from primary care.'
+review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '76.7%, 18.0% and 22.8% checked against stored abstract; ZA UMIC; descriptive OE5; clinical advice content out of scope.'
