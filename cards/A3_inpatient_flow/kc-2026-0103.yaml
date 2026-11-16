@@ -1,8 +1,8 @@
 id: kc-2026-0103
 version: 1
-status: candidate
+status: approved
 title: Meeting an 85% average occupancy target still left neonatal ICUs over 100% on many days
-summary: Using several years of neonatal ICU data from Calgary, a queueing model with time-varying admissions and real length-of-stay patterns showed that units meeting the long-run 85% occupancy rule still often ran above 100% on individual days. Static rules of thumb underestimated the beds needed.
+summary: Using several years of neonatal ICU data from Calgary, a queueing model with time-varying admissions and real length-of-stay patterns showed that units meeting the long-run 85% occupancy rule still often ran above 100% on individual days. Static rules of thumb were inadequate under fluctuating demand.
 intervention: Time-varying queueing model (Mt/Gt/infinity) for bed planning
 comparator: Average-based and fixed-occupancy rules (85% rule)
 source:
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Modelling study on one region''s data; validation not described in the abstract: OE5. No effect size is given, so no number is carded. Lesson for A3 and capacity planning: report the share of days over capacity, not only mean occupancy. LMIC partial: needs a few years of admission and discharge dates, which a paper register can supply.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'Quote checked verbatim; no number carded; summary de-overstated (inadequate, not underestimated); queueing OE5; CA HIC confirmed.'

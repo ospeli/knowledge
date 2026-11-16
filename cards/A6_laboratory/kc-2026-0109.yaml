@@ -1,8 +1,8 @@
 id: kc-2026-0109
 version: 1
-status: candidate
+status: approved
 title: In a Delhi hospital lab, the analysis phase took 57% of a 138-minute median turnaround
-summary: Using information-system timestamps for 2,505 routine biochemistry and haematology tests at a New Delhi tertiary hospital, the median total turnaround was 138 minutes. The analytical phase took 57% of it, pre-analytical 26% and post-analytical 17%; staff and patients also named billing, transport, system delays and validation.
+summary: Using information-system timestamps for 2,505 routine biochemistry and haematology tests at a New Delhi tertiary hospital, the median total turnaround was 138 minutes. The analytical phase took 57% of it, pre-analytical 26% and post-analytical 17%; the authors say administrative steps, specimen transport, information-system delays and result validation also added to it.
 intervention: None (turnaround measurement by phase)
 comparator: Phases of the same process
 source:
@@ -47,3 +47,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Preprint, single-site descriptive study, no CI: OE5. Agrees with kc-2026-0026 (Brazil) that the analytical phase dominates. Supports A5 diagnostics light: show request-to-result time split by phase. LMIC yes: LMIC tertiary setting using routine HIS timestamps.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '138 min and phase shares checked; summary now matches the authors listed causes (billing not stated); preprint OE5; IN LMIC.'

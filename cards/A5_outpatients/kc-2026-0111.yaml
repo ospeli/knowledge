@@ -1,6 +1,6 @@
 id: kc-2026-0111
 version: 1
-status: candidate
+status: approved
 title: Patient journey data turned into candidate layouts for an eye outpatient clinic
 summary: 'A public hospital eye clinic used patient visit data to count moves between service stations, built a weighted map of which stations should sit next to each other, and with staff produced two block layouts: one linear for an existing building, one with a central consultation core for a new build.'
 intervention: Graph-based layout planning from observed patient movements
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-site planning study; authors state the layouts are concepts, not validated floor plans, and no outcome was measured: OE5. Supports X1 walk mode and A1: a walk-mode map can produce the station-to-station move counts that drive this method. Country and income not stated in the abstract. LMIC yes: needs only visit steps, which walk mode or paper can capture.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'Quote checked verbatim; method only, no effect; domains A5/C6 fit; country and income not stated; OE5.'

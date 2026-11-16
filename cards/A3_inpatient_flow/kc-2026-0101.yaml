@@ -1,7 +1,7 @@
 id: kc-2026-0101
 version: 1
-status: candidate
-title: One in five discharge-summary actions sent to GP practices was not completed
+status: approved
+title: One in five older patients needing a GP action after discharge had an action missed
 summary: In seven English general practices, 263 older patients were discharged with 160 summaries asking for 551 follow-up actions. Among patients who needed an action, 20.6% had an action missed (error) and 4.4% came to harm; 17.5% had a related readmission within 90 days.
 intervention: None (observational review of how practices processed discharge-summary actions)
 comparator: Patients with and without errors
@@ -52,3 +52,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Retrospective record review in 7 purposively sampled practices, CI given for readmission only. Observational, multi-site: OE4. The CI is for the readmission share, not for the error or harm rates. Operational lever for A3: treat discharge-summary requests as tracked tasks with an owner, so the receiving team can close them. Clinical content of actions is out of scope. LMIC partial: needs written discharge summaries reaching primary care.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'Numbers and CI checked against stored abstract; title corrected (20.6% is patients with an error, not actions); design other, OE4 kept; GB HIC confirmed.'

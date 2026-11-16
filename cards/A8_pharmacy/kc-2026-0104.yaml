@@ -1,7 +1,7 @@
 id: kc-2026-0104
 version: 1
-status: candidate
-title: Lean redesign of ICU medicine ordering and supply cut wasted doses by about a third
+status: approved
+title: Lean redesign of ICU medicine ordering and supply cut wasted medicine units by about a third
 summary: A Dutch academic ICU measured wasted medication for three weeks, found causes with staff (over-ordering, over-supply and over-preparation, therapy changes), then changed protocols, ran awareness campaigns and sent labelled medicines with patients on transfer. Waste fell by 31.8% per 100 beds per day and its value by 18.4%.
 intervention: Lean-based redesign of medicine ordering, supply and preparation
 comparator: Three-week baseline before implementation
@@ -48,3 +48,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site before-after with short measurement periods and no CI: OE4 downgraded to OE5. Supports the stock object (B4 and A6 pharmacy stock) and X1 lean method: count waste, ask staff for causes, change order and supply rules. No prescribing content. LMIC partial: waste counting is low tech; the savings depend on local drug prices.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'All three figures checked against stored abstract; single-site before-after OE5; NL HIC; operational waste process, no prescribing content.'

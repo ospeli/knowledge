@@ -1,6 +1,6 @@
 id: kc-2026-0115
 version: 1
-status: candidate
+status: approved
 title: Physiotherapists rated booking-platform and SMS reminders effective; posters were not
 summary: A national survey of 1,246 private physiotherapists in France found online booking platform reminders and SMS reminders rated effective by about 79% and 78% of users, against 20% for in-clinic posters. Attendance itself was not measured.
 intervention: Digital appointment reminders (booking platform, SMS)
@@ -28,6 +28,8 @@ kpis:
     ci:
     - '74.1'
     - '83.2'
+  evidence:
+    checked_by: ospeli-review-bot
 - name: sms_reminder_rated_effective_pct
   definition: Share of users rating SMS reminders effective or very effective
   effect:
@@ -36,6 +38,8 @@ kpis:
     ci:
     - '72.4'
     - '82.9'
+  evidence:
+    checked_by: ospeli-review-bot
 - name: poster_rated_effective_pct
   definition: Share rating in-clinic posters effective or very effective
   effect:
@@ -44,6 +48,8 @@ kpis:
     ci:
     - '16.6'
     - '23.4'
+  evidence:
+    checked_by: ospeli-review-bot
 implementation_needs:
 - automatic reminder before each booking
 - record of reminder sent and confirmed
@@ -51,3 +57,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Cross-sectional survey of perceived effectiveness only; objective attendance was not assessed: OE5. Tier C: finding written from the PubMed abstract (PMID 42912695), no quotes; a human reviewer must check numbers. For A1: start with automatic reminders, and measure the did-not-attend rate rather than relying on staff impressions. LMIC partial: SMS transfers widely; booking platforms less so.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: 'Checked against PubMed abstract PMID 42912695: 78.9% (74.1-83.2), 77.7% (72.4-82.9), 20.0% (16.6-23.4) correct; perceived effectiveness only; FR HIC; OE5.'

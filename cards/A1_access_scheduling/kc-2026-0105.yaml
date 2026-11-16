@@ -1,6 +1,6 @@
 id: kc-2026-0105
 version: 1
-status: candidate
+status: approved
 title: Unconfirmed bookings, transport and housing needs went with child clinic no-shows
 summary: In six general paediatric clinics, 34.8% of 7,931 booked appointments were missed. A prediction model reached an AUROC of about 0.71 with or without social-needs data, but unconfirmed appointments, no active patient portal, transport needs and housing instability were linked to no-shows and are things a clinic can act on.
 intervention: None (retrospective analysis of no-show predictors and a prediction model)
@@ -16,7 +16,7 @@ design: forecasting
 evidence_level: OE5
 setting:
   country: unknown
-  income: HIC
+  income: unknown
   facility: general_paediatric_clinics
   sites: 6
 kpis:
@@ -43,5 +43,10 @@ implementation_needs:
 - reminder and confirmation step before each visit
 - outreach list for unconfirmed bookings
 lmic_applicability: partial
-notes: 'Retrospective, six clinics, five months, no CIs in the abstract: OE5. Country not stated in the abstract (insurance variables suggest the US). For A1: a modest model adds little over tracking confirmation; any score should only suggest outreach, with a person deciding and an off switch. Flows, never people: report no-show by clinic and slot type, never as a label on a patient. LMIC partial: confirmation by phone or SMS transfers; portal status does not.'
+notes: 'Retrospective, six clinics, five months, no CIs in the abstract: OE5. Country not stated in the abstract (insurance variables suggest the US; income left unknown). For A1: a modest model adds little over tracking confirmation; any score should only suggest outreach, with a person deciding and an off switch. Flows, never people: report no-show by clinic and slot type, never as a label on a patient. LMIC partial: confirmation by phone or SMS transfers; portal status does not.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '34.8% and AUROC 0.708 checked; associations carry no effect sizes; income set to unknown (country not stated); OE5.'

@@ -1,8 +1,8 @@
 id: kc-2026-0106
 version: 1
-status: candidate
+status: approved
 title: Booked eye-clinic patients waited less than walk-ins; the gain varied by department
-summary: A survey of 996 waits in two outpatient departments of a Chinese tertiary hospital found that, after adjustment, booked patients in ophthalmology waited 6.43 minutes less than walk-ins. The authors report that the gain differed by department and that satisfaction depended on whether waits matched expectations.
+summary: A survey of 996 waits in two outpatient departments of a Chinese tertiary hospital found that, after adjustment, booked patients in ophthalmology waited 6.43 minutes less than walk-ins. The study title reports that the gain differed by department; the stored abstract stops before the other department and satisfaction results.
 intervention: Appointment booking
 comparator: Walk-in attendance
 source:
@@ -38,3 +38,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Preprint, single-site cross-sectional survey: OE5. The stored abstract is cut off after the ophthalmology result, so the gynaecology result and satisfaction findings are not carded; a reviewer should read the full abstract. Lesson for A1 and E4: measure waits per department and per booking type, and compare the actual call time with the booked window. LMIC yes: walk-in plus booking mixes are common in polyclinics.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '-6.43 min and CI checked against truncated stored abstract; unsupported satisfaction claim removed from summary; preprint OE5; CN UMIC.'

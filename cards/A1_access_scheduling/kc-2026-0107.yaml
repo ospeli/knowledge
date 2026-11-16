@@ -1,6 +1,6 @@
 id: kc-2026-0107
 version: 1
-status: candidate
+status: approved
 title: E-referral platform answered three in four paediatric referrals within an hour
 summary: Over two years, a South African specialist paediatric department received 579 e-referrals, mostly from primary care nurses, with volume up 50% in the second year. 76.7% got a response within an hour; 18% were managed locally with advice and 22.8% were booked into outpatients.
 intervention: Electronic referral platform to a specialist paediatric service
@@ -48,3 +48,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-site retrospective descriptive review, no comparator measured, no CI: OE5. Lesson for A1 (and the two-site polyclinic): time each referral from sent to answered and record its outcome; about one in five needed no visit at all. Clinical advice content is out of scope. LMIC yes: UMIC public setting, nurse-led referrals from primary care.'
 review_by: '2031-11-15'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-16'
+  notes: '76.7%, 18.0% and 22.8% checked against stored abstract; ZA UMIC; descriptive OE5; clinical advice content out of scope.'
