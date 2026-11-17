@@ -1,0 +1,37 @@
+id: kc-2026-0119
+version: 1
+status: candidate
+title: Patients rate SMS and phone reminders highly; digital exclusion limits reach
+summary: A scoping review of 45 studies of patient and carer views of technology-based appointment reminders found high satisfaction, mostly with SMS. Digital exclusion, language, confidentiality and socio-economic barriers recurred, and few studies examined who was left out.
+intervention: Technology-facilitated appointment reminders (SMS, phone calls, app notifications)
+comparator: None
+source:
+  doi: 10.1093/jamia/ocag112
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1093/jamia/ocag112
+domains:
+- A1_access_scheduling
+- E4_patient_experience
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: mixed
+  facility: various
+kpis:
+- name: reminder_satisfaction
+  definition: Patient and carer satisfaction with technology-based reminders (qualitative, no pooled figure)
+  evidence:
+    quote: Patients and carers reported high satisfaction.
+- name: reminder_engagement_barriers
+  definition: Recurring barriers to engaging with reminders
+  evidence:
+    quote: Recurring barriers included digital exclusion, language challenges, confidentiality concerns, and socio-economic inequalities.
+implementation_needs:
+- reminder language chosen per patient
+- a non-smartphone channel (voice call or SMS)
+- minimal content in the message for confidentiality
+lmic_applicability: partial
+notes: 'Scoping review (no quality appraisal reported) of mostly cross-sectional surveys of perceptions, not attendance outcomes: downgraded to OE4. Income mix of included studies not stated; recorded as mixed. For A1: offer SMS and voice, choose language, keep message content minimal. LMIC partial: SMS is widely usable, but literacy, shared phones and language need design attention.'
+review_by: '2031-11-17'

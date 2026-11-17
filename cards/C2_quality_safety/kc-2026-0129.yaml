@@ -1,0 +1,33 @@
+id: kc-2026-0129
+version: 1
+status: candidate
+title: Lean can improve teamwork but harms psychological safety when driven by pressure
+summary: A scoping review of 17 hospital studies (2003-2023) found Lean can improve teamwork and staff engagement, but may reduce psychological safety and intensify work when driven by managerial pressure rather than participation. Leadership maturity and depth of implementation shaped results.
+intervention: Lean healthcare transformation
+comparator: None
+source:
+  doi: 10.58830/ozgur.pub1519.c6127
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.58830/ozgur.pub1519.c6127
+domains:
+- C2_quality_safety
+- C1_workforce
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: unknown
+  facility: hospitals
+kpis:
+- name: staff_outcomes_of_lean
+  definition: Staff teamwork, engagement and psychological safety under Lean (qualitative)
+  evidence:
+    quote: The review finds that Lean tools can improve teamwork and engagement but may also reduce psychological safety when managerial pressure, rather than participative cultural development, drives implementation.
+implementation_needs:
+- staff-led mapping sessions
+- leaders trained in participative improvement
+- measure process, never individual speed
+lmic_applicability: partial
+notes: 'Scoping review in a book chapter, thematic synthesis, no quality appraisal reported: OE4. For X1 process mapping and walk mode: supports measuring flows not people, and letting the ward team own the map. LMIC partial: settings of included studies not stated in the abstract.'
+review_by: '2031-11-17'

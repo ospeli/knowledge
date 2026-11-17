@@ -1,0 +1,33 @@
+id: kc-2026-0124
+version: 1
+status: candidate
+title: Ghana framework contracts cut medicine prices and lead times but stock-outs continued
+summary: A qualitative case study of Ghana's framework contracting for essential medicines found documented falls in contract prices and supplier lead times. Supplier fill rates and forecast accuracy stayed low, facility stock-outs continued and debts built up, because payment and call-off sat with regional stores and hospitals.
+intervention: National framework contracting (multiple suppliers per product, firm prices, indicative volumes)
+comparator: Fragmented purchasing before 2018 (described, not measured)
+source:
+  doi: 10.21203/rs.3.rs-10899965/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10899965/v1
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: qualitative
+evidence_level: OE5
+setting:
+  country: GH
+  income: LMIC
+  facility: national_medicines_supply_system
+kpis:
+- name: supply_performance
+  definition: Contract prices, supplier lead times, fill rates, forecast accuracy and facility stock-outs (from documents, no figures in abstract)
+  evidence:
+    quote: The documentary record showed substantial reductions in contract prices and supplier lead times alongside low supplier fill rates, weak forecast accuracy, continuing facility-level stockouts and accumulated indebtedness across the financing chain.
+implementation_needs:
+- supplier fill rate tracked per order
+- forecast versus actual demand tracked
+- timely payment to suppliers
+lmic_applicability: 'yes'
+notes: 'Preprint; qualitative case study (11 documents, 10 senior interviews): OE5. No effect sizes in the abstract. For B4: track supplier fill rate and order lead time per purchase order, not price alone; a cheaper contract does not mean stock on the shelf. LMIC yes: Ghana.'
+review_by: '2031-11-17'

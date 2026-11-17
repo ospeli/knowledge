@@ -1,0 +1,37 @@
+id: kc-2026-0122
+version: 1
+status: candidate
+title: ABC critical-index analysis guides hospital drug stock control in Indonesia
+summary: A systematic review of eight Indonesian studies found hospitals use ABC critical-index analysis to focus monitoring on the few drugs that take most of the budget. Integrated information systems, e-prescribing, Economic Order Quantity and reorder points were linked to better stock monitoring and fewer stock-outs.
+intervention: ABC critical-index classification of drug inventory, with EOQ and reorder points
+comparator: None
+source:
+  doi: 10.35451/jfm.v9i1.3687
+  tier: B
+  licence: cc-by-nd
+  url: https://doi.org/10.35451/jfm.v9i1.3687
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: ID
+  income: UMIC
+  facility: hospital_pharmacy
+kpis:
+- name: stock_out_risk
+  definition: Risk of drug stock-outs (qualitative, no pooled figure)
+  evidence:
+    quote: In addition, the study also emphasized the importance of integrated information systems and electronic prescription systems to improve the accuracy of stock monitoring and reduce the risk of stock outs.
+- name: budget_share_category_a
+  definition: Share of the drug budget absorbed by category A items (qualitative)
+  evidence:
+    quote: Category A drugs, despite their small number of items, absorb the largest portion of the budget and therefore require close monitoring.
+implementation_needs:
+- item list with annual usage value
+- criticality rating per item
+- reorder point and order quantity per item
+lmic_applicability: 'yes'
+notes: 'Small review (8 studies), no quality appraisal reported, weak venue, primary studies appear descriptive: OE4. No outcome effect sizes. For B4 and the shared stock object: support ABC (value) and criticality classes, with reorder points, from the start. LMIC yes: Indonesian public-insurance hospitals; method needs only a stock ledger.'
+review_by: '2031-11-17'

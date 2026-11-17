@@ -1,0 +1,51 @@
+id: kc-2026-0117
+version: 1
+status: candidate
+title: Schedulers logging barriers found 29% of post-discharge follow-up bookings hit one
+summary: Schedulers booking primary care follow-up after hospital discharge logged barriers in a structured form refined through PDSA cycles. Barriers were recorded in 29% of notes; clinician availability (46%) and patient-related reasons (42%) were the commonest, which led to protected follow-up slots and clinic outreach.
+intervention: Structured in-workflow form for schedulers to record booking barriers, refined by PDSA cycles and reviewed with interdisciplinary teams
+comparator: None
+source:
+  doi: 10.56305/001c.170605
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.56305/001c.170605
+domains:
+- A3_inpatient_flow
+- A1_access_scheduling
+- C2_quality_safety
+design: case_study
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_and_primary_care_clinics
+kpis:
+- name: booking_notes_with_barrier_pct
+  definition: Share of scheduler notes for post-discharge follow-up that recorded a barrier, Aug 2022 to Oct 2024
+  effect:
+    value: '29'
+    unit: percent
+  evidence:
+    quote: Barriers were documented in 4,024 notes (29%), with 2,896 barrier notations after excluding "reason not listed."
+- name: barrier_clinician_availability_pct
+  definition: Share of barrier notations due to primary care clinician availability
+  effect:
+    value: '46'
+    unit: percent
+  evidence:
+    quote: The most common barriers were PCP availability constraints (46%), namely accommodation requests (30%); and patient-related reasons (42%), namely patients feeling the appointment was not needed (12%).
+- name: barrier_patient_related_pct
+  definition: Share of barrier notations due to patient-related reasons
+  effect:
+    value: '42'
+    unit: percent
+  evidence:
+    quote: The most common barriers were PCP availability constraints (46%), namely accommodation requests (30%); and patient-related reasons (42%), namely patients feeling the appointment was not needed (12%).
+implementation_needs:
+- short barrier pick-list inside the booking screen
+- regular review of barrier data with clinic leads
+- protected follow-up slots for discharged patients
+lmic_applicability: partial
+notes: 'Descriptive quality-improvement report; no change in follow-up rates or readmissions is reported in the abstract: OE5. Country not stated in the abstract. For A3 and A1: a one-tap "why could this not be booked" reason on the booking screen gives managers a barrier list without extra work. LMIC partial: the idea needs no EHR (a paper or phone pick-list works), but post-discharge primary care follow-up may not exist in the same form.'
+review_by: '2031-11-17'

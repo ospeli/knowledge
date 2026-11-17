@@ -1,0 +1,34 @@
+id: kc-2026-0125
+version: 1
+status: candidate
+title: A Brazilian university hospital built a discharge committee by action research
+summary: Over 12 months, a university hospital in north-eastern Brazil used action research to set up a hospital discharge management committee. The group built eligibility criteria, a readiness scale and discharge and post-discharge workflows, and members perceived better patient and caregiver monitoring in the pilot unit.
+intervention: Hospital Discharge Management Committee with eligibility criteria, readiness scale and discharge workflows
+comparator: None
+source:
+  doi: 10.1590/0034-7167-2025-0174
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1590/0034-7167-2025-0174
+domains:
+- A3_inpatient_flow
+- E2_primary_community
+design: qualitative
+evidence_level: OE5
+setting:
+  country: BR
+  income: UMIC
+  facility: university_hospital
+kpis:
+- name: perceived_discharge_monitoring
+  definition: Committee members' perception of patient and caregiver monitoring (no quantitative KPI reported)
+  evidence:
+    quote: In the group's perception, there was an improvement in patient and caregiver monitoring, as well as a positive assessment of committee formation and methodology used, valuing each individual contribution.
+implementation_needs:
+- multidisciplinary discharge committee
+- eligibility criteria and readiness scale
+- written discharge and post-discharge workflow
+- one pilot unit first
+lmic_applicability: 'yes'
+notes: 'Qualitative action research, one pilot unit, perceptions only; no length-of-stay or readmission figures: OE5. Useful as an implementation pattern (situational diagnosis, plan, implement, assess) for A3 discharge planning screens. LMIC yes: Brazilian public university hospital.'
+review_by: '2031-11-17'

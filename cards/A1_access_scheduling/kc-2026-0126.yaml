@@ -1,0 +1,33 @@
+id: kc-2026-0126
+version: 1
+status: candidate
+title: Care pathway coordinators cut non-value-added steps in Norwegian cancer pathways
+summary: Interviews across colorectal and prostate cancer pathways in three Norwegian hospitals found pathway coordinators were central to removing non-value-added activities and bottlenecks between departments. Using real-time data and planning beyond day-to-day operations remained hard.
+intervention: Care pathway practices, especially a pathway coordinator role
+comparator: None
+source:
+  doi: 10.1186/s12913-026-16044-2
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1186/s12913-026-16044-2
+domains:
+- A1_access_scheduling
+- C6_strategy_planning
+design: qualitative
+evidence_level: OE5
+setting:
+  country: 'NO'
+  income: HIC
+  facility: hospitals_3
+kpis:
+- name: pathway_patient_flow
+  definition: Non-value-added activities and bottlenecks along the pathway (qualitative)
+  evidence:
+    quote: Findings reveal that care pathway coordinators play a crucial role in reducing non-value-added activities and bottlenecks; however, challenges remain in leveraging real-time data and extending the planning horizon beyond operational level.
+implementation_needs:
+- named coordinator per pathway
+- shared view of where each patient is in the pathway
+- planning horizon beyond the current week
+lmic_applicability: partial
+notes: 'Multiple case study, 35 interviews, no measured flow outcomes: OE5. For X1 process mapping: the coordinator role is where value-stream findings get acted on; give that role the map and a live view. LMIC partial: needs a dedicated coordinator post.'
+review_by: '2031-11-17'

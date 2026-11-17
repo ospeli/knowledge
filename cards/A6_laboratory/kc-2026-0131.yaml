@@ -1,0 +1,33 @@
+id: kc-2026-0131
+version: 1
+status: candidate
+title: Slow lab and imaging turnaround is linked with longer ED stays and boarding
+summary: A systematic review found delays in laboratory and radiology results were consistently associated with longer emergency department length of stay and more boarding, and that streamlining diagnostic pathways reduced length of stay in some studies.
+intervention: Streamlined diagnostic pathways (various)
+comparator: Usual diagnostic processes
+source:
+  doi: 10.33024/mahesa.v6i11.25268
+  tier: B
+  licence: cc-by-sa
+  url: https://doi.org/10.33024/mahesa.v6i11.25268
+domains:
+- A6_laboratory
+- A7_imaging
+- A2_emergency_flow
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: unknown
+  facility: hospital_ed
+kpis:
+- name: diagnostic_tat_and_ed_los
+  definition: Association between diagnostic turnaround time and ED length of stay (qualitative)
+  evidence:
+    quote: The findings indicated that diagnostic delays, particularly in laboratory testing and radiological examinations, were consistently associated with longer ED LOS and increased boarding time.
+implementation_needs:
+- time stamps for request, sample or scan, and result
+- turnaround time shown per test type
+lmic_applicability: partial
+notes: 'Review in a student journal; number of included studies and quality appraisal not given; review years are inconsistent (2019-2025 in the title, 2022-2026 in the text); mostly observational studies: OE4. For A5 diagnostics: turnaround time is a flow KPI for the ED too. LMIC partial: settings not stated in the abstract.'
+review_by: '2031-11-17'

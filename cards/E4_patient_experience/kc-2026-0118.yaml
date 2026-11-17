@@ -1,0 +1,39 @@
+id: kc-2026-0118
+version: 1
+status: candidate
+title: Outpatients at a one-stop service centre reported 89.17% overall satisfaction
+summary: A survey of 1,016 outpatients and family members at one tertiary hospital found 89.17% overall satisfaction with a one-stop service model. Convenience of the one-stop process was the strongest predictor of satisfaction; on-time versus delayed waiting was not significant once other factors were included.
+intervention: One-stop outpatient service centre
+comparator: None (cross-sectional)
+source:
+  doi: 10.1002/hsr2.73330
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1002/hsr2.73330
+domains:
+- E4_patient_experience
+- A5_outpatients
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: tertiary_hospital_outpatients
+kpis:
+- name: outpatient_overall_satisfaction_pct
+  definition: Share of surveyed outpatients or family members reporting overall satisfaction (PSQ), March-April 2025
+  effect:
+    value: '89.17'
+    unit: percent
+  evidence:
+    quote: The overall satisfaction level among outpatients was relatively high, at 89.17% (906/1016).
+- name: waiting_time_effect_on_satisfaction
+  definition: Whether on-time versus delayed waiting predicted satisfaction in the multivariable model (no effect size carded)
+  evidence:
+    quote: In contrast, demographic variables (age, gender) and binary waiting time (on-time vs. delayed) were not significant in the multivariable model (all p > 0.05).
+implementation_needs:
+- single counter or desk for registration, payment and queries
+- short patient survey with process-convenience items
+lmic_applicability: partial
+notes: 'Single-site cross-sectional survey with no before-after or control comparison, so the satisfaction level cannot be attributed to the one-stop model: OE5. The reported correlations (r = 0.992) and model fit (R2 = 0.999) are implausibly high and suggest overlap between the composite scores and the outcome; treat the "dominant driver" claim with caution. Country not stated in the abstract. For E4: ask about process convenience as well as waiting. LMIC partial: a one-stop desk is low-tech.'
+review_by: '2031-11-17'
