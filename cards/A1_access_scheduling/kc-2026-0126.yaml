@@ -1,8 +1,8 @@
 id: kc-2026-0126
 version: 1
-status: candidate
-title: Care pathway coordinators cut non-value-added steps in Norwegian cancer pathways
-summary: Interviews across colorectal and prostate cancer pathways in three Norwegian hospitals found pathway coordinators were central to removing non-value-added activities and bottlenecks between departments. Using real-time data and planning beyond day-to-day operations remained hard.
+status: approved
+title: Interviews credit pathway coordinators with cutting waste in Norwegian cancer pathways
+summary: Interviews across colorectal and prostate cancer pathways in three Norwegian hospitals found pathway coordinators were seen as central to reducing non-value-added activities and bottlenecks between departments. Using real-time data and planning beyond day-to-day operations remained hard.
 intervention: Care pathway practices, especially a pathway coordinator role
 comparator: None
 source:
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Multiple case study, 35 interviews, no measured flow outcomes: OE5. For X1 process mapping: the coordinator role is where value-stream findings get acted on; give that role the map and a live view. LMIC partial: needs a dedicated coordinator post.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: title and summary de-causalised (interview perceptions, no measured flow outcome).'

@@ -1,6 +1,6 @@
 id: kc-2026-0116
 version: 1
-status: candidate
+status: approved
 title: A pulmonary clinic had a 42.5% no-show rate; inpatient referrals missed more often
 summary: In one academic outpatient pulmonary clinic, 42.5% of appointments were no-shows and the actual follow-up interval was about twice the intended one. Appointments referred from an inpatient stay had higher odds of no-show; external outpatient referrals had lower odds.
 intervention: None (retrospective analysis of appointment outcomes by referral source and other factors)
@@ -55,3 +55,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site retrospective cohort, no confidence intervals in the abstract: OE5. Country is not stated in the abstract. Patient-level factors (diagnoses, language, payment) are deliberately not carded; only referral source is used as an operational lever. The authors suggest standardised follow-up intervals and prediction-based overbooking but did not test them. For A1: report no-show rate by referral source and compare intended with actual follow-up interval. LMIC partial: the measures need only a booking register.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

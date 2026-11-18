@@ -1,6 +1,6 @@
 id: kc-2026-0127
 version: 1
-status: candidate
+status: approved
 title: Indian outpatient waits of 90–120 minutes stem mainly from department process
 summary: A narrative review of Indian outpatient waiting-time studies found waits of 90 to 120 minutes or more for consultations or procedures lasting minutes, mostly due to departmental process. For walk-in CT and ultrasound it proposes a seven-point framework, including real-time order transmission, priority queues and turnaround monitoring.
 intervention: Proposed framework for walk-in CT and ultrasound (order transmission, decoupled billing, predictive staffing, priority queuing, parallel preparation, queue communication, turnaround monitoring)
@@ -35,3 +35,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Narrative review, no systematic search or appraisal; the framework is proposed, not tested: OE5. For A5 diagnostics (ultrasound slots) and A1: time each step from order to report so the wait can be split from scan time. LMIC yes: Indian walk-in model.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

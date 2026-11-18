@@ -1,6 +1,6 @@
 id: kc-2026-0125
 version: 1
-status: candidate
+status: approved
 title: A Brazilian university hospital built a discharge committee by action research
 summary: Over 12 months, a university hospital in north-eastern Brazil used action research to set up a hospital discharge management committee. The group built eligibility criteria, a readiness scale and discharge and post-discharge workflows, and members perceived better patient and caregiver monitoring in the pilot unit.
 intervention: Hospital Discharge Management Committee with eligibility criteria, readiness scale and discharge workflows
@@ -32,3 +32,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Qualitative action research, one pilot unit, perceptions only; no length-of-stay or readmission figures: OE5. Useful as an implementation pattern (situational diagnosis, plan, implement, assess) for A3 discharge planning screens. LMIC yes: Brazilian public university hospital.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

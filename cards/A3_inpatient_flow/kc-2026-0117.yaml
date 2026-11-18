@@ -1,8 +1,8 @@
 id: kc-2026-0117
 version: 1
-status: candidate
+status: approved
 title: Schedulers logging barriers found 29% of post-discharge follow-up bookings hit one
-summary: Schedulers booking primary care follow-up after hospital discharge logged barriers in a structured form refined through PDSA cycles. Barriers were recorded in 29% of notes; clinician availability (46%) and patient-related reasons (42%) were the commonest, which led to protected follow-up slots and clinic outreach.
+summary: Schedulers booking primary care follow-up after hospital discharge logged barriers in a structured form refined through PDSA cycles. Barriers were recorded in 29% of notes; clinician availability (46%) and patient-related reasons (42%) were the commonest, which informed education on protected follow-up slots and outreach to clinic directors.
 intervention: Structured in-workflow form for schedulers to record booking barriers, refined by PDSA cycles and reviewed with interdisciplinary teams
 comparator: None
 source:
@@ -49,3 +49,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Descriptive quality-improvement report; no change in follow-up rates or readmissions is reported in the abstract: OE5. Country not stated in the abstract. For A3 and A1: a one-tap "why could this not be booked" reason on the booking screen gives managers a barrier list without extra work. LMIC partial: the idea needs no EHR (a paper or phone pick-list works), but post-discharge primary care follow-up may not exist in the same form.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: summary "led to protected slots" corrected to "informed education on protected slots" per source.'

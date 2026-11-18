@@ -1,8 +1,8 @@
 id: kc-2026-0118
 version: 1
-status: candidate
+status: approved
 title: Outpatients at a one-stop service centre reported 89.17% overall satisfaction
-summary: A survey of 1,016 outpatients and family members at one tertiary hospital found 89.17% overall satisfaction with a one-stop service model. Convenience of the one-stop process was the strongest predictor of satisfaction; on-time versus delayed waiting was not significant once other factors were included.
+summary: A survey of 1,016 outpatients and family members at one tertiary hospital found 89.17% overall satisfaction with a one-stop service model. The authors report convenience of the one-stop process as the strongest predictor, though the model statistics are implausibly high; on-time versus delayed waiting was not significant once other factors were included.
 intervention: One-stop outpatient service centre
 comparator: None (cross-sectional)
 source:
@@ -37,3 +37,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site cross-sectional survey with no before-after or control comparison, so the satisfaction level cannot be attributed to the one-stop model: OE5. The reported correlations (r = 0.992) and model fit (R2 = 0.999) are implausibly high and suggest overlap between the composite scores and the outcome; treat the "dominant driver" claim with caution. Country not stated in the abstract. For E4: ask about process convenience as well as waiting. LMIC partial: a one-stop desk is low-tech.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: summary now attributes the dominant-driver claim to the authors and flags the implausible statistics.'

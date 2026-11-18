@@ -1,6 +1,6 @@
 id: kc-2026-0129
 version: 1
-status: candidate
+status: approved
 title: Lean can improve teamwork but harms psychological safety when driven by pressure
 summary: A scoping review of 17 hospital studies (2003-2023) found Lean can improve teamwork and staff engagement, but may reduce psychological safety and intensify work when driven by managerial pressure rather than participation. Leadership maturity and depth of implementation shaped results.
 intervention: Lean healthcare transformation
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Scoping review in a book chapter, thematic synthesis, no quality appraisal reported: OE4. For X1 process mapping and walk mode: supports measuring flows not people, and letting the ward team own the map. LMIC partial: settings of included studies not stated in the abstract.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

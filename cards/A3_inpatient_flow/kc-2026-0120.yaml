@@ -1,6 +1,6 @@
 id: kc-2026-0120
 version: 1
-status: candidate
+status: approved
 title: Insurance approvals and billing delayed discharges in an Indian tertiary hospital
 summary: A mixed-methods study of 320 inpatient discharges in an Indian tertiary hospital found most were timely, but a substantial share missed benchmarks because of insurance approvals, billing delays and logistics. Late exits overlapped with early-morning admissions, adding to emergency department congestion.
 intervention: None (diagnostic study of discharge order to exit time)
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single site, descriptive, no figures for the share missing the benchmark or the benchmark itself in the abstract; journal venue is weak: OE5. The proposed fixes (dashboard, discharge coordinator, discharge lounge) were not tested. For A3: split the discharge timeline into order, paperwork or payment cleared, and bed vacated, so the bottleneck shows. LMIC yes: Indian setting with insurance-approval steps common in mixed-payer systems.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

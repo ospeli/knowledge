@@ -1,8 +1,8 @@
 id: kc-2026-0131
 version: 1
-status: candidate
+status: approved
 title: Slow lab and imaging turnaround is linked with longer ED stays and boarding
-summary: A systematic review found delays in laboratory and radiology results were consistently associated with longer emergency department length of stay and more boarding, and that streamlining diagnostic pathways reduced length of stay in some studies.
+summary: A systematic review found delays in laboratory and radiology results were consistently associated with longer emergency department length of stay and more boarding, and that interventions streamlining diagnostic pathways were reported to reduce length of stay (no pooled figures or study count given).
 intervention: Streamlined diagnostic pathways (various)
 comparator: Usual diagnostic processes
 source:
@@ -31,3 +31,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Review in a student journal; number of included studies and quality appraisal not given; review years are inconsistent (2019-2025 in the title, 2022-2026 in the text); mostly observational studies: OE4. For A5 diagnostics: turnaround time is a flow KPI for the ED too. LMIC partial: settings not stated in the abstract.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: summary corrected: source reports LOS reductions from streamlined pathways generally, not "in some studies".'

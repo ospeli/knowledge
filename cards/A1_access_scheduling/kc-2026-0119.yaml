@@ -1,6 +1,6 @@
 id: kc-2026-0119
 version: 1
-status: candidate
+status: approved
 title: Patients rate SMS and phone reminders highly; digital exclusion limits reach
 summary: A scoping review of 45 studies of patient and carer views of technology-based appointment reminders found high satisfaction, mostly with SMS. Digital exclusion, language, confidentiality and socio-economic barriers recurred, and few studies examined who was left out.
 intervention: Technology-facilitated appointment reminders (SMS, phone calls, app notifications)
@@ -35,3 +35,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Scoping review (no quality appraisal reported) of mostly cross-sectional surveys of perceptions, not attendance outcomes: downgraded to OE4. Income mix of included studies not stated; recorded as mixed. For A1: offer SMS and voice, choose language, keep message content minimal. LMIC partial: SMS is widely usable, but literacy, shared phones and language need design attention.'
 review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'
