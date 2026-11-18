@@ -1,0 +1,39 @@
+id: kc-2026-0128
+version: 1
+status: approved
+title: An Italian ED paired a bed reserve and a bed coordinator nurse with a crowding dashboard
+summary: An Italian hospital introduced a real-time NEDOCS crowding dashboard, a reserve of beds for emergency admissions, a dedicated nurse coordinator for bed management and faster radiology for urgent requests. The authors report fewer delays in bed allocation, but the abstract gives no figures.
+intervention: NEDOCS dashboard, structured bed reserve for emergency admissions, nurse bed coordinator, prioritised ED radiology
+comparator: Before the six-month intervention (implied)
+source:
+  doi: 10.23750/abm.2026.18848
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.23750/abm.2026.18848
+domains:
+- A3_inpatient_flow
+- A2_emergency_flow
+- A7_imaging
+design: before_after
+evidence_level: OE5
+setting:
+  country: IT
+  income: HIC
+  facility: hospital_ed
+kpis:
+- name: bed_allocation_delay
+  definition: Delay from admission decision to bed allocation (qualitative, no figure in abstract)
+  evidence:
+    quote: The structured bed reserve system facilitated hospital admissions and reduced delays in bed allocation.
+implementation_needs:
+- agreed number of beds held for emergency admissions
+- named bed coordinator each shift
+- live crowding score
+lmic_applicability: partial
+notes: 'Single-site quasi-experimental study; abstract reports no numbers, so effects cannot be judged: OE5. For A3: a bed reserve and a named bed coordinator are configurable patterns (reserved-bed flag, coordinator role). LMIC partial: a reserve needs some slack capacity.'
+review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

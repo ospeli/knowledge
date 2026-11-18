@@ -1,0 +1,55 @@
+id: kc-2026-0121
+version: 1
+status: approved
+title: A FOCUS-PDCA exam-management project was linked to fewer defective inpatient exams
+summary: A hospital used FOCUS-PDCA quality improvement, with assistive staff coordinating inpatient physical examinations. Against a historical control group, defective examinations fell from 44.7% to 19.6% and median length of stay was 4 days versus 5.
+intervention: FOCUS-PDCA improvement of inpatient examination management involving unlicensed assistive personnel
+comparator: Historical control group under usual management
+source:
+  doi: 10.1038/s41598-026-74721-y
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1038/s41598-026-74721-y
+domains:
+- A3_inpatient_flow
+- C2_quality_safety
+design: before_after
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_inpatients
+kpis:
+- name: defective_examination_rate_pct
+  definition: Rate of defective inpatient examinations (denominator and defect not defined in the abstract), intervention versus historical control
+  effect:
+    value: 19.6 vs 44.7
+    unit: percent
+  evidence:
+    quote: Compared to the control group, the FOCUS-PDCA group had significantly lower rates of defect examinations (19.6% vs. 44.7%, p < 0.01), nursing interruption events (14.5% vs. 26.4%, p < 0.01), and nurse referral events (6.1% vs. 24.7%, p < 0.01).
+- name: nursing_interruption_rate_pct
+  definition: Rate of nursing interruption events (denominator not stated), intervention versus control
+  effect:
+    value: 14.5 vs 26.4
+    unit: percent
+  evidence:
+    quote: Compared to the control group, the FOCUS-PDCA group had significantly lower rates of defect examinations (19.6% vs. 44.7%, p < 0.01), nursing interruption events (14.5% vs. 26.4%, p < 0.01), and nurse referral events (6.1% vs. 24.7%, p < 0.01).
+- name: length_of_stay_median_days
+  definition: Median hospital length of stay, intervention versus control
+  effect:
+    value: 4.00 vs 5.00
+    unit: days
+  evidence:
+    quote: 'Furthermore, the FOCUS-PDCA group had higher patient satisfaction (9.04 ± 0.82 vs. 8.45 ± 0.96, p <0.01) lower hospital cost [Median: 29,434.70 RMB (IQR: 9,705.00–52,451.40) vs. 34,537.60 RMB (IQR: 14,689.98–64,222.12), p < 0.001], and shorter length of hospital stay [Median: 4.00 days (IQR: 3.00, 5.00) vs. 5.00 days (IQR: 4.00, 6.00), p < 0.001].'
+implementation_needs:
+- assistive staff to escort and coordinate exams
+- agreed definition of a defective examination
+- PDCA review cycle with ward team
+lmic_applicability: partial
+notes: 'Single site, historical control, no confidence intervals (medians with IQR and p-values): OE4 downgraded to OE5. Country not stated (costs reported in RMB). "Defect examination" is not defined in the abstract. Length of stay was not adjusted for case mix. For A3 and X1: a worked example of a PDCA cycle with a clear process KPI. LMIC partial: relies on assistive staff being available.'
+review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: KPI definitions no longer assume per-examination or per-patient denominators (not stated).'

@@ -1,0 +1,38 @@
+id: kc-2026-0130
+version: 1
+status: approved
+title: Simulated earlier full-capacity protocol activation cut time over ED crowding limits
+summary: A discrete-event simulation with a machine-learning forecast of waiting-room crowding six hours ahead compared earlier, prediction-triggered full capacity protocol activation with usual reactive activation. Earlier activation reduced time above the crowding threshold and protocol duration; ED length of stay and waits did not change significantly.
+intervention: Prediction-triggered (proactive) full capacity protocol activation
+comparator: Reactive activation after thresholds are crossed
+source:
+  doi: 10.21203/rs.3.rs-10047072/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-10047072/v1
+domains:
+- A2_emergency_flow
+- A3_inpatient_flow
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital_ed
+kpis:
+- name: time_above_crowding_threshold
+  definition: Hours with waiting-room crowding above the threshold (no figure in abstract)
+  evidence:
+    quote: Proactive deployment produced statistically significant reductions in time above the crowding threshold and average protocol duration across threshold settings, while effects on ED length of stay and wait time were not statistically significant, supporting proactive FCP for crowding control.
+implementation_needs:
+- written full capacity protocol with trigger levels
+- hourly waiting-room counts
+- person who decides activation
+lmic_applicability: uncertain
+notes: 'Preprint; calibrated and validated simulation (OE4) downgraded to OE5 for preprint status; no effect sizes in the abstract. For A3 escalation: a forecast can suggest earlier activation, but a person decides, and the rule must work with the forecast off. LMIC uncertain: needs a formal capacity protocol and hourly data.'
+review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'

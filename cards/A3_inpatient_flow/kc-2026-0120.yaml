@@ -1,0 +1,38 @@
+id: kc-2026-0120
+version: 1
+status: approved
+title: Insurance approvals and billing delayed discharges in an Indian tertiary hospital
+summary: A mixed-methods study of 320 inpatient discharges in an Indian tertiary hospital found most were timely, but a substantial share missed benchmarks because of insurance approvals, billing delays and logistics. Late exits overlapped with early-morning admissions, adding to emergency department congestion.
+intervention: None (diagnostic study of discharge order to exit time)
+comparator: Hospital discharge time benchmarks (not specified in the abstract)
+source:
+  doi: 10.64823/ijter.2609001
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.64823/ijter.2609001
+domains:
+- A3_inpatient_flow
+- D2_revenue_cycle
+design: mixed_methods
+evidence_level: OE5
+setting:
+  country: IN
+  income: LMIC
+  facility: tertiary_hospital
+kpis:
+- name: discharge_turnaround_time
+  definition: Time from physician discharge order to the patient physically leaving the bed (no figure in abstract)
+  evidence:
+    quote: The results show that most discharges are timely, but a substantial proportion fail to meet benchmarks because of the administrative complexities brought by insurance-linked cases (TPA and PSU approvals), delayed billing processing, and logistical challenges.
+implementation_needs:
+- time stamps for discharge order, billing cleared and bed vacated
+- flag for insurance-linked discharges
+- daily view of pending discharges
+lmic_applicability: 'yes'
+notes: 'Single site, descriptive, no figures for the share missing the benchmark or the benchmark itself in the abstract; journal venue is weak: OE5. The proposed fixes (dashboard, discharge coordinator, discharge lounge) were not tested. For A3: split the discharge timeline into order, paperwork or payment cleared, and bed vacated, so the bottleneck shows. LMIC yes: Indian setting with insurance-approval steps common in mixed-payer systems.'
+review_by: '2031-11-17'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-18'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. No changes needed.'
