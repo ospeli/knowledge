@@ -1,0 +1,36 @@
+id: kc-2026-0141
+version: 1
+status: candidate
+title: 'Hospital drug shortages are handled in three phases: detect, respond, then review'
+summary: A scoping review of 31 studies, mostly from high-income settings, mapped how hospital pharmacy teams manage drug shortages. Work fell into three linked phases (detection and assessment, response, mitigation and evaluation), using procurement changes, inventory control, substitution, allocation rules and moving stock between facilities, supported by communication systems.
+intervention: Structured shortage-management workflow (detect, respond, mitigate and evaluate)
+comparator: None (descriptive synthesis)
+source:
+  doi: 10.1177/00185787261489688
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1177/00185787261489688
+domains:
+- B4_supply_chain
+- A8_pharmacy
+design: systematic_review
+evidence_level: OE4
+setting:
+  country: multi
+  income: mixed
+  facility: hospital_pharmacy
+kpis:
+- name: shortage_service_impact
+  definition: Treatment delays and service disruption linked to shortages (qualitative; no pooled figure)
+  effect:
+    value: associated with delays and disruption
+  evidence:
+    checked_by: ''
+implementation_needs:
+- early-warning flag when stock falls below a threshold
+- named shortage lead
+- rules for allocation and moving stock between sites
+- communication to wards
+lmic_applicability: partial
+notes: 'Scoping review (1053 records, 31 included) with no effect estimates; mostly HIC evidence: OE4. Therapeutic substitution is a clinical decision and out of scope for Ospeli; the operational parts are detection, allocation, redistribution and communication. For B4 and A6: a shortage record with stages (detected, assessed, response, closed) and a transfer-between-sites action. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers need checking against the source by a reviewer (checked_by left empty). LMIC partial: framework transfers, evidence base is mostly high-income.'
+review_by: '2031-11-19'

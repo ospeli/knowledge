@@ -1,0 +1,58 @@
+id: kc-2026-0138
+version: 1
+status: candidate
+title: Italian hospital-wide discharge work cut stays for complex discharges and ED waits
+summary: 'An Italian teaching hospital tackled ED crowding from the output side: a simulation showed boarding as the main bottleneck, and the hospital added a written set of discharge rules, digital referral routes to community and home care, and nursing protocols. Over 2019-2024, with ED volume up by about a quarter, average stay for complex discharges fell by about a quarter and overall ED waits fell by 17.8%, but boarding time rose.'
+intervention: 'Hospital-wide output measures: discharge rule set, digitised community and home-care discharge pathways, nursing protocols'
+comparator: Same hospital before the interventions (2019 baseline)
+source:
+  doi: 10.1177/09514848261490128
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1177/09514848261490128
+domains:
+- A3_inpatient_flow
+- A2_emergency_flow
+- E2_primary_community
+design: before_after
+evidence_level: OE5
+setting:
+  country: IT
+  income: HIC
+  facility: teaching_hospital
+kpis:
+- name: alos_complex_discharge_community_facility
+  definition: Average length of stay for patients discharged to community continuity-of-care beds
+  effect:
+    value: -24.6
+    unit: percent
+  evidence:
+    checked_by: ''
+- name: alos_complex_discharge_home_care
+  definition: Average length of stay for patients discharged with integrated home care
+  effect:
+    value: -22.6
+    unit: percent
+  evidence:
+    checked_by: ''
+- name: ed_waiting_time
+  definition: Overall ED waiting time
+  effect:
+    value: -17.8
+    unit: percent
+  evidence:
+    checked_by: ''
+- name: ed_boarding_time
+  definition: Time admitted patients waited in the ED for a bed
+  effect:
+    value: increased
+  evidence:
+    checked_by: ''
+implementation_needs:
+- agreed discharge rules
+- electronic referral to community and home care
+- boarding time measured
+- length of stay by discharge destination
+lmic_applicability: partial
+notes: 'Single-site pre-post over 199,354 ED visits with no control and secular changes (volume up 23.6%); CI reported only for satisfaction: OE5. Boarding rose, which the authors link to case complexity and a policy of not boarding medical patients on surgical wards; a reader should not take the ED gain as a boarding gain. For A3: report length of stay by discharge destination (home, home care, community bed) so delays for complex discharges are visible. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers need checking against the source by a reviewer (checked_by left empty). LMIC partial: needs community and home-care services to discharge into.'
+review_by: '2031-11-19'

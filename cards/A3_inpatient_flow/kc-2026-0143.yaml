@@ -1,0 +1,37 @@
+id: kc-2026-0143
+version: 1
+status: candidate
+title: Redesign diagnostics traced long stays in one patient group to discharge planning gaps
+summary: A Sydney tertiary hospital used healthcare redesign diagnostic tools (data analysis, mapping the patient journey, staff and patient input, then prioritisation) for one group of admitted patients with an average stay of 13 days. The diagnostic picked three feasible targets, including timely discharge planning, and traced root causes to missing care pathways, poor coordination and fragmented handover to community services.
+intervention: Mixed-methods redesign diagnostic phase (evidence gathering, triangulation, prioritisation)
+comparator: None (diagnostic phase before redesign)
+source:
+  doi: 10.1002/nop2.70954
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1002/nop2.70954
+domains:
+- A3_inpatient_flow
+- C6_strategy_planning
+design: mixed_methods
+evidence_level: OE5
+setting:
+  country: AU
+  income: HIC
+  facility: tertiary_hospital
+kpis:
+- name: mean_length_of_stay_days
+  definition: Average length of stay for the patient group studied (baseline, before redesign)
+  effect:
+    value: 13
+    unit: days
+  evidence:
+    quote: Their average LOS was 13 days.
+implementation_needs:
+- length of stay data for the patient group
+- patient journey walk or map
+- staff and patient interviews
+- prioritisation by impact and feasibility
+lmic_applicability: partial
+notes: 'Single-site diagnostic phase; no intervention yet and no outcome change, so OE5. The number is a baseline, not an effect. Medication-management targets are clinical and out of scope. For X1 process mapping and walk mode: an example of the diagnose-then-prioritise sequence (map the journey, triangulate with data, pick high-impact and feasible targets) that walk mode supports before any change. LMIC partial: the method is low cost; the data step needs reliable admission and discharge times.'
+review_by: '2031-11-19'

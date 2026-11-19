@@ -1,0 +1,42 @@
+id: kc-2026-0140
+version: 1
+status: candidate
+title: A 15-question discharge checklist reliably shows how ready patients feel to go home
+summary: At a US tertiary hospital, 269 general medicine patients expected to leave within one to two days completed a 15-item discharge checklist. The items formed one reliable scale; patients who were younger, had shorter stays and better cognitive and mental health scored as more prepared.
+intervention: Patient-completed 15-item discharge checklist 24-48 hours before expected discharge
+comparator: None (validation study)
+source:
+  doi: 10.1097/pts.0000000000001606
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1097/pts.0000000000001606
+domains:
+- A3_inpatient_flow
+- E4_patient_experience
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: tertiary_hospital
+kpis:
+- name: checklist_internal_consistency
+  definition: Cronbach alpha of the 15-item discharge checklist
+  effect:
+    value: 0.85
+    unit: Cronbach alpha
+  evidence:
+    checked_by: ''
+- name: discharge_readiness_by_length_of_stay
+  definition: Association of checklist score with length of stay (shorter stay, higher readiness)
+  effect:
+    value: shorter stay associated with higher readiness
+  evidence:
+    checked_by: ''
+implementation_needs:
+- expected discharge date set early
+- checklist given 1 to 2 days before discharge
+- named person to act on unmet items
+lmic_applicability: partial
+notes: 'Single-site psychometric validation; no intervention or outcome comparison: OE5. Useful as a discharge-readiness tool, not proof that using it shortens stays. For A3: a short patient-facing readiness checklist tied to the expected discharge date can surface blockers a day early; items stay operational (transport, equipment, who to call), no clinical content. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers need checking against the source by a reviewer (checked_by left empty). LMIC partial: needs translation and literacy adaptation.'
+review_by: '2031-11-19'

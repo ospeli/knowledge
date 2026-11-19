@@ -1,0 +1,34 @@
+id: kc-2026-0134
+version: 1
+status: candidate
+title: Appointment templates that hold slots for walk-ins balance a primary care doctor's day
+summary: An operations research study designed 'masks' (weekly appointment templates that set how many slots each day keeps for booked patients and walk-ins) for a primary care practice, including robust versions for uncertain demand and no-shows. In an agent-based simulation the masks were compared with five published scheduling systems on overtime, idle time and turned-away requests; the abstract does not give the results.
+intervention: Robust mask-based appointment templates (booked and walk-in capacity planned per day)
+comparator: Five appointment scheduling systems from the literature (simulated)
+source:
+  doi: 10.1007/s10729-026-09789-z
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1007/s10729-026-09789-z
+domains:
+- A1_access_scheduling
+- A5_outpatients
+- E2_primary_community
+design: optimisation
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: primary_care_practice
+kpis:
+- name: clinician_overtime_idle_and_rejections
+  definition: Doctor overtime, idle time, unsuccessful treatment requests and rejected walk-ins (simulated; no figures in abstract)
+  evidence:
+    quote: We evaluate the mask-based appointment scheduling systems and compare them with five appointment scheduling systems from the literature on the basis of key performance indicators such as the PCP's overtime and idle time as well as the number of unsuccessful treatment requests or rejected walk-ins.
+implementation_needs:
+- walk-in and booked demand counted per weekday
+- no-show rate per session
+- clinic template that can reserve walk-in slots
+lmic_applicability: partial
+notes: 'Optimisation model tested by agent-based simulation; results not in the abstract, so the direction of benefit cannot be checked from the stored text: OE5. Uncertain: the case-study setting is not named in the abstract. For A1 (polyclinic pilot): supports a clinic template with a planned number of walk-in slots per session, sized from counted walk-in and no-show rates. LMIC partial: walk-in heavy clinics are common in LMICs, but the method needs demand data.'
+review_by: '2031-11-19'

@@ -1,0 +1,36 @@
+id: kc-2026-0137
+version: 1
+status: candidate
+title: Shared lifts, not dispatch rules, drove late hospital deliveries in a simulation
+summary: A simulation replayed 33,079 real hospital delivery requests to compare human-only dispatch with robot dispatch rules. Pickup travel loaded a shared bank of lifts; in one high-staffing case, doubling lift capacity from two to four cut late human-only deliveries from 55.11% to 3.18%, a bigger effect than any dispatch rule.
+intervention: 'Scenario: more lift capacity; resource-aware robot dispatch'
+comparator: Human dispatch with two lifts (simulated)
+source:
+  doi: 10.48550/arxiv.2610.05971
+  tier: B
+  licence: cc-by-sa
+  url: https://doi.org/10.48550/arxiv.2610.05971
+domains:
+- B3_hotel_services
+- B2_estates_facilities
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: hospital
+kpis:
+- name: late_deliveries_share
+  definition: Share of delivery requests completed after their deadline, human-only dispatch, lift capacity 2 vs 4 (simulated, one scenario)
+  effect:
+    value: 55.11 to 3.18
+    unit: percent of requests
+  evidence:
+    quote: In one high staffing case, raising assumed elevator capacity from two to four reduces human only lateness from 55.11\% to 3.18\%, exceeding the dispatch differences.
+implementation_needs:
+- request time, pickup, delivery and deadline recorded per job
+- lift waits noted
+- porter availability by hour
+lmic_applicability: partial
+notes: 'Preprint; discrete-event replay of observed requests, but contents, deadlines, staffing and completion times are scenario assumptions, and the authors say results are not estimates of hospital benefit: OE5. For B3 portering: record each job''s request, pickup and completion times and where it waited, so shared bottlenecks (lifts) show up before blaming dispatch or staff. Measure the flow, not the porter. LMIC partial: robots are rare, but lift bottlenecks are common in multi-storey hospitals.'
+review_by: '2031-11-19'

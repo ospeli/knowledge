@@ -1,0 +1,43 @@
+id: kc-2026-0136
+version: 1
+status: candidate
+title: Digital twin model claims a 31% cut in unplanned equipment downtime
+summary: A conference-style engineering paper proposes a digital twin for predictive maintenance of critical medical equipment (MRI scanners, ventilators, infusion pumps, monitors), using sensor data, usage history and fault records. The authors report 96.4% fault-prediction accuracy and a 31% fall in unplanned downtime, but the abstract does not say where or how this was measured.
+intervention: Digital twin predictive maintenance using telemetry, usage and fault history
+comparator: Reactive or time-based maintenance (implied)
+source:
+  doi: 10.24874/pes08.03.001
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.24874/pes08.03.001
+domains:
+- B1_biomedical_engineering
+- D3_it_digital
+design: other
+evidence_level: OE5
+setting:
+  country: unknown
+  income: unknown
+  facility: unknown
+kpis:
+- name: unplanned_equipment_downtime
+  definition: Unplanned equipment downtime with the framework vs without (setting and method not stated)
+  effect:
+    value: -31
+    unit: percent
+  evidence:
+    quote: Moreover, the framework allows reducing the unplanned equipment downtimes by 31 percent and maintenance expenses by 27 percent on the whole.
+- name: maintenance_cost
+  definition: Total maintenance expense with the framework vs without
+  effect:
+    value: -27
+    unit: percent
+  evidence:
+    quote: Moreover, the framework allows reducing the unplanned equipment downtimes by 31 percent and maintenance expenses by 27 percent on the whole.
+implementation_needs:
+- asset register with fault history
+- equipment usage hours recorded
+- sensor telemetry (high-end equipment only)
+lmic_applicability: uncertain
+notes: 'Unvalidated model: the abstract names no hospital, sample or comparison, and the figures may be simulated: OE5. Uncertain: treat the numbers as claims, not expected results. A biomedical engineering manager would use only the low-tech part now: a clean fault history and usage log per asset is the precondition for any predictive maintenance. For B1: keep fault history and downtime per asset; do not promise prediction. LMIC uncertain: telemetry is rare on older equipment.'
+review_by: '2031-11-19'
