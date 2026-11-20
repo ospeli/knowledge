@@ -1,8 +1,8 @@
 id: kc-2026-0137
 version: 1
-status: candidate
-title: Shared lifts, not dispatch rules, drove late hospital deliveries in a simulation
-summary: A simulation replayed 33,079 real hospital delivery requests to compare human-only dispatch with robot dispatch rules. Pickup travel loaded a shared bank of lifts; in one high-staffing case, doubling lift capacity from two to four cut late human-only deliveries from 55.11% to 3.18%, a bigger effect than any dispatch rule.
+status: approved
+title: In a hospital delivery simulation, more lift capacity cut lateness more than dispatch rules did
+summary: A simulation replayed 33,079 real hospital delivery requests to compare human-only dispatch with robot dispatch rules. Pickup travel loaded a shared bank of lifts; in one high-staffing case, raising assumed lift capacity from two to four cut late human-only deliveries from 55.11% to 3.18%, more than the differences between dispatch rules.
 intervention: 'Scenario: more lift capacity; resource-aware robot dispatch'
 comparator: Human dispatch with two lifts (simulated)
 source:
@@ -34,3 +34,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Preprint; discrete-event replay of observed requests, but contents, deadlines, staffing and completion times are scenario assumptions, and the authors say results are not estimates of hospital benefit: OE5. For B3 portering: record each job''s request, pickup and completion times and where it waited, so shared bottlenecks (lifts) show up before blaming dispatch or staff. Measure the flow, not the porter. LMIC partial: robots are rare, but lift bottlenecks are common in multi-storey hospitals.'
 review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against stored abstract: 33,079 replayed requests, 55.11% to 3.18% lateness at lift capacity 2 vs 4 in one high-staffing scenario, verbatim; preprint simulation, authors say not estimates of hospital benefit: OE5 kept. Fixes: title no longer claims lifts "drove" lateness generally (one scenario); lift capacity marked as assumed.'

@@ -1,6 +1,6 @@
 id: kc-2026-0141
 version: 1
-status: candidate
+status: approved
 title: 'Hospital drug shortages are handled in three phases: detect, respond, then review'
 summary: A scoping review of 31 studies, mostly from high-income settings, mapped how hospital pharmacy teams manage drug shortages. Work fell into three linked phases (detection and assessment, response, mitigation and evaluation), using procurement changes, inventory control, substitution, allocation rules and moving stock between facilities, supported by communication systems.
 intervention: Structured shortage-management workflow (detect, respond, mitigate and evaluate)
@@ -25,12 +25,17 @@ kpis:
   effect:
     value: associated with delays and disruption
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
 - early-warning flag when stock falls below a threshold
 - named shortage lead
 - rules for allocation and moving stock between sites
 - communication to wards
 lmic_applicability: partial
-notes: 'Scoping review (1053 records, 31 included) with no effect estimates; mostly HIC evidence: OE4. Therapeutic substitution is a clinical decision and out of scope for Ospeli; the operational parts are detection, allocation, redistribution and communication. For B4 and A6: a shortage record with stages (detected, assessed, response, closed) and a transfer-between-sites action. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers need checking against the source by a reviewer (checked_by left empty). LMIC partial: framework transfers, evidence base is mostly high-income.'
+notes: 'Scoping review (1053 records, 31 included) with no effect estimates; mostly HIC evidence: OE4. Therapeutic substitution is a clinical decision and out of scope for Ospeli; the operational parts are detection, allocation, redistribution and communication. For B4 and A6: a shortage record with stages (detected, assessed, response, closed) and a transfer-between-sites action. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers checked against the PubMed abstract by ospeli-review-bot. LMIC partial: framework transfers, evidence base is mostly high-income.'
 review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against PubMed abstract PMID 42856770: 1,053 records, 31 studies, mostly HIC, three phases and listed strategies match; scoping review with no effect estimates: OE4 kept (downgraded from review level, reason in notes); therapeutic substitution flagged as clinical and out of scope.'

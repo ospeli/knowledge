@@ -1,8 +1,8 @@
 id: kc-2026-0139
 version: 1
-status: candidate
+status: approved
 title: Virtual nursing across nine US hospitals linked to shorter stays after about six months
-summary: Across nine hospitals in one US health system, a central virtual nursing programme (remote nurses supporting admission and other ward tasks) was followed by a fall in hospital length of stay of about 0.8 days and ED length of stay of about 0.4 hours, compared with hospitals that had not yet started. The gains appeared only six to seven months after go-live.
+summary: Across nine hospitals in one US health system, a central virtual nursing programme (remote nurses supporting admission workflows) was followed by a fall in hospital length of stay of about 0.8 days and ED length of stay of about 0.4 hours, compared with hospitals that had not yet started. The gains appeared only six to seven months after go-live.
 intervention: Centralised virtual nursing programme (staggered go-live by hospital)
 comparator: Not-yet-implemented hospitals (staggered difference-in-differences)
 source:
@@ -31,7 +31,7 @@ kpis:
     - -0.94
     - -0.631
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 - name: ed_length_of_stay_hours
   definition: ED length of stay for admitted adults, average treatment effect on treated hospitals
   effect:
@@ -41,11 +41,16 @@ kpis:
     - -0.516
     - -0.281
   evidence:
-    checked_by: ''
+    checked_by: ospeli-review-bot
 implementation_needs:
-- remote nursing team and video links to rooms
-- admission and discharge task lists split between bedside and remote nurses
+- remote nursing team
+- admission tasks split between bedside and remote nurses
 - at least 6 to 12 months of follow-up before judging
 lmic_applicability: uncertain
-notes: 'Retrospective staggered difference-in-differences on 129,080 encounters with not-yet-treated hospitals as comparators, plus matched analyses; observational, one health system: OE3. Median hospital stay did not change (3.9 days) while the mean fell, so the gain is in longer stays. For A3: judge a workflow change on a 6 to 12 month run chart, not the first months. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers need checking against the source by a reviewer (checked_by left empty). LMIC uncertain: needs reliable video links and spare nursing capacity.'
+notes: 'Retrospective staggered difference-in-differences on 129,080 encounters with not-yet-treated hospitals as comparators, plus matched analyses; observational, one health system: OE3. Median hospital stay did not change (3.9 days) while the mean fell, so the gain is in longer stays. For A3: judge a workflow change on a 6 to 12 month run chart, not the first months. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers checked against the PubMed abstract by ospeli-review-bot. LMIC uncertain: needs reliable video links and spare nursing capacity.'
 review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against PubMed abstract PMID 42976388: HLOS ATT -0.786 d (-0.940 to -0.631), EDLOS ATT -0.398 h (-0.516 to -0.281), 9 hospitals, 129,080 encounters, effects from month 6 (HLOS) and 7 (EDLOS), median HLOS unchanged 3.9 d; staggered DiD with not-yet-treated comparators: OE3 kept; US HIC. Fixes: "other ward tasks", discharge task lists and video links removed (not in source).'

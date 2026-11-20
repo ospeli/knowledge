@@ -1,8 +1,8 @@
 id: kc-2026-0135
 version: 1
-status: candidate
-title: An extra weekly clinic and a reminder register cut waits and lost follow-up
-summary: At a US safety-net teaching hospital eye clinic, adding one extra weekly procedure clinic cut the time from referral to procedure by 37 days. Adding a register of high-risk patients with appointment reminders then lowered the odds of being lost to follow-up at 3 months and raised clinic attendance.
+status: approved
+title: An extra weekly clinic and a reminder register were followed by shorter waits and less lost follow-up
+summary: At a US safety-net teaching hospital eye clinic, adding one extra weekly procedure clinic was associated with a 37-day shorter time from referral to procedure. Adding a register of high-risk patients with appointment reminders was then associated with lower odds of being lost to follow-up at 3 months and raised clinic attendance.
 intervention: One additional weekly procedure session, then a high-risk patient register with appointment reminders
 comparator: Historical cohort in the 8 months before (sequential cohorts)
 source:
@@ -28,7 +28,7 @@ kpis:
   evidence:
     quote: 'The introduction of an additional weekly PRP clinic was associated with a decrease in time from referral to PRP by 37 days ( p < 0.001), increased odds of 3‐month PRP (odds ratio [OR]: 6.53; 95% confidence interval [CI]: 3.03–14.10; p < 0.001) and 3‐month full PRP (OR: 4.66; 95% CI: 2.22–9.78; p < 0.001).'
 - name: loss_to_follow_up_3m
-  definition: Odds of no attendance within 3 months, register and reminders vs historical cohort
+  definition: Odds of 3-month loss to follow-up, register and reminders vs historical cohort
   effect:
     value: 0.1
     unit: odds ratio
@@ -54,3 +54,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-centre retrospective sequential cohorts (115, 74 and 65 encounters) with mixed-effects models and CIs; no concurrent control; OE4. The procedure itself is clinical and out of scope; the operational lessons are capacity (one more session) for referral-to-treatment time, and a due-list with reminders for loss to follow-up. For A1: a ''due for follow-up'' list and reminder log per clinic. LMIC partial: the reminder register is low cost; an extra session needs staff.'
 review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against stored abstract: -37 days (p<0.001), OR 0.10 (0.01-0.79) vs historical cohort, OR 2.96 (1.18-7.47) vs extra-clinic cohort, cohorts 115/74/65 encounters; single-centre retrospective sequential cohorts with CIs: OE4 kept; operational (capacity and reminders), procedure itself out of scope. Fixes: title/summary de-causalised (observational "associated with"); loss-to-follow-up definition matched to source wording.'

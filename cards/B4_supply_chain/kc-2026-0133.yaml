@@ -1,7 +1,7 @@
 id: kc-2026-0133
 version: 1
-status: candidate
-title: Argentina's medicine programme bought faster under multi-year, ring-fenced budgets
+status: approved
+title: Argentina's medicine programme bought faster when run under multi-year, ring-fenced budgets
 summary: Over 2002-2024, Argentina's REMEDIAR programme delivered free essential medicines to more than 8,000 primary care centres. Under international loan rules (multi-year budgets, ring-fenced funds, predictable payment) procurement took 48% less time than under national treasury funding, and central buying paid about a quarter of market price.
 intervention: Centralised procurement and direct delivery under multi-year, ring-fenced budgeting (international loan rules)
 comparator: Same programme under annual national treasury funding; decentralised subnational buying as price benchmark
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Longitudinal single case study with descriptive time series; the authors state no causal effects are estimated; no CIs: OE5. The authors attribute the gains to the management rules, not the source of money. Central buying came with slower formulary change. For B4: record procurement cycle time (request to award to delivery) as a KPI alongside price. LMIC yes: upper-middle-income, public primary care.'
 review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against stored abstract: 48% shorter procurement timelines, 25% vs 46% of market price, >8,000 centres, 2002-2024 verbatim; descriptive single case study, authors estimate no causal effects, no CIs: OE5 kept; AR UMIC; operational (procurement and budgeting).'
