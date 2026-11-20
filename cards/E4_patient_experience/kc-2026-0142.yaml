@@ -1,0 +1,47 @@
+id: kc-2026-0142
+version: 1
+status: approved
+title: Experience surveys need questions that fit where the patient is in their care
+summary: A US cancer centre clinic gave a tablet-based patient experience survey at follow-up visits two to three months after the first consultation; 41 of 70 eligible patients (59%) completed it. Overall ratings were high, but questions about treatments the patient had not yet had drew many 'not applicable' answers.
+intervention: Locally designed tablet survey at a fixed follow-up visit
+comparator: None (single cross-sectional administration)
+source:
+  doi: 10.1007/s11060-026-05878-9
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1007/s11060-026-05878-9
+domains:
+- E4_patient_experience
+- A5_outpatients
+design: other
+evidence_level: OE5
+setting:
+  country: US
+  income: HIC
+  facility: academic_cancer_centre_outpatients
+kpis:
+- name: survey_completion_rate
+  definition: Share of eligible patients who completed the survey at the follow-up visit
+  effect:
+    value: 59
+    unit: percent
+  evidence:
+    checked_by: ospeli-review-bot
+- name: item_applicability
+  definition: 'Share of ''not applicable'' answers on stage-dependent items (qualitative: substantial)'
+  effect:
+    value: substantial on treatment-dependent items
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- survey offered on a tablet or phone at a set visit
+- '''not applicable'' option on every item'
+- reasons for non-completion recorded
+lmic_applicability: partial
+notes: 'Quality-improvement evaluation of a non-validated instrument, one administration, one clinic: OE5. Transferable design lesson for E4: match questions to the service and stage the patient has reached, offer ''not applicable'', and track completion rate and reasons for non-completion. Clinical content of the service is out of scope. Tier C: abstract read via the PubMed record, not stored in the inbox; no quotes; numbers checked against the PubMed abstract by ospeli-review-bot. LMIC partial: tablets help, a paper or SMS version may be needed.'
+review_by: '2031-11-19'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-20'
+  notes: 'Checked against PubMed abstract PMID 43043512: 41 of 70 eligible (59%) completed, tablet survey at 2-3 month follow-up, substantial "not applicable" on treatment-dependent items, non-validated instrument, single cross-sectional administration: OE5 kept; US HIC. Operational survey-design lesson only.'
