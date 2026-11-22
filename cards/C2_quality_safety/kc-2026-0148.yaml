@@ -1,0 +1,43 @@
+id: kc-2026-0148
+version: 1
+status: candidate
+title: Mapping an ICU improvement collaborative put half the effort in four stages
+summary: Process mapping of an ICU improvement collaborative in Argentine public hospitals traced 11 stages and about 1,020 person-hours. Approvals, data collection, analysis and dissemination were rated hardest and took about half the effort; heavy data forms pulled attention away from the improvement work.
+intervention: Retrospective process mapping (Pathfinder framework) of a quality improvement collaborative
+comparator: None
+source:
+  doi: 10.12688/wellcomeopenres.26970.3
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.12688/wellcomeopenres.26970.3
+domains:
+- C2_quality_safety
+- C4_governance
+design: mixed_methods
+evidence_level: OE5
+setting:
+  country: AR
+  income: UMIC
+  facility: public_icus_multicentre
+kpis:
+- name: total_effort_person_hours
+  definition: Estimated total team effort across all mapped stages
+  effect:
+    value: 1,020
+    unit: person-hours
+  evidence:
+    quote: Eleven stages of the research process were mapped, from question formulation to dissemination, with an estimated total effort of approximately 1,020 person-hours.
+- name: effort_share_hardest_stages
+  definition: Share of effort in the four stages rated most difficult (approvals, data collection, analysis, dissemination)
+  effect:
+    value: 50
+    unit: '% of effort'
+  evidence:
+    quote: The stages with the highest perceived difficulty (4/5) were ethical and institutional approvals, data collection, analysis, and dissemination, which together accounted for approximately 50% of the total estimated effort.
+implementation_needs:
+- stage-by-stage map with effort estimates
+- light data collection forms
+- local coordinator per site
+lmic_applicability: 'yes'
+notes: 'Descriptive mixed-methods case study with estimated (not timed) effort: OE5. For X1 process mapping: shows a simple map-plus-effort method surfacing where work piles up, and that data-collection burden can crowd out improvement, an argument for capturing timings with taps during the walk rather than separate forms. Middle-income setting, low-cost tools (WhatsApp, REDCap).'
+review_by: '2031-11-22'

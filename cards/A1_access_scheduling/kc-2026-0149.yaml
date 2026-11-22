@@ -1,0 +1,42 @@
+id: kc-2026-0149
+version: 1
+status: candidate
+title: Negative comments on a national booking system were mostly about no slots
+summary: Analysis of about 35,000 social media comments on Türkiye's national doctor-appointment system found half were positive. Of the negative ones, 86% concerned appointment unavailability and cancellations; positive ones mostly praised easy booking.
+intervention: Social media sentiment and topic analysis as a feedback source for a national appointment service
+comparator: None
+source:
+  doi: 10.35377/saucis...1911035
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.35377/saucis...1911035
+domains:
+- A1_access_scheduling
+- E4_patient_experience
+design: other
+evidence_level: OE5
+setting:
+  country: TR
+  income: UMIC
+  facility: national_appointment_system
+kpis:
+- name: negative_topic_share_unavailability
+  definition: Share of negative comments in the topic on appointment unavailability and cancellation
+  effect:
+    value: 86.29
+    unit: '% of negative comments'
+  evidence:
+    quote: Negative discourse was dominated by appointment unavailability and cancellation problems (86.29%), whereas positive discourse mainly concerned smooth appointment booking and system usability (64.95%) and institutional guidance and standard feedback messages (24.40%).
+- name: sentiment_split
+  definition: Share of comments classified positive, negative and neutral
+  effect:
+    value: 50.2 / 29.4 / 20.4
+    unit: '% positive / negative / neutral'
+  evidence:
+    quote: Overall, 50.2% of comments were classified as positive, 29.4% as negative, and 20.4% as neutral, with a mean sentiment score of 0.19.
+implementation_needs:
+- feedback themes coded the same way across sources
+- slot availability and cancellation counts tracked alongside feedback
+lmic_applicability: partial
+notes: 'Descriptive text-mining study of public posts, model checked on 400 hand-labelled comments (85.5% accuracy); no CIs, self-selected posters: OE5. For A1 and E4: the leading complaint is "no slot / cancelled", so the clinic report should put free-slot supply and clinic-side cancellations next to feedback. Ospeli itself should code feedback by theme (access, communication, environment), not mine social media. LMIC partial: needs a national or large booking system.'
+review_by: '2031-11-22'

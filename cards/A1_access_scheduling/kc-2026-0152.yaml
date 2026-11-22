@@ -1,0 +1,39 @@
+id: kc-2026-0152
+version: 1
+status: candidate
+title: 'Walk-in clinic: days to first post-discharge visit did not change onward linkage'
+summary: Among 165 patients referred at hospital or ED discharge to a walk-in bridge clinic, the time until their first visit was not associated with later linkage to a regular outpatient provider. The authors suggest the walk-in format lets patients come when ready.
+intervention: Walk-in (no appointment) bridge clinic after discharge
+comparator: Varying time to first visit
+source:
+  doi: 10.12746/swjm.v14i61.1692
+  tier: B
+  licence: cc-by-sa
+  url: https://doi.org/10.12746/swjm.v14i61.1692
+domains:
+- A1_access_scheduling
+- A3_inpatient_flow
+design: other
+evidence_level: OE4
+setting:
+  country: unknown
+  income: unknown
+  facility: county_safety_net_urgent_care_clinic
+kpis:
+- name: linkage_rr_per_day_to_first_visit
+  definition: Risk ratio of outpatient linkage by time from discharge referral to first bridge-clinic visit
+  effect:
+    value: '1.00'
+    unit: unadjusted RR
+    ci:
+    - 0.99
+    - 1.01
+  evidence:
+    quote: 'There was no significant association between the amount of time until a patient’s first OUD bridge clinic visit after being referred at discharge from the hospital or ED and eventual outpatient treatment linkage (unadjusted RR 1.00; 95% CI: 0.99, 1.01; p=0.84).'
+implementation_needs:
+- walk-in sessions alongside booked slots
+- referral recorded at discharge
+- linkage to a regular provider tracked
+lmic_applicability: partial
+notes: 'Single-site retrospective cohort with CIs: OE4. Null finding, contrasts with earlier studies; the walk-in explanation is the authors'' interpretation, not tested. Card kept to the scheduling question only (walk-in versus booked follow-up after discharge); no treatment content. Country not stated. For A1: walk-in sessions are a valid visit type for post-discharge follow-up and should be supported alongside booked slots.'
+review_by: '2031-11-22'

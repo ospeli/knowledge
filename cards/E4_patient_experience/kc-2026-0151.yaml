@@ -1,0 +1,45 @@
+id: kc-2026-0151
+version: 1
+status: candidate
+title: Working equipment went with higher patient satisfaction in a Nigerian hospital
+summary: Among 350 patients in seven departments of a tertiary hospital in Ibadan, 76.3% were satisfied. Being treated with dignity, access to specialists and functional equipment were independently linked to satisfaction; waiting time was linked only before adjustment.
+intervention: None (cross-sectional survey of service factors)
+comparator: Dissatisfied patients
+source:
+  doi: 10.21203/rs.3.rs-11000093/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-11000093/v1
+domains:
+- E4_patient_experience
+- B1_biomedical_engineering
+design: other
+evidence_level: OE5
+setting:
+  country: NG
+  income: LMIC
+  facility: tertiary_hospital
+kpis:
+- name: satisfied_share
+  definition: Share of patients classed as satisfied overall (neutral counted as dissatisfied)
+  effect:
+    value: 76.3
+    unit: '% of patients'
+  evidence:
+    quote: Among 350 patients, 267 (76.3%) were satisfied and 83 (23.7%) dissatisfied.
+- name: satisfaction_odds_functional_equipment
+  definition: Adjusted odds of satisfaction where patients reported functional equipment
+  effect:
+    value: 4.09
+    unit: adjusted odds ratio
+    ci:
+    - 1.7
+    - 9.84
+  evidence:
+    quote: 'In the final comprehensive model, satisfaction was independently associated with dignity and respect (AOR = 10.29, 95% CI: 4.32–24.50), access to medical specialists (AOR = 4.97, 95% CI: 2.26–10.96), and functional equipment (AOR = 4.09, 95% CI: 1.70–9.84).'
+implementation_needs:
+- equipment fault reporting and repair times visible to department leads
+- short patient feedback form by department
+lmic_applicability: 'yes'
+notes: 'Preprint (Research Square), single-site cross-sectional survey with CIs; wide intervals: OE5 for preprint. Association only. Not the Ethiopian household-linkage preprint pattern; CIs are reported. For E4 and B1: supports showing equipment uptime next to patient feedback by department; dignity and respect is the strongest factor and is not something Ospeli measures per person.'
+review_by: '2031-11-22'

@@ -1,0 +1,46 @@
+id: kc-2026-0146
+version: 1
+status: candidate
+title: Unmet transport, utility and cost needs went with more missed clinic appointments
+summary: In a paediatric outpatient programme, families who screened positive for unmet social needs missed medical appointments at a 63% higher rate. Transport, utilities and healthcare cost needs were each linked to missed visits; infusion appointments were not affected.
+intervention: Standardised health-related social needs screen at clinic
+comparator: Patients screening negative
+source:
+  doi: 10.1002/jpr3.70295
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1002/jpr3.70295
+domains:
+- A1_access_scheduling
+- A5_outpatients
+design: other
+evidence_level: OE4
+setting:
+  country: unknown
+  income: unknown
+  facility: paediatric_outpatient_programme
+kpis:
+- name: missed_appointment_rate_ratio
+  definition: Incidence rate ratio of missed medical appointments in the prior year, positive vs negative social-needs screen
+  effect:
+    value: 1.63
+    unit: IRR
+    ci:
+    - 1.11
+    - 2.38
+  evidence:
+    quote: 'Patients with HRSNs had a 63% (incidence rate ratio [IRR]: 1.63, 95% confidence interval [CI]: 1.11, 2.38, p = 0.0121) higher rate of missed medical appointments, which remained significant after adjusting for race/ethnicity, age, and sex (IRR: 1.56, 95% CI: 1.07, 2.28, p = 0.0212).'
+- name: patients_with_any_missed_appointment_pct
+  definition: Share of patients with at least one completed appointment who also missed one or more
+  effect:
+    value: 54
+    unit: '% of patients'
+  evidence:
+    quote: Among patients with at least one completed medical appointment ( n = 184), 54% had one or more missed appointments.
+implementation_needs:
+- short needs screen at booking or arrival
+- transport and cost help to offer when a need is found
+- did-not-attend reasons recorded
+lmic_applicability: partial
+notes: 'Single-programme cross-sectional association (191 patients), with CIs: OE4. Association, not proof that meeting needs cuts missed visits. Country not stated. For A1: record a did-not-attend reason code (transport, cost, other) rather than only a count, so the clinic can act; never used to rank or penalise patients. LMIC partial: transport and cost barriers likely larger, but screening tools need local adaptation.'
+review_by: '2031-11-22'
