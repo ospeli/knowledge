@@ -1,8 +1,8 @@
 id: kc-2026-0151
 version: 1
-status: candidate
+status: approved
 title: Working equipment went with higher patient satisfaction in a Nigerian hospital
-summary: Among 350 patients in seven departments of a tertiary hospital in Ibadan, 76.3% were satisfied. Being treated with dignity, access to specialists and functional equipment were independently linked to satisfaction; waiting time was linked only before adjustment.
+summary: Among 350 patients in seven departments of a tertiary hospital in Ibadan, 76.3% were satisfied. Being treated with dignity, access to specialists and functional equipment were independently linked to satisfaction; waiting time was linked in unadjusted analysis but was not among the independent factors reported.
 intervention: None (cross-sectional survey of service factors)
 comparator: Dissatisfied patients
 source:
@@ -43,3 +43,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Preprint (Research Square), single-site cross-sectional survey with CIs; wide intervals: OE5 for preprint. Association only. Not the Ethiopian household-linkage preprint pattern; CIs are reported. For E4 and B1: supports showing equipment uptime next to patient feedback by department; dignity and respect is the strongest factor and is not something Ospeli measures per person.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: waiting-time wording matched to source (bivariate only; not listed as independent).'

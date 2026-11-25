@@ -1,6 +1,6 @@
 id: kc-2026-0150
 version: 1
-status: candidate
+status: approved
 title: 'Children''s hospital online reviews: communication most common theme, then access'
 summary: Of 350 Google Maps reviews of three public children's hospitals in Türkiye, half were negative. Communication and staff attitude was the most common theme; access, appointments and process flow came third, and environment, hygiene and support services fifth.
 intervention: Content analysis of online reviews as a patient-experience source
@@ -40,3 +40,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Qualitative content analysis of self-selected public reviews, three hospitals: OE5. Star ratings missed nuance in mixed reviews, which argues for a free-text box on the E4 form. For E4 and B3: a starter theme list (communication, access and flow, environment and hygiene, support services) for coding feedback; results shown by service, never naming staff.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

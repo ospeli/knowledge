@@ -1,8 +1,8 @@
 id: kc-2026-0146
 version: 1
-status: candidate
+status: approved
 title: Unmet transport, utility and cost needs went with more missed clinic appointments
-summary: In a paediatric outpatient programme, families who screened positive for unmet social needs missed medical appointments at a 63% higher rate. Transport, utilities and healthcare cost needs were each linked to missed visits; infusion appointments were not affected.
+summary: In a paediatric outpatient programme, families who screened positive for unmet social needs missed medical appointments at a 63% higher rate. Transport, utilities and healthcare cost needs were each linked to missed visits; missed infusion appointments were not linked.
 intervention: Standardised health-related social needs screen at clinic
 comparator: Patients screening negative
 source:
@@ -44,3 +44,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-programme cross-sectional association (191 patients), with CIs: OE4. Association, not proof that meeting needs cuts missed visits. Country not stated. For A1: record a did-not-attend reason code (transport, cost, other) rather than only a count, so the clinic can act; never used to rank or penalise patients. LMIC partial: transport and cost barriers likely larger, but screening tools need local adaptation.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: infusion finding reworded from causal to association.'

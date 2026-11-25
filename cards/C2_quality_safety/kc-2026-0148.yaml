@@ -1,7 +1,7 @@
 id: kc-2026-0148
 version: 1
-status: candidate
-title: Mapping an ICU improvement collaborative put half the effort in four stages
+status: approved
+title: Mapping an ICU improvement collaborative found half the effort in four hard stages
 summary: Process mapping of an ICU improvement collaborative in Argentine public hospitals traced 11 stages and about 1,020 person-hours. Approvals, data collection, analysis and dissemination were rated hardest and took about half the effort; heavy data forms pulled attention away from the improvement work.
 intervention: Retrospective process mapping (Pathfinder framework) of a quality improvement collaborative
 comparator: None
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Descriptive mixed-methods case study with estimated (not timed) effort: OE5. For X1 process mapping: shows a simple map-plus-effort method surfacing where work piles up, and that data-collection burden can crowd out improvement, an argument for capturing timings with taps during the walk rather than separate forms. Middle-income setting, low-cost tools (WhatsApp, REDCap).'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: title de-causalised.'

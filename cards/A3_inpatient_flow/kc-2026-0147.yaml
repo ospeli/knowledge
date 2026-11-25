@@ -1,6 +1,6 @@
 id: kc-2026-0147
 version: 1
-status: candidate
+status: approved
 title: Patients with limited English most valued discharge instructions in their language
 summary: In a choice experiment with 89 Spanish- and Haitian Creole-speaking inpatients, how discharge instructions were recorded carried the most weight, followed by how teaching was spoken. Patients preferred written or audio instructions in their own language and staff who speak it.
 intervention: Discharge communication options (instruction format, interpreter mode, family involvement, follow-up call)
@@ -47,3 +47,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site stated-preference study (n=89) with CIs: OE4. Measures preferences, not readmissions or delays. Country not stated in the abstract. For A3: the discharge checklist can carry a "language needed" flag and "instructions given in preferred language" tick, so it is planned before the day of discharge. LMIC partial: multilingual settings are common, written translation capacity may be limited.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

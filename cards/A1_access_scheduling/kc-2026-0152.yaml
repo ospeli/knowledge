@@ -1,10 +1,10 @@
 id: kc-2026-0152
 version: 1
-status: candidate
+status: approved
 title: 'Walk-in clinic: days to first post-discharge visit did not change onward linkage'
 summary: Among 165 patients referred at hospital or ED discharge to a walk-in bridge clinic, the time until their first visit was not associated with later linkage to a regular outpatient provider. The authors suggest the walk-in format lets patients come when ready.
 intervention: Walk-in (no appointment) bridge clinic after discharge
-comparator: Varying time to first visit
+comparator: Varying time to first visit (all patients used the walk-in clinic; no booked-slot comparison)
 source:
   doi: 10.12746/swjm.v14i61.1692
   tier: B
@@ -20,8 +20,8 @@ setting:
   income: unknown
   facility: county_safety_net_urgent_care_clinic
 kpis:
-- name: linkage_rr_per_day_to_first_visit
-  definition: Risk ratio of outpatient linkage by time from discharge referral to first bridge-clinic visit
+- name: linkage_rr_time_to_first_visit
+  definition: Risk ratio of outpatient linkage by time from discharge referral to first bridge-clinic visit (time unit not stated in abstract)
   effect:
     value: '1.00'
     unit: unadjusted RR
@@ -37,3 +37,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site retrospective cohort with CIs: OE4. Null finding, contrasts with earlier studies; the walk-in explanation is the authors'' interpretation, not tested. Card kept to the scheduling question only (walk-in versus booked follow-up after discharge); no treatment content. Country not stated. For A1: walk-in sessions are a valid visit type for post-discharge follow-up and should be supported alongside booked slots.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fixes: KPI renamed and definition notes the time unit is not stated; comparator clarified (no walk-in vs booked comparison in the study).'

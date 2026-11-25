@@ -1,6 +1,6 @@
 id: kc-2026-0149
 version: 1
-status: candidate
+status: approved
 title: Negative comments on a national booking system were mostly about no slots
 summary: Analysis of about 35,000 social media comments on Türkiye's national doctor-appointment system found half were positive. Of the negative ones, 86% concerned appointment unavailability and cancellations; positive ones mostly praised easy booking.
 intervention: Social media sentiment and topic analysis as a feedback source for a national appointment service
@@ -40,3 +40,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Descriptive text-mining study of public posts, model checked on 400 hand-labelled comments (85.5% accuracy); no CIs, self-selected posters: OE5. For A1 and E4: the leading complaint is "no slot / cancelled", so the clinic report should put free-slot supply and clinic-side cancellations next to feedback. Ospeli itself should code feedback by theme (access, communication, environment), not mine social media. LMIC partial: needs a national or large booking system.'
 review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'
