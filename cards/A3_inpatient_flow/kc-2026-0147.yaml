@@ -1,0 +1,54 @@
+id: kc-2026-0147
+version: 1
+status: approved
+title: Patients with limited English most valued discharge instructions in their language
+summary: In a choice experiment with 89 Spanish- and Haitian Creole-speaking inpatients, how discharge instructions were recorded carried the most weight, followed by how teaching was spoken. Patients preferred written or audio instructions in their own language and staff who speak it.
+intervention: Discharge communication options (instruction format, interpreter mode, family involvement, follow-up call)
+comparator: Alternative levels within each attribute
+source:
+  doi: 10.1007/s11606-026-10921-6
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1007/s11606-026-10921-6
+domains:
+- A3_inpatient_flow
+- E4_patient_experience
+design: other
+evidence_level: OE4
+setting:
+  country: unknown
+  income: unknown
+  facility: urban_safety_net_hospital
+kpis:
+- name: importance_instruction_record
+  definition: Relative importance (decision weight) of the format of discharge instructions
+  effect:
+    value: 39.9
+    unit: '% decision weight'
+    ci:
+    - 34.0
+    - 44.5
+  evidence:
+    quote: Record of discharge instructions held the greatest relative importance (39.9% decision weight; 95% CI 34.0%-44.5%), followed by mode of verbal communication (34.7%; 95% CI 29.0%-39.1%).
+- name: importance_verbal_mode
+  definition: Relative importance of the mode of verbal communication (language-concordant clinician or interpreter type)
+  effect:
+    value: 34.7
+    unit: '% decision weight'
+    ci:
+    - 29.0
+    - 39.1
+  evidence:
+    quote: Record of discharge instructions held the greatest relative importance (39.9% decision weight; 95% CI 34.0%-44.5%), followed by mode of verbal communication (34.7%; 95% CI 29.0%-39.1%).
+implementation_needs:
+- discharge instructions available in the main local languages
+- interpreter or language-concordant staff booked for discharge teaching
+- option to record audio instructions
+lmic_applicability: partial
+notes: 'Single-site stated-preference study (n=89) with CIs: OE4. Measures preferences, not readmissions or delays. Country not stated in the abstract. For A3: the discharge checklist can carry a "language needed" flag and "instructions given in preferred language" tick, so it is planned before the day of discharge. LMIC partial: multilingual settings are common, written translation capacity may be limited.'
+review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

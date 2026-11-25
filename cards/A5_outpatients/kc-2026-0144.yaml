@@ -1,0 +1,48 @@
+id: kc-2026-0144
+version: 1
+status: approved
+title: Pre-visit digital questionnaire made outpatient notes more complete in a pilot trial
+summary: Patients filled in a specialty questionnaire before their outpatient visit, which produced a ready-to-copy summary. Notes held a median 100% of the agreed items, against 46.9% with usual care, in a 43-patient randomised pilot across three specialties.
+intervention: Pre-visit computer-assisted history-taking with a structured copy-ready summary
+comparator: Usual care (no pre-visit questionnaire)
+source:
+  doi: 10.1186/s12913-026-15808-0
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1186/s12913-026-15808-0
+domains:
+- A5_outpatients
+- A1_access_scheduling
+design: rct
+evidence_level: OE3
+setting:
+  country: unknown
+  income: unknown
+  facility: outpatient_services_multicentre
+kpis:
+- name: documentation_completeness_pct
+  definition: Share of predefined screening-relevant items present in the final clinic note (blinded reviewer)
+  effect:
+    value: 100.0 vs 46.9
+    unit: median % of items
+  evidence:
+    quote: Overall median documentation completeness was 100.0% (IQR 100.0-100.0) in the intervention group compared with 46.9% (IQR 10.0-68.8) in the control group (p < 0.001), with consistent differences across rheumatology, dermatology, and orthopedics.
+- name: patient_willingness_pct
+  definition: Patients willing to complete a digital pre-visit questionnaire before future appointments
+  effect:
+    value: 41 of 43 (95.3%)
+    unit: patients
+  evidence:
+    quote: CAHT acceptance was high among both patients and physicians, with 41 of 43 patients (95.3%) willing to complete and the six responding physicians (100%) willing to offer digital pre-visit questionnaires before future appointments.
+implementation_needs:
+- questionnaire sent before the appointment
+- summary that pastes into the clinic note
+- fallback for patients without a phone
+lmic_applicability: partial
+notes: 'Small randomised pilot (43 patients), multicentre, IQRs but no confidence intervals: multi-site RCT (OE1) downgraded twice to OE3, for no CI and for small pilot size. Outcome is note completeness, not clinic time or waits; workflow impact untested. Country not stated in the abstract (trial registered in DRKS), so country/income unknown. For A1/A5: a pre-visit form tied to the booking is a cheap way to make the visit start ready; keep it to administrative and history items, no clinical scoring by Ospeli. LMIC partial: needs patient phone access and literacy support.'
+review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked.'

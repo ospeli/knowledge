@@ -1,0 +1,56 @@
+id: kc-2026-0153
+version: 1
+status: approved
+title: Lean review of surgical instrument sets cut set types and raised readiness
+summary: A cancer hospital in Tianjin standardised and slimmed its surgical instrument sets, shared common instruments in a pool and tracked them by computer. Afterwards there were about a third fewer set types, counting and reprocessing took less time, and more sets were ready when needed.
+intervention: 'Multidisciplinary Lean management of surgical instruments: categorised standard sets, set rationalisation, shared instrument pools, IT traceability'
+comparator: Same hospital before the change (historical control)
+source:
+  doi: 10.1111/ijn.70196
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1111/ijn.70196
+domains:
+- A9_clinical_support
+- B4_supply_chain
+- A4_theatres
+design: before_after
+evidence_level: OE5
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_cancer_hospital
+kpis:
+- name: instrument_set_types_change
+  definition: Change in the number of distinct surgical instrument set types
+  effect:
+    value: -32.7
+    unit: '%'
+  evidence:
+    checked_by: ospeli-review-bot
+- name: instrument_set_readiness_pct
+  definition: Share of instrument sets prepared and ready when required, before vs after
+  effect:
+    value: 86.2 to 98.7
+    unit: '%'
+  evidence:
+    checked_by: ospeli-review-bot
+- name: scrub_nurse_counting_time_change
+  definition: Change in scrub nurse time spent counting instruments
+  effect:
+    value: -27.2
+    unit: '%'
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- theatre, sterile services and procurement in one team
+- instrument usage data per procedure
+- tracking of sets through reprocessing
+lmic_applicability: partial
+notes: 'Tier C: abstract read via the PubMed record (PMID 42947362), not stored in the inbox; no quotes; numbers need a human reviewer to fill checked_by. Single-site historical before-after, no CIs: OE5. Also reported fewer instruments per set (-21.3%) and lower reprocessing and assembly times; cost saving given as a cumulative CNY figure, left out as currency-specific. For B4 (stock object) and later A9: a shared pool plus per-set tracking is the stock pattern; readiness rate is a simple KPI. LMIC partial: IT traceability may be paper-based at first.'
+review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read abstract via PubMed record (tier C): every number, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked; no quotes.'

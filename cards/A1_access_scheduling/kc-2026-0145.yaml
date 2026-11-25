@@ -1,0 +1,49 @@
+id: kc-2026-0145
+version: 1
+status: approved
+title: Differentiated HIV clinic models cost less and retained more patients in Ethiopia
+summary: In one hospital and three health centres, nine differentiated delivery models (multi-month dispensing, appointment spacing, community groups, fast-track and others) cost less per patient per year and retained more patients at 12 months than standard monthly care.
+intervention: 'Differentiated service delivery models: multi-month dispensing, appointment spacing, community ART groups, FastTrack, peer-led and group models'
+comparator: Standard of care
+source:
+  doi: 10.1136/bmjopen-2026-120948
+  tier: B
+  licence: cc-by-nc
+  url: https://doi.org/10.1136/bmjopen-2026-120948
+domains:
+- A1_access_scheduling
+- E2_primary_community
+- D1_finance_costing
+design: other
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: hospital_and_health_centres_4
+kpis:
+- name: annual_cost_and_retention_standard_care
+  definition: Annual provider cost per patient (USD) and 12-month retention in care, standard of care
+  effect:
+    value: 295 USD; 76.6% retention
+    unit: USD per patient per year; % retained
+  evidence:
+    quote: SOC had the highest annual cost per patient (US$295) and lowest retention (76.6%).
+- name: annual_cost_and_retention_community_groups
+  definition: Annual provider cost per patient (USD) and 12-month retention, community ART groups and FastTrack
+  effect:
+    value: CAG 199 USD, 93.0%; FastTrack 212 USD, 92.9%
+    unit: per patient per year; % retained
+  evidence:
+    quote: CAG was the most cost-effective (US$199 per patient; 93.0% retention; ICER -5.85), followed by FastTrack (US$212; 92.9%; -5.09) and adolescent groups (US$238; 90.5%; -4.10).
+implementation_needs:
+- clear eligibility for each model
+- appointment spacing and multi-month supply in the booking system
+- reliable stock for longer refills
+lmic_applicability: 'yes'
+notes: 'Retrospective micro-costing comparison (393 vs 393), single zone, no confidence intervals and patients were not randomised (stable patients are usually moved to DSD, so retention differences may reflect selection): OE5. Peer-reviewed journal, not the Ethiopian-preprint pattern flagged before. For A1: booking rules should support appointment spacing, fast-track refill visits and group visits as visit types, with per-type retention tracked. Operational delivery models only; no treatment content.'
+review_by: '2031-11-22'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-25'
+  notes: 'Re-read stored abstract (tier A/B): every quote verbatim, numbers, CIs, direction, units, design, evidence level, domains, setting, LMIC and operational scope checked. Fix: KPI unit now covers both cost and retention.'
