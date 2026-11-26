@@ -1,0 +1,45 @@
+id: kc-2026-0157
+version: 1
+status: candidate
+title: Payment-system downtime at an Indonesian lab tripled pre-sampling waits
+summary: When a regional health laboratory fell back to manual payment during digital system downtime, mean wait from registration to entering the sampling room rose from 1.99 to 6.86 minutes. The increase eased slowly as staff adapted; the authors advise backup payment channels and a manual contingency SOP.
+intervention: Unplanned switch to manual payment (digital payment downtime)
+comparator: Digital payment phase at the same laboratory
+source:
+  doi: 10.35870/ljit.v4i2.9077
+  tier: B
+  licence: cc-by-nc-sa
+  url: https://doi.org/10.35870/ljit.v4i2.9077
+domains:
+- D3_it_digital
+- E1_preparedness
+- A6_laboratory
+design: its_uncontrolled
+evidence_level: OE4
+setting:
+  country: ID
+  income: UMIC
+  facility: regional_health_laboratory
+kpis:
+- name: pre_lab_wait_minutes
+  definition: Mean wait from administrative registration to entry into the sampling room
+  effect:
+    value: 1.99 vs 6.86
+    unit: minutes
+  evidence:
+    quote: Mean waiting time increased from 1.99 minutes in the digital phase to 6.86 minutes in the manual phase.
+- name: wait_level_change
+  definition: ITS level change in daily mean wait at downtime
+  effect:
+    value: 4.875
+    unit: minutes
+  evidence:
+    quote: Downtime was accompanied by a level increase of 4.875 minutes (β₂ = 4.875; p < 0.001) and a negative trend change (β₃ = −0.021; p = 0.002), indicating a flattening trend that possibly reflects staff adaptation to manual procedures.
+implementation_needs:
+- timestamps at registration and at sampling-room entry
+- backup payment channel
+- manual contingency SOP rehearsed
+- downtime start and end logged
+lmic_applicability: 'yes'
+notes: 'Single-site uncontrolled interrupted time series over 67 working days, autocorrelation corrected, no CI: OE3 downgraded to OE4. Very high R² on few days; treat the size as indicative. Patient-safety effects not measured. For Ospeli: a clear case for the offline-first design and for a "downtime" flag in walk mode so waits during outages are shown separately. LMIC yes: Indonesia.'
+review_by: '2031-11-26'

@@ -1,0 +1,59 @@
+id: kc-2026-0159
+version: 1
+status: candidate
+title: Day-of-surgery cancellations rose from 4.0% to 9.2% with neighbourhood disadvantage
+summary: Across 72,489 elective encounters at a US children's hospital, 5.6% were cancelled on the day. Rates rose across social vulnerability groups, and among these cancellations no-shows grew as a share while clinical reasons fell, pointing to engagement before surgery.
+intervention: None (observational association)
+comparator: Lowest vs highest social vulnerability tercile
+source:
+  doi: 10.1007/s00383-026-06715-w
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.1007/s00383-026-06715-w
+domains:
+- A4_theatres
+- A1_access_scheduling
+design: other
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: childrens_hospital
+kpis:
+- name: day_of_surgery_cancellation_rate
+  definition: Share of elective encounters cancelled on the day of surgery
+  effect:
+    value: 4,066 (5.6%)
+  evidence:
+    quote: Among 72,489 encounters, 4,066 (5.6%) were DoSCs.
+- name: dosc_by_vulnerability_tercile
+  definition: Day-of-surgery cancellation rate, lowest vs highest vulnerability tercile
+  effect:
+    value: 4.0 to 9.2
+    unit: '%'
+  evidence:
+    quote: Rates increased across SVI terciles from 4.0% to 9.2% (p < 0.001).
+- name: dosc_odds_high_vulnerability
+  definition: Adjusted odds of day-of-surgery cancellation with higher vulnerability
+  effect:
+    value: 2.2
+    unit: odds ratio
+    ci:
+    - 1.94
+    - 2.49
+  evidence:
+    quote: Higher SVI (OR 2.20, 95% CI 1.94–2.49) and Black race (OR 1.89, 95% CI 1.74–2.07) were independently associated with DoSC; the race association persisted after excluding SVI’s race theme.
+- name: no_show_share_of_dosc
+  definition: Share of day-of-surgery cancellations due to no-show, low to high vulnerability
+  effect:
+    value: 2.7 to 14.1
+    unit: '%'
+  evidence:
+    quote: Among DoSCs, the proportion attributed to no-shows increased with vulnerability (2.7%–14.1%), whereas clinical reasons declined.
+implementation_needs:
+- cancellation reason recorded with a fixed code list
+- area-level deprivation index linked to postcode
+- pre-operative contact call or reminder for higher-risk bookings
+lmic_applicability: partial
+notes: 'Large single-site retrospective cohort with adjusted CIs, no intervention: OE4. For A4/A1: report day-of-surgery cancellations by reason and flag bookings for a pre-op contact; the race association is reported in the source but is not used to flag patients. "4,066" appears as written in the quote. LMIC partial: needs an area deprivation measure; reason coding transfers anywhere.'
+review_by: '2031-11-26'

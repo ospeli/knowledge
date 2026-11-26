@@ -1,0 +1,49 @@
+id: kc-2026-0167
+version: 1
+status: candidate
+title: Renaming a surgical department to show its subspecialty came with more cases but no step change
+summary: At a Chinese tertiary oncology hospital, renaming Head and Neck Surgery to Head, Neck and Thyroid Surgery was followed by 21.4% more surgical cases and 19.9% more DRG weight over 12 months, with case mix and quality indicators stable. Segmented regression found no abrupt change at the renaming date.
+intervention: Department renamed to name its subspecialty
+comparator: 12 months before renaming
+source:
+  doi: 10.1186/s12913-026-16221-3
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1186/s12913-026-16221-3
+domains:
+- C6_strategy_planning
+- A4_theatres
+- D4_performance
+design: its_uncontrolled
+evidence_level: OE4
+setting:
+  country: CN
+  income: UMIC
+  facility: tertiary_oncology_hospital
+kpis:
+- name: surgical_caseload_change
+  definition: Change in monthly surgical caseload, after vs before
+  effect:
+    value: 21.4
+    unit: '%'
+  evidence:
+    quote: After renaming, monthly discharges increased by 14.3% ( p = 0.084), DRG total weight by 19.9% ( p = 0.024), and surgical caseload by 21.4% ( p = 0.021); 82% of the growth in total billed charges reflected volume, not per-case charges.
+- name: drg_weight_change
+  definition: Change in DRG total weight, after vs before
+  effect:
+    value: 19.9
+    unit: '%'
+  evidence:
+    quote: After renaming, monthly discharges increased by 14.3% ( p = 0.084), DRG total weight by 19.9% ( p = 0.024), and surgical caseload by 21.4% ( p = 0.021); 82% of the growth in total billed charges reflected volume, not per-case charges.
+- name: case_mix_index
+  definition: Case Mix Index before vs after
+  effect:
+    value: 1.45 vs 1.53
+  evidence:
+    quote: The Case Mix Index (1.45 vs. 1.53) and quality indicators did not deteriorate.
+implementation_needs:
+- monthly activity and case-mix data
+- segmented regression or run chart around the change date
+lmic_applicability: partial
+notes: 'Single-site uncontrolled ITS without CIs; no abrupt change at the renaming date, so attribution is weak (authors say causal attribution needs controlled studies): OE3 downgraded to OE4. Uncertain usefulness: mainly a reminder to test any service change with a run chart, not a recommendation to rename. Thyroid stage details are clinical and left out.'
+review_by: '2031-11-26'

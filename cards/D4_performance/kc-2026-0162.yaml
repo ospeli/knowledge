@@ -1,0 +1,37 @@
+id: kc-2026-0162
+version: 1
+status: candidate
+title: Length of stay and staffing, not bed occupancy, tracked financial efficiency in 40 Indonesian hospitals
+summary: A data envelopment analysis of 40 Indonesian police hospitals (2020 to 2024) found most were not fully efficient in turning spending into revenue. Average length of stay, support staff numbers, physician numbers and the COVID-19 period were significantly associated with efficiency; bed occupancy ratio and turnover interval were not.
+intervention: None (two-stage DEA and Tobit panel analysis)
+comparator: Hospitals on vs off the efficiency frontier
+source:
+  doi: 10.28986/jtaken.v12i2.2726
+  tier: B
+  licence: cc-by-sa
+  url: https://doi.org/10.28986/jtaken.v12i2.2726
+domains:
+- D4_performance
+- D1_finance_costing
+- A3_inpatient_flow
+design: other
+evidence_level: OE4
+setting:
+  country: ID
+  income: UMIC
+  facility: public_hospital
+  sites: 40
+kpis:
+- name: efficiency_correlates
+  definition: Factors significantly associated with DEA financial efficiency score
+  effect:
+    value: average length of stay, support staff, physicians, COVID-19 period; not bed occupancy or turnover interval
+  evidence:
+    quote: Tobit regression indicates that average length of stay, number of supporting staff, number of physicians, and the COVID-19 period are significantly correlated with efficiency, while bed occupancy ratio, turnover interval, and nonphysician health personnel are not.
+implementation_needs:
+- yearly expenditure by type (personnel, goods, capital)
+- revenue per hospital
+- ALOS, BOR and turnover interval computed the same way across sites
+lmic_applicability: 'yes'
+notes: 'Multi-site panel with no effect sizes or CIs in the abstract: OE4. Direction of the ALOS association not stated in the abstract, so not claimed. Efficiency here is financial (revenue output), not clinical. For D4: a benchmark view can show ALOS and BOR side by side, but BOR alone was not associated with efficiency. LMIC yes: Indonesia.'
+review_by: '2031-11-26'

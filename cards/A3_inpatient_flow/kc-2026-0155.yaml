@@ -1,0 +1,62 @@
+id: kc-2026-0155
+version: 1
+status: candidate
+title: 'Risk-graded discharge follow-up at six Ugandan hospitals: 60% of higher-risk families kept every visit'
+summary: Six Ugandan hospitals gave every family of a child under five discharged after suspected sepsis a risk category, counselling and education, then set the intensity of scheduled follow-up by risk and age. Compared with the period before, 60.0% of medium- to very-high-risk families attended all scheduled visits, and readmission and post-discharge death were lower.
+intervention: 'Smart Discharges: risk category given at discharge, counselling, education, follow-up intensity set by predicted risk and age'
+comparator: Baseline phase at the same hospitals (usual discharge)
+source:
+  doi: 10.3389/fped.2026.1835061
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.3389/fped.2026.1835061
+domains:
+- A3_inpatient_flow
+- E2_primary_community
+design: before_after
+evidence_level: OE3
+setting:
+  country: UG
+  income: LIC
+  facility: hospital
+  sites: 6
+kpis:
+- name: followup_attendance_all_visits
+  definition: Share of medium/high/very-high-risk families attending all scheduled post-discharge visits (intervention phase)
+  effect:
+    value: 60.0
+    unit: '%'
+  evidence:
+    quote: With Smart Discharges, 2,337/3,892 (60.0%) medium/high/very high-risk families attended all their scheduled visits.
+- name: readmission_within_6_months
+  definition: Children re-admitted to hospital, baseline vs intervention phase
+  effect:
+    value: 18.9 vs 16.8
+    unit: '%'
+  evidence:
+    quote: In Phase-1, 1,313 (18.9%) children were re-admitted to the hospital vs. 1,024 (16.8%) in Phase-2.
+- name: post_discharge_mortality_6_months
+  definition: Deaths within six months of discharge, baseline vs intervention
+  effect:
+    value: 6.3 vs 4.9
+    unit: '%'
+  evidence:
+    quote: The observed post-discharge mortality rate was 439 (6.3%) in Phase-1 vs. 296 (4.9%) in Phase-2; this represents an unadjusted absolute risk reduction of 1.4% (95%CI 0.7 to 2.3) and an adjusted hazard ratio 0.77 (95%CI 0.67 to 0.90) favouring the intervention.
+- name: post_discharge_mortality_adjusted_hr
+  definition: Adjusted hazard ratio for post-discharge death, intervention vs baseline
+  effect:
+    value: 0.77
+    unit: hazard ratio
+    ci:
+    - 0.67
+    - 0.9
+  evidence:
+    quote: The observed post-discharge mortality rate was 439 (6.3%) in Phase-1 vs. 296 (4.9%) in Phase-2; this represents an unadjusted absolute risk reduction of 1.4% (95%CI 0.7 to 2.3) and an adjusted hazard ratio 0.77 (95%CI 0.67 to 0.90) favouring the intervention.
+implementation_needs:
+- discharge risk score agreed locally
+- follow-up visit schedule booked before the family leaves
+- staff time for discharge counselling
+- tracking of attended vs missed follow-up visits
+lmic_applicability: 'yes'
+notes: 'Multi-site prospective before-after with staggered implementation and CIs, no randomisation: OE3. Large sample (13,051 children). The prediction algorithm was built in the baseline phase from admission data; Ospeli would not compute clinical risk, only carry a locally agreed risk category set by staff and use it to plan follow-up bookings and track attendance (operational part). Readmission figures have no significance test in the abstract. Families in both phases got soap and a mosquito net. Uncertain scope: outcome includes mortality; card kept for the discharge-process and follow-up-attendance KPIs. LMIC yes: run in Uganda.'
+review_by: '2031-11-26'

@@ -1,0 +1,37 @@
+id: kc-2026-0161
+version: 1
+status: candidate
+title: Manual stock records and weak forecasting drove stock-outs in Ethiopian IDP camp supply chains
+summary: Interviews with health staff, government and donor stakeholders described a multi-level medicine supply chain for displaced-person camps in Ethiopia. Frequent stock-outs were linked to centralised procurement, donor dependence, weak forecasting, manual inventory and a weak logistics information system, plus poor storage and no cold chain.
+intervention: None (qualitative study of supply chain organisation)
+comparator: None
+source:
+  doi: 10.1186/s13031-026-00867-1
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1186/s13031-026-00867-1
+domains:
+- B4_supply_chain
+- A8_pharmacy
+- E1_preparedness
+design: qualitative
+evidence_level: OE5
+setting:
+  country: ET
+  income: LIC
+  facility: idp_camp_health_sites
+kpis:
+- name: stock_out_drivers
+  definition: Themes reported as causes of stock-outs and unreliable medicine availability
+  effect:
+    value: centralised procurement, donor dependence, weak forecasting, manual inventory, weak LMIS
+  evidence:
+    checked_by: ''
+implementation_needs:
+- simple electronic stock card usable offline
+- consumption-based forecasting
+- storage and cold-chain checks
+- supervision and reporting routine
+lmic_applicability: 'yes'
+notes: 'Qualitative interviews, no numbers: OE5. Reported themes, not measured effects. For B4: supports a phone stock card, consumption-based reorder levels and an expiry check, all working offline. LMIC yes: Ethiopia humanitarian setting.'
+review_by: '2031-11-26'

@@ -1,0 +1,57 @@
+id: kc-2026-0158
+version: 1
+status: candidate
+title: Rural blood dispatch platform met its 30-minute emergency target in 84% of episodes
+summary: A stand-alone web platform linked a tertiary blood bank with four rural obstetric clinics in Taiwan for ordering, identity checks and cold-chain dispatch. Over 252 dispatch episodes the routine 90-minute target was met 97.7% of the time and the emergency 30-minute target 84.2%, with all clinics adopting it.
+intervention: Web platform for inter-site blood ordering, verification and dispatch with prespecified service-level targets
+comparator: None (prespecified service-level targets)
+source:
+  doi: 10.2196/101843
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.2196/101843
+domains:
+- A9_clinical_support
+- B5_transport
+- D3_it_digital
+design: case_study
+evidence_level: OE5
+setting:
+  country: TW
+  income: HIC
+  facility: tertiary_blood_bank_and_rural_clinics
+  sites: 5
+kpis:
+- name: emergency_dispatch_sla_met
+  definition: Emergency dispatches delivered within 30 minutes
+  effect:
+    value: 84.2% (32/38)
+  evidence:
+    quote: The emergency SLA was met in 84.2% (32/38) of episodes and 100% in both 2025 and 2026 to date; median emergency turnaround was 28 (IQR 23-29) minutes.
+- name: routine_dispatch_sla_met
+  definition: Routine dispatches delivered within 90 minutes
+  effect:
+    value: 97.7% (209/214)
+  evidence:
+    quote: The routine SLA was met in 97.7% (209/214) of episodes; median routine turnaround was 72 (IQR 62-79) minutes.
+- name: median_emergency_turnaround
+  definition: Median emergency turnaround
+  effect:
+    value: 28
+    unit: minutes
+  evidence:
+    quote: The emergency SLA was met in 84.2% (32/38) of episodes and 100% in both 2025 and 2026 to date; median emergency turnaround was 28 (IQR 23-29) minutes.
+- name: clinic_adoption
+  definition: Eligible clinics using the platform
+  effect:
+    value: 100% (4/4)
+  evidence:
+    quote: Adoption reached 100% (4/4) of eligible clinics and all obstetric clinicians.
+implementation_needs:
+- service-level targets agreed before launch
+- audit log of order, verification and dispatch times
+- cold-chain transport
+- no full hospital-system integration required
+lmic_applicability: partial
+notes: 'Single-network implementation report with no comparator and no CI: OE5. Useful pattern: set SLA targets up front and measure them from audit-log timestamps. The drone substudy is preliminary and left out. Clinical transfusion safety not carded. LMIC partial: the SLA-plus-audit-log method transfers; the platform assumes reliable connectivity.'
+review_by: '2031-11-26'

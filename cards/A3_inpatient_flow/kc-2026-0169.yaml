@@ -1,0 +1,39 @@
+id: kc-2026-0169
+version: 1
+status: candidate
+title: Specialist social worker on inpatient addiction consults linked to slightly fewer 30-day readmissions
+summary: At a US safety-net hospital, 53% of 5,069 hospitalisations with an addiction consult also had a specialist social worker. Adjusted 30-day readmission risk was lower with social work, though the confidence interval reached no difference; the clearer link was in one subgroup.
+intervention: Specialist social worker added to the inpatient addiction consult team
+comparator: Addiction consults without documented social work involvement
+source:
+  doi: 10.1097/adm.0000000000001809
+  tier: C
+  licence: publisher
+  url: https://doi.org/10.1097/adm.0000000000001809
+domains:
+- A3_inpatient_flow
+- C1_workforce
+design: other
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: safety_net_hospital
+kpis:
+- name: readmission_30d_adjusted_rr
+  definition: Adjusted risk ratio of 30-day all-cause readmission, social work vs none
+  effect:
+    value: 0.89
+    unit: risk ratio
+    ci:
+    - 0.78
+    - 1.01
+  evidence:
+    checked_by: ''
+implementation_needs:
+- social worker time allocated to the consult team
+- discharge-to-community links recorded
+- 30-day readmission tracked by team involvement
+lmic_applicability: uncertain
+notes: 'Single-site retrospective cohort, adjusted, with CI; overall CI includes no effect: OE4. Subgroup results depend on treatment type and are left out as clinical. Tier C: abstract read via PubMed (PMID 43077574), not stored in the inbox; no quotes; reviewer to fill checked_by. For A3: supports recording which discharge-support roles were involved so readmission can be compared. LMIC uncertain: specialist social work posts are scarce.'
+review_by: '2031-11-26'
