@@ -1,7 +1,7 @@
 id: kc-2026-0165
 version: 1
-status: candidate
-title: Operative-note audit and template revision lifted documentation scores, but the template was rarely used
+status: approved
+title: Operative-note audit lifted documentation scores, but the new template was rarely used
 summary: A closed-loop audit at an English hospital revised the operative-note template and fed back results to surgeons. The median documentation score rose from 75.0% to 81.2%, yet the revised template was used in only 19.4% of re-audited notes and no single criterion stayed significant after correction.
 intervention: Revised operative-note template plus feedback of audit results
 comparator: First audit cycle
@@ -22,7 +22,7 @@ setting:
   facility: tertiary_hospital
 kpis:
 - name: documentation_score_median
-  definition: Median share of 16 audit criteria met per note, cycle 1 vs cycle 2
+  definition: Median overall documentation score against 16 GIRFT criteria, cycle 1 vs cycle 2
   effect:
     value: 75.0 to 81.2
     unit: '%'
@@ -42,3 +42,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-site before-after, small second cycle (31 notes), one month after change, no CI on the main score: OE4 downgraded to OE5. The surgical content of the criteria is clinical and out of scope. For C4: track template or tool uptake alongside the audit score, since the score rose with low uptake. LMIC yes: audit cycles need no technology.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; KPI definition no longer assumes score method; title shortened"

@@ -1,9 +1,9 @@
 id: kc-2026-0157
 version: 1
-status: candidate
-title: Payment-system downtime at an Indonesian lab tripled pre-sampling waits
-summary: When a regional health laboratory fell back to manual payment during digital system downtime, mean wait from registration to entering the sampling room rose from 1.99 to 6.86 minutes. The increase eased slowly as staff adapted; the authors advise backup payment channels and a manual contingency SOP.
-intervention: Unplanned switch to manual payment (digital payment downtime)
+status: approved
+title: Payment-system downtime at an Indonesian lab more than tripled pre-sampling waits
+summary: When a regional health laboratory fell back to manual payment during digital system downtime, mean wait from registration to entering the sampling room rose from 1.99 to 6.86 minutes. A small flattening trend afterwards may reflect staff adapting; the authors advise backup payment channels and a manual contingency SOP.
+intervention: Switch to manual payment during digital payment downtime
 comparator: Digital payment phase at the same laboratory
 source:
   doi: 10.35870/ljit.v4i2.9077
@@ -43,3 +43,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Single-site uncontrolled interrupted time series over 67 working days, autocorrelation corrected, no CI: OE3 downgraded to OE4. Very high R² on few days; treat the size as indicative. Patient-safety effects not measured. For Ospeli: a clear case for the offline-first design and for a "downtime" flag in walk mode so waits during outages are shown separately. LMIC yes: Indonesia.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; title 'more than tripled' (1.99 to 6.86); adaptation and 'unplanned' wording matched to source"

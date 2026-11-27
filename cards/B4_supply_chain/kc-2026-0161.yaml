@@ -1,8 +1,8 @@
 id: kc-2026-0161
 version: 1
-status: candidate
-title: Manual stock records and weak forecasting drove stock-outs in Ethiopian IDP camp supply chains
-summary: Interviews with health staff, government and donor stakeholders described a multi-level medicine supply chain for displaced-person camps in Ethiopia. Frequent stock-outs were linked to centralised procurement, donor dependence, weak forecasting, manual inventory and a weak logistics information system, plus poor storage and no cold chain.
+status: approved
+title: Ethiopian IDP camp stock-outs blamed on central buying, donor reliance, weak forecasting
+summary: Interviews with health staff, government and donor stakeholders described a multi-level medicine supply chain for displaced-person camps in Ethiopia. Interviewees reported frequent stock-outs driven by centralised procurement, donor dependence and weak forecasting; other challenges were poor storage, no cold chain, manual inventory and a weak logistics information system.
 intervention: None (qualitative study of supply chain organisation)
 comparator: None
 source:
@@ -24,9 +24,9 @@ kpis:
 - name: stock_out_drivers
   definition: Themes reported as causes of stock-outs and unreliable medicine availability
   effect:
-    value: centralised procurement, donor dependence, weak forecasting, manual inventory, weak LMIS
+    value: centralised procurement, donor dependence, weak forecasting
   evidence:
-    checked_by: ''
+    quote: Frequent stock-outs and unreliable medicine availability were reported, driven by centralized procurement, donor dependence, and weak forecasting.
 implementation_needs:
 - simple electronic stock card usable offline
 - consumption-based forecasting
@@ -35,3 +35,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Qualitative interviews, no numbers: OE5. Reported themes, not measured effects. For B4: supports a phone stock card, consumption-based reorder levels and an expiry check, all working offline. LMIC yes: Ethiopia humanitarian setting.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Quote added for tier B; title/summary corrected: source links stock-outs to procurement, donor dependence and forecasting only, not manual inventory or LMIS"

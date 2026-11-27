@@ -1,8 +1,8 @@
 id: kc-2026-0159
 version: 1
-status: candidate
-title: Day-of-surgery cancellations rose from 4.0% to 9.2% with neighbourhood disadvantage
-summary: Across 72,489 elective encounters at a US children's hospital, 5.6% were cancelled on the day. Rates rose across social vulnerability groups, and among these cancellations no-shows grew as a share while clinical reasons fell, pointing to engagement before surgery.
+status: approved
+title: 'Day-of-surgery cancellations: 4.0% in least vs 9.2% in most disadvantaged areas'
+summary: Across 72,489 elective encounters at a US children's hospital, 5.6% were cancelled on the day. Rates rose across social vulnerability groups, and among these cancellations no-shows grew as a share while clinical reasons fell; the authors call for testing engagement-focused pre-operative interventions.
 intervention: None (observational association)
 comparator: Lowest vs highest social vulnerability tercile
 source:
@@ -57,3 +57,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Large single-site retrospective cohort with adjusted CIs, no intervention: OE4. For A4/A1: report day-of-surgery cancellations by reason and flag bookings for a pre-op contact; the race association is reported in the source but is not used to flag patients. "4,066" appears as written in the quote. LMIC partial: needs an area deprivation measure; reason coding transfers anywhere.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers and CIs checked against stored abstract; title de-temporalised (tercile comparison, not a rise over time); engagement claim attributed to authors"

@@ -1,6 +1,6 @@
 id: kc-2026-0160
 version: 1
-status: candidate
+status: approved
 title: Many Ghanaian district-hospital ED staff did not know their triage system existed
 summary: Among 256 emergency staff at 15 district hospitals in Ghana, most said their hospital had a triage system and a trauma protocol, but the share unaware ranged from 0% to 43% by hospital. Awareness was higher in faith-based hospitals than government ones; the authors suggest periodic training and printed copies on display.
 intervention: None (cross-sectional survey)
@@ -52,3 +52,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Multi-site cross-sectional survey with adjusted CIs, purposive hospitals: OE4. Very wide CI for faith-based odds. For A2 and C4: a document-awareness check ("does staff know protocol X exists and where it is") is a cheap governance KPI. LMIC yes: Ghana district hospitals.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers and CI checked against stored abstract; OE4 survey; governance KPI, not clinical"

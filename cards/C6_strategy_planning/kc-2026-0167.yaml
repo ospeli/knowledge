@@ -1,7 +1,7 @@
 id: kc-2026-0167
 version: 1
-status: candidate
-title: Renaming a surgical department to show its subspecialty came with more cases but no step change
+status: approved
+title: Renaming a surgical department came with more cases but no step change
 summary: At a Chinese tertiary oncology hospital, renaming Head and Neck Surgery to Head, Neck and Thyroid Surgery was followed by 21.4% more surgical cases and 19.9% more DRG weight over 12 months, with case mix and quality indicators stable. Segmented regression found no abrupt change at the renaming date.
 intervention: Department renamed to name its subspecialty
 comparator: 12 months before renaming
@@ -47,3 +47,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-site uncontrolled ITS without CIs; no abrupt change at the renaming date, so attribution is weak (authors say causal attribution needs controlled studies): OE3 downgraded to OE4. Uncertain usefulness: mainly a reminder to test any service change with a run chart, not a recommendation to rename. Thyroid stage details are clinical and left out.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; weak attribution (no step change) stated in title and notes; kept as monitoring example"

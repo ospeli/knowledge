@@ -1,7 +1,7 @@
 id: kc-2026-0166
 version: 1
-status: candidate
-title: UK scientist-led echo clinics spread widely but without common standards or outcome data
+status: approved
+title: UK scientist-led echo clinics are widespread but vary in standards and outcome measurement
 summary: In a national survey of 194 UK echocardiography staff, 63% reported an established scientist-led clinic combining scan and assessment in one visit. Funding and staffing were the main barriers, and only 43% routinely collected patient feedback.
 intervention: Scientist-led one-stop clinics (imaging plus assessment in one visit)
 comparator: None (descriptive survey)
@@ -49,3 +49,8 @@ implementation_needs:
 lmic_applicability: uncertain
 notes: 'Preprint, self-selected professional survey, perceived benefits only: OE5. For A1: one-stop clinics need a slot template and a feedback form; most services were not measuring outcomes, which Ospeli can make easy. LMIC uncertain: depends on a scientist workforce that may not exist.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; title matched to source ('variation in standards and outcome measurement', not absence)"

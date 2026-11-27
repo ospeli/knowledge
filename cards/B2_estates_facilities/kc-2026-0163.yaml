@@ -1,8 +1,8 @@
 id: kc-2026-0163
 version: 1
-status: candidate
-title: Charging hospital batteries before scheduled outages mattered more than battery size (model)
-summary: An hourly simulation of solar panels plus battery storage for a Lahore hospital under load-shedding found that if the battery charged only from solar surplus it was usually empty when outages began. Charging from the grid in the three hours before each scheduled outage removed unserved critical load from 100 kWp solar with 200 kWh storage upward.
+status: approved
+title: Charging hospital batteries before planned outages mattered more than size (model)
+summary: An hourly simulation of solar panels plus battery storage for a Lahore hospital under load-shedding found that if the battery charged only from solar surplus it was usually empty when outages began. Charging from the grid in the three hours before each scheduled outage brought unserved critical load to zero in the base case (8 outage hours a day) from 100 kWp solar with 200 kWh storage upward.
 intervention: Pre-outage grid charging of battery storage (Dispatch B)
 comparator: Battery charged only from solar surplus (Dispatch A)
 source:
@@ -41,3 +41,8 @@ implementation_needs:
 lmic_applicability: 'yes'
 notes: 'Preprint, simulation with a synthetic hospital load, not validated against a real site: OE5. Tariff and cost results are local and left out. For B2: the operational lesson is a schedule rule (charge before the planned outage), which a facilities checklist can carry. LMIC yes: written for load-shedding in Pakistan.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; unvalidated simulation OE5; base-case condition added to summary"

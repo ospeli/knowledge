@@ -1,7 +1,7 @@
 id: kc-2026-0156
 version: 1
-status: candidate
-title: Linking two administrative datasets made multi-facility cancer pathways visible by process mining
+status: approved
+title: Linked administrative data made multi-facility cancer pathways visible by process mining
 summary: In Kuwait, linking a cancer centre EHR with national discharge data built an event log of 3,334 activity records for 50 patients. Process discovery and Sankey views showed different pathways for breast and colorectal cancer, for example more clinic visits per week and more hospital stays in general hospitals for colorectal cancer.
 intervention: Process mining on an event log linked from two administrative data sources
 comparator: Breast vs colorectal cancer pathways (descriptive)
@@ -20,13 +20,6 @@ setting:
   income: HIC
   facility: cancer_centre_and_general_hospitals
 kpis:
-- name: event_log_size
-  definition: Activity records in the linked event log
-  effect:
-    value: 3,334
-    unit: records
-  evidence:
-    quote: The linked event log comprised 3,334 activity records and was examined using process discovery, event classification and Sankey visualization.
 - name: clinic_visits_per_week
   definition: Clinic visits per patient per week, colorectal vs breast cancer
   effect:
@@ -47,3 +40,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Preprint, purposive sample of 50 patients, descriptive, no CI: OE5. For X1 process mapping: shows the same event-log approach Ospeli uses (activity, timestamp, place) can be built from routine data and drawn as a Sankey; authors call findings hypothesis-generating. Clinical treatment content left out. LMIC partial: needs linkable records, often missing where data are fragmented.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; preprint OE5 confirmed; non-KPI event-log size removed"

@@ -1,8 +1,8 @@
 id: kc-2026-0158
 version: 1
-status: candidate
+status: approved
 title: Rural blood dispatch platform met its 30-minute emergency target in 84% of episodes
-summary: A stand-alone web platform linked a tertiary blood bank with four rural obstetric clinics in Taiwan for ordering, identity checks and cold-chain dispatch. Over 252 dispatch episodes the routine 90-minute target was met 97.7% of the time and the emergency 30-minute target 84.2%, with all clinics adopting it.
+summary: A stand-alone web platform linked a tertiary blood bank with four rural obstetric clinics in Taiwan for ordering, identity checks and cold-chain dispatch. Over 252 dispatch episodes the routine 90-minute target was met 97.7% of the time and emergency dispatches arrived within 30 minutes in 84.2%, short of the 90% target overall but 100% in 2025 and 2026; all clinics adopted it.
 intervention: Web platform for inter-site blood ordering, verification and dispatch with prespecified service-level targets
 comparator: None (prespecified service-level targets)
 source:
@@ -55,3 +55,8 @@ implementation_needs:
 lmic_applicability: partial
 notes: 'Single-network implementation report with no comparator and no CI: OE5. Useful pattern: set SLA targets up front and measure them from audit-log timestamps. The drone substudy is preliminary and left out. Clinical transfusion safety not carded. LMIC partial: the SLA-plus-audit-log method transfers; the platform assumes reliable connectivity.'
 review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; summary notes emergency SLA (90% target) missed overall but met in 2025-26; logistics only"
