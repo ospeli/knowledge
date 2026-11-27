@@ -1,0 +1,49 @@
+id: kc-2026-0165
+version: 1
+status: approved
+title: Operative-note audit lifted documentation scores, but the new template was rarely used
+summary: A closed-loop audit at an English hospital revised the operative-note template and fed back results to surgeons. The median documentation score rose from 75.0% to 81.2%, yet the revised template was used in only 19.4% of re-audited notes and no single criterion stayed significant after correction.
+intervention: Revised operative-note template plus feedback of audit results
+comparator: First audit cycle
+source:
+  doi: 10.7759/cureus.120170
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.7759/cureus.120170
+domains:
+- C4_governance
+- C5_records_ig
+- A4_theatres
+design: before_after
+evidence_level: OE5
+setting:
+  country: GB
+  income: HIC
+  facility: tertiary_hospital
+kpis:
+- name: documentation_score_median
+  definition: Median overall documentation score against 16 GIRFT criteria, cycle 1 vs cycle 2
+  effect:
+    value: 75.0 to 81.2
+    unit: '%'
+  evidence:
+    quote: The overall documentation score improved, from a median of 75.0% (IQR 68.8-81.2) to 81.2% (IQR 68.8-93.8; p=0.004).
+- name: template_uptake
+  definition: Share of re-audited notes using the revised template
+  effect:
+    value: '19.4'
+    unit: '%'
+  evidence:
+    quote: The revised template was used in only six of 31 re-audit cases (19.4%).
+implementation_needs:
+- audit criteria list
+- template built into the record system
+- uptake of the template tracked, not only scores
+lmic_applicability: 'yes'
+notes: 'Single-site before-after, small second cycle (31 notes), one month after change, no CI on the main score: OE4 downgraded to OE5. The surgical content of the criteria is clinical and out of scope. For C4: track template or tool uptake alongside the audit score, since the score rose with low uptake. LMIC yes: audit cycles need no technology.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; KPI definition no longer assumes score method; title shortened"

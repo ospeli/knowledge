@@ -1,0 +1,42 @@
+id: kc-2026-0168
+version: 1
+status: approved
+title: Process map and driver diagram lifted on-time pre-surgery plans from 26% to 63%
+summary: A US children's hospital used a process map, key driver diagram and p-chart to raise the share of pre-surgery plans for a high-risk group finished at least seven days ahead. After standard documentation in the record and clearer roles and communication, the share rose from a mean of 26% to 63% and held for over a year, short of the 80% aim.
+intervention: Process map, key driver diagram, standard plan template in the record, defined roles and communication
+comparator: Baseline period at the same centre
+source:
+  doi: 10.1111/hae.70437
+  tier: C
+  licence: unknown
+  url: https://doi.org/10.1111/hae.70437
+domains:
+- A4_theatres
+- C2_quality_safety
+design: its_uncontrolled
+evidence_level: OE4
+setting:
+  country: US
+  income: HIC
+  facility: childrens_hospital
+kpis:
+- name: plans_complete_7_days_before
+  definition: Share of pre-surgery plans completed at least 7 days before the procedure (p-chart mean)
+  effect:
+    value: 26 to 63
+    unit: '%'
+  evidence:
+    checked_by: ospeli-review-bot
+implementation_needs:
+- process map of the planning steps
+- due date for each plan linked to the surgery date
+- run or p-chart of on-time completion
+- named role for each step
+lmic_applicability: 'yes'
+notes: 'Single-site QI with a statistical process control chart, no CI: OE3 downgraded to OE4. Tier C: abstract read via PubMed (PMID 43075757), not stored in the inbox; no quotes; reviewer to fill checked_by. The plan content is clinical (bleeding disorders) and out of scope; the card covers only the timeliness process. For X1: a worked example of process map plus driver diagram plus p-chart. LMIC yes: method needs no technology.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Tier C: 26% to 63% and 80% aim checked against PubMed abstract (PMID 43075757); timeliness process only"

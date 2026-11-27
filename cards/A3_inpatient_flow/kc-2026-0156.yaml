@@ -1,0 +1,47 @@
+id: kc-2026-0156
+version: 1
+status: approved
+title: Linked administrative data made multi-facility cancer pathways visible by process mining
+summary: In Kuwait, linking a cancer centre EHR with national discharge data built an event log of 3,334 activity records for 50 patients. Process discovery and Sankey views showed different pathways for breast and colorectal cancer, for example more clinic visits per week and more hospital stays in general hospitals for colorectal cancer.
+intervention: Process mining on an event log linked from two administrative data sources
+comparator: Breast vs colorectal cancer pathways (descriptive)
+source:
+  doi: 10.21203/rs.3.rs-11310775/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-11310775/v1
+domains:
+- A3_inpatient_flow
+- C5_records_ig
+design: other
+evidence_level: OE5
+setting:
+  country: KW
+  income: HIC
+  facility: cancer_centre_and_general_hospitals
+kpis:
+- name: clinic_visits_per_week
+  definition: Clinic visits per patient per week, colorectal vs breast cancer
+  effect:
+    value: 0.31 vs 0.23
+    unit: visits/week
+  evidence:
+    quote: Colorectal cancer patients recorded more clinic visits per week than breast cancer patients (0.31 vs. 0.23, p<0.05) and more diagnostic events per patient (26.0 vs. 12.2, p<0.05), driven by laboratory and radiology testing.
+- name: general_hospital_share_of_stays
+  definition: Share of hospitalisations in general hospitals, colorectal vs breast
+  effect:
+    value: 24 of 101 (24%) vs 8 of 74 (11%)
+  evidence:
+    quote: General hospitals accounted for 24 of 101 (24%) colorectal hospitalizations, compared with 8 of 74 (11%) breast cancer hospitalizations.
+implementation_needs:
+- a shared patient key across data sources (pseudonymised)
+- consistent activity and timestamp fields
+- event classification agreed before analysis
+lmic_applicability: partial
+notes: 'Preprint, purposive sample of 50 patients, descriptive, no CI: OE5. For X1 process mapping: shows the same event-log approach Ospeli uses (activity, timestamp, place) can be built from routine data and drawn as a Sankey; authors call findings hypothesis-generating. Clinical treatment content left out. LMIC partial: needs linkable records, often missing where data are fragmented.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; preprint OE5 confirmed; non-KPI event-log size removed"

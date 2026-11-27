@@ -1,0 +1,56 @@
+id: kc-2026-0166
+version: 1
+status: approved
+title: UK scientist-led echo clinics are widespread but vary in standards and outcome measurement
+summary: In a national survey of 194 UK echocardiography staff, 63% reported an established scientist-led clinic combining scan and assessment in one visit. Funding and staffing were the main barriers, and only 43% routinely collected patient feedback.
+intervention: Scientist-led one-stop clinics (imaging plus assessment in one visit)
+comparator: None (descriptive survey)
+source:
+  doi: 10.21203/rs.3.rs-11218122/v1
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.21203/rs.3.rs-11218122/v1
+domains:
+- A5_outpatients
+- A7_imaging
+- C1_workforce
+design: other
+evidence_level: OE5
+setting:
+  country: GB
+  income: HIC
+  facility: mixed
+kpis:
+- name: established_clinic_share
+  definition: Respondents reporting an established scientist-led clinic
+  effect:
+    value: 63
+    unit: '%'
+  evidence:
+    quote: An established scientist-led clinic was reported by 63% of respondents, with a further 13% reporting a service in pilot phase.
+- name: patient_feedback_collected
+  definition: Respondents reporting routine patient feedback collection
+  effect:
+    value: 43
+    unit: '%'
+  evidence:
+    quote: Only 43% of respondents reported routinely collected formal or informal patient feedback, although free-text responses indicate largely positive feedback.
+- name: barrier_funding_staffing
+  definition: Respondents naming funding and staffing shortages as challenges
+  effect:
+    value: 56 and 51
+    unit: '%'
+  evidence:
+    quote: Key challenges included funding (56%), staffing shortages (51%), accreditation gaps (34%), and limited consultant support (33%).
+implementation_needs:
+- clinic template with one-visit slot length
+- escalation pathway to a consultant
+- routine patient feedback form
+lmic_applicability: uncertain
+notes: 'Preprint, self-selected professional survey, perceived benefits only: OE5. For A1: one-stop clinics need a slot template and a feedback form; most services were not measuring outcomes, which Ospeli can make easy. LMIC uncertain: depends on a scientist workforce that may not exist.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; title matched to source ('variation in standards and outcome measurement', not absence)"

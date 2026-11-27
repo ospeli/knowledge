@@ -1,0 +1,48 @@
+id: kc-2026-0163
+version: 1
+status: approved
+title: Charging hospital batteries before planned outages mattered more than size (model)
+summary: An hourly simulation of solar panels plus battery storage for a Lahore hospital under load-shedding found that if the battery charged only from solar surplus it was usually empty when outages began. Charging from the grid in the three hours before each scheduled outage brought unserved critical load to zero in the base case (8 outage hours a day) from 100 kWp solar with 200 kWh storage upward.
+intervention: Pre-outage grid charging of battery storage (Dispatch B)
+comparator: Battery charged only from solar surplus (Dispatch A)
+source:
+  doi: 10.5281/zenodo.24501259
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.5281/zenodo.24501259
+domains:
+- B2_estates_facilities
+- E1_preparedness
+design: simulation_des
+evidence_level: OE5
+setting:
+  country: PK
+  income: LMIC
+  facility: hospital_modelled
+kpis:
+- name: unserved_critical_load_dispatch_a
+  definition: Unserved critical load per year with battery charged from solar surplus only, across sizes tested
+  effect:
+    value: 69.5–121.4
+    unit: MWh/year
+  evidence:
+    quote: If the battery is charged only from PV surplus (Dispatch A), daytime hospital load absorbs almost all PV output, the battery is usually empty when an outage begins, and 69.5–121.4 MWh/year of critical load remains unserved even at the largest sizes tested.
+- name: unserved_critical_load_no_system
+  definition: Unserved critical load per year with no solar or storage, 8 outage hours a day
+  effect:
+    value: 177.2
+    unit: MWh/year
+  evidence:
+    quote: Without PV or storage, 177.2 MWh/year of critical load is unserved in the base case of 8 outage hours per day.
+implementation_needs:
+- published load-shedding schedule
+- critical-load list (theatres, ICU, cold chain)
+- battery controller that can charge from grid on a timetable
+lmic_applicability: 'yes'
+notes: 'Preprint, simulation with a synthetic hospital load, not validated against a real site: OE5. Tariff and cost results are local and left out. For B2: the operational lesson is a schedule rule (charge before the planned outage), which a facilities checklist can carry. LMIC yes: written for load-shedding in Pakistan.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers checked against stored abstract; unvalidated simulation OE5; base-case condition added to summary"

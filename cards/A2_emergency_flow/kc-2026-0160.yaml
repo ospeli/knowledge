@@ -1,0 +1,59 @@
+id: kc-2026-0160
+version: 1
+status: approved
+title: Many Ghanaian district-hospital ED staff did not know their triage system existed
+summary: Among 256 emergency staff at 15 district hospitals in Ghana, most said their hospital had a triage system and a trauma protocol, but the share unaware ranged from 0% to 43% by hospital. Awareness was higher in faith-based hospitals than government ones; the authors suggest periodic training and printed copies on display.
+intervention: None (cross-sectional survey)
+comparator: Faith-based and private vs government hospitals
+source:
+  doi: 10.1186/s13104-026-08132-7
+  tier: B
+  licence: cc-by-nc-nd
+  url: https://doi.org/10.1186/s13104-026-08132-7
+domains:
+- A2_emergency_flow
+- C4_governance
+design: other
+evidence_level: OE4
+setting:
+  country: GH
+  income: LMIC
+  facility: district_hospital_ed
+  sites: 15
+kpis:
+- name: staff_reporting_triage_system
+  definition: Staff reporting a triage system at their hospital
+  effect:
+    value: 85.5
+    unit: '%'
+  evidence:
+    quote: Most reported that their hospital had a triage system (85.5%) and a trauma protocol (86.7%).
+- name: unaware_range_by_hospital
+  definition: Range across hospitals of staff unaware of a triage system
+  effect:
+    value: 0 to 43
+    unit: '%'
+  evidence:
+    quote: Hospitals ranged from 0% to 43% of respondents being unaware of a triage system.
+- name: awareness_odds_faith_based
+  definition: Adjusted odds of triage-system awareness, faith-based vs government
+  effect:
+    value: 20.54
+    unit: odds ratio
+    ci:
+    - 2.72
+    - 155.06
+  evidence:
+    quote: Staff at faith-based hospitals were more likely to be aware of a triage system at their hospital than government hospital staff (aOR = 20.54; 95%CI 2.72–155.06; p = 0.003).
+implementation_needs:
+- printed triage and trauma protocols on display in the ED
+- periodic refresher training
+- simple staff awareness check (spot survey)
+lmic_applicability: 'yes'
+notes: 'Multi-site cross-sectional survey with adjusted CIs, purposive hospitals: OE4. Very wide CI for faith-based odds. For A2 and C4: a document-awareness check ("does staff know protocol X exists and where it is") is a cheap governance KPI. LMIC yes: Ghana district hospitals.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Numbers and CI checked against stored abstract; OE4 survey; governance KPI, not clinical"

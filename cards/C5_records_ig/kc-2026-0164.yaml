@@ -1,0 +1,42 @@
+id: kc-2026-0164
+version: 1
+status: approved
+title: At one Indonesian hospital, EMR tangible benefits were 1.86 times running costs
+summary: At an Indonesian national specialist hospital, running costs of electronic medical records over 2020 to 2025 were set against tangible benefits (cost displacement and cost avoidance). The benefit-cost ratio was 1.86; the authors note this covers running costs only, not full economic feasibility.
+intervention: Electronic medical record in routine use
+comparator: Ongoing operational cost of the EMR (benefit-cost ratio)
+source:
+  doi: 10.63447/jmt.v3i2.2135
+  tier: A
+  licence: cc-by
+  url: https://doi.org/10.63447/jmt.v3i2.2135
+domains:
+- C5_records_ig
+- D1_finance_costing
+- D3_it_digital
+design: case_study
+evidence_level: OE5
+setting:
+  country: ID
+  income: UMIC
+  facility: national_specialist_hospital
+kpis:
+- name: emr_benefit_cost_ratio
+  definition: Tangible benefits divided by ongoing operational costs, 2020–2025
+  effect:
+    value: 1.86
+    unit: ratio
+  evidence:
+    quote: The BCR of 1.86 indicates that the tangible benefits were greater than the operational costs.
+implementation_needs:
+- list of running costs (licences, maintenance, staff)
+- costs displaced (paper, printing, storage, filing staff)
+- agreed period for the comparison
+lmic_applicability: 'yes'
+notes: 'Single-site document review, no comparator site and no uncertainty: OE5. Excludes set-up cost and intangible benefits. For C5/D1: a simple template to show running cost vs displaced paper-record cost. LMIC yes: Indonesia.'
+review_by: '2031-11-26'
+approval:
+  by: ospeli-review-bot
+  kind: ai
+  date: '2026-11-27'
+  notes: "Number checked against stored abstract; title limited to one hospital and running costs"
